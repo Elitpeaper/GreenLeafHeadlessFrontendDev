@@ -1,0 +1,453 @@
+/* AUTO-GENERATED from docs/tasarim/tokens.json by scripts/tokens/build-tokens.mjs — do not edit. */
+
+/* Hover-recolor accent vars (K-066): registered so CSS can transition them. Unsupported browsers swap instantly. */
+@property --accent-soft {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #F1F8EE;
+}
+@property --accent-line {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #D5EFC9;
+}
+@property --accent-decor {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #4EAE36;
+}
+@property --accent-decor-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #30A8D7;
+}
+@property --accent-decor-3 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #86B726;
+}
+@property --accent-text {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2F7A22;
+}
+@property --stripe-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #4EAE36;
+}
+@property --stripe-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #86B726;
+}
+@property --stripe-3 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #30A8D7;
+}
+
+/* Variant for the full motion layer (K-190): html[data-motion="on"] is set by the motion runtime, incl. the
+   ?motion=full preview switch. Use motion-on:hover:-translate-y-1 for movement; colour transitions need no variant (K-231). */
+@custom-variant motion-on (&:where(html[data-motion="on"] *));
+/* K-264: the site's own motion tier is the single source, not the OS media query. motion-safe / motion-reduce follow
+   html[data-motion] (set by the boot script from the visitor's "Hareketi azalt" choice), so an OS "reduce" setting no
+   longer switches hover movement off on its own. */
+@custom-variant motion-safe (&:where(html[data-motion="on"] *));
+@custom-variant motion-reduce (&:where(html:not([data-motion="on"]) *));
+
+@theme {
+  --color-brand-green: #4EAE36;
+  --color-brand-lime: #86B726;
+  --color-brand-blue: #30A8D7;
+  --color-brand-black: #333533;
+  --color-ink: #333533;
+  --color-ink-muted: #5A625B;
+  --color-ink-deep: #1A1D1B;
+  --color-line: #E3E9E1;
+  --color-line-strong: #8A948B;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F6F8F4;
+  --color-green-50: #F1F8EE;
+  --color-green-100: #E8F4E2;
+  --color-green-200: #D5EFC9;
+  --color-green-300: #BFE3AE;
+  --color-green-700: #2F7A22;
+  --color-green-800: #245F1A;
+  --color-green-900: #1B4614;
+  --color-lime-50: #F5F9EA;
+  --color-lime-100: #EEF5DA;
+  --color-lime-200: #C9E37F;
+  --color-lime-700: #4A6A0F;
+  --color-blue-50: #EEF7FB;
+  --color-blue-100: #E3F2F9;
+  --color-blue-700: #176A8E;
+  --color-blue-800: #0F5573;
+  --color-danger: #B42318;
+  --color-danger-50: #FEF3F2;
+  --color-gold-50: #FBF6E9;
+  --color-gold-200: #F3E7C4;
+  --color-gold-300: #E9CF8A;
+  --color-gold-400: #D9B45A;
+  --color-gold-500: #C9A24B;
+  --color-gold-700: #8A6A1F;
+  --color-gold-800: #7A5A12;
+  --color-forest-900: #0F3B22;
+  --color-forest-950: #0A2A18;
+  --color-forest-500: #2E8A55;
+  --color-forest-600: #226E45;
+  --color-forest-700: #1A5A3A;
+  --color-forest-800: #14482F;
+  --color-cream-50: #FBF7EF;
+  --color-cream-100: #F6EEDF;
+  --color-cream-200: #EFDFC3;
+  --color-sand-300: #E2C49E;
+  --color-sand-400: #CFA77A;
+  --color-earth-500: #9C6B45;
+  --color-earth-600: #875A39;
+  --color-earth-700: #6F462B;
+  --color-earth-800: #573521;
+  --color-earth-900: #3F2618;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-xs--letter-spacing: 0.01em;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.55;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.4;
+  --text-2xl: clamp(1.375rem, 1.25rem + 0.6vw, 1.75rem);
+  --text-2xl--line-height: 1.25;
+  --text-2xl--letter-spacing: -0.01em;
+  --text-3xl: clamp(1.75rem, 1.35rem + 2vw, 2.75rem);
+  --text-3xl--line-height: 1.1;
+  --text-3xl--letter-spacing: -0.015em;
+  --text-4xl: clamp(2.25rem, 1.6rem + 3.2vw, 4rem);
+  --text-4xl--line-height: 1.04;
+  --text-4xl--letter-spacing: -0.02em;
+  --text-display: clamp(2.75rem, 1.7rem + 5.2vw, 5.75rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.03em;
+  --text-mega: clamp(3.5rem, 2rem + 7.5vw, 8.5rem);
+  --text-mega--line-height: 0.9;
+  --text-mega--letter-spacing: -0.04em;
+  --text-ultra: clamp(3.5rem, 1.5rem + 8vw, 8.5rem);
+  --text-ultra--line-height: 0.9;
+  --text-ultra--letter-spacing: -0.045em;
+  --text-colossal: clamp(6rem, 2.5rem + 17vw, 18rem);
+  --text-colossal--line-height: 0.85;
+  --text-colossal--letter-spacing: -0.05em;
+  --font-weight-light: 300;
+  --font-weight-book: 400;
+  --font-weight-medium: 500;
+  --font-weight-demi: 600;
+  --font-weight-bold: 700;
+  --tracking-eyebrow: 0.08em;
+  --tracking-premium: 0.14em;
+  --tracking-tight: -0.015em;
+  --spacing-gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+  --spacing-section: clamp(3rem, 2.2rem + 4vw, 6rem);
+  --spacing-section-tight: clamp(2rem, 1.6rem + 2vw, 3.5rem);
+  --spacing-stack: clamp(1.25rem, 1rem + 1.2vw, 2rem);
+  --spacing-card-pad: clamp(0.75rem, 0.6rem + 0.5vw, 1rem);
+  --spacing-grid-gap: clamp(0.75rem, 0.5rem + 0.9vw, 1.25rem);
+  --spacing-tap-min: 44px;
+  --spacing-tap: 44px;
+  --spacing-control-sm: 36px;
+  --spacing-control: 44px;
+  --spacing-control-lg: 52px;
+  --spacing-header: 76px;
+  --spacing-header-compact: 64px;
+  --spacing-header-subnav: 44px;
+  --container-page: 76rem;
+  --container-wide: 90rem;
+  --container-prose: 40rem;
+  --container-drawer: 28rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2rem;
+  --radius-2xl: 3rem;
+  --radius-pill: 999px;
+  --radius-tile: 1.75rem;
+  --radius-panel: 2.25rem;
+  --shadow-xs: 0 1px 2px rgb(28 36 29 / 0.06);
+  --shadow-card: 0 1px 2px rgb(28 36 29 / 0.05), 0 10px 30px -12px rgb(47 122 34 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(28 36 29 / 0.06), 0 22px 48px -18px rgb(47 122 34 / 0.32);
+  --shadow-button: 0 1px 1px rgb(28 36 29 / 0.08), 0 8px 20px -8px rgb(47 122 34 / 0.55);
+  --shadow-overlay: 0 24px 64px -16px rgb(28 36 29 / 0.28), 0 2px 6px rgb(28 36 29 / 0.08);
+  --shadow-gold: 0 1px 0 rgb(233 207 138 / 0.6) inset, 0 18px 40px -18px rgb(138 106 31 / 0.45);
+  --shadow-tile: 0 2px 4px rgb(10 42 24 / 0.10), 0 30px 60px -24px rgb(10 42 24 / 0.50);
+  --shadow-tile-hover: 0 4px 8px rgb(10 42 24 / 0.12), 0 44px 80px -28px rgb(10 42 24 / 0.58);
+  --shadow-long: 24px 32px 56px -20px rgb(10 42 24 / 0.42);
+  --shadow-badge: inset 0 1px 0 rgb(255 255 255 / 0.22), 10px 14px 24px -10px rgb(10 42 24 / 0.55);
+  --shadow-cta-cream: inset 0 1px 0 rgb(255 255 255 / 0.65), 0 2px 3px rgb(10 42 24 / 0.18), 0 18px 34px -14px rgb(10 42 24 / 0.60);
+  --shadow-card-on-forest: 0 1px 2px rgb(10 42 24 / 0.20), 0 24px 48px -22px rgb(10 42 24 / 0.65);
+  --shadow-sticker: inset 0 1px 0 rgb(255 255 255 / 0.7), 6px 10px 0 -2px rgb(10 42 24 / 0.18), 14px 22px 32px -14px rgb(10 42 24 / 0.55);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+}
+
+/* Accent layer as Tailwind colors: bg-accent-soft, text-accent-text, border-accent-line, bg-stripe-1 ... */
+@theme inline {
+  --color-accent-decor: var(--accent-decor);
+  --color-accent-decor-2: var(--accent-decor-2);
+  --color-accent-decor-3: var(--accent-decor-3);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-on-accent: var(--on-accent);
+  --color-accent-text: var(--accent-text);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-line: var(--accent-line);
+  --color-accent-deep: var(--accent-deep);
+  --color-on-accent-deep: var(--on-accent-deep);
+  --color-accent-on-deep: var(--accent-on-deep);
+  --color-surface-themed: var(--surface-themed);
+  --color-on-surface-themed: var(--on-surface-themed);
+  --color-stripe-1: var(--stripe-1);
+  --color-stripe-2: var(--stripe-2);
+  --color-stripe-3: var(--stripe-3);
+}
+
+:root {
+  --accent-decor: #4EAE36;
+  --accent-decor-2: #30A8D7;
+  --accent-decor-3: #86B726;
+  --accent: #2F7A22;
+  --accent-hover: #245F1A;
+  --on-accent: #FFFFFF;
+  --accent-text: #2F7A22;
+  --accent-soft: #F1F8EE;
+  --accent-line: #D5EFC9;
+  --accent-deep: #1B4614;
+  --on-accent-deep: #FFFFFF;
+  --accent-on-deep: #C9E37F;
+  --surface-themed: #FFFFFF;
+  --on-surface-themed: #333533;
+  --stripe-1: #4EAE36;
+  --stripe-2: #86B726;
+  --stripe-3: #30A8D7;
+  --accent-gradient: none;
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 450ms;
+  --duration-slower: 800ms;
+  --duration-ambient: 14s;
+  --duration-xs: 120ms;
+  --duration-sm: 200ms;
+  --duration-md: 320ms;
+  --duration-lg: 500ms;
+  --duration-xl: 800ms;
+  --font-role-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-role-display: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-role-accent: var(--font-comfortaa), var(--font-jost), sans-serif;
+  --z-header: 40;
+  --z-megamenu: 45;
+  --z-overlay: 50;
+  --z-drawer: 60;
+  --z-toast: 70;
+  --gradient-gold-foil: linear-gradient(115deg, #8A6A1F 0%, #C9A24B 28%, #F3E7C4 50%, #D9B45A 68%, #8A6A1F 100%);
+  --gradient-gold-button: linear-gradient(180deg, #E9CF8A 0%, #C9A24B 100%);
+  --gradient-forest-depth: radial-gradient(120% 90% at 50% 0%, #14502E 0%, #0F3B22 55%, #0A2A18 100%);
+  --gradient-gold-glow: radial-gradient(closest-side, rgb(233 207 138 / 0.55), rgb(233 207 138 / 0));
+  --gradient-forest-hero: linear-gradient(135deg, #226E45 0%, #1A5A3A 48%, #14482F 100%);
+  --gradient-forest-deep: linear-gradient(160deg, #14482F 0%, #0F3B22 60%, #0A2A18 100%);
+  --gradient-forest-radial: radial-gradient(120% 90% at 20% 0%, #226E45 0%, #1A5A3A 45%, #0F3B22 100%);
+  --gradient-tile-green: linear-gradient(150deg, #2F7A22 0%, #245F1A 100%);
+  --gradient-tile-earth: linear-gradient(150deg, #875A39 0%, #6F462B 100%);
+  --gradient-tile-earth-deep: linear-gradient(150deg, #6F462B 0%, #573521 100%);
+  --gradient-tile-sand: linear-gradient(150deg, #E2C49E 0%, #CFA77A 100%);
+  --gradient-tile-cream: linear-gradient(150deg, #FBF7EF 0%, #EFDFC3 100%);
+  --gradient-cta-cream: linear-gradient(180deg, #EFDFC3 0%, #E2C49E 100%);
+  --type-stroke-outline-on-forest-width: 1.5px;
+  --type-stroke-outline-on-forest-color: rgb(239 223 195 / 0.22);
+  --type-stroke-outline-on-light-width: 1.5px;
+  --type-stroke-outline-on-light-color: rgb(47 122 34 / 0.22);
+  --type-stroke-outline-on-sand-width: 2px;
+  --type-stroke-outline-on-sand-color: rgb(63 38 24 / 0.30);
+  --stripe-signature-band-1: 10px;
+  --stripe-signature-band-2: 6px;
+  --stripe-signature-band-3: 8px;
+  --stripe-signature-gap: 4px;
+  --stripe-thin-band-1: 2px;
+  --stripe-thin-band-2: 1px;
+  --stripe-thin-band-3: 1px;
+  --stripe-thin-gap: 0px;
+  --stripe-inline-band-1: 4px;
+  --stripe-inline-band-2: 3px;
+  --stripe-inline-band-3: 3px;
+  --stripe-inline-gap: 3px;
+  --stripe-inline-width: 56px;
+  --stripe-giant-band-1: 70px;
+  --stripe-giant-band-2: 42px;
+  --stripe-giant-band-3: 56px;
+  --stripe-giant-gap: 0px;
+  --z-collage-ground: 0;
+  --z-collage-decor-type: 1;
+  --z-collage-color-block: 2;
+  --z-collage-photo: 3;
+  --z-collage-paper: 4;
+  --z-collage-sticker: 5;
+  --z-collage-text: 6;
+  --z-collage-controls: 7;
+  --collage-rotate-photo: -3deg;
+  --collage-rotate-sticker-1: 4deg;
+  --collage-rotate-sticker-2: -2deg;
+  --collage-rotate-sticker-3: 6deg;
+  --collage-rotate-max: 6deg;
+  --collage-gap-to-text: 32px;
+  --hero-intro-logo-size: 88px;
+  --hero-intro-logo-max-duration: 900ms;
+  --hero-intro-headline-duration: 600ms;
+  --hero-intro-headline-lead: 200ms;
+  --hero-intro-total: 1.6s;
+}
+
+/* Theme presets — apply with data-theme on any container (see src/lib/theme/ThemeScope.tsx). */
+[data-theme="premium-gold"] {
+  --accent-decor: #D9B45A;
+  --accent-decor-2: #0F3B22;
+  --accent-decor-3: #E9CF8A;
+  --accent: #C9A24B;
+  --accent-hover: #E9CF8A;
+  --on-accent: #1A1D1B;
+  --accent-text: #7A5A12;
+  --accent-soft: #FBF6E9;
+  --accent-line: #E9CF8A;
+  --accent-deep: #0F3B22;
+  --on-accent-deep: #FFFFFF;
+  --accent-on-deep: #E9CF8A;
+  --surface-themed: #FFFFFF;
+  --on-surface-themed: #333533;
+  --stripe-1: #C9A24B;
+  --stripe-2: #E9CF8A;
+  --stripe-3: #0F3B22;
+  --accent-gradient: linear-gradient(115deg, #8A6A1F 0%, #C9A24B 28%, #F3E7C4 50%, #D9B45A 68%, #8A6A1F 100%);
+}
+
+/* Recolor zone: transitions only the registered accent vars. Timing knobs belong to hareket-tasarimcisi. */
+[data-accent-zone] {
+  transition-property: --accent-soft, --accent-line, --accent-decor, --accent-decor-2, --accent-decor-3, --accent-text, --stripe-1, --stripe-2, --stripe-3;
+  transition-duration: var(--recolor-duration, 420ms);
+  transition-timing-function: var(--recolor-ease, var(--ease-standard));
+}
+/* K-231: colour changes stay smooth (~0.25 s) in the reduced tier too; only position/scale motion is removed (K-264: site tier). */
+html:not([data-motion="on"]) [data-accent-zone] {
+  transition-duration: var(--recolor-duration-reduced, 250ms);
+}
+
+/* v1.3 responsive token values (mobile-first; md = 768px). */
+@media (min-width: 768px) {
+  :root {
+    --stripe-giant-band-1: 120px;
+    --stripe-giant-band-2: 72px;
+    --stripe-giant-band-3: 96px;
+    --hero-intro-logo-size: 136px;
+  }
+}
+
+/* v1.2 gradient + surface-mode utilities (K-186/K-188); v1.3 text-stroke-* / color-block-* (K-234/K-236). */
+@utility bg-gradient-gold-foil {
+  background-image: var(--gradient-gold-foil);
+}
+
+@utility bg-gradient-gold-button {
+  background-image: var(--gradient-gold-button);
+}
+
+@utility bg-gradient-forest-depth {
+  background-image: var(--gradient-forest-depth);
+}
+
+@utility bg-gradient-gold-glow {
+  background-image: var(--gradient-gold-glow);
+}
+
+@utility bg-gradient-forest-hero {
+  background-image: var(--gradient-forest-hero);
+}
+
+@utility bg-gradient-forest-deep {
+  background-image: var(--gradient-forest-deep);
+}
+
+@utility bg-gradient-forest-radial {
+  background-image: var(--gradient-forest-radial);
+}
+
+@utility bg-gradient-tile-green {
+  background-image: var(--gradient-tile-green);
+}
+
+@utility bg-gradient-tile-earth {
+  background-image: var(--gradient-tile-earth);
+}
+
+@utility bg-gradient-tile-earth-deep {
+  background-image: var(--gradient-tile-earth-deep);
+}
+
+@utility bg-gradient-tile-sand {
+  background-image: var(--gradient-tile-sand);
+}
+
+@utility bg-gradient-tile-cream {
+  background-image: var(--gradient-tile-cream);
+}
+
+@utility bg-gradient-cta-cream {
+  background-image: var(--gradient-cta-cream);
+}
+
+@utility surface-showcase {
+  background-color: var(--color-forest-800);
+  background-image: var(--gradient-forest-hero);
+  color: var(--color-cream-100);
+}
+
+@utility surface-commerce {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+}
+
+@utility text-stroke-outline-on-forest {
+  color: transparent;
+  -webkit-text-stroke: var(--type-stroke-outline-on-forest-width) var(--type-stroke-outline-on-forest-color);
+}
+
+@utility text-stroke-outline-on-light {
+  color: transparent;
+  -webkit-text-stroke: var(--type-stroke-outline-on-light-width) var(--type-stroke-outline-on-light-color);
+}
+
+@utility text-stroke-outline-on-sand {
+  color: transparent;
+  -webkit-text-stroke: var(--type-stroke-outline-on-sand-width) var(--type-stroke-outline-on-sand-color);
+}
+
+@utility color-block-green {
+  background-color: var(--color-brand-green);
+  color: var(--color-forest-950);
+}
+
+@utility color-block-lime {
+  background-color: var(--color-brand-lime);
+  color: var(--color-forest-950);
+}
+
+@utility color-block-blue {
+  background-color: var(--color-brand-blue);
+  color: var(--color-forest-950);
+}
+
+@utility color-block-lime-hover-plate {
+  background-color: var(--color-cream-50);
+  color: var(--color-forest-900);
+}

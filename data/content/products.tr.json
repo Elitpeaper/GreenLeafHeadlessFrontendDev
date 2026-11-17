@@ -1,0 +1,583 @@
+{
+  "_meta": {
+    "owner": "icerik-editoru",
+    "version": "0.1",
+    "updated": "2026-11-16",
+    "scope": "51 TR (satışta) ürün: 41 publishReady + 10 başlıksız. Anahtar = ürün kodu (kodsuz kayıt için id).",
+    "rules": "Tedavi edici/tıbbi iddia yok. Kaynakta olmayan bilgi yazılmadı; bilinmeyen alan boş bırakıldı (\"\" veya []). Üye fiyatı/PV metne yazılmaz.",
+    "fields": "title_tr, shortDescription_tr (tek cümle), description_tr (2-3 cümle), features_tr (3 madde), usage_tr, ingredients_highlight (yalnız kaynaktaki içerikler), notices (UI sabit uyarı anahtarı: regulated|supplement|cosmetic), titleChanged, needsReview (editör notu). seoTitle/seoDescription: seo-uzmani anahtar kelime notu gelince eklenecek.",
+    "status": "iddia denetimi: editör geçişi tamam; insan/uzman kontrolü bekliyor (UYUM-RAPORU)."
+  },
+
+  "ASB046": {
+    "title_tr": "iLiFE SOD İpek Yüz Kremi",
+    "titleChanged": false,
+    "shortDescription_tr": "Protein, bal ve SOD kompleksi içeren, kadifemsi dokulu besleyici yüz kremi.",
+    "description_tr": "Kadifemsi dokusu cilde kolayca yayılır, hızla emilir ve yapışkanlık bırakmadan konfor hissi verir. Kolajen, hyaluronik asit ve bitkisel özüt içeren formülü cildi bakımlı ve pürüzsüz gösterir.",
+    "features_tr": ["Besleyici, kadifemsi doku", "Hızla emilir, yapışkanlık bırakmaz", "Günlük yüz bakımına uygun"],
+    "usage_tr": "Temizlenmiş yüz cildine az miktarda sür; hafif masaj hareketleriyle tamamen emilene kadar yay. Sabah ve/veya akşam kullan.",
+    "ingredients_highlight": ["Protein", "Bal", "SOD kompleksi", "Kolajen", "Hyaluronik asit", "Bitkisel özüt"],
+    "notices": ["cosmetic"],
+    "needsReview": ["name-conflict: panel adı 'ipek losyonu', RU adı 'protein ve ballı yüz kremi' (S-031)"]
+  },
+  "CBE034": {
+    "title_tr": "CARICH E Vitaminli Cilt Sütü",
+    "titleChanged": true,
+    "shortDescription_tr": "E vitamini ve hyaluronik asitle zenginleştirilmiş, hafif emülsiyon dokulu cilt sütü.",
+    "description_tr": "Pürüzsüz emülsiyon dokusu her mevsim rahat kullanım sağlar. E vitamini esansı ve hyaluronik asit içerir; cildi nemli ve yumuşak hissettirir.",
+    "features_tr": ["E vitamini ve hyaluronik asit içerir", "Hızla emilir", "Cildi nemli ve pürüzsüz hissettirir"],
+    "usage_tr": "Az miktarda sütü yüz cildine sür, yumuşak hareketlerle eşit biçimde yay ve emilmesini bekle.",
+    "ingredients_highlight": ["E vitamini", "Sodyum hyaluronat", "Ginseng kökü özütü"],
+    "notices": ["cosmetic"],
+    "needsReview": ["title: 'Emülsiyon' yerine RU 'Молочко' = süt/losyon"]
+  },
+  "DAB089": {
+    "title_tr": "iLiFE Gliserinli Cilt Nemlendiricisi",
+    "titleChanged": true,
+    "shortDescription_tr": "Gliserin, sodyum hyaluronat ve B grubu vitamin içeren günlük nemlendirici.",
+    "description_tr": "Cilde nemli ve ferah bir görünüm kazandırmak için geliştirilmiş nemlendirici bakım ürünüdür. Yüz ve boyun bakımında günlük kullanıma uygundur.",
+    "features_tr": ["Cilde nemli, ferah bir görünüm verir", "Gliserin ve sodyum hyaluronat içerir", "Yüz ve boyun için günlük kullanım"],
+    "usage_tr": "Temizlenmiş yüz ve boyun cildine düzenli olarak sür.",
+    "ingredients_highlight": ["Gliserin", "Sodyum hyaluronat", "B grubu vitamin"],
+    "notices": ["cosmetic"],
+    "needsReview": ["name-conflict (S-031)", "kaynakta B5 ve niasinamid (B3) çelişiyor; yalnız 'B grubu vitamin' yazıldı"]
+  },
+  "FPA151": {
+    "title_tr": "Pink Point İnci Işıltılı Makyaj Kremi",
+    "titleChanged": true,
+    "shortDescription_tr": "İnci tozlu, doğal aydınlık veren makyaj kremi.",
+    "description_tr": "Uygulandığında yumuşak ve ışıltılı bir dokuya dönüşür, cilde içten gelen bir aydınlık verir. Sodyum hyaluronat, niasinamid, pantenol ve beta-glukan içerir.",
+    "features_tr": ["İnci özütü ince bir sedef ışıltısı verir", "Hafif doku, kolay yayılır", "Cildi makyaja hazırlar"],
+    "usage_tr": "",
+    "ingredients_highlight": ["İnci tozu", "Sodyum hyaluronat", "Niasinamid", "Pantenol", "Beta-glukan"],
+    "notices": ["cosmetic"],
+    "needsReview": ["usage kaynakta yok", "marka yazımı: Pink Point (brands.json)"]
+  },
+  "SAA069": {
+    "title_tr": "SEALUXE Yeşil Çaylı Nemlendirici Temizleyici",
+    "titleChanged": true,
+    "shortDescription_tr": "Yeşil çay ve karagenan özütlü, yoğun köpüklü yüz temizleyici.",
+    "description_tr": "Yoğun mus köpüğü yüzü nazikçe sarar ve gözeneklerdeki kiri almaya yardımcı olur. Temizlik, tazelik ve nem hissi verir.",
+    "features_tr": ["Yoğun, mus kıvamında köpük", "Yüzü nazikçe temizler", "Yeşil çay özütü içerir"],
+    "usage_tr": "Yüzünü ıslat, gereken miktarı avucunda köpürt. Dairesel hareketlerle nazikçe masaj yap, durula.",
+    "ingredients_highlight": ["Yeşil çay özütü", "Karagenan özütü"],
+    "notices": ["cosmetic"],
+    "needsReview": ["title: katalog 'Macunu', RU 'бальзам' (balm); biçim belirtilmedi — S-047"]
+  },
+  "SBC053": {
+    "title_tr": "SEALUXE Aloe Vera Nemlendirici Maske",
+    "titleChanged": false,
+    "shortDescription_tr": "Aloe vera özütlü, yoğun nem veren yüz maskesi.",
+    "description_tr": "Aloe vera özütlü maske cildi yoğun biçimde nemlendirir; yumuşak, esnek ve pürüzsüz bir görünüm kazandırır.",
+    "features_tr": ["Yoğun nem hissi", "Aloe vera özütü içerir", "Cildi yumuşak ve pürüzsüz gösterir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Aloe vera özütü"],
+    "notices": ["cosmetic"],
+    "needsReview": ["usage kaynakta yok", "paket: 25 ml × 8 adet (volume alanında)"]
+  },
+  "SBJ064": {
+    "title_tr": "SEALUXE Aydınlatıcı Temizleme Jeli",
+    "titleChanged": false,
+    "shortDescription_tr": "Hafif dokulu, günlük kullanıma uygun yüz temizleme jeli.",
+    "description_tr": "Kirleri yumuşak biçimde alır ve yıkama sonrası gerginlik hissi bırakmaz. Aynısafa çiçeği esansı ve mineralli deniz suyu içeren formülü cildi daha ışıltılı gösterir.",
+    "features_tr": ["Cildi nazikçe temizler", "Yıkama sonrası gerginlik hissi bırakmaz", "Daha ışıltılı bir görünüm verir"],
+    "usage_tr": "Nemli yüze az miktarda jel uygula, dairesel hareketlerle masaj yap, ılık suyla iyice durula. Sabah ve akşam kullan.",
+    "ingredients_highlight": ["Aynısafa çiçeği esansı", "Mineralli deniz suyu"],
+    "notices": ["cosmetic"],
+    "needsReview": ["'epidermisi yeniler' ifadesi çıkarıldı (R-03)"]
+  },
+
+  "CAA038": {
+    "title_tr": "CARICH Zencefil Hacim Şampuanı",
+    "titleChanged": false,
+    "shortDescription_tr": "Zencefil ve bal özütlü, saça hacimli görünüm veren şampuan.",
+    "description_tr": "Zencefil özütü saç derisindeki kir ve yağı temizler; saçı daha hafif ve hacimli gösterir. Bal özütü, ayçiçeği yağı, seramid, provitamin ve hidrolize protein içerir.",
+    "features_tr": ["Saçı hafif ve hacimli gösterir", "Saç derisini temizler", "Bal özütü ve ayçiçeği yağı içerir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Zencefil özütü", "Bal özütü", "Ayçiçeği yağı", "Seramid", "Provitamin", "Hidrolize protein"],
+    "notices": ["cosmetic"],
+    "needsReview": ["usage kaynakta yok"]
+  },
+  "CAA039": {
+    "title_tr": "CARICH Çiçek Kokulu Şampuan",
+    "titleChanged": false,
+    "shortDescription_tr": "Günlük kullanıma uygun, çiçek kokulu nazik şampuan.",
+    "description_tr": "Kir ve fazla yağı alırken saçın doğal yumuşaklığını korur. Taramayı kolaylaştırır ve saçı bakımlı gösterir.",
+    "features_tr": ["Saçı ve saç derisini temizler", "Yumuşaklık ve pürüzsüzlük hissi verir", "Kalıcı çiçek kokusu bırakır"],
+    "usage_tr": "Islak saça uygula, masaj hareketleriyle köpürt, iyice durula. Gerekirse tekrarla.",
+    "ingredients_highlight": [],
+    "notices": ["cosmetic"],
+    "needsReview": []
+  },
+  "CAB040": {
+    "title_tr": "CARICH Zencefil Hacim Saç Kremi",
+    "titleChanged": false,
+    "shortDescription_tr": "Zencefil ve bal özütlü, saça hafiflik veren saç kremi.",
+    "description_tr": "Zencefil özütü saça hafiflik ve hacim hissi verir. Bal özütü ve ayçiçeği tohumu yağı saçı nemlendirir.",
+    "features_tr": ["Saça hafiflik ve hacim hissi verir", "Bal özütü içerir", "Ayçiçeği tohumu yağıyla nemlendirir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Zencefil özütü", "Bal özütü", "Ayçiçeği tohumu yağı"],
+    "notices": ["cosmetic"],
+    "needsReview": ["usage kaynakta yok"]
+  },
+
+  "ASB044": {
+    "title_tr": "iLiFE Nemlendirici Aloe Vera Jeli",
+    "titleChanged": false,
+    "shortDescription_tr": "Aloe vera suyu ve hyaluronik asit içeren, serinletici nemlendirici jel.",
+    "description_tr": "Hafif jel dokusu hızla emilir, hoş bir serinlik hissi verir ve yapışkanlık bırakmaz. Aloe vera suyu, hyaluronik asit ve tremella özütü içerir.",
+    "features_tr": ["Serinletici, hafif doku", "Yapışkanlık bırakmadan emilir", "Yüz ve vücutta günlük kullanıma uygun"],
+    "usage_tr": "Temiz yüz veya vücut cildine gereken miktarda jeli sür; hafif masajla tamamen emilene kadar yay. Her gün ya da ihtiyaç duydukça kullan.",
+    "ingredients_highlight": ["Aloe vera suyu", "Hyaluronik asit", "Tremella özütü"],
+    "notices": ["cosmetic"],
+    "needsReview": ["'nem eksikliğini giderir' çıkarıldı"]
+  },
+  "ASB045": {
+    "title_tr": "iLiFE Aloe Vera Bakım Jeli",
+    "titleChanged": true,
+    "shortDescription_tr": "Saf aloe vera suyu bazlı, çok amaçlı bakım jeli.",
+    "description_tr": "Hızla emilir ve yapışkanlık hissi bırakmaz. Aloe vera suyu bazlı formülü vitamin ve mineral içerir; yüz ve vücutta kullanılabilir.",
+    "features_tr": ["Aloe vera suyu bazlı", "Yüz ve vücutta kullanılabilir", "Hızla emilir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Aloe vera suyu", "Vitamin ve mineraller"],
+    "notices": ["cosmetic"],
+    "needsReview": ["'Onarıcı', güneş yanığı/böcek ısırığı/kesik, antibakteriyel, 'iyileşme' ifadeleri çıkarıldı (R-02)", "usage kaynakta yok"]
+  },
+  "ASB047": {
+    "title_tr": "iLiFE Papatyalı Köpük El Sabunu",
+    "titleChanged": false,
+    "shortDescription_tr": "Papatya özütlü, havadar köpüklü sıvı el sabunu.",
+    "description_tr": "Havadar köpüğü elleri nazikçe temizler; her kullanımda tazelik ve yumuşaklık hissi bırakır. Papatya özütü, gliserin ve bisabolol içerir.",
+    "features_tr": ["Yumuşak, havadar köpük", "Suyla kolay durulanır", "Günlük kullanıma uygun"],
+    "usage_tr": "Nemli ellere gereken miktarda köpüğü uygula, ellerini ovalayarak köpürt ve suyla iyice durula.",
+    "ingredients_highlight": ["Papatya özütü", "Gliserin", "Bisabolol"],
+    "notices": [],
+    "needsReview": []
+  },
+  "CBA052": {
+    "title_tr": "CARICH Aromalı Duş Jeli",
+    "titleChanged": true,
+    "shortDescription_tr": "Provitamin, pantenol ve hyaluronik asit içeren aromalı duş jeli.",
+    "description_tr": "Yumuşak ve yoğun dokulu jel, ince aromasıyla duşa spa havası katar. Cildi pürüzsüz, ipeksi ve nemli hissettirir.",
+    "features_tr": ["Yumuşak ve yoğun doku", "Gün boyu süren hafif aroma", "Provitamin, pantenol ve hyaluronik asit içerir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Provitamin", "Pantenol", "Hyaluronik asit"],
+    "notices": [],
+    "needsReview": ["'pullanmayı giderir, dengeyi onarır' çıkarıldı", "usage kaynakta yok"]
+  },
+  "CBB017": {
+    "title_tr": "CARICH Binchotan Kömürlü El Yapımı Sabun",
+    "titleChanged": true,
+    "shortDescription_tr": "Bambu kömürü ve bitkisel yağlarla hazırlanmış el yapımı sabun.",
+    "description_tr": "Cildi ve gözenekleri nazikçe temizler; yıkama sonrası yumuşaklık ve konfor hissi bırakır. Shea yağı, zeytinyağı ve gliserin içerir.",
+    "features_tr": ["Doğal bambu kömürü içerir", "Shea yağı, zeytinyağı ve gliserin içerir", "Yıkama sonrası yumuşak his"],
+    "usage_tr": "Sabunu avuçlarında ya da file ile köpürt, nemli cilde uygula, nazikçe masaj yap ve iyice durula.",
+    "ingredients_highlight": ["Bambu (binchotan) kömürü", "Shea yağı", "Zeytinyağı", "Gliserin"],
+    "notices": [],
+    "needsReview": ["'yatıştırıcı bakım' çıkarıldı"]
+  },
+  "CBF014": {
+    "title_tr": "CARICH Aloe Vera Nemlendirici El Kremi",
+    "titleChanged": false,
+    "shortDescription_tr": "Shea yağı ve aloe vera özütlü nemlendirici el kremi.",
+    "description_tr": "Hafif dokusu hızla emilir ve yapışkanlık bırakmaz. Shea yağı, aloe vera özütü, vazelin ve allantoin içerir; hoş bir aroma bırakır.",
+    "features_tr": ["Hafif doku, hızlı emilim", "Shea yağı ve aloe vera özütü içerir", "Hoş bir aroma bırakır"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Shea yağı", "Aloe vera özütü", "Vazelin", "Allantoin"],
+    "notices": [],
+    "needsReview": ["usage kaynakta yok"]
+  },
+  "CBF015": {
+    "title_tr": "CARICH Shea Yağlı Nemlendirici El Kremi",
+    "titleChanged": false,
+    "shortDescription_tr": "Shea yağlı, el cildine yumuşaklık veren nemlendirici krem.",
+    "description_tr": "Zengin shea yağı içerir; el cildini yumuşak ve pürüzsüz hissettirir. Kolay emilir, yağlılık hissi bırakmaz. Bal ve E vitamini de içerir.",
+    "features_tr": ["Shea yağı içerir", "Bal ve E vitamini içerir", "Kolay emilir, yağlılık hissi bırakmaz"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Shea yağı", "Bal", "E vitamini"],
+    "notices": [],
+    "needsReview": ["'antiseptik, yara ve çatlakları iyileştirir, serbest radikallere karşı korur, erken yaşlanmayı önler' çıkarıldı (R-02)", "RU adı yalnız 'Крем для рук'; shea bilgisi katalogdan", "usage kaynakta yok"]
+  },
+  "DAA108": {
+    "title_tr": "iLiFE Aloe Veralı Köpük El Sabunu",
+    "titleChanged": false,
+    "shortDescription_tr": "Aloe vera özütlü, havadar köpüklü sıvı el sabunu.",
+    "description_tr": "Havadar köpüğü elleri nazikçe temizler; her kullanımda tazelik, konfor ve nem hissi bırakır. Aloe vera özütü, gliserin ve E vitamini içerir.",
+    "features_tr": ["Yumuşak, havadar köpük", "Suyla kolay durulanır", "Ev, ofis ve ortak alanlar için uygun"],
+    "usage_tr": "Nemli ellere gereken miktarda köpüğü uygula, ellerini ovalayarak köpürt ve suyla iyice durula.",
+    "ingredients_highlight": ["Aloe vera özütü", "Gliserin", "E vitamini"],
+    "notices": [],
+    "needsReview": []
+  },
+  "DAA109": {
+    "title_tr": "iLiFE Ferahlatıcı Nemlendirici Duş Jeli",
+    "titleChanged": true,
+    "shortDescription_tr": "Provitamin ve gliserin içeren, ferahlatıcı duş jeli.",
+    "description_tr": "Cildi nazikçe temizlerken doğal nemini korumaya yardımcı olur. Pantenol ve oleil glukozit içerir.",
+    "features_tr": ["Ferahlatıcı his", "Provitamin ve gliserin içerir", "Nazik temizlik"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Provitamin", "Gliserin", "Pantenol", "Oleil glukozit"],
+    "notices": [],
+    "needsReview": ["'genel durumunu iyileştirir' çıkarıldı (R-02)", "usage kaynakta yok"]
+  },
+  "DAB087": {
+    "title_tr": "iLiFE Pembe Aloe Vera Jeli",
+    "titleChanged": false,
+    "shortDescription_tr": "Aloe vera, hyaluronik asit ve beyaz mantar özütü içeren nemlendirici jel.",
+    "description_tr": "Aloe vera, hyaluronik asit ve beyaz mantar özütü içeren formül cildi nemlendirir ve yumuşak hissettirir.",
+    "features_tr": ["Aloe vera içerir", "Hyaluronik asit ve beyaz mantar özütü içerir", "Nemlendirici bakım"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Aloe vera", "Hyaluronik asit", "Beyaz mantar özütü"],
+    "notices": ["cosmetic"],
+    "needsReview": ["'iltihap önleyici, antibakteriyel, yaralarda etkilidir, yenilenmeyi hızlandırır, alerji yapmaz' çıkarıldı (R-02)", "usage kaynakta yok"]
+  },
+
+  "CCA016": {
+    "title_tr": "CARICH Florürsüz Deniz Yosunu Diş Macunu",
+    "titleChanged": false,
+    "shortDescription_tr": "Florür içermeyen, deniz yosunu özütlü nane aromalı diş macunu.",
+    "description_tr": "Deniz yosunu özütü ve dipotasyum gliserizinat içerir; ferah nane aromasıyla nefesi tazeler. Dikey duran kompakt ambalajı vardır.",
+    "features_tr": ["Florür içermez", "Deniz yosunu özütü içerir", "Uzun süren nane ferahlığı"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Deniz yosunu özütü", "Dipotasyum gliserizinat"],
+    "notices": [],
+    "needsReview": ["'çürüğü önler, mineyi onarır, ağız sağlığını iyileştirir, dişleri güçlendirir, %76 tüketim' çıkarıldı (R-01)", "usage kaynakta yok"]
+  },
+  "CCC001": {
+    "title_tr": "CARICH Kömürlü Diş Fırçası (2'li)",
+    "titleChanged": true,
+    "shortDescription_tr": "Kömür ve ince ipek katkılı, yumuşak kıllı diş fırçası.",
+    "description_tr": "Kömür ve ince ipekten üretilmiş siyah yumuşak kıllar; kıl kalınlığı 0,18 mm. Kaymaz, desenli sapı kullanımı kolaylaştırır.",
+    "features_tr": ["Kömür ve ince ipek katkılı yumuşak kıllar", "Kıl kalınlığı 0,18 mm", "Kaymaz, desenli sap"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["MARKA ÇATIŞMASI: RU adı 'OKFAD', katalog/veri 'CARICH' — S-047", "'minesini korur, leke giderir, plak ve dil pası temizler, diş eti masajı' çıkarıldı"]
+  },
+  "CCC029": {
+    "title_tr": "CARICH Limited Seri Kömürlü Diş Fırçası",
+    "titleChanged": true,
+    "shortDescription_tr": "Minimalist tasarımlı, uzatılmış yumuşak kıllı limited seri diş fırçası.",
+    "description_tr": "Odun kömürü katkılı, uzatılmış yumuşak kıllar. Kıl kalınlığı 0,18 mm, 80 °C'ye dayanıklıdır. İskandinav tarzı ergonomik sapı vardır.",
+    "features_tr": ["Uzatılmış, yumuşak kıllar", "Odun kömürü katkılı kıl", "İskandinav tarzı ergonomik sap"],
+    "usage_tr": "Kıllara diş macunu uygula; tüm diş yüzeylerini ve diş eti çizgisini en az 2 dakika fırçala. Kullanımdan sonra fırçayı suyla iyice durula.",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["başlıktan '(10'lu)' çıkarıldı: RU '10 шт/уп' koli adedi olabilir (K-030) — S-047", "'nefes tazeliği' ifadesi çıkarıldı"]
+  },
+  "DAA062": {
+    "title_tr": "iLiFE Doğal Deniz Yosunu Diş Macunu",
+    "titleChanged": false,
+    "shortDescription_tr": "Deniz yosunu özütlü, nane aromalı ferah diş macunu.",
+    "description_tr": "Yumuşak, kremsi köpüğüyle dişleri temizler; uzun süreli serinlik ve taze nefes hissi verir. Nane aroması doğal bir ferahlık sunar.",
+    "features_tr": ["Kremsi, yumuşak köpük", "Uzun süren serinlik hissi", "Deniz yosunu özütü içerir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Deniz yosunu özütü"],
+    "notices": [],
+    "needsReview": ["'ağız sağlığını iyileştirir', 'mineye özenle bakar' çıkarıldı (R-01; doğrulama raporunda claim-risk işaretli)", "usage kaynakta yok"]
+  },
+
+  "T001": {
+    "title_tr": "CARICH Başlangıç Seti",
+    "titleChanged": false,
+    "shortDescription_tr": "CARICH ürünlerinden oluşan başlangıç seti.",
+    "description_tr": "",
+    "features_tr": [],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["set içeriği kaynakta yok ('Panelde kayıtlı set içeriği:' boş) — S-048"]
+  },
+  "T003": {
+    "title_tr": "SEALUXE Hydra Genesis Cilt Bakım Seti",
+    "titleChanged": false,
+    "shortDescription_tr": "SEALUXE Hydra Genesis serisinden cilt bakım seti.",
+    "description_tr": "",
+    "features_tr": [],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["set içeriği kaynakta yok — S-048", "fiyat şüpheli (DOGRULAMA-RAPORU §6)"]
+  },
+  "T006": {
+    "title_tr": "SEALUXE Bifida Maya Cilt Bakım Koleksiyonu",
+    "titleChanged": false,
+    "shortDescription_tr": "SEALUXE Bifida Maya serisinden cilt bakım koleksiyonu.",
+    "description_tr": "",
+    "features_tr": [],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["set içeriği kaynakta yok — S-048", "fiyat şüpheli (DOGRULAMA-RAPORU §6)"]
+  },
+
+  "ASA017": {
+    "title_tr": "iLiFE Çiçek Kokulu Çamaşır Jeli",
+    "titleChanged": false,
+    "shortDescription_tr": "Çiçek aromalı, günlük kullanıma uygun çok amaçlı çamaşır jeli.",
+    "description_tr": "Yumuşak ama etkili formülü günlük kirleri giderir ve giysilere kalıcı çiçek kokusu verir. Fosfat ve optik beyazlatıcı içermez.",
+    "features_tr": ["Günlük kir ve lekeleri giderir", "Kalıcı çiçek aroması", "Fosfat ve optik beyazlatıcı içermez"],
+    "usage_tr": "Aktivatörlü makine (8–10 parça): 30 ml. Tamburlu makine (8–10 parça): 25 ml. Elde yıkama, 3–5 L suda (1–3 parça): 10–20 ml.",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": []
+  },
+  "ASA086": {
+    "title_tr": "iLiFE Bambu Özlü Bulaşık Deterjanı",
+    "titleChanged": false,
+    "shortDescription_tr": "Bambu özütlü, greyfurt aromalı bulaşık deterjanı.",
+    "description_tr": "Yağı ve günlük kirleri giderir; kolay durulanır ve iz bırakmaz. Nötr formülü ve yoğun köpüğü günlük kullanıma uygundur.",
+    "features_tr": ["Yağ ve kirleri giderir", "Kolay durulanır, iz bırakmaz", "Ferah greyfurt aroması"],
+    "usage_tr": "Nemli süngere az miktarda ürün uygula ya da suda çöz. Bulaşıkları yıka, ardından temiz suyla iyice durula.",
+    "ingredients_highlight": ["Bambu özütü"],
+    "notices": [],
+    "needsReview": []
+  },
+  "ASF053": {
+    "title_tr": "iLiFE Çok Amaçlı Çamaşır Jeli",
+    "titleChanged": true,
+    "shortDescription_tr": "Günlük giysiler için konsantre, çok amaçlı çamaşır jeli.",
+    "description_tr": "Kir ve lekeleri giderir, kolay durulanır ve kumaşta iz bırakmaz. Fosfat ve floresan beyazlatıcı içermez. İpek, yün ve hassas kumaşlar için uygun değildir.",
+    "features_tr": ["Kir ve lekeleri giderir", "Kolay durulanır, iz bırakmaz", "Fosfat ve floresan beyazlatıcı içermez"],
+    "usage_tr": "Makinede yıkama: 8–10 parça için 30 ml. Elde yıkama: 8–10 parça için 25 ml.",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["başlıktan '(1 kg)' çıkarıldı (hacim ayrı alan); katalog 1 kg, RU 1000 ml — birim doğrulanmalı"]
+  },
+  "ASF054": {
+    "title_tr": "iLiFE Konsantre Çamaşır Deterjanı",
+    "titleChanged": true,
+    "shortDescription_tr": "Günlük giysiler için konsantre, çok amaçlı çamaşır deterjanı.",
+    "description_tr": "Kir ve lekeleri giderir, kolay durulanır ve kumaşta iz bırakmaz. Fosfat ve floresan beyazlatıcı içermez.",
+    "features_tr": ["Kir ve lekeleri giderir", "Kolay durulanır, iz bırakmaz", "Fosfat ve floresan beyazlatıcı içermez"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["ÇATIŞMA: katalog 'Çamaşır Jeli (2 kg)' (ASF053 metninin kopyası), RU 'стиральный порошок, 2кг' = toz. Biçim nötr bırakıldı; dozaj yazılmadı — S-047"]
+  },
+  "ASF055": {
+    "title_tr": "iLiFE Bulaşık Deterjanı",
+    "titleChanged": true,
+    "shortDescription_tr": "Gliserin içeren, hoş kokulu bulaşık deterjanı.",
+    "description_tr": "Hindistancevizi kaynaklı yüzey aktif madde içeren yumuşak formülü yağ ve kirleri gidermeye yardımcı olur. Gliserin içerir, taze bir koku bırakır.",
+    "features_tr": ["Yağ ve kirleri giderir", "Gliserin içerir", "Hoş, taze koku"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Gliserin", "Hindistancevizi kaynaklı yüzey aktif madde"],
+    "notices": [],
+    "needsReview": ["'sebze-meyve yıkama' ve 'güvenli/ekolojik' iddiaları çıkarıldı (R-04)", "usage kaynakta yok"]
+  },
+  "ASF066": {
+    "title_tr": "iLiFE Çamaşır Sabunu",
+    "titleChanged": true,
+    "shortDescription_tr": "Pamuk, keten ve sentetik kumaşlar için çok amaçlı kalıp sabun.",
+    "description_tr": "Farklı zorluktaki kirlerin giderilmesine yardımcı olur; enzim içerir. Aloe ve papatya özütleri elde yıkamada el cildine nazik davranır.",
+    "features_tr": ["Pamuk, keten ve sentetik kumaşlar için", "Enzimli formül", "Aloe ve papatya özütü içerir"],
+    "usage_tr": "Ürünü ıslat, kirli bölgelere sabunu sür, köpük oluşana kadar nazikçe ov, ardından suyla iyice durula.",
+    "ingredients_highlight": ["Enzim", "Aloe özütü", "Papatya özütü"],
+    "notices": [],
+    "needsReview": ["'Bakteriyostatik / antibakteriyel' çıkarıldı: biyosidal ürün iddiası (R-04)"]
+  },
+  "DAC056": {
+    "id": "tr-5283",
+    "title_tr": "iLiFE Mutfak Yağ Temizleyici",
+    "titleChanged": false,
+    "shortDescription_tr": "Mutfak yüzeylerindeki yağ lekeleri için temizleyici.",
+    "description_tr": "",
+    "features_tr": [],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["katalog metni ve Rusça açıklama yok; yalnız RU başlığına dayanır — S-049"]
+  },
+  "LGI019": {
+    "title_tr": "Greenleaf Zencefilli Bulaşık Deterjanı",
+    "titleChanged": false,
+    "shortDescription_tr": "Zencefil özütlü, fosfor eklenmemiş bulaşık deterjanı.",
+    "description_tr": "Zencefil özütü koku giderici etki sağlar; balık kokusunu ve yağ birikintilerini gidermeye yardımcı olur. Gıda tipi zencefil aroması içerir.",
+    "features_tr": ["Fosfor eklenmemiş formül", "Zencefil özütü içerir", "Yağ ve kokuya karşı"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Zencefil özütü", "Yüzey aktif maddeler"],
+    "notices": [],
+    "needsReview": ["usage kaynakta yok"]
+  },
+
+  "EAA022": {
+    "title_tr": "YIBEILE Çocuk Diş Macunu — Portakal",
+    "titleChanged": false,
+    "shortDescription_tr": "Portakal aromalı çocuk diş macunu.",
+    "description_tr": "Sulu portakal aromasıyla diş fırçalamayı keyifli bir alışkanlığa çevirmeyi amaçlar. Sevimli tavşanlı ambalajı çocukların hoşuna gider.",
+    "features_tr": ["Portakal aroması", "Çocuklar için geliştirilmiş formül", "Sevimli tavşanlı ambalaj"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["yaş aralığı ve yutma uyarısı kaynakta yok — S-047", "'mukozayı tahriş etmez' çıkarıldı"]
+  },
+  "EBB018": {
+    "title_tr": "YIBEILE Çocuk Yulaf Özlü Vücut Kremi",
+    "titleChanged": false,
+    "shortDescription_tr": "Yulaf özütlü, çocuklar için nemlendirici vücut kremi.",
+    "description_tr": "Yumuşak ve nemli dokusu çocuk cildini nemlendirir. Yulaf özütü, avokado ağacı yağı ve skualan içerir; 3–12 yaş çocuklar için geliştirilmiştir.",
+    "features_tr": ["3–12 yaş çocuklar için", "Yulaf özütü içerir", "Pompalı ambalaj kullanım miktarını kontrol etmeyi kolaylaştırır"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Yulaf özütü", "Avokado ağacı yağı", "Skualan"],
+    "notices": ["cosmetic"],
+    "needsReview": ["'kuruluk sorununu giderir, kullanımı güvenlidir' çıkarıldı (R-02)", "yaş aralığı katalogdan — doğrulanmalı"]
+  },
+  "YBA045": {
+    "title_tr": "YIBEILE Çocuk 2'si 1 Arada Şampuan ve Duş Jeli",
+    "titleChanged": true,
+    "shortDescription_tr": "Amino asit bazlı, çocuklar için şampuan ve duş jeli.",
+    "description_tr": "Yumuşak formülü çocuğun cildini ve saçını nazikçe temizler. Amino asit bazlı temizleyici bileşenler ve bitkisel özütler içerir.",
+    "features_tr": ["Şampuan ve duş jeli bir arada", "Amino asit bazlı yumuşak formül", "Saçı yumuşak ve kolay taranır hissettirir"],
+    "usage_tr": "Çocuğun ıslak saç ve cildine az miktarda ürün uygula, nazikçe köpürt, ılık suyla iyice durula.",
+    "ingredients_highlight": ["Amino asit bazlı temizleyiciler", "Bitkisel özütler"],
+    "notices": [],
+    "needsReview": ["'cildi kurutmaz, koruyucu bariyeri korur' çıkarıldı"]
+  },
+
+  "CEA069": {
+    "title_tr": "CARICH Bambu Cep Mendili",
+    "titleChanged": false,
+    "shortDescription_tr": "Ağartılmamış bambu lifinden, taşıması kolay cep mendili.",
+    "description_tr": "Ağartılmamış lif bambunun doğal rengini korur; dokunuşta yumuşaktır, dayanıklı ve emicidir.",
+    "features_tr": ["Ağartılmamış bambu lifi", "Yumuşak ve dayanıklı", "Cepte taşımaya uygun"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["'çevreci ve sürdürülebilir alternatif' iddiası kanıtsız olduğu için çıkarıldı (R-05)"]
+  },
+  "KLA128": {
+    "title_tr": "CARICH Bambu Yüz Mendili",
+    "titleChanged": false,
+    "shortDescription_tr": "Ağartılmamış bambu lifinden, arka arkaya çekilebilen yüz mendili.",
+    "description_tr": "Doğal, ağartılmamış bambu lifinden üretilmiştir. Özgün tasarımı sayesinde her birini tek tek koparmaya gerek kalmadan arka arkaya çekilebilir.",
+    "features_tr": ["Ağartılmamış bambu lifi", "Arka arkaya çekilebilen tasarım", "Ev, ofis ve seyahatte günlük kullanıma uygun"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["'hipoalerjenik, en hassas ciltler için güvenli' çıkarıldı (R-02)", "fiyat aykırı (DOGRULAMA-RAPORU)"]
+  },
+  "NWA052": {
+    "title_tr": "Nilrich Krill Yağı Yumuşak Kapsül",
+    "titleChanged": true,
+    "shortDescription_tr": "Antarktik krill yağı içeren, omega-3 kaynağı gıda takviyesi.",
+    "description_tr": "Antarktik krill yağı yumuşak kapsülleri; omega-3 yağ asitleri (EPA ve DHA), fosfolipitler ve astaksantin içerir. Gıda takviyesidir.",
+    "features_tr": ["Omega-3 (EPA ve DHA) içerir", "Fosfolipit ve astaksantin içerir", "Yumuşak kapsül"],
+    "usage_tr": "Ambalaj üzerindeki kullanım talimatına uygun şekilde ağızdan alınır. Günde en fazla 6 kapsül.",
+    "ingredients_highlight": ["Antarktik krill yağı", "Omega-3 (EPA, DHA)", "Fosfolipitler", "Astaksantin"],
+    "notices": ["supplement"],
+    "needsReview": ["R-06: takviye; 'antioksidan, yüksek biyoyararlanım' çıkarıldı; kaynakta 'çiğneyerek alın' yazıyor, yumuşak kapsül için doğrulanmalı", "deniz ürünü alerjisi uyarısı (kaynaktan) ambalaj metniyle teyit edilmeli", "ürün Tarım ve Orman Bakanlığı takviye bildirimi/izni kontrolü gerekli"]
+  },
+
+  "tr-3857": {
+    "id": "tr-3857",
+    "title_tr": "CARICH Makyaj Temizleme Mendili",
+    "titleChanged": true,
+    "shortDescription_tr": "Makyajı sürtmeden, nazikçe çıkarmaya yardımcı ıslak mendil.",
+    "description_tr": "Kozmetik ürünleri nazikçe çözerek yüzü temizler. Yoğun ovalamaya ve ek ürüne gerek bırakmaz; göz ve dudak çevresinde de kullanılabilir. 30 adetlik pakettir.",
+    "features_tr": ["Yoğun ovalamaya gerek bırakmaz", "Göz ve dudak çevresinde kullanılabilir", "30 adetlik ıslak mendil"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": ["cosmetic"],
+    "needsReview": ["kodsuz kayıt (no-code); thin-source: yalnız RU kısa açıklama", "usage ve içerik yok", "görsel yok"]
+  },
+  "LGD012": {
+    "title_tr": "Greenleaf Pürüzsüzleştirici Yüz Kremi",
+    "titleChanged": true,
+    "shortDescription_tr": "Doğal yağlar, peptitler ve kolloidal platin içeren günlük yüz kremi.",
+    "description_tr": "Yoğun nem ve besleme isteyen cilt için günlük bakım kremidir. Cildi yumuşak, pürüzsüz ve bakımlı gösterir.",
+    "features_tr": ["Doğal yağlar içerir", "Peptit ve kolloidal platin içerir", "Cildi yumuşak ve pürüzsüz gösterir"],
+    "usage_tr": "",
+    "ingredients_highlight": ["Doğal yağlar", "Peptitler", "Kolloidal platin"],
+    "notices": ["cosmetic"],
+    "needsReview": ["fiyat şüpheli, satışa açılmaz (S-025)", "görsel ve PV yok", "usage yok"]
+  },
+  "SCA016": {
+    "title_tr": "SEALUXE Doğal Tonlu Krem Pudra",
+    "titleChanged": true,
+    "shortDescription_tr": "Doğal tonlu, hafif dokulu çok amaçlı krem pudra.",
+    "description_tr": "Kompakt ambalajlı ürünün hafif dokusu cilde karışır ve gün boyu doğal, taze bir görünüm verir.",
+    "features_tr": ["Doğal ton", "Hafif doku, cilde karışır", "Kompakt ambalaj"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": ["cosmetic"],
+    "needsReview": ["ton adı/numarası kaynakta yok", "usage ve içerik yok", "'kusursuz kapatıcılık' abartısı yumuşatıldı"]
+  },
+  "XNA038": {
+    "title_tr": "SEALUXE Star Eyes Charm Göz Kalemi — Siyah Çay",
+    "titleChanged": true,
+    "shortDescription_tr": "Gözlere belirgin bir vurgu veren göz kalemi.",
+    "description_tr": "Göz makyajını kolay ve hızlı tamamlamak için tasarlanmıştır. Renk tonu: siyah çay.",
+    "features_tr": ["Kolay ve hızlı uygulama", "Siyah çay tonu", "60 mg"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": ["cosmetic"],
+    "needsReview": ["RU adı 'Клей-карандаш для подводки глаз' = yapıştırıcı kalem olabilir (takma kirpik?) — ürün türü doğrulanmalı (S-047)", "fiyat aykırı"]
+  },
+  "CBA034": {
+    "title_tr": "CARICH Saç Bakım Yağı Kapsülleri (21'li)",
+    "titleChanged": true,
+    "shortDescription_tr": "Pürüzsüz ve yönetilebilir saçlar için jelatin kapsülde saç bakım yağı.",
+    "description_tr": "Hafif, konsantre formül kabarık ve asi telleri yumuşak, pürüzsüz ve parlak göstermeye yardımcı olur. Her kapsül 0,5 ml'dir.",
+    "features_tr": ["Hafif, konsantre formül", "Saçı yumuşak ve parlak gösterir", "Tek kullanımlık jelatin kapsül"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": ["cosmetic"],
+    "needsReview": ["kapsül içinde ağızdan alınmaz uyarısı ambalajdan teyit edilmeli (gıda takviyesi değil, saç bakımı)", "usage yok", "görsel yok"]
+  },
+  "LPA025/CDA025": {
+    "title_tr": "BLUE POINT Hacim Veren Durulanmayan Sprey",
+    "titleChanged": true,
+    "shortDescription_tr": "Köklerde yağlanmayı emen, saça hacimli görünüm veren durulanmayan sprey.",
+    "description_tr": "Gün içinde saçı su kullanmadan tazelemeye yardımcı olur. Fazla yağı emer; saça doğal hacim, hafiflik ve bakımlı bir görünüm kazandırır.",
+    "features_tr": ["Su gerektirmeden saç tazeleme", "Köklerde fazla yağı emer", "Hafif ve hacimli görünüm"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["usage yok", "görsel ve PV yok"]
+  },
+  "SBE042": {
+    "title_tr": "Greenleaf Fulleren Seti",
+    "titleChanged": true,
+    "shortDescription_tr": "Bitki özütleri içeren fulleren bakım seti.",
+    "description_tr": "Bitki özütlerinin birleşimiyle cildi nemlendirmeyi ve doğal bir ışıltı vermeyi amaçlayan bakım seti.",
+    "features_tr": [],
+    "usage_tr": "",
+    "ingredients_highlight": ["Bitki özütleri", "Fulleren"],
+    "notices": ["cosmetic"],
+    "needsReview": ["set içeriği, marka (Greenleaf mı?), görsel, PV yok — S-048"]
+  },
+  "LGZ042": {
+    "title_tr": "JINGHUXI Gece Hijyenik Ped",
+    "titleChanged": true,
+    "shortDescription_tr": "Gece kullanımı için yüksek emici hijyenik ped (8 adet).",
+    "description_tr": "Uyku sırasında konfor ve güvenilir koruma isteyenler için tasarlanmıştır. Yüksek emicidir ve sıvıyı tutar. Pakette 8 adet bulunur.",
+    "features_tr": ["Gece kullanımına uygun", "Yüksek emicilik", "8 adetlik paket"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["ped boyutu/uzunluğu kaynakta yok"]
+  },
+  "MAH723": {
+    "title_tr": "MARVISIA RLS190501 Polarize Güneş Gözlüğü",
+    "titleChanged": true,
+    "shortDescription_tr": "TR90 çerçeveli, polarize camlı güneş gözlüğü.",
+    "description_tr": "Polarize camlar parlak güneş ışığında yansıyan göz alıcı ışığı azaltmaya yardımcı olur. TR90 çerçeve hafif bir kullanım sunar.",
+    "features_tr": ["Polarize camlar", "TR90 çerçeve", "Parlak güneşte konforlu kullanım"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["UV koruma/standart bilgisi kaynakta yok; 'gözlerinizi korur' benzeri iddia yazılmadı (R-07)"]
+  },
+  "MAI223": {
+    "title_tr": "MARVISIA Y2001 Metal Çerçeveli Polarize Güneş Gözlüğü",
+    "titleChanged": true,
+    "shortDescription_tr": "Metal çerçeveli, polarize camlı şık güneş gözlüğü.",
+    "description_tr": "Polarize camlar ve metal çerçeve şıklığı işlevle birleştirir. Parlak güneşte kalite ve konfor arayanlar için tasarlanmıştır.",
+    "features_tr": ["Polarize camlar", "Metal çerçeve", "Şık tasarım"],
+    "usage_tr": "",
+    "ingredients_highlight": [],
+    "notices": [],
+    "needsReview": ["UV koruma/standart bilgisi kaynakta yok (R-07)"]
+  }
+}

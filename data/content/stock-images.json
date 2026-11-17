@@ -1,0 +1,639 @@
+{
+  "_meta": {
+    "owner": "ui-tasarimci",
+    "generated": "2026-11-16",
+    "basePath": "/images/stock/",
+    "license": "Kaynak ve lisans: docs/tasarim/gorsel-kaynaklari.md (K-102)",
+    "note": "alt boş bırakılacak dekoratif kullanımlarda (mega menü) bileşen alt=\"\" verir",
+    "updated": "2026-11-17",
+    "note2": "v2 (K-270, 2026-11-17): 50 yeni slot — shelf.*, page.*, about.*, door.* (+ door.*.tall dikey pin fotoğrafları), listing.*, collection.default, promo.mega, blog.cover.*, nature.*, lifestyle.*, texture.*, finder.serum. Yerleşim: docs/tasarim/briefler/fotograf-ve-svg-yerlesim.md"
+  },
+  "slots": {
+    "home.hero.1": {
+      "file": "/images/stock/hero-canopy-blue-sky.webp",
+      "alt": "Mavi gökyüzüne karşı güneşle aydınlanan taze yeşil yapraklar",
+      "width": 2400,
+      "height": 1800,
+      "blurDataURL": "data:image/webp;base64,UklGRjwBAABXRUJQVlA4IDABAAAwBgCdASogABgAPu1epk2ppKMiMAgBMB2JbAC91AgdmDa7v6sL2ov+9X6uSaHlvexvpLmq5brnjGvAAP6D7C/BIbG1+SoGBuOcrddoW9vfADZCxvt8qR7mEyBIhNyRRXNyS49IjEfI+FW6EUbem/mwR38jtTE/R6PFtc8ATXMfc2Jc4pn2u9iFBTQjCY5aYpSeb7aByQDUluxkWQGoaVYuoE2lmh8namdhtTXkHV4KjRFeYN7sga0WbIv/GuxBEXFpBBPm9zz+yG6PSX2n7zeG0HoQp9kJpWD739AlRqpxy/uwXgQ52KfcjnJOgEhCLNZAAZsSoRzKhuNIo6O86CHIJckFYmgKK+YH4yjC/zkvH0t3SEbT8YTmiHu1WC33iwvs8YUqGb57BVKJ3XRkDCAA",
+      "sourceId": "1780147984916-12d30e6cf396",
+      "mobile": {
+        "file": "/images/stock/hero-canopy-blue-sky-mobile.webp",
+        "width": 1080,
+        "height": 1350,
+        "blurDataURL": "data:image/webp;base64,UklGRuoBAABXRUJQVlA4IN4BAACQCACdASogACgAPt1UoE2opKMiNUgBEBuJbADEGgxKFcCV9TdVqQHZAmBKzO5BCq+8ngJduB/Axh4c3YhfEXpo5dRhm7QOoo7D8G7KOAD+RMdA1hIFPzR/tI6SOj5hy0QTyrXK8W6MFiN7MnTlLYuExY8pPZ0v0+jiXqrgn126LPGJBKXZMOn0rAv/7oRd+r41Pp1JcShQP32j6sam6ZPLME95wFtIbcqwh6SSU0llrRWb7p8d+AVs17n/jLCn6xXfZXsrLTMkPVXxUJVuOFijV2lGJbV7gMmPiJx43AAKgXEcp8gbID+63W1iRtTjCtEIYl612qRj8L9w+ppSPTZNSqEM7W/eICKwSLD94z1Uf67WunlhVfXyloEURVh1FwVnGQ7p6xoYauOKyPVZXlNu6PcRjOH3wXOZBYyN/No3l6szxbgrS6Ipn8SlKycH2ESbkEwRv9Zoe3y4KJXmUqBQ8TQ4b2Xuvbh2z2TwGh0TzJ9RZnOYhtj5oaWbymHNu/JPK6pdL9NJbL9oG6lQtxYeletos4bskXU49ljONrGWwNPYS0AIcveR97EnCENYaQDJTrenzgTNelvbtqKybdDAtkNYIu4ptJEoLS++b5v4OuXWxnG2LOF5ap2ChgAA"
+      }
+    },
+    "home.hero.2": {
+      "file": "/images/stock/hero-bright-leaves-sky.webp",
+      "alt": "Berrak mavi gökyüzü önünde parlak yeşil yapraklı dallar",
+      "width": 2400,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRjgBAABXRUJQVlA4ICwBAAAQBgCdASogABUAPu1gqE2ppaOiMAgBMB2JbACnQ48fYUa2yIsmLekJ1Q26fyJu4RlYfpxadrNAG4AA/r51oO/gO4oMm9aNG6NU81doP/gLEjapzLq3vlOhmKwv47C001wq+KIw/M8HOSH7qgH1+cJRDNlnL2RPebrL6vas9Yh25FpXOQmOdSEW/N2ADs6aISmXxwN03OwX44GaWm9iV3LxSqHBXnIe1B3lOq85XOroCtrzR9ebDF6nCxKMKawWvxqDabcoVLNbny5KzBXi+XikLTqaKglri/JZScYMe2HZbDfDk1affUy+czuBKDOmCDOXjT67hl5/oBX7SkUs9kuVetun0SwQQeiF/VJUjCRMmiMaOl0plt3OzJzHK4AQP88kWX31OBnbWDgSAAA=",
+      "sourceId": "1780172452574-46b26fbdee3a",
+      "mobile": {
+        "file": "/images/stock/hero-bright-leaves-sky-mobile.webp",
+        "width": 1080,
+        "height": 1350,
+        "blurDataURL": "data:image/webp;base64,UklGRh4CAABXRUJQVlA4IBICAACwCQCdASogACgAPtVUnU2oJKKiNUwBABqJbACdMsD8XaGGwtwG8c7yV/raA0zaKoHArjJVT2zD3GGyQh9qsa2ar8nShxATYuJ3Z1QGzNz6tE/pWmEyAAD7jM971nC2DX7gzDCrZDr3p+LOF623JarP3UASJxuybvjTSLEHCpH2nHI8URLA9UxEQfOVM9o7TGCwYtmgntlrt/aNH/fJ8Zd8f5SvxuZ4o39LKVo0MvtFilpaip7YukszEpXJpoLx2sAP6BkFWq7TQYM3gQqK3nDJAjcpWRaqFipMFUIJr0IrVe/jhD/f+CGrDebW40DTohTUwh852KCg0Nlj0FwpGZEFE+dxX6QHVC3nTr4F4GD3Zrm+9mgq/psUxuYRKXWL0MQur6KSxMQDr19VWuEGv2EOOXnKZuUVIfA9oPY7Fw/y3FcmYD7gtKre/nL7sVuiUSJNw2uzrLrUXF+pGIT7Lwxv4HunBDvAmCHt6Ayn1S1/FfjJsK+9wbVaKITjy8uB18ihCdkMZ348ALU2gYpscvbDi90sH/kYdnqSlP4TaNlknNqy7INdmjLmg3SBCNXSMiW6G5ShTgckKvMi5Ht2vTvpUnr5DjiGcymDOq4xTI1Xsl0YEF1jxWKUz6BS8jVxYtubPO+mh+iJRuDc/6f3cRJKZHbWznCkOfDAnNPD+ANY+49Sf3RX3o89PIjulIswsUAAAA=="
+      }
+    },
+    "home.hero.3": {
+      "file": "/images/stock/hero-sunburst-leaves.webp",
+      "alt": "Yeşil yaprakların arasından süzülen güneş ışığı ve mavi gökyüzü",
+      "width": 2400,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRgIBAABXRUJQVlA4IPYAAABQBQCdASogABUAPu1gp02ppSOiMAgBMB2JbACxHxlWZjlMnWks/wYlXpHUPHCmDNW6kwAA9n2Z7Fxldydbtjti47NzF74sZExOSy8wrhEgT0YY2lUeb+fy5FbOblC4SsCdXZx/UpPFZS/IBt/faYg7YDhVre48KxCBinc4xZUYI0PbRbr8pmmGtRTbHD6bA5nUMdbrXvpXBBOmUZkPovWFkNXj6+6TYQAt7h6Yy+8oVAUA95+HR7/T9xd2qVQKWYq5YAUlknkz558Wh1r0vE/VPjraIuSbJ8HcG+u5/JYtqs6bOXtYaG+NfnQ7jm8LpPFiEtHQAAA=",
+      "sourceId": "1765227082917-cd0b453f515d",
+      "mobile": {
+        "file": "/images/stock/hero-sunburst-leaves-mobile.webp",
+        "width": 1080,
+        "height": 1350,
+        "blurDataURL": "data:image/webp;base64,UklGRpQBAABXRUJQVlA4IIgBAAAQCACdASogACgAPu1kpU6ppaMiKq35MB2JbACnQ8ZAHd5dfUhhhY/3asNIVOFSMy+b1hodACLcn/4vh2pJRl/kAGVQUsWytVzQAP7Ik9Y3TErvnyEfWb8QaXTfI7W8YgBBD6ZfcRSQ/s/88+5hBLoSv/wuntFh+cMRjPlByESUZj9ZwTJhh9kcZyJzNUkDBo2dF1WDGcQYZt/MODJ/39ebQHuSubFtRddSuNGR9X7NmiV2VodqF610Jrpcv6Vr9coEHLcOfOotwjfFSF39MpTIfwEXu7QatnJ7J5URIsBg2DbkhtoyK0wFI7HQAPXaTpHqEaej2rT/GTeLJ8p/kx8niU6rAmPNODGN23UDokebkfdjzFNCQWpd4FV/hPgQFCRLA1HgabFvC/M1S7tnFnYrsGUKwWBjOqnvZLzaL+xlMQYVHTJ84XDqFaBEhOzpo0MmaWuctvHV2rfeTsUq5NBzS4SXWNW0VArjUwPpitg5nVkHSeSjr6FHvyTXbuEjwZhIDgyi9SwgAA=="
+      }
+    },
+    "brand.story.1": {
+      "file": "/images/stock/story-tree-trunk-canopy.webp",
+      "alt": "Aşağıdan bakışla gövdesi ve canlı yeşil yaprak tacıyla bir ağaç",
+      "width": 1200,
+      "height": 900,
+      "blurDataURL": "data:image/webp;base64,UklGRmYBAABXRUJQVlA4IFoBAAAwBwCdASogABgAPu1gqE2ppSOiMAgBMB2JbACdMoEUuz4Jl1U7OBCW6uL+MEFofujAwBGTrtQinqPqFR03fWav0QAA/luFA3NwDEMRwWO/Xn6AUAR2eoa2cCv5j3aRMQFPiA25cGBjJbuz1DXrn58okL6E3uvEdHkzj/00VQfJC6DBsHIRKOscQSsnDv6rFBHoYB8T+SlI+wxt/6/madilJ0Db1mjPFHOcL/r+9xLsumI7GQAuNLQZSCqMYsP0u45cW7X3FwjQ91SqHkgvlT8yFdyBfxQrSWmTvGUAJX2ORklzBTaEdVN4zTtI2OKHKMh+ABEOS9/L2ekX91nm0AVhSz+HU2mT2q7Ywq7ketNwbtAL8zSvw3oQb1jTXOU++1p0IPpSzSNu86uClRbcAbreI7q5hG1NVEVEutrRqccPpNFo3DRcx5iYw+9DmUf92CFAk5n7CLimWAAA",
+      "sourceId": "1783332581173-35abae3d3896"
+    },
+    "brand.story.2": {
+      "file": "/images/stock/story-sun-through-branches.webp",
+      "alt": "Yemyeşil dalların arasından parlayan güneş",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRjABAABXRUJQVlA4ICQBAACwBQCdASogABUAPu1iqU2ppaOiMAgBMB2JaACdMy/vWBA3JMsk0ohZsyjJaMXww1EIRS/NGAAA+K6VxTBxVVOjpP6gLRvEvcoXn63Wnn3id7f+Rz91yw3uzEj+HVMGw/wGTgEEI8K+Up+d/jdyvmtArwjmOVIfN/yKuUY03tpieSKVAFpoKma3K90sYBWKtDP5keN5WuC4cZAGw3mcf7TAdA9R96o4+fzmHh06XnV+/f/Ton66BI0CH4UDzEibA8yGc7ST941Anl52jgUhW43IPxV+ktvy9yvSOXtjHIVv+GX/nDve+NEx+y7okN6ZwdTKS6rBFIu1tufj7FsuA9EqFP+p9/Chp9b1XL53QcSuZQwLlI/yXSczX2Yl/kx41+iBoAAA",
+      "sourceId": "1489644484856-f3ddc0adc923"
+    },
+    "membership.scene": {
+      "file": "/images/stock/membership-hands-fern.webp",
+      "alt": "Avuç içinde tutulan küçük eğrelti yaprakları",
+      "width": 1200,
+      "height": 687,
+      "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABwBQCdASogABIAPu1qqk8ppiOiMBgIATAdiWMAvzg0X6yEKWHAyz8QESYdRD0z6CxkchcIAP70QNUNZjLP02IlSJ9wVuFQzSEz5rYLAhXxiq3GNPyVew9ZmYYbpn07/Awg2oyblTEHe6KTydnHc9RIWsb13PT95Aq6qKT350LFiRh5B2n/UPhsp48r1t0UsKZDPcUMwFyu4Q8AAAA=",
+      "sourceId": "1542601906990-b4d3fb778b09"
+    },
+    "pv.scene": {
+      "file": "/images/stock/pv-dewdrop-leaf.webp",
+      "alt": "Açık yeşil bir yaprağın üzerinde tek bir su damlası",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwBACdASogABUAPu1mq0+ppSOiMBgIATAdiUAYmwE9WniGcBnVHvKUtfHfcFzxzIAA/tpuVqLVSQ4QFO+AdOUN3+b4Plt4smEWljlo3z+Ls537r70d97NU/T1oB5BBgAc81uw8fwcEYWFoVmKoAEJ9i8krnfDEZ2mWJVr1PQB+5sQ17fGr+LKoB52/elgGuzAr7Btmg6741ZAA",
+      "sourceId": "1523146351332-8e68fde7c860"
+    },
+    "skinFinder.hero": {
+      "file": "/images/stock/skin-leaf-water-drops.webp",
+      "alt": "Güneşte parlayan yaprak üzerindeki su damlaları",
+      "width": 1200,
+      "height": 1500,
+      "blurDataURL": "data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAADwBwCdASogACgAPulgp02pJaOiNVgIASAdCWgAt725cZWqrt5Z3gidfl5RoGR+3eLLm881Umf3UixZbTnFyTJ5zp0bFgKUP4AA/upD6iOyQnqcrPxAmJvdio8jwlZYL6W3TvlA36QOX6O9gFX+BPfBnB1zxZ/bO++nU+4vT2/Urn7JBM74y+RdAeY7mEgqHHz++FRlPQIDk/BvzjFeHtD38RGmMxcgbyxizn0vqROHgXiRIdYtN9TXIcaHOdoqfA82qAgZ+jtwF5W1RszslM7YDR6eWWZLQEdp748EYAKIccrPP56t2JTcSps+eWfY+lHhUeBjAeSYuE1DgwV+itNilqCw1+vWmD+n+EuCez5JMRiDZnv8hqcWaMDLikCyetE37yvdfGZU0RwDJQPzFTbM9cpslFtPsZHuBPmwjdRtNrz5z79FBNQFDTAyCwgA",
+      "sourceId": "1635179587718-1dc681e324ca"
+    },
+    "skinFinder.texture.dewy": {
+      "file": "/images/stock/skin-texture-dewy-leaf.webp",
+      "alt": "Yaprak yüzeyinde irili ufaklı su damlaları",
+      "width": 1200,
+      "height": 900,
+      "blurDataURL": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAABwBQCdASogABgAPu1kqk2ppaQiMAgBMB2JZQC/OmwHW0O0TbsnoaxDbVu5Mp/0yc4zijgAAP7o9dYL3U0NE5CXGs6O8v0/xQjy7ynSu+qQUuULytA+lZtNq43iMZ8+JmNGEUwh7Ma1SlwFi3u0Iq1JzHbqopX9+vG6j5scIa9ecDssxJF4mQGUfSUAB1TWPvvGGBpuBF+ewjzNF5BgjOVb7uuYugHo9NuEbmtocrOxLk12VoaU6yaqb1UIM76me3ul62Yqnd35NcTKPdCRhlsFLWDdsnL5sJ8JTfbfVgLYMi7ELigYAA==",
+      "sourceId": "1446608943998-cbd52b140335"
+    },
+    "skinFinder.texture.aloe": {
+      "file": "/images/stock/skin-texture-aloe.webp",
+      "alt": "Beyaz zemin önünde taze aloe vera yaprakları",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4IAIBAAAwBQCdASogABUAPu1kqk+ppSOiMBgIATAdiWYAA+VbFQggpYrcle0MgCK8J2DjZogHUAD+9hNE7xkVr4feVocw3Q4xMEdqHyFMvz2XinQpaIgfALJ8HFflOZGbQ/nkpRx6lhzuFXonTWGn6qWTJFnOtR2E/wAbpUe7rOr0EUFy9ALLfSn4h7GXNjfTz54f91i2D593KVbcIJ9m/B8hJ6rFNRkzZ8sGpQAZwJ1s51Wh4shrUYhWkU1DmIL82oGuxeOJOUst/F4xod8XYtqBUGLK3FEAUhe2srMt+wf4O4HaezyqNh0nSiN9v3j4F+NzK+PQ8fNCJ8aZli4hgpLo1QgAAAA=",
+      "sourceId": "1702416062979-dc44baa952c1"
+    },
+    "premium.gold.1": {
+      "file": "/images/stock/premium-gold-backlit-leaf.webp",
+      "alt": "Altın tonlu güneş ışığında parlayan yaprak",
+      "width": 1200,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRpgBAABXRUJQVlA4IIwBAAAwCACdASogACsAPu1mqk6ppaQiKqwBMB2JZACdMyl4dCWt1TPu7mYHORvOslEAar4kyP27jqWa88Q8D+kpGEhI7L5xBBBtgIAZAAD+/b0OfM0URSvO3ovI+JJhDCPs8ntgWTrijuqyJc3nYeeXLMRErh8I1TIHbT+CbqcR1/I+ffTV90tjLQYkl/HVJAeR9VlY/pwZ131TWjPYFJj/DBNvJc2lM4FS0EqZwu/agaVeiuQmOEI8x+ZYwLJzpRHmZpCXSUicZgGPx8tRJGvoH7oqHRM/C/QaLN/CABWjyJIbeb6Kex4zvp9HJ6C4tX6SIyOxnRHCJQeo1ojkfilMmC6RLrhg/cMGeHmjDo8Clf8TcmMhPEFHay5mmHpi3zduJd2tDpSHBjgDGeldv7XQj5zpy8DXkx0UtmuPvfMftxCZAtQYkAFwx8+/uPVxUscE5ZtEYCNyVZ7oJYz5z9Bano+++yE0kRMpPwDOQKs8TRTAJyvKwOZ9mH6vZ65vK+6YskMewRcc1iycvKQnwAA=",
+      "sourceId": "1596259582350-2fc48a1bb2c4"
+    },
+    "premium.gold.2": {
+      "file": "/images/stock/premium-gold-sun-bokeh.webp",
+      "alt": "Yaprakların arasından sızan altın rengi güneş ışığı ve bokeh",
+      "width": 1200,
+      "height": 1798,
+      "blurDataURL": "data:image/webp;base64,UklGRjwCAABXRUJQVlA4IDACAAAwCgCdASogADAAPslOnU2npCKiOqgA8BkJbACdMsJIqEHhgOMFYOaQMkWRy4hpAmXR3NQWGzuAXCvYZxabDE+IgV1VJUtiBqtRFBAGKdDD7PYt14he7wK4bEAA/q1Cqvx8x7DdbbdhlqH8pSdyyIRMhxhr065NIVw3VqaZtwEpI8JYLFe8qrQIz1bj79p+7ObszTU+gNwRJwkRdYi0nfovAj+imN1FAzmw8SfIDRaPvlwskQIL5P45uKy2ExlV+WKll47dlu8aUQVzyV5qMU3gyGly6Ch9EfhmDdb4QYAOZJ1vbG8DR5tGjeRu0viOX9ryINy9cSMFlvoWY6AHFKyhpWbQntBz7Mn030fTZ1dm7nk3tlsg54iBZ4RLn6H0jtYNNl8XHc5kcIRtjK1AKPB/kTaQ+YNp3B0OrAD/KjhJYqMEw3FLY7JJAzpOGBquCBasoIS9NWAwyEImgkNUA7ReNUxDcHQEBhri4OYwpkYtsH9ESGi3XeMMlmAOp4SE1ukqZ+8NzygDEwid2+Yky+gpMVvEA4XJq3+b2m+TanK2mly0stWwgt1kqn1gm1KGKbzqsdwuXmnN6ecJUl3C+YQKyKyO7jbRKxVG3uPK/X9KvjuRZ/bc9KwmsDrV3lt10rdXUsFVA/bNgDoYl6rYAkSADaIXcVwYDKMfditwDxHrKAWeE23ZaZf9U8yfqaugA08qxsQBEza8g4lRmsM5cJMWzAmk2O+M/yhpK7KGtAgAAA==",
+      "sourceId": "1558752089-3d3d775917a2"
+    },
+    "category.cilt-bakimi": {
+      "file": "/images/stock/skin-texture-aloe.webp",
+      "alt": "Beyaz zemin önünde taze aloe vera yaprakları",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4IAIBAAAwBQCdASogABUAPu1kqk+ppSOiMBgIATAdiWYAA+VbFQggpYrcle0MgCK8J2DjZogHUAD+9hNE7xkVr4feVocw3Q4xMEdqHyFMvz2XinQpaIgfALJ8HFflOZGbQ/nkpRx6lhzuFXonTWGn6qWTJFnOtR2E/wAbpUe7rOr0EUFy9ALLfSn4h7GXNjfTz54f91i2D593KVbcIJ9m/B8hJ6rFNRkzZ8sGpQAZwJ1s51Wh4shrUYhWkU1DmIL82oGuxeOJOUst/F4xod8XYtqBUGLK3FEAUhe2srMt+wf4O4HaezyqNh0nSiN9v3j4F+NzK+PQ8fNCJ8aZli4hgpLo1QgAAAA=",
+      "sourceId": "1702416062979-dc44baa952c1"
+    },
+    "category.makyaj": {
+      "file": "/images/stock/cat-makyaj.webp",
+      "alt": "Beyaz zemin üzerinde dizili makyaj fırçaları",
+      "width": 1200,
+      "height": 1452,
+      "blurDataURL": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAAAQBQCdASogACcAPt1gp02opiOiNVgMARAbiWUAyLj0CcOoSpo2YYfgJtkO/UWdbQ9cAP712rGwK13cdzI2X1XLA3EIZClREKbVuMquwsP3RkG2VEiN2rsqUOSZVkTpdO07qhNl8r2OmAxHywsCatzsEn3iixAmYEjjSsmShZmkcdeFAh+89wyUdvOhOyfP9DgWAMPRR8huBIFCMfRAN+VBmxUGZjoEhi9vK0DoCLzaGSdmdGRfKDGIPksV4QUuxEdkipzkbttF9ihRG7z4xvmcAAA=",
+      "sourceId": "1622364649682-e7af9fecc43d"
+    },
+    "category.sac-bakimi": {
+      "file": "/images/stock/cat-sac-bakimi.webp",
+      "alt": "Okaliptüs dalı ve ahşap tarak",
+      "width": 1200,
+      "height": 1800,
+      "blurDataURL": "data:image/webp;base64,UklGRooBAABXRUJQVlA4IH4BAABQCQCdASogADAAPulgpk2pJaOiMAqpIB0JYgDOlV0rBN4X2THaTxoUPfbsEOpWyQKunOZgyoIyZW4QjfpklUpmruUKz3Sb4d+z4lfo+7/xZjagAAD+q7XzTeirGc/F/1nR4VEkHfwIFsAjMwpiAGdzmUT2Do06PAvVh9Bf4e1G8AVqbbMvS1ygyz9cZHZIYlgxxBYkni5aVXsOu4y7uJFg12MM4uG3oUG6UGV0vrgxBgDQOpEL1BwgqcDXplZ0P0XFN8kswWjnWVXmdoqSH1HskEcQVb8fiqHLF3e5C+Tg48VY1M1U3qto73sbh08W2vyVe4KSwLyu9ddCDL3QUSZvKAS1TPFyXdNAz7IK0947/tLnekrQHDq04wQUuHXNViTltWqgUwIPSbqnYdyQPQQejrnFdd4musl4CORV8QvUeZIDCD721vlehYgW8Cmd9TAXTXsrqIIIcqU3/2rxaI80QofzZvEGq0b3+07JhJMXWkRFKrfo41hwSswtYAAA",
+      "sourceId": "1617727249656-7c8118778430"
+    },
+    "category.vucut-bakimi": {
+      "file": "/images/stock/cat-vucut-bakimi.webp",
+      "alt": "Beyaz zemin üzerinde üst üste dizilmiş beyaz kalıp sabunlar",
+      "width": 1200,
+      "height": 1800,
+      "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBQCdASogADAAPtlYqE2oJSSiNVv8AQAbCWcAwzRVqxj0kLz58awKWYDPn7R85OZEAAD+8DI9GVw++LfcC62j8Ba0t+DK+663LS/Og74e7R4phQwc6QtQMGQ5DUPJY3XfxEb3XuJvkusak0VYE5agAAA=",
+      "sourceId": "1607006344152-62699f97b42c"
+    },
+    "category.agiz-ve-dis-bakimi": {
+      "file": "/images/stock/cat-agiz-ve-dis-bakimi.webp",
+      "alt": "Cam kavanozda bambu diş fırçaları ve okaliptüs yaprakları",
+      "width": 1200,
+      "height": 900,
+      "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwBACdASogABgAPuFgqU2opiQiMAwBEBwJZQAD5koOBMA9wO9bbELgoIZOBpwoYAAA/ucpbtOKXhMKEYwDdPb80S/AxoE8XDiMGr/Y5qMyhIEtP9mkesOeRmbFaV9LuxJfAuec0jvqvtgjOCTFPLc/Im62fwOGUKzNuaBeeFm7ovIBDD7jkHBdh368q0WZCX9f/j1gzkuobdIHHgyLAAAA",
+      "sourceId": "1777446523856-e7acffa844a7"
+    },
+    "category.setler": {
+      "file": "/images/stock/cat-setler.webp",
+      "alt": "Beyaz kutu üzerinde yeşil kurdele",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBACdASogABUAPtlco02oJSMiN/qoAQAbCUAAC3dFmk5XMOBkX268O93bi4AA/ucpy5AtHStUvVzGzTPbOFK0lUZCqC51dKNJw9mcaekuUHaG7kUuXAN3X3sJY/kAUYSwOmSz7A8/ZV6hRG7ou2PSTbwiM4Ii8K1fe0ZSJ/3EY9nLNYVr35FPhDleFJzgTUKAbs2IYYaJjS7XXqo7IgAA",
+      "sourceId": "1668127039852-0e7c8b3a1601"
+    },
+    "category.ev-ve-temizlik": {
+      "file": "/images/stock/cat-ev-ve-temizlik.webp",
+      "alt": "Güneşli bir bahçede ipte kuruyan çamaşırlar",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASogABUAPu1iqU2ppaQiMAgBMB2JZACw8vABS5DitIYsONGzub+tuBTwGeRi4IlAAP7KRkarkq9UNs6pBOIX7C49wbrXAwD4vwzANwvVYxh7roLobxSjWpuZr6tJl3ph4975WbbFQNPlxhh/Z0wXGyBmteP3GxE31ITi9YZE5Ag+i4tw4T5W114qx/H3e4R7V/H2UfLmm4ccZYl1XvA8yzyGM0jBZFc3AVsvtYaGf4eqODgzd5nateWT994Xgv70OUIrrjVCnHC/KyHXI0jfZ5+kHAA=",
+      "sourceId": "1745613830905-552dfc3a62ba"
+    },
+    "category.anne-ve-cocuk": {
+      "file": "/images/stock/cat-anne-ve-cocuk.webp",
+      "alt": "Askıda duran desenli bebek tulumları",
+      "width": 1200,
+      "height": 1499,
+      "blurDataURL": "data:image/webp;base64,UklGRgYBAABXRUJQVlA4IPoAAACQBgCdASogACgAPuVapE2pJKMiNVgMASAciWIAuxtfwLXGazUNNTX0xtT/Xc/b2cUBk3cPg1KxUpE/mtnIAP7qiDgeZ/PydohMrn9M2+c+6hQuByGngcuEIgvkjHv13mtbYrWg9OA9qvP3AKFYjFabUZCgF4CR2wbbib+uJvDTctrDEtK/dqNMNYeSzhpbFfAO8r9FicG8OQ1yvovpz11UxutoQ2YpqBaIkNaTLOT9h5g6J4l+fIH1HiN6lQWGv1FwKH59OPE399GSDXDpKVaaA/2y6TqPs2Mf5rOKIdHZ7Ijlq86j62H2VMZuc4sWqdx8BHN8Z3xMAAAA",
+      "sourceId": "1569974641446-22542de88536"
+    },
+    "category.hijyen-ve-kagit": {
+      "file": "/images/stock/cat-hijyen-ve-kagit.webp",
+      "alt": "Açık zemin önünde beyaz pamuk kozalı dal",
+      "width": 1200,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADQBgCdASogACsAPu1mrFAppSQisBVYATAdiWcA0M8ucG+Z/SjrN4HIaAuTNBNxGHDCzzNn1XVKyQytoEtZZ9gA/vi2gm4Gt9MJt+jpBaV4dyXyh+Rsms+AFI9tXpY1kHPcQ0xzYxv6jbYegpuui0LJfhVE1sgbmrjPvO8tgFIYIqz00ep00RWw/ATgVZttNvTbWaBgj6AQ6hQBaWmAAAkawXPxpEkjRxxsnm7EM7D3lNnE9Sopj5hcU6CQhhfxs8Yr6Lq333WG9VXZAAA=",
+      "sourceId": "1616431101491-554c0932ea40"
+    },
+    "category.saglik-ve-takviye": {
+      "file": "/images/stock/cat-saglik-ve-takviye.webp",
+      "alt": "Yeşil zemin önünde cam fincanda bitki çayı ve nane yaprakları",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwBACdASogABUAPu1oqk2ppiQiMAgBMB2JaACsMw6DTq2Upan+D1eGfZp+T9b4rgAA/oucvnh6hc3lCEqmZA9Q0K8HXj6GI2+Iv/nCb69avBFTYG3zkJ0ceh/Ji/WPTH0K2rR98X7fSaoGAfGBauvUFdWY1SVahQDyEzyk0ELwbXZw2VIGBtVIraAcEoAA",
+      "sourceId": "1627435601361-ec25f5b1d0e5"
+    },
+    "category.mutfak-ve-gida": {
+      "file": "/images/stock/cat-mutfak-ve-gida.webp",
+      "alt": "Renkli taze sebzeler: domates, patlıcan, biber",
+      "width": 1200,
+      "height": 1805,
+      "blurDataURL": "data:image/webp;base64,UklGRkQCAABXRUJQVlA4IDgCAADQCQCdASogADAAA4BaJbACdMoR8n4K8NGW24l2q7zrZgjRjRWQFeBOAjj1ysqB7h2sT+jA83YmMKykFFtU5zIekaeQNZA/hXethAM+onFVrh/GQ03D/5gA/vaHZdBEfd3v/OJZ6Hwd2LHBsZPtPjGwLH4+ZjsPnMMNNVFyWyaVdQUWxWYWGI2yyLHeFt5M3g8xR5s+xXGgLlT2K3z9/OOYnsKu/5t0EWGMyUb7NL5gQcKwRwVQXz8sjqw0ord2WtQF5GvFO9sXpDWxn6KP58yOcmdOuPfuk6ihs2JQiQN85b9F6eh1RFesrUtcRvNrxy29usOemFrjLfv26WVeUwifzgbqXbm5lOfkn800tR4E5fld/JqqpJa2NN3uR2MBfPOm7rvxuuvV2bPbmo2wjL4E0meehsZ72/kNN0qLfXKpkEjQ71qj8beoJatnvJ2Yeb0g3OBpuwtoEXwD+MHWMJ9egHEkRJQOKoZFGpZ0EvpIxBFp/HwrbW8KDb5guhQgiOIgEAeld8uR+lkRm8lAVYsCrXmhjPgP8wKgmpc846mq/8Cz5DGwnjEc5cteV2R73p+sRapbx+0d/nr/w6hcoRF2D8Mq07Pqx9F5q9hGDgfyycVbvgNIXQsjgAqF37OGPQD1IglrMXlki4K4Br03EXCiXpbNEasBSpLJ4w/EsluqXGfctpqwKmxL23MfwLWEDGRSXHEaSyk1zZzEgukeNIpva0iybicghKBOBrw7r12HfxTAVwpNIAAA",
+      "sourceId": "1572357243457-fc153742e7a5"
+    },
+    "category.giyim-ve-aksesuar": {
+      "file": "/images/stock/cat-giyim-ve-aksesuar.webp",
+      "alt": "Üst üste katlanmış yeşil ve mavi tonlarda tekstiller",
+      "width": 1200,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBACdASogABoAPu1krE4ppaSiKA1RMB2JQBS1giO3lchjNHcKkRpzBSapx8AA/tNL8hgGIj5ZgM9U6WfIgbdRX2ogjrSwrabf6qMfqEfnPUV16N05Ks9YGNnsr+MRcP/D0n3DIP7BGtKMlordB+SNDKsYwv0QbC2ka40gVPYuA26fjXKV+L4qcdjcNvBWMDY0EGcI0DCv9cDuBNfz6AAA",
+      "sourceId": "1625471592808-3b848a6e9ffd"
+    },
+    "footer.texture": {
+      "file": "/images/stock/texture-fern-canopy.webp",
+      "alt": "Yukarıdan bakışla yoğun yeşil eğrelti yaprakları",
+      "width": 1200,
+      "height": 795,
+      "blurDataURL": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABQBQCdASogABUAPu1iqU2ppaOiMAgBMB2JQBbZtYg0CIlDJ+ftRHEpAkkLvb6qchhPQcAA/uVvSXAE0qqEKqa/9Y/Rhu87Byxn2JYf2TJk1G5P0vcXDHw0QRCyAiHeplevr3K5Pku9rcZaPX0lfRygl5JWw+vkbqgIydR8q8N8vqA92lJaAyuSb4CaZdnfPIWzw3BOkimy+ZiKixDfSqJT5t3v+KhvIAoG2fjuFSWAJgjN+D4H1rtUxG2AwwAA",
+      "sourceId": "1526030575810-fb77228cd9a2"
+    },
+    "emptyState.texture": {
+      "file": "/images/stock/texture-fern-macro.webp",
+      "alt": "Yakından eğrelti yaprağı dokusu",
+      "width": 1200,
+      "height": 677,
+      "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBQCdASogABIAPu1irFAppSQisBgIATAdiWMAt77wD1twYvaY+PH2U+shAitxrS6puTFUgAD+0fXcko4aEXETBB8EKFQrxip/XMFgUH4ut9KwQErmbYow1IEpTCVRlx279De5YgIJI2P/MW6Hkyy9MDlW4GXntAFolNWaBzLBR8VLH92Ka2AHnfq9TMszlPALHz5dmcrtU7SFRInTdsSsyFjY+3iHrFFfAmMy8860hrdqWzY794UqAAA=",
+      "sourceId": "1474139346426-aa184093f6d0"
+    },
+    "shelf.cilt-bakimi": {
+      "file": "/images/stock/shelf-cilt-bakimi.webp",
+      "alt": "Beyaz masada nane yapraklarıyla açık bir krem kavanozu",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQBQCdASogABUAPu1cqk4ppKQiMBgMATAdiWQAuzMv5bA9/X/82lDG5iXslJ6nwQHLqJJroAD+83Le8QbTiDUJqCEOivxellVQqDt4vYOP5w7vgLi/6klVpJXXAknAOoSlR/xxq7RDd0Ar4t0IgRJ+xYv7/X1HVDRY2fg9QhipemW6tVbgoKMXRiVqSWOSL+RD+bMHeQUCRQG9sLZnXKmj7hCB4MuhzvKMoUWOLIPzXspWcAA=",
+      "sourceId": "1737100917895-eee7006cdbbb"
+    },
+    "shelf.makyaj": {
+      "file": "/images/stock/shelf-makyaj.webp",
+      "alt": "Mercan rengi pudra üzerinde makyaj fırçası",
+      "width": 740,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRgwBAABXRUJQVlA4IAABAACwBwCdASogADQAPuFapU2opSOiN/gIARAcCWwAt+vRR6LhlQhlbxN4suc3zhMsrHs+j8P8HZpFs28DDWeZBYnD/3SSpdsAAP701dm06RRIOvPNY7x+VZWQrwJasCtAXNGzs6no6cYguRO8AZTvbtFKrjW/k/o3JHTx07WRuBV36o/HCGg5XSUyvdSWJOwO7th8qMwj0znrG+ZdZnPP/Nrki2Eg4/WhXmhM34Ds5E7eMtlAJQfbTRifEiqajoxTgXgcKh8+A++yXCA7V/Nwj/TpcNdqv+K2oaQsvEBWuPbotL9pZI7ifbmJF7pLmZ0ixmCc/kIHKoKBhtWPa4e0BQgA",
+      "sourceId": "1757990939518-61d786ea1684"
+    },
+    "shelf.sac-bakimi": {
+      "file": "/images/stock/shelf-sac-bakimi.webp",
+      "alt": "Güneşli yeşil yaprakların arasında arkası dönük, dalgalı uzun saçlı bir kadın",
+      "width": 1200,
+      "height": 801,
+      "blurDataURL": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAADQBQCdASogABUAPu1mqU2ppaQiMAgBMB2JYgC2zAollU5Zb3i7FfD1wcI5n4q3Ov7lTnEarXQAAP7ohw5VECc/bJjOV9HXFmq4mRjHfbMgFINo1VAXQuI9Ugr7ncyyiqKIIKWQ7Vz+vTmYGmNs1vPvEasZqQUrQDcIO8h2A6Rc/SXHfTp6fxd+auSkUYXCw2hVQrycq8KeJxtWUE/V+I8XQItH+W89y5ayAw5dvBEDVQDsaxc0duxYDZJteQg9r5SMcuD8jkLDEJTTRYHcPiYon6Pp/FVFVkmwAA==",
+      "sourceId": "1497433550656-7fb185be365e"
+    },
+    "shelf.vucut-bakimi": {
+      "file": "/images/stock/shelf-vucut-bakimi.webp",
+      "alt": "Pencere önünde katlanmış yeşil havlu ve küçük saksı bitkileri",
+      "width": 1200,
+      "height": 801,
+      "blurDataURL": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAABQBQCdASogABUAPu1irFAppSQisBgIATAdiUAZE7UATMv0lLa8zHM12gw1ebkyczMUGAAA/kyla/EsInM1GJtI571XrlOO22a8dBN44Ez1MhNhyBjMTPeFzMxAeMyr3r8CwQaWvWvgFYCkC3j3iadCwO+kyOFEKv/FUg6Go76DTsyVaS5tnIjbbipXovSbPZuzxkTKSRR3ZlTcBbe0w0JpZOqHfLD0vHgrzzj0KPyWBunxW/3wVmhfIsRCGWjoBleXJDjOIAA=",
+      "sourceId": "1574421233376-06f2ccf017f7"
+    },
+    "shelf.agiz-ve-dis-bakimi": {
+      "file": "/images/stock/shelf-agiz-ve-dis-bakimi.webp",
+      "alt": "Cam kavanozda iki bambu diş fırçası",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADQBACdASogADAAPu1mqU8ppaOiMBVaqTAdiUzd6fQUq4iZOrw1VyyeZ9SNDUFmAAD+8OWW3MyRHLna5hBxVt/71iedhHrXFweSjW3wR6LrPffXsVxjk4NOe2VVBmh1ZyNU3fAV7m90AiMVVssocgVxDKy1zG9dGwFyair/+q/lxaJhZXJhAB+asArmOKj2NzVef3p81eDwAA==",
+      "sourceId": "1553691475-f38e4026275b"
+    },
+    "shelf.setler": {
+      "file": "/images/stock/shelf-setler.webp",
+      "alt": "Yeşil kurdele ve taze yapraklarla süslenmiş beyaz hediye kutusu",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRngBAABXRUJQVlA4IGwBAACwCACdASogADAAPu1irVAppSQiqrgMATAdiUAVgPVHYiYYoJw6eTCfo+/fNrS3W79ul4CsGklKmASX1a0oXCfoGg3ShrsZeaf6Iyf/VkAA/vF59+Y7lXtAtyuEy9p1rb+HEBjAlTyhOJ4YPojRrSCXUNW4SirIIWQGNFDDRL2JKbIb5q4cYkDetQ6KcExj0/iVFBDQN2XfUj/rBC2rsjefEYyvSEaMQ2WoXZHwWJiTLoD1TK8m7maUGTb7GVSiPm9W/lDUERt3cIjF3XI7vYu1kYJ5m0QJn6cl8a8yvBTD4maarXNkec6MBAAvtFhDiwm5xIhtC/6J30NLGbmhZMYKI24AVrW67LamMMXf9q7gl1XHWqEC6HQQf2ESX0Hm0j+fX/AGPdkSICiJjmKRCsvKGXdSMy3sd9i5RGN79SPWpcTSRa67iMZcudJTDY2K8+uG8KE9qj+UwyAaYFAipGlgQ/2hqSJb8L5DwAAA",
+      "sourceId": "1781184308132-1da7c1cda994"
+    },
+    "shelf.ev-ve-temizlik": {
+      "file": "/images/stock/shelf-ev-ve-temizlik.webp",
+      "alt": "Masmavi gökyüzü önünde ipte kuruyan çamaşırlar",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBACdASogABUAPuFeqE2opSQiMAwBEBwJbACdM5M4GDuLi8RNzgojUP6PybYhAAD+7SBqG/gY/yp/mVtqM2ttTg3gYUe/tiCoJJGGvoGQyYz3XdiBUy6zXqC0KQzXnvuCgaCiSSCcJyI5VbZrmmYLBFrrmSYOUCSxt+s+Y3bT3MzbQPu0u0xXUhEvGWp4K8KoeY0AAAA=",
+      "sourceId": "1600014190031-11dccd559665"
+    },
+    "shelf.anne-ve-cocuk": {
+      "file": "/images/stock/shelf-anne-ve-cocuk.webp",
+      "alt": "Yetişkin ellerinin arasında minik bebek ayakları",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRgoBAABXRUJQVlA4IP4AAACQBgCdASogADAAPuVUpU2pJCOjNVv4ASAciWgAsPGuAb0BwquZX+jVYY99tjVONU2w6fPR2fXgPd61zb0QAPw6Um+LRzg28Y7OQVKaV4JeZmGJGqOa5CjgkT/QkTSDyO3bTRgpiua7ptk1S2Kb6uMa5olcpm4eQfhv4hOgs+6vYrPvivb80WLavJhfCK1h8krKFrweB0a15SR7f+1Oipv68Bvr8VMhFb1z4Kp0k3jAJgZr/x/XXn04iS1sFI4PLhnS0/IYh6fLJEA9nhFrsqtXFv+ZqBePNQYIcvVxHLshxFvL7KSFeGuHLTAwS5X/POkdFbeZ/75srFYAbOIAAA==",
+      "sourceId": "1782944440224-f89228cf5416"
+    },
+    "shelf.hijyen-ve-kagit": {
+      "file": "/images/stock/shelf-hijyen-ve-kagit.webp",
+      "alt": "Üst üste katlanmış temiz beyaz havlular",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAADQBQCdASogABUAPuFgq02opiSiMAwBEBwJQBfBd+SUsNgcdxWdV+brAOX6Z7MbO1Y+xjP+oAOAAP6qH3n4Z3DogxojmFuU11O+VUrL0ApPPjcz2U3qG7X8jEt9Dk4kB5/b8n1fOTaC4l1v9I/jfk5ZKYLGkEqJ1QrfH/9aUy1qOFdlGibW1HoJ0TOanV4I/l0K8yPHOZJ4Faf/rdFsBIg6oF2nWquYO8Ivt3uRmsLkLEn5i7Ao1bu7GwB8jwABYEzrgOBkUayB39dKQSbRPwaMoRjF/qJdAAA=",
+      "sourceId": "1760722974657-f64bce2f9cc5"
+    },
+    "shelf.saglik-ve-takviye": {
+      "file": "/images/stock/shelf-saglik-ve-takviye.webp",
+      "alt": "Güneşli bahçede yeşil bitki çayıyla dolu cam demlik",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAQBQCdASogABUAPu1qqU8ppiOiMBgIATAdiUAZQAGtCCG9v/Ggu2N4KMqUtdLkMVIAAP6i7qW74G+NSK+PwRn9PuHtA/pN8vchXOw0dg/1Ic6ZUTrSPi6bkwLQ6TzVDI1voORRmGFErq5Q1QNfC5w06xrxuA3DCq2hJnhIV+TrhdfcS/BKiN6VPXe17bz1qDRt6QMD9BtPG1ST0WvOoM5fFn8tptiy5nx+BdHB0snbQ+QAEeRyqAuQAAA=",
+      "sourceId": "1762920738963-002dbf2b4501"
+    },
+    "shelf.mutfak-ve-gida": {
+      "file": "/images/stock/shelf-mutfak-ve-gida.webp",
+      "alt": "Güneşli mutfak penceresinin önünde meyve kâsesi ve maydanoz",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAADwBACdASogABUAPu1mqk2ppaQiMAgBMB2JYwC+SBPRbDl1It1YRaSVvc0UXbghiQAA/aubhfUwSbBqJamUkNIoirvKQnJTZl1q8ynsqzSyPC3F9AuV1YHU7YIF1LPozTDk27/uPNiQBq8W8jeFq17tkPNOW0msBqaYAZfRUrlA13VI89G6ocfbPXeXYLr6FNe0MPChW2Z7u0luw5X3Zohm8eBfzxLFwPUkrkMhtiPGK1O7CnBtzAExIAA=",
+      "sourceId": "1790823840771-1892c565e03d"
+    },
+    "shelf.giyim-ve-aksesuar": {
+      "file": "/images/stock/shelf-giyim-ve-aksesuar.webp",
+      "alt": "Rulo yapılmış beyaz, yeşil ve sarı havlular",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACQBACdASogABUAPu1qqk8ppiOiMBgIATAdiWQAxkAOntPLYW6S2QzxTYiHHUgA/ro/9aVxykMhk19M1U3LZKBgs4EIAAVMZdclWJAt3/OSTq5D9goM2Bxq9EKCv+Zd688UwiUU8OL10zZcS+PAOdLKcYM+ruWFUTQv455BGc7whEC85DW52Nd6eWsjuXhSJ0322wzVAMQut/wK9uuRrN8q+A332oMuhSiAk8Kd4UqzSX7VMXUJFc+N/qAAAA==",
+      "sourceId": "1790088229891-4f093b66330b"
+    },
+    "page.pv.hero": {
+      "file": "/images/stock/page-pv-leaf-sky.webp",
+      "alt": "Mavi gökyüzüne ve güneşe uzanan tek bir taze yeşil yaprak",
+      "width": 1600,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAACQBQCdASogACAAPu1iq1AppSOisBgIATAdiWwArDlBOaAlxBsVDv2p6sdYo1WasHI8V6rtAAD+5xUmyLnkOWgNxj600z+Y7HZ7U+y0w3hz2WwNzRExZsScM0TK0REdo+k8+gnThIhbnLhwcGMnhP03yj176yfy6lP5NZaRo6o6EG/a2PH2FhJTPGRHQMpB6Edi9Fh0vRb1laEqTpy4LCUxnftrQTxXtuuoCCXxg8jNYvvUn8I6n79W7MduDzrnUTt29ahsuxh6sNwD/qOnR8WmS5CYt/oAAAA=",
+      "sourceId": "1587090311790-61e3ae82ac17"
+    },
+    "page.uyeOl.hero": {
+      "file": "/images/stock/page-uye-ol-mesh-bag.webp",
+      "alt": "Taze pırasa dolu yeşil file alışveriş çantasını tutan el",
+      "width": 1066,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAABQBgCdASogADAAPu1iqE4ppSOiMBVdUTAdiWoAwoBe0+jPkYIpXOI+vz2XVhYoHfGbaThp4OtPesIAAAD+9Tt4FftVIAlzZScPeUxm7eVGuaQRfdDexOHORTeoF+S8P7s1YooGDKgvGKFsQQwYFo4G1dwW6/hKzrp3v0Fezyp9zN91f3abYOp1Xl3tXh69rzcJnaMrxsGGmCmLjNhGB+iSFQeVrnec7WFL7hwgBGf6M8ZS622qY0p3ukdLegMf2ZbZ4zPRQsu4t5mEDe1bd7sTLhSlIm2eS24AAA==",
+      "sourceId": "1582803824122-f25becf36ad8"
+    },
+    "page.sertifikalar.hero": {
+      "file": "/images/stock/page-sertifikalar-cuttings.webp",
+      "alt": "Ahşap standda suda köklenen bitki çelikleriyle cam fanuslar",
+      "width": 1600,
+      "height": 1066,
+      "blurDataURL": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAADwBQCdASogABUAPu1mqk2ppaQiMAgBMB2JQBOg1q9pDJuF4y2WXCMfZ5ogYrR4walLcS3N0vfwAAD5MHDvOfrE5HVuIFLzEli+6ykwfhEnDyUOUj5oaO+1Rw7Pq69NpgwSWS978m2yjoeu1ceBgDgOgcbiaoCcIn0nJ8M6YlSE02vsLtnjmyq0Q+2YkxZPxZS40t4oqOOx2WKmKChW0I5nc3dftcpj4DVFHkS+KU30uLu83oQYmFDxdtoHOLaguXHlHM5NLDpaWWgml8VQn3oD1pCxW2VYNpMMZqfExbYMtyhBZBjoe9dKJlWs4b6bz6Igf+dyvY/AAA==",
+      "sourceId": "1791646912802-074e728b3f83"
+    },
+    "page.hakkimizda.hero": {
+      "file": "/images/stock/page-hakkimizda-hand-grass.webp",
+      "alt": "Güneşli bir çayırda otlara dokunan el",
+      "width": 1600,
+      "height": 1066,
+      "blurDataURL": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAADQBQCdASogABUAPu1iqU2ppaOiMAgBMB2JQBbZgQAqiinX2rNVhbwBDcvEgDVuFTah61H98SFAAP6V70SMFpRA3rwMzffGYWDbXsQQv2DWr/Q5vXpcS/WWQXzhWi1OuxsI9N60xl8aStYAsN+RBxUOKcpffIBcjTBzEvo/zCPD+Y9qZoAKCB8N8yIeRy9xiOd+puGNsmV9a6DuqAHAraeQBpEe0WVkVY20z0gP+/uj6wiPujT3bDiLaSmypWr5x/hi3ROcYw2N3mIu5ndeF4gBgsrjmbT45f/lGRe49KoaEAAA",
+      "sourceId": "1789975801754-5aa7b960d9aa"
+    },
+    "page.sss.hero": {
+      "file": "/images/stock/page-sss-forest-path.webp",
+      "alt": "Güneş ışığı süzülen yeşil ağaçların arasından geçen patika",
+      "width": 1600,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRgYBAABXRUJQVlA4IPoAAABQBgCdASogABoAPu1op02ppqOiMBgMATAdiWQAnS/UgMhIR3p0snXazprxQ6skERzYwQyrTXNaJrpnYAD+6dLXyVVIzqy8IkPhHjqREES4k/eTn67IRPijQkdoCB7ttmuLqfFFW2qSdVW62LFQZJyYZV7q5dfvHcSOcAPxpi6gtR8/RYTN+8WrQSPZNb64GRuYPs8lBQBWd9/04aUsrK0I9Vue6Ms2DPm+bIMg2j3/fmULGzHLt/KGQ7yKBdVLR3zWg7bkCJ7ZOwMRiePWT6k9RrDgd6jNiq6q6xOJudGNsdpfFZWn/GD1gYHGvOe6Iq/xY6IbFufEAAAA",
+      "sourceId": "1597201423947-3e0028337902"
+    },
+    "page.blog.hero": {
+      "file": "/images/stock/page-blog-notebook.webp",
+      "alt": "Ahşap masada boş defter, kalem, kahve ve küçük bir sukulent",
+      "width": 1600,
+      "height": 1060,
+      "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABQBQCdASogABUAPuVipU2pJaOiN/VYASAciWgAnTMy66GVQIyB7D7SLy0aB8TrpztOfbgA/tloGpR0qTMvmMRAlK82/8w8jV4BrFPKs0AKnmOQZMzWRFtpD795QiVh1ik5gbF5N+eimFAjeqUcA1brPWCmiiVEGQ+ewFhjE+NSRQfb+sxQ45BDCPdTYxpl2XC+UKJukwLEdqoKBUTIvoYr0+BpRBEiyI/V5cFkwE5VRTTpNgBkvGYAAAA=",
+      "sourceId": "1743385779581-670d35cbecbf"
+    },
+    "page.haberler.hero": {
+      "file": "/images/stock/page-haberler-morning.webp",
+      "alt": "Sabah güneşinin yeşil bahçeye açılan mutfağı aydınlatması",
+      "width": 1061,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRqIBAABXRUJQVlA4IJYBAAAQCACdASogADAAPu1mqk6ppaOiKqwBMB2JQBftas0mcessoHLuvXHJQezV1Aa9eKqOXmMJ0LaE99IBmJ+w/GH9xVIt4CB2PK+QAP6P1FTTyVNaKXDwcpVRJv58GbYunn9Utz7N5gPi/fg1HHMmuwzG/blFyr1UbQv+4Ku3WTNkvF222/P6Fd1vMW7jBp/c4D4DXPoVcTd3Jm3sDbEHVWorUiYJzs4Dv+0YfV0ozL5uJkdIS1tItZigERglD8pkk9/Uy6JwGy4aY5PYgzdyRSlumZE9+fSzqWbH+YsRV8Y2BbUJU3rJbeF9KxI6cpRk6VGIMWKB4e2OzKLULPVFqUIaL8gvp9Xp0mTMa2AU4yBqzlkdDCQcgXMkXBkb9mQ0NIP7wU2hSOOoCxY1NEbrfTxgFWEbQnCmUW5umEnFaXRdb3tn9jVQktUzHKKUThhvFT5nh2nqnGLRj2zXycXBm7NHpMDENVwcz/zsBGNt5aS9u2O84hD0/XOj20ikrakN3a1OHLV9/8NjSMmzDFMXbGu3iYDFsAAA",
+      "sourceId": "1784288195989-056788fdae4c"
+    },
+    "page.favoriler.hero": {
+      "file": "/images/stock/page-favoriler-daisies.webp",
+      "alt": "Cam serada güneşe uzanan beyaz papatyalar",
+      "width": 1600,
+      "height": 1064,
+      "blurDataURL": "data:image/webp;base64,UklGRj4BAABXRUJQVlA4IDIBAACwBgCdASogABUAPu1gqE2ppaOiMAgBMB2JYgC07An9gQYEqibmUXVGP1dUwc2zlHWLPX2cRcDJ/D+xN0szIAD4AHyostb7HlnJZ7bvpr8WlJxkIRdvPvVSqemiGfGsp2pXERYUopzFjXfwRxTlE/gLAePJbOsP+pPPTs4AElhK5aJiuCYn/izW2byIKWg0XvKqAxxFH+J+y5gS/E5/cKZu4mi6J2mxGR7wvtm1VU2avzFK8LFJrBC6P5TXMo7OP3r3h/hFGemYY98e8R2zte7fJoW5/KN8xwxRJeyRiRGPxvXn/5Y2GEQ0Pw94G7xCu3DPhQn8K4l2v5Bwn+S6EIoBdlPAVApPvkw9OByQpEMU47tHVOyvfOGlXA3IBXSuxN+/hwvHdhE0DhI6hHExBDspgAA=",
+      "sourceId": "1583715155360-f5e7d1fbf8bc"
+    },
+    "about.home": {
+      "file": "/images/stock/about-sunlit-window.webp",
+      "alt": "Güneşli pencere önünde yeşil saksı bitkisi",
+      "width": 1200,
+      "height": 822,
+      "blurDataURL": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAADQBACdASogABYAPu1mqk2ppaQiMAgBMB2JaADKL144ABBjaVRKLMQbOHZDGb82AAD+56GCES7NAvdXNTaX3Q7i3ZrF2YCPzMktUsHR6b374aEeLaMgVJQjIF6DYj/GTLNOijhFdxIn81re6nC0JXjJDK9FZMoHw7e4zZ9EM7owyhH+2toWzi7hOviY641k9/oxCG4cvKKKZ4p+8Idkb/eOLDAPBtGAlwRUye+URE29KizOMH1EnLIwP8oyFSwqHHTlIjMKx9ynS7LQg+7gAA==",
+      "sourceId": "1465577512280-1c2d41a79862"
+    },
+    "about.family": {
+      "file": "/images/stock/about-child-daisies.webp",
+      "alt": "Yeşil çimenlerde papatyalara dokunan bir çocuk eli",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRkYBAABXRUJQVlA4IDoBAAAwCACdASogADAAPu1wslKppiSipWmZMB2JQBXidQRO4xOuoEIDakLw3S/XTQ+WhGWrKCsfOiHxxKOWPvE5bstaFvuc4hNfZ9a2AAD+9YXW7fV1z7ywFxRbH/cWnqtxrolUpbW2f8DHUx83e6+0l0MmIveoRgXXThaMwj+6Th9LxFW57oNTBMTNQZDvj4rV6TALLf+/iNfDyO9FwFGU434vlQsytXeLFgeKzGMk/STP4xUjUJWGJa40D5FR6fTRAdm6oZGxUEE/9G+QCWVX3QGG0tGx7paNO77t4HVlHxS3AEGtMz0aQz9mUo2NBwc04/G1WEW+QpwC2M1WRr6znGErQ8QWYf61mPzS/iwAY1wdxrc80U1nY/WxXISjjZqZDdaU7089CPmhjHoRVFe4+3Vfgq+/UmoMdX0gAA==",
+      "sourceId": "1783944904530-23f780899cea"
+    },
+    "door.pv": {
+      "file": "/images/stock/door-pv-seedlings.webp",
+      "alt": "Güneşli pencere pervazında saksılarda büyüyen fideler",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABwBQCdASogABUAPu1iqU2ppaOiMAgBMB2JYgCdAy5rpAxjech4V5K1Hi5dE5Ak3OYPSnhgAP7devS0MpENe7Uy72Jq36nZhV2qwPG1gjV4siRCN8EXDGbrVy5wHLa63jPX9ybLL3drdIUfI2RBop76+nWfE6NwvlqCgr9OuJyHyvKT5r5hIcEpqoRaO2HcuNRkYHTKvdwljTWhiMr6o1lz5lQY1f1ClZ7+E3R8qItBTLcPW/6XZ3e3c0kNiahhuNYyTmnuY3AT4sX4DLzs5yvbNpD6YrxRfbn7+jgA",
+      "sourceId": "1768407313710-9fb5f82c63d6"
+    },
+    "door.membership": {
+      "file": "/images/stock/door-membership-monstera.webp",
+      "alt": "Pencere önünde ışıkla dolan iri yapraklı bitkiler",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRgwCAABXRUJQVlA4IAACAADwCACdASogADAAPslMnU2npCKiOqgA8BkJagC2+8lv/s0htjGBWpy0dJqzQMVCj1dlGajXeNnh5Y5orp7oIHgKckY/vFTo16LYxR6KtYqdGAD+o3MGzEwjncwEWi6cQyIccl/qPdNwo16thnmOB7MZIvIbMF6SlFWN0QH8GYVU1JNEzNkb6OVLzcwtipeMg6GYH+te5bC925gWt/d7KtKhO9GvHWP34hO4TxnX8f/jmGOzFL73jr7U7tty0fOzlE80GbRqqhxf5un9i+2DEPozloyLvq4rmAEPsIzvOc2V1p1hLxMPeRXjLMKXyuY/Sx6CIIHLY7nbUzroax3FWD6FN+FnowyQnrsm1ZW2FlVywUnOLyr/vGcNbh3QPy/ds4210fKaY62iAr5uRNjQD1DbHnRTa5sjlFMwn6bQAo7kVTWeLrAiU/R2YKblV7hLAeGIF2vQlLzS6Gat2DcRNFr0RoyzIw4vCCbjzYlRZH256ZT9acQTdT160WOWo5K3+23ZM0kLaK7pJEsgQXw207PfRGW0cmdl4vmxxFcV0dsGqCTxg0iVAT1qwAZ2CI32ddO28f4fnyYzHBBpTm3sSWWCc8rUNSy6cjr+bVN0kqTGYX58GQjfV+VCX8qEu0V0kseaXq6aOGX5QbUwmXjp2ejBtLv+o+fXKmQkbKGwwAAAAA==",
+      "sourceId": "1650553452639-426e19568920"
+    },
+    "door.news": {
+      "file": "/images/stock/door-news-plant.webp",
+      "alt": "Beyaz duvar önünde parlak yapraklı genç bir bitki",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRjIBAABXRUJQVlA4ICYBAACQBwCdASogADAAPu1wr1IppiQiqrgIATAdiUAZoHFEtugveJVoyGQlO+461lDQukiwuuH4cT/aKnOLDEVos3NU7hou5GAA/vtDrGy5k53jFPnmBeytCAx5BTp4mNgYdlk3yN1AbMYz++DTMXd2IPzDYjfMkLMfYoZ8eOdUie5wLEIFAlM0yCJ2Eeh7PZTaStcBUXyPGGLWyNSyP0PCZ3HqptocV5yu4gqOitFQPuo3oPGixdsY0mGEM0GQs6BrxvzoFelP92dpmTmGrwkEygrayPadQKoAHuf9WV9Rjn2+FnluER1q0jTsrM1E7MGb23yxNVPetawEMRLHeHDMLrPKNyQxNFQVcANEpAEun9z3ZT0fAGXnKUPRf6c0IrdeuCu3WIkwAAA=",
+      "sourceId": "1640867123424-29863cad5603"
+    },
+    "listing.all": {
+      "file": "/images/stock/listing-all-greenhouse.webp",
+      "alt": "Güneşli bir serada bitkilerle çevrili yol",
+      "width": 2400,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACQBACdASogAA0APu1kqU2ppaQiMAgBMB2JYwC7AYvOtx2k1Gw816tEGXAytAAA/v3xHrsNnb6rpfYylCGDE7ucDkibbxo7+htvHeNI8KMZS+V5N2MitnjliIIWaZaFHPCBUCKtuiSucYz+uwhdh62mLgCvVMy4SQikDEdN9x9wpwmH0kBc99zYIf7WrQuTujIYxTtXbvStEbkPjH2sKByG43wmsAAA",
+      "sourceId": "1781001820801-20fd87171bde"
+    },
+    "listing.search": {
+      "file": "/images/stock/listing-search-forest.webp",
+      "alt": "Güneş beneklerinin düştüğü ormanda kıvrılan toprak yol",
+      "width": 2000,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBACdASogAA0APu1kq04ppaQiMAgBMB2JZAAAXtDhvlNwBLNAqEUWAAD+uxZaq7Eac0JWo1LBTc9XWJ5bEYpDAQBbdB1iGVBtd0k57IK//5IMPTpEmo0FGFvjdm8Pc4cji/tjhtrF4TZsd/zozXpVNmAiv2XuWj71jq4/MxPh/WeUcP7wGeA8KqVGwh0hG6Si1rpBOPPJJEYHgtLMAA==",
+      "sourceId": "1773858375548-3919c0fe1ca0"
+    },
+    "collection.default": {
+      "file": "/images/stock/collection-mint-macro.webp",
+      "alt": "Canlı yeşil nane yapraklarına yakından bakış",
+      "width": 2400,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABQBACdASogAA0APu1kqU4ppaOiMAgBMB2JYwCdACP/pXL+vOl3ChOzF6gAAP7pnFp/pWhZGKX/AZkqe+7B75urLYr4RhLaRHMXdYtspS55sHflAM1xmNtdQvsPg1Vxdz+e2rbZI4cMPbZG+bqxYF3HJMING/VhRmuyzA0qQo8CbQNetAWNoSne+YvUAAAA",
+      "sourceId": "1594225504861-9cb4f7c16e32"
+    },
+    "promo.mega": {
+      "file": "/images/stock/promo-cream-mint.webp",
+      "alt": "Beyaz zeminde mavi krem kavanozu ve taze nane yaprakları",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRl4BAABXRUJQVlA4IFIBAAAwCACdASogADAAPu1sqk+ppiOiKrgMATAdiWwAwEk3if9kyG0ZpAmi1LPpGLLCMAPBEJXPLy+hxTsWZAGmcX+MtdAuO/UWdQyIgAD++hSlBsPPZGuO5zR9Dei4A9s3dlXWZ8O6G+oYvUoIaO2CjKQoryv2++aozoJO/3y/JV2ykb/76ptDzfT4CFuihZNWf11gAiXV/xjN3OKAzoUxaQFlkKcaATGp3ceWV3xj0X62gczF1+RPxR8A6hjXCP6vO2npFBcRCo4T13MPIg3XKFVhrpIz9RMGQpdNGRfINH6fZIf263Ge+XYu2s1tAA+ICe6vhKvvb6lyVkvtnlVTJiQ6eL9w7KKZJ5ub+le5efnkC/pmagNZHc2I0+OOYyGDJcBTOhNGhmLzPRUWMVaHfyj5sqrkVK8ZuusoWWw44lMlHY/U8OXSzMktCnrAwI4k9YAAAA==",
+      "sourceId": "1737100946427-bedef0a397a4"
+    },
+    "blog.cover.cevre-etiketi-yaniltmasi-nasil-anlasilir": {
+      "file": "/images/stock/blog-cevre-etiketi.webp",
+      "alt": "Pazar tezgâhında taze karnabahar, brokoli, turp ve taze soğan",
+      "width": 1200,
+      "height": 981,
+      "blurDataURL": "data:image/webp;base64,UklGRowBAABXRUJQVlA4IIABAACQBwCdASogABoAPuFSpE2opCOiN/qoARAcCWwAtRrjfIFwOkGqDakWgywNKUzmIDD725UZqrl6F+VBCTys3cbLaeqKDAAA/fyqbcNkcs4N9RZ2eMdF63NySsGGoW/IloY9xtmmI11vRiQMyj2EcJLWeszwCaiB4MfZb+NTsAfStnxQGthP15dZbXgXQcakFwyfgN53EKo5+pRhJMGm2r6wFHja/Ml5rEez62+NSpA/+64r4Rjmn0U0gPINOkxXFuFyo6TSuslCh3YDK6aUU5OWucI9pKcOyY2a/FYIt90+r/FYerHt9rxX3cpqlZOpJZ7WDurmQxN1PTt3NXo5joNgXPRTAzCrvQei/v4Oxs1/U8m8MbVVcaM6KTfVusuKqyOYkJOeFDJ7vk4aO2rw3/SzmNsSVF8GCfEYi+nGYf6eDNfi1rOO2CLq5y43/BWD10FsHkiZAoYBWPOpH1+Hg9OskDSESbAFsvuZFCuprYJoGAs0ihC4+SssEPIl+mU6AAA=",
+      "sourceId": "1591586116988-62fe65164f8d"
+    },
+    "blog.cover.atik-ayirma-ve-geri-donusum-rehberi": {
+      "file": "/images/stock/blog-atik-ayirma.webp",
+      "alt": "Beyaz zeminde yeniden kullanılan cam kavanozlar",
+      "width": 1200,
+      "height": 900,
+      "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADQBACdASogABgAPu1srVCppiQiqAqpMB2JZQAAj/ZQI4FttQJfASLIwvSP/fU8QAD+83+89edpQR5l+kWI79gFhkU4f1veZB47nw10Yv8XAPi+/65P4PalwJDRb9PVKQJIhlYTvEXMdhs794a5OwApGi//wFEi2JLMfYAhnRWwdgoXgAA=",
+      "sourceId": "1567966221845-e91f7d888354"
+    },
+    "blog.cover.pil-ayirma-ve-geri-donusum": {
+      "file": "/images/stock/blog-pil-ayirma.webp",
+      "alt": "Fide viyolünün bölmelerinde filizlenen genç bitkiler",
+      "width": 1200,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBQCdASogABUAPu1oq08ppiOiMBgIATAdiWUAwzWMdkZ4dnNI8PKlon7wUo9dFTlzoBgA+eOAGQSVgdDsuCBjhNOe8gvyCsYTOm6q6nu7MVZMMtHs/zU6vwWHYa+rvV6KQWUCEm8M9GRhNfKAbGtsJMkR3Jq9MPq7qIWnJBFuzn+a5n2GbGKQmw+cbV9xLagkTaPWbPMDZMcnUOr3tUjvzjSA34kYTb5csx1eWBAfeSNlHbHBKANtXECctAJsAAA=",
+      "sourceId": "1466692476868-aef1dfb1e735"
+    },
+    "blog.cover.cevre-dostu-ev-icin-basit-adimlar": {
+      "file": "/images/stock/blog-cevre-dostu-ev.webp",
+      "alt": "Banyo tezgâhında yeşil bitki ve katlanmış havlular",
+      "width": 800,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRiwBAABXRUJQVlA4ICABAABQBwCdASogADAAPu1qq1AppiOiqrgMATAdiWMAzu2Mvw2vBsIXt2Hsj1siSbyoGcjySnzpEtunIXBhDh6HSrhtBXpWAP7weCViPp6ySSBkfS0utl1SktD+y8WXl8/sdVaO4fsfcsUxeds+J8WFBNBO+a53wIvRk/JmYW0lhBG6yHGw2qLVxAzQsD9YMNnC0fTQeHtFqw0flLrDpm+nMWrQq1rwIm6LclHAO0XxHwclk9Fh4adF2MFYZxNzmCGwdvr5thMQ/65LVheLoTz+CRjGhy3zLCMm8sG2EmNOVszCBxVqMpEOPVWchro/pbSZna2DpZ3S9zQiLstyAPC/b8yATxGNMpsu4J2NbewEqdaNlC2HUZku65vAtQwOe6EZAAA=",
+      "sourceId": "1722248210636-0336b1e7dea7"
+    },
+    "door.pv.tall": {
+      "file": "/images/stock/door-tall-pv-leaf.webp",
+      "alt": "Mavi gökyüzüne karşı güneşle parlayan iri yeşil yaprak",
+      "width": 1502,
+      "height": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRsoBAABXRUJQVlA4IL4BAACwCACdASogACsAPtVUnk2oJKKiNUwBABqJbAC1CQT4xrPTRkrebsVBmGIbUxTnfkW/IPkUFS1Q7w3akg3d8ky8HfVLJcNLySO9Zh4ARYAA/ujpdsXrKMHgyb2gFAYDVyvKq1SN4H23TQq2NPzgi//ioogODF42oUkRIktoR5ndD5k66QTZJRSt0ZuniepbgH9Y9ZqeqCcVpckjmOtcXQFUdRn2oT7wkeb3LEDj5AiiQzim0y6UsQy263d34nOx1fpFay/Wcyks/pAaoM4hZ+hs9ZNphEui0n0Fq7kjPmi+RbUZMMVGdwycCrne2+RWcZionpLTzFDsq6p62+NSmIpnlrOz7h36HMW38lw4bkex2RlMjLCfk01C08lNOEFvMwXtwgmoIXhfTwqnd+Hn07p0ZKY5oSw09oM3a+2DyVgNChRcvN2ZrWOV+b6zIr9dGNwZ/QVVunM0B4dF9Vly9/p7mtcPTIGO8NJK8UP3QJbP1/FFOUIDXFvQ1J/o2xqZkeS4pkWJG2tuVjUbBk0r4p64J7VOvdTq0LXh1p9qzGL9N3yeexNAN9ewzR1hOpPrQrrXc7wpeX3776yFOgAAAA==",
+      "sourceId": "1781032157391-ec65bc3d07e2"
+    },
+    "door.finder.tall": {
+      "file": "/images/stock/door-tall-finder-aloe.webp",
+      "alt": "Aloe vera yaprakları ve yağ damlalarının yanında kâsede krem doku",
+      "width": 1500,
+      "height": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRlIBAABXRUJQVlA4IEYBAADwBwCdASogACsAPu1qrE+ppiQiKrgMATAdiUAToGZzD+tBqWfwehzUmSTHRKvrxb6gTYD+3oXnWcQLdAJCLWzfPil/SUqdXQAA/uqRBqTJTtXY94Gl0EEuG4MTHo0yJuw36t3/XOdUvz6T4tbfn587av8ReEPrZ0bc5I5E+7csbro/BF80w81A/YXL7KiR3HyEET+IlPrFekpAXKDfCeVB+m1UGj7Fk7CHJhFzU0QXBNoLMcYZXoYR5i3vDtksww968pqEowV7jpY6JKPDRceLYeokcfpIMdAH0slmES4utZN7zrwvStnkSSpGkZjTjColWCurEaHoAO17f7oSCu6IhnBDVYpi17ynUC2o0tYJiNDg+lKe8e1FEgOXVSQrB7KQLcolN48a8TEUwLhHuEqNVpoialPxeNvUVxJXMZSghta61+AAAA==",
+      "sourceId": "1792595342287-8334531de513"
+    },
+    "door.premium.tall": {
+      "file": "/images/stock/door-tall-premium-golden.webp",
+      "alt": "Altın rengi güneşle arkadan aydınlanan yeşil yapraklı dal",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRhYBAABXRUJQVlA4IAoBAABQBgCdASogADAAPulep02pJSOmNVgIASAdCWYAuwGMlJ3/1As+UnzrX7bOAZHaSM5VI8HgztIj+esiQAD+t0+SIQf/Mv/3MPZlmoI/yUZ1FpUdvbiW1Hg6sviZJJe+qjESzRq3UQ1KjCnVESfBi5O2l6niLGcy+sgZu3ct8XpLzNrrAGa0ixbt05gN8THAh9DnCqgSbYgohQCPWYhd+emo+8u9JuvnwDqRgleEy8jMvGQ+DW2T9vVvbLAFisCdI7yxKu6FUbTWyNWPquALWNZ8F+iNU0Ux+CJer0dn4pX+KObMxEKtMIm0DwSrY+bUp9pYIpQhzWkdkJjxZn0ADMCuPPLbu9tobAAAAA==",
+      "sourceId": "1782500135413-a486527722b9"
+    },
+    "door.membership.tall": {
+      "file": "/images/stock/door-tall-membership-hands.webp",
+      "alt": "Üç elin birbirine uzattığı küçük saksı bitkileri",
+      "width": 1600,
+      "height": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAACwBwCdASogACgAPu1mqVEppSOiqrgMATAdiUAQQ7QGqSVQKBO3RQ+10YXDSTc8DXaiy1jueRcTlW1c666ptyliDfTJ2xpgAP7348nbTtOd+ypei2BgWX77XuutidGNu26WkFF4MTUoiD2VRZ2r92rjktiZ02QyR/F2uRkpiKw0lpE/tFxVNABzjG3lg8XXU9Mwe1hJwqwj1gnOHEbqCHyo6sVpG8VQYHd4P1PMtFmdF2DmblX1PpPw33Q2/+0MiDSZAmWEX1CHyrKosLS1bZKqiPRTG6chqR5ZWAK6MNDt1BlTDpTcujv0zlw814jh5ngM0WeBvLazDBOSFcAtBRTNK1wIFotShFJ/nHUrmcxtOEYtoRr18yKIC7ssaWjlmLvAAA==",
+      "sourceId": "1659683705445-462189a7d2f5"
+    },
+    "door.news.tall": {
+      "file": "/images/stock/door-tall-news-window.webp",
+      "alt": "Güneşli pencerenin önünde ahşap masada buharı tüten kupa",
+      "width": 1333,
+      "height": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRlABAABXRUJQVlA4IEQBAADQBwCdASogADAAPu1ork8ppiSiKrgMATAdiUAXZnjIP2lVPaN2uXI0lUVVuwJ7SfP53stlSJ0a7BIINmBXeveP1qx+R867uAD+wpkN4qIo/JQZVKcU7ObDdz3uSScCftIewHU/gC862M0D4qyvYvr8Ic/8+BpHpaWG7F5j5pQx0braChBS2AQFfjSBXl0skk7OqrPrH1SS+k7ztPJ4Avj80J6Mp18oqiT7eQgrn4jSSMocrCmXBlM1MybzJjvFTY0BZ77ARn9ukRVelLZoZ7K2mGQSgsQKwM6qzG1xDNXyTlZ2qBO48wTdJk2dBz7U7XNOP9fpr8SqkPzZKWA3/FScD6N6Rdg/kBweF5/8mTK4bj1TnsxsrJVEzjz+hvgYlxSILzrlNw0e3lonpQqGVUdQB45kp6/rRoOsYl8gj0rE4LoAAAA=",
+      "sourceId": "1662038271111-5b1c0b4157e8"
+    },
+    "nature.maple-sun": {
+      "file": "/images/stock/nature-maple-sun.webp",
+      "alt": "Yeşil akçaağaç yaprakları arasından süzülen güneş",
+      "width": 1200,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRuABAABXRUJQVlA4INQBAAAQCQCdASogACsAPu1oqE8ppiOiKqwBMB2JbADN8w84pMUbOuqUdruQVk3dLzX/pcGTbNERamymoupZpn0enaTu6KBsBOat8WdAbKDMRLkeV0AA/vuWsnirJ6QkC3556NHdYx+x4goX15mnuZ7IOqoodQjWzbLGMS/E/Kszz+eXSVVxHk33r1/moob2I7Ixh4LFe/B5nIrmCfSg32EXcBqDJCyILEaT+OtKtYyn4aV6cRMMb2CAN364xS2wxoI44XdA74un9HbqQCFiYC5Npl7y/3M+rnXUOLaaf2p6wB8K9Mvzihp40rV7gXFsW10NCqD8vaACNJznqNnvtWtRAB6eRjM29rE4roCBQ+VrEQaF5BM5On+tbMqQXKF458lYxKu/clN9Xs/KBLAH+v5BpeWVHa5/gEKf1tIabvp5VTnru1wyMa1+jgy6RUOs1IMnoae1NbDHg1UPO7BSGkU8+jeDx7Pt7MfiwOM6D92/NLu2eqYB5qFq1tzZy1eIgQxwmtpQUlB7XrBEpntnS4AFhjHs1WRWk3pl1fWttesCqOnc1TNYn9mKP8yky1PrtG+7sDBZZdx7rfxoA8wzqeWKWeFQJmSVBHK8aILD3jrQidl2kD3oIAA=",
+      "sourceId": "1790230874648-838adce711de"
+    },
+    "nature.sunbeam-leaf": {
+      "file": "/images/stock/nature-sunbeam-leaf.webp",
+      "alt": "Güneş huzmesinde dokusu belirginleşen yeşil yaprak",
+      "width": 1067,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRgIBAABXRUJQVlA4IPYAAAAQBwCdASogADAAPu1epU2ppKMiNVQMATAdiUAW/XTnvMLKqT2EJZQvzrQ1lh/+1evQN5qGP37Il31I2DeoI7utgAD+9XvL5WFA9my0gqKDtgvNwGm6uVyKqIv7dvqJ+9+FZAq3Pwu461NuI+Hho/lCgkO2VwStz0QBloTAaNdX7/91Ca6indxMdhZupRqzidiv9MmX2hZJ3zxYHGJ+xVaT90QiUCyxLo1s0C2aH7mlRlx144OtVhsj1ZUp/6zws/JRMGQqwdLrdX+BAR0LhxWXbxfz94Kap0opGJ+5OMBVZkugxpvzcIwokePEubdIM0qUU85IAAA=",
+      "sourceId": "1780170079111-40d3ca1bcf94"
+    },
+    "nature.sunlit-branch": {
+      "file": "/images/stock/nature-sunlit-branch.webp",
+      "alt": "Güneşle aydınlanan canlı yeşil yapraklı dal",
+      "width": 1066,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRhoCAABXRUJQVlA4IA4CAAAwCQCdASogADAAPtFQn02oJKKiOrzIAQAaCWwAuweoKwu0nKBHOriZUw3S/RfZgmFwf9jj/BcVUojKFDvav2YEmbFlZWMGaOZK6b2YWvEjcsAAAP794NxLIsCxguUEpt4y4Nujqs+39SwU1CsQJ6jQP2M+zjFlPvuJWSp27EkpEU3ANuRU+JJM9UK1h37FL3Z8zwZyikB+XEQNajOljWozsIBsO+J5aWi9fLB0pXDd7iwzgGS27L19HQdv2sTpRrjtS05paxUDYZFQoWunb8vdr8SrmUlbW1GK0zOvmADuu97ajo/5gpGh+mIh3qeEYiqrwMnN2R73Uo1a7HAbTBeD6FAG7Or0vYeqse6hE7k/MOdSuh6pMmU6mOrzOYAhfLcUAeKee+Ht1b9+ygjjgIOtsk95pGhuLZer3uT0bP+8Rgq3pvQP5O+Wy4HDLmWyMAakK2jZXMFiUmkeXNmmDc2XnXnYnF51c0ZauD/UudSyxI2UX2f4p+a++NCfBB0NEzpoSW0/Y4m7P8i1ON/mVw/Yk12n9vsSmjPHwjERGbJatix0geZ6P7jla62M1OSMBaCdiB0tZnOHW9Dn6QeJ6uYXrsnYFdb4CSHmoLZ+tPnA4raBJKZy2/BDckg4NDaEd49h/kWsdFMF1PmoDULYOdkCnSg1FJzYJuxU0IEjX3KAUUjZRR1cH1FMKS7WkAAA",
+      "sourceId": "1758741596183-2f52521b70c6"
+    },
+    "nature.bright-sky": {
+      "file": "/images/stock/nature-bright-sky.webp",
+      "alt": "Parlak gökyüzü önünde yeşil yapraklı dallar",
+      "width": 1067,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRnwBAABXRUJQVlA4IHABAABwCACdASogADAAPulipk2pJaOiMBqtUSAdCUAZ7QGKtXTIFeTctaxBxNuPv+JOwfXAIe+v9HE9vC3wg5B2Jo+i0B4cVTuk1vM5VGgAAP76pojU9v6fcaSyEJ7URHrrGJWoC8lXzLGX6J41h6S7LEqtKaQQCqU7LaYxFnyj2uZcbCIio6VfuZa0144XpyWb8VdcF6Xicpx2I6zGyEjT4sWfAiY4COHT6ADjAdXAPO4wl0r4qGfKkg85+ItYX2v+dAd9xS6mqQxA5ZAgCR1Xc804Qy8u6KfPj9YHjzjycSUO7U+vyIryaXumubo9p45llPmPLMsDgs+Ezqz04RN6W6xwiyvSOeMRzbHAP6agSrETfvhVTgU9EQi858AUq/k2omvo0YO8RNH8DV3LupXcPYTYSoXRDsMVED0RQRUvafKvz6UZPkkHsZ5Cg2g3l7qaez0nbd21bPbVjaEyh0tm7UiwFR/3X9FjftIDqZifnMAAAA==",
+      "sourceId": "1786700814978-57a1b3e1c828"
+    },
+    "about.growth": {
+      "file": "/images/stock/about-growth-hands.webp",
+      "alt": "Avuçlarda toprakla tutulan genç bir fidan",
+      "width": 1067,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAABwBgCdASogADAAPu1kq02ppaQiMBqqqTAdiUAYmw6tpAYKdSs4d5Zh0xqyaTEYM5LzGRMBbZP/7A5pvgAA/vZWXmLhJb8nQTrUp7eVjY7PUeeUr14FwVneZrJAUM3WJjRc2LTO5eHgjufOQyGxL9AmavtW/jWATcEkvA5vqwuDNwpVeIQCSwcO5BiF+MkoT4yB54rhVRNTDjZTRwQAJkNrYmr1/dFQ1IH+mHvvJStmYcP3ZEHdBabff7KyQUJgmMumJur5eX0rA5HNXSwwJklM1ltK8ylzt84R4pnrjHd7qJeAAAA=",
+      "sourceId": "1707129900844-484443dd3534"
+    },
+    "finder.serum": {
+      "file": "/images/stock/finder-serum-blue.webp",
+      "alt": "Islak yüzeyde gün ışığında mavi damlalıklı şişe",
+      "width": 1063,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAACwBgCdASogADAAPu1kqk+ppSOiMBVaqTAdiWwArDN1cLT5lVMM3z2cIliaCesSlViPW/aiIlk9CoTno5KddAD+2VjYeuQHT5TJosNNlxcBh0YlBZjUngh3FdneHVipx3d7q6D4V9qgO2V1xFeeST6fvy+S4Pts+3YaTd7XmBOol84I1YTNBgrJpmIspivV6Hp0DuufNMf2lyNPW8/iynoTy3Bj/WKtekKNv8m1/IjDuoQnn8GYsSL5BwTVE0HWb9QuOG6K8kiNBQ6HBErCpLwpIEb9W3lfWsEwVLLx5s0mV7mMmI9N1NQy/WuiYRkMWixZZv5g6ZviOB7eYoWLmAxjF6avdnyJX3ohdtCQAAA=",
+      "sourceId": "1779636210693-7a432750d823"
+    },
+    "lifestyle.bathroom": {
+      "file": "/images/stock/lifestyle-bathroom-plants.webp",
+      "alt": "Saksı bitkileriyle aydınlık beyaz banyo",
+      "width": 1067,
+      "height": 1600,
+      "blurDataURL": "data:image/webp;base64,UklGRiIBAABXRUJQVlA4IBYBAAAwBwCdASogADAAPu1mq1GppSOiqrgKATAdiWUAzjndoYpVnvbaBh7NJKCiFZdgnrHtX5w+BS+krFGZzeZ7EKQVPoAA/u1HYa4CGmjRWXOk0l3nM2wVdtcbfmKhsmZ83MpAtzgokiKoZSNLfAG1+dCTRCk6/KM35MB8/QoXeh7zEsVrXVypooiXfyP8k5n4PVe5m1h07GTwFSOzQk8GiGdQqRfJK8NZCa6oOuGKCsEHJ5RWdW48sQc3GbUwR8Oc8IKeFiWWH8fFLgzeDqW8rTsbtH8VtUHbzbF2f3BoBLjaXrBe2H6llET5Omjnyh1Q55UMRuLZp9K7MDLdcATAK7lYxucYS3FGToESAblfMN4XztXhk5AAAA==",
+      "sourceId": "1552321554-5fefe8c9ef14"
+    },
+    "lifestyle.window-plant": {
+      "file": "/images/stock/lifestyle-window-plant.webp",
+      "alt": "Fayanslı pencere pervazında yeşil bitki ve cam şişe",
+      "width": 1600,
+      "height": 1066,
+      "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAwBQCdASogABUAPu1cqk2ppKQiMBgMATAdiUAXChU4+Y/cHOSUoC6zeR3YpZgmY/MpEAD+4wISXcDQhYvhuvtnCa4v3AIDeg0lPmj0joq5uXqfiv3p1kHMkIwzQLMR/G0Iu/uGFo4vZJUY7WI1LbV+g43QwbAE0AJ07bpGWnqrNsuqBEH2Asn10IagZrnBbKUNCBVWBNO+XXjrJgWUmvlbSPPDfkAA",
+      "sourceId": "1479725545837-43abe4066d43"
+    },
+    "lifestyle.cleaning": {
+      "file": "/images/stock/lifestyle-lemon-cleaning.webp",
+      "alt": "Mutfak tezgâhında limonlar ve sarı sıvılı sprey şişe",
+      "width": 1600,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBQCdASogABgAPu1ip02ppaOiMAgBMB2JZADIXGlfup6J4pAo9Mvr01/XKWHN99Cj8AAA/vzWryEmShQ+iaimFBmWyQLzrp6jJPwSWLVLnIQruRPTZ8VJV77EouwsYrJYuPZQyCKDbr0UfEpSL6bmluuw/EFbi49Vu0X3T+s5AfxfG6FTzCia7K43v6pNzVKkr556y9MHRcEKkgA=",
+      "sourceId": "1583907659441-addbe699e921"
+    },
+    "texture.cream": {
+      "file": "/images/stock/texture-cream-swatch.webp",
+      "alt": "Açık bej zeminde beyaz krem sürüntüsü",
+      "width": 1128,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASogACIAPu1mrE6ppaQiMBVaqTAdiWcAx+Q5APWmN+p2DVAA/u+JA5P0qKGLBmFMdswl97vMrl0IUFpXn9zptgN6gzeux61B3k36d6mXthH/Hw8tBOvs48MpsBVfAAAA",
+      "sourceId": "1585945037805-5fd82c2e60b1"
+    },
+    "texture.water-green": {
+      "file": "/images/stock/texture-water-green.webp",
+      "alt": "Yeşil ve mavi tonlarda dalgalanan su yüzeyi",
+      "width": 1600,
+      "height": 996,
+      "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASogABQAPu1gqlAppSOisBgIATAdiWIAeM4CLsxlZxZd1Sk96hY6t1yXVQAA/rvf5zVZDpRF74QDY6bXapTJa/9fL+3GJu5U6zsmDgwd9/IoJdXLI9ipyJwK2EUst8IBwzdrZL8qVl8Zi7xbj1cOvNOivqVpJ8ZNr6WxgAAA",
+      "sourceId": "1599290915883-e449350ca4a2"
+    },
+    "texture.water-blue": {
+      "file": "/images/stock/texture-water-blue.webp",
+      "alt": "Durgun mavi suda yayılan halkalar",
+      "width": 1600,
+      "height": 1068,
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwBACdASogABUAPu1kqE2ppaOiMAgBMB2JYwCdABedjVijm3j9BSogmMJ7uJt4AP1QmxCu+RgDdCrpbU4ctQV2fbe1LaWe5PWmtmVeMN2yH1nXk/oOHb5vj3DaCKCxJcMlwAAA",
+      "sourceId": "1511198922712-e31c72f8fcd4"
+    }
+  }
+}

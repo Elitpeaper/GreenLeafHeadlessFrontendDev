@@ -1,0 +1,5 @@
+y2-1440-reduced {"motion":"reduced","display":"grid","track":[1376,660],"cells":[[0,0,441,660],[461,0,638,320],[1119,0,257,660],[461,340,309,320],[790,340,309,320]]}
+y2-900-reduced {"motion":"reduced","display":"grid","track":[845,1000],"cells":[[0,0,845,320],[0,340,412,320],[432,340,412,320],[0,680,412,320],[432,680,412,320]]}
+y2-1440-full {"motion":"on","display":"flex","track":[2352,547],"cells":[[0,0,544,547],[564,0,432,547],[1016,0,432,547],[1468,0,432,547],[1920,0,432,547]]}
+home-full infinite running after 5.5s: []
+urunler-full infinite running after 5.5s: []

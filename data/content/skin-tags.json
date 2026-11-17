@@ -1,0 +1,4861 @@
+{
+ "_meta": {
+  "owner": "veri-muhendisi",
+  "kind": "K-056 quiz tags (skinType/concerns/routineStep), deterministic keyword rules",
+  "rules": "docs/veri/ETIKET-KURALLARI.md",
+  "generator": "scripts/data/04e-skin-tags.mjs",
+  "lock": "set \"locked\": true on an entry to keep a manual correction across re-runs",
+  "scope": {
+   "face": 253,
+   "set": 11,
+   "body": 105,
+   "locked": 8
+  }
+ },
+ "tags": {
+  "tr-3857": {
+   "code": null,
+   "title": "CARICH Makyaj Temizleme Mendili",
+   "availability": "tr",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-997": {
+   "code": "ASB046",
+   "title": "iLiFE SOD İpek Yüz Kremi",
+   "availability": "tr",
+   "skinType": [
+    "kuru",
+    "normal"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Besleyici, yoğun nem gerektiren cilt için krem"
+  },
+  "gl-988": {
+   "code": "CBE034",
+   "title": "CARICH E Vitaminli Cilt Sütü",
+   "availability": "tr",
+   "skinType": [
+    "kuru",
+    "normal"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Kuruluk sorununa yönelik süt, hafif emülsiyon"
+  },
+  "tr-4713": {
+   "code": "DAB089",
+   "title": "iLiFE Gliserinli Cilt Nemlendiricisi",
+   "availability": "tr",
+   "skinType": [
+    "kuru",
+    "normal",
+    "karma"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Hafif, ferah günlük nemlendirici; kuruluğu azaltma konumu"
+  },
+  "gl-5441": {
+   "code": "FPA151",
+   "title": "Pink Point İnci Işıltılı Makyaj Kremi",
+   "availability": "tr",
+   "skinType": [
+    "normal",
+    "karma"
+   ],
+   "concerns": [
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "İnci ışıltılı, hafif ve ferah krem; bakım sonu/makyaj altı adımı"
+  },
+  "tr-1117": {
+   "code": "LGD012",
+   "title": "Greenleaf Pürüzsüzleştirici Yüz Kremi",
+   "availability": "tr",
+   "skinType": [
+    "kuru",
+    "normal"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Yoğun nem ve besleme isteyen cilt için krem"
+  },
+  "gl-1698": {
+   "code": "SAA069",
+   "title": "SEALUXE Yeşil Çaylı Nemlendirici Temizleyici",
+   "availability": "tr",
+   "skinType": [
+    "yagli",
+    "karma",
+    "normal"
+   ],
+   "concerns": [
+    "tikali-gozenek",
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Mus köpük, gözenekteki kiri alır, nem hissi bırakır"
+  },
+  "gl-1054": {
+   "code": "SBC053",
+   "title": "SEALUXE Aloe Vera Nemlendirici Maske",
+   "availability": "tr",
+   "skinType": [
+    "kuru",
+    "normal"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Kuruluk ve pullanmaya yönelik nem maskesi"
+  },
+  "gl-1050": {
+   "code": "SBJ064",
+   "title": "SEALUXE Aydınlatıcı Temizleme Jeli",
+   "availability": "tr",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti"
+   ],
+   "routineStep": "temizleme",
+   "rule": "editor:S-058",
+   "locked": true,
+   "source": "editor",
+   "editorNote": "Gerginlik bırakmayan nazik günlük jel; tip kısıtı yok"
+  },
+  "gl-5195": {
+   "code": "ASA082",
+   "title": "iLiFE Nemlendirici Cilt Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-531": {
+   "code": "ASB016",
+   "title": "iLiFE Proteinli ve Ballı Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-309": {
+   "code": "ASB021",
+   "title": "iLiFE Nemlendirici Yüz Temizleme Ürünü 98 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-308": {
+   "code": "ASB023",
+   "title": "iLiFE Yüz Serumu 50 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-302": {
+   "code": "ASB024",
+   "title": "iLiFE Elastikiyet Odaklı Yüz Kremi 30 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ince-cizgi",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-905": {
+   "code": "ASB042",
+   "title": "iLiFE Aloe Veralı Yatıştırıcı Nemlendirici Krem 85 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1123": {
+   "code": "CBC011",
+   "title": "CARICH Makyaj Temizleme Mendili 80'li",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-363": {
+   "code": "CBE016",
+   "title": "CARICH E Vitaminli Nemlendirici Süt 65 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-610": {
+   "code": "CBE027",
+   "title": "CARICH At Yağlı Krem 14 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2359": {
+   "code": "CGA129",
+   "title": "CARICH Nemlendirici Krem 15 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-167": {
+   "code": "CIA012",
+   "title": "CARICH Lavantalı Isıtıcı Buharlı Göz Maskesi 10'lu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-3104": {
+   "code": "CIA012/A",
+   "title": "CARICH Lavantalı Isıtıcı Göz Kompres Maskesi 10'lu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "yatistirma"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-168": {
+   "code": "CIA013",
+   "title": "CARICH Papatyalı Isıtıcı Buharlı Göz Maskesi 10'lu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-3105": {
+   "code": "CIA013/A",
+   "title": "CARICH Papatyalı Isıtıcı Göz Kompres Maskesi 10'lu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi",
+    "yatistirma"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-169": {
+   "code": "CIA015",
+   "title": "CARICH Yeşil Çaylı Isıtıcı Buharlı Göz Maskesi 10'lu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-170": {
+   "code": "CIA016",
+   "title": "CARICH Katkısız Isıtıcı Buharlı Göz Maskesi 10'lu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-1750": {
+   "code": "CIA063",
+   "title": "Jiadeli Serinletici Göz Maskesi 5'li",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-4184": {
+   "code": "CIA063/A",
+   "title": "Jiadeli Serinletici Göz Maskesi 5'li",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-4808": {
+   "code": "CIA072/A",
+   "title": "Nilrich Çin Hurması Çekirdekli Gece Jeli 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1151": {
+   "code": "DAB031",
+   "title": "iLiFE Yeşil Çaylı Yumuşak Makyaj Temizleme Köpüğü 150 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-5620": {
+   "code": "DAB081",
+   "title": "iLiFE İnci Özlü Krem 30 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-864": {
+   "code": "DAB086",
+   "title": "iLiFE B Vitaminli Gliserinli Cilt Bakım Ürünü 110 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-3334": {
+   "code": "DAB087/A",
+   "title": "iLiFE Pembe Aloe Vera Jeli",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2130": {
+   "code": "DAB088",
+   "title": "iLiFE Aloe Veralı Yüz Toniği 350 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-374": {
+   "code": "FPA144",
+   "title": "PINK POINT Gül Aromalı Yoğun Nemlendirici Dudak Balmı",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-5923": {
+   "code": "JDA091",
+   "title": "KARDLI Hafif Sıcak Buharlı Göz Maskesi",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-2295": {
+   "code": "LGA003",
+   "title": "GREENLEAF Platin İmparatorluk Serumu 30 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-426": {
+   "code": "LGA004",
+   "title": "GREENLEAF Platinli Jelatin Kapsül Serum 20 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "isilti"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-2294": {
+   "code": "LGA007",
+   "title": "GREENLEAF Işıltı Veren Saf Esans 30 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "goz-cevresi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-380": {
+   "code": "LGA013",
+   "title": "GREENLEAF Çift Özütlü Serum 20 ml + 20 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1227": {
+   "code": "LGA016",
+   "title": "GREENLEAF Çift Serum 20 ml + 20 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-2293": {
+   "code": "LGC013",
+   "title": "GREENLEAF Platinli Yumuşatıcı Losyon 120 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2292": {
+   "code": "LGC014",
+   "title": "GREENLEAF Platinli Emülsiyon 60 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-2282": {
+   "code": "LGC018",
+   "title": "GREENLEAF Hyaluronik Asitli Nemlendirici Tonik Losyon 100 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2291": {
+   "code": "LGC021",
+   "title": "GREENLEAF Saf Işıltı Emülsiyonu 100 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-2290": {
+   "code": "LGD007",
+   "title": "GREENLEAF Platinli Yüz Kremi 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2289": {
+   "code": "LGD010",
+   "title": "GREENLEAF Saf Işıltı Kremi 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-424": {
+   "code": "LGD013",
+   "title": "GREENLEAF Göz Çevresi Kremi 20 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-2288": {
+   "code": "LGF005",
+   "title": "GREENLEAF Erkekler İçin Aminoasitli Temizleme Köpüğü 150 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "parlama-gozenek"
+   ],
+   "routineStep": "temizleme",
+   "rule": "title:temizleme"
+  },
+  "gl-632": {
+   "code": "LGF010",
+   "title": "GREENLEAF Çay Ağacı Yağlı Yüz Sabunu 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-616": {
+   "code": "LGG131",
+   "title": "PINK POINT İki Bileşenli Maya Esanslı Su 480 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-3000": {
+   "code": "LGG131/A",
+   "title": "PINK POINT İki Bileşenli Maya Esanslı Su 480 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-364": {
+   "code": "LGG139",
+   "title": "PINK POINT Işıltı Veren Nemlendirici Dudak Maskesi 10 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "nem",
+    "isilti"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-401": {
+   "code": "LGH014",
+   "title": "GREENLEAF Altın Yüz Maskesi 25 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-358": {
+   "code": "LGH016",
+   "title": "GREENLEAF Gece Besleyici İki Bileşenli Yüz Maskesi 28 ml + 2 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5627": {
+   "code": "LGI020",
+   "title": "Greenleaf Kiraz Çiçekli Nemlendirici Banyo Sabunu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:nemlendirme"
+  },
+  "gl-5369": {
+   "code": "LGW543",
+   "title": "XUEFUYUN Niasinamidli Gece Yüz Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi",
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1136": {
+   "code": "LGW545",
+   "title": "ZHENXI Cilt Tonu Eşitleyici Krem 15 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-621": {
+   "code": "LGW546",
+   "title": "Işıltı Odaklı Yüz Temizleme Jeli",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-892": {
+   "code": "LGW555",
+   "title": "SONPHESKIN Niasinamidli Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "karma",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-222": {
+   "code": "LMC049",
+   "title": "LIMANCY Ölmez Çiçek Özlü Dudak Bakım Maskesi 8 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-425": {
+   "code": "LPA036",
+   "title": "BLUE POINT İpek Fibroinli İpek Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-5837": {
+   "code": "LYA069",
+   "title": "Greenleaf Çay Ağacı Yağlı Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "ambiguous"
+  },
+  "gl-6310": {
+   "code": "LYA120",
+   "title": "Greenleaf Vitaminli Nemlendirici El Kremi 3'lü Set 30 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:nemlendirme"
+  },
+  "gl-53": {
+   "code": "MZA158",
+   "title": "iLIFE Antioksidanlı SOD Kremi 100 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2676": {
+   "code": "MZA252/A",
+   "title": "Misel Makyaj Temizleme Suyu",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-3291": {
+   "code": "MZA414/A",
+   "title": "Kükürtlü Sıvı Yüz Temizleyici",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-369": {
+   "code": "SAA031",
+   "title": "SEALUXE Aminoasitli Nemlendirici Temizleme Köpüğü",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-809": {
+   "code": "SAA032",
+   "title": "SEALUXE Yeşil Çaylı Nemlendirici Yüz Temizleme Macunu",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-701": {
+   "code": "SAA035",
+   "title": "SEALUXE Aminoasitli Derin Temizleme Jeli (Normal ve Yağlı Ciltler)",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "normal",
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-704": {
+   "code": "SAA036",
+   "title": "SEALUXE Aminoasitli Derin Temizleme Jeli (Normal ve Kuru Ciltler)",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "normal"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-672": {
+   "code": "SAA045",
+   "title": "SEALUXE Aminoasitli Yüz Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-404": {
+   "code": "SAA046",
+   "title": "SEALUXE Yeşil Çaylı Makyaj Temizleme Köpüğü",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-419": {
+   "code": "SAA047",
+   "title": "SEALUXE Nemlendirici Yüz Yıkama Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-2553": {
+   "code": "SAA047/A",
+   "title": "SEALUXE Nemlendirici Yüz Yıkama Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "normal",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-1526": {
+   "code": "SAA050/O",
+   "title": "SEALUXE Aminoasitli Derin Temizleme Ürünü",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma"
+   ],
+   "concerns": [
+    "isilti"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-789": {
+   "code": "SAA051",
+   "title": "SEALUXE Aminoasitli Köpüren Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-861": {
+   "code": "SAA052",
+   "title": "SEALUXE Niasinamidli Yumuşatıcı Yüz Temizleyici",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "ince-cizgi"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-904": {
+   "code": "SAA054",
+   "title": "SEALUXE Enzimli Temizleme Tozu (10'lu)",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "parlama-gozenek"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-590": {
+   "code": "SAA055",
+   "title": "SEALUXE Enzimli Temizleme Tozu (30'lu)",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "parlama-gozenek"
+   ],
+   "routineStep": "maske",
+   "rule": "category:yuz-maskeleri"
+  },
+  "gl-917": {
+   "code": "SAA057",
+   "title": "SEALUXE Bitki Özlü Temizleme Yağı",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-919": {
+   "code": "SAA058",
+   "title": "SEALUXE İki Maya Bileşenli Yüz Temizleyici",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-921": {
+   "code": "SAA059",
+   "title": "SEALUXE Ferahlatıcı Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "normal",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-2926": {
+   "code": "SAA059/A",
+   "title": "SEALUXE Ferahlatıcı Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "yagli",
+    "karma",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2301": {
+   "code": "SAA063",
+   "title": "SEALUXE Erkekler İçin Aminoasitli Ferah Temizleme Köpüğü",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "title:temizleme"
+  },
+  "gl-3529": {
+   "code": "SAA063/A",
+   "title": "SEALUXE Erkekler İçin Aminoasitli Ferah Temizleme Köpüğü",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "title:temizleme"
+  },
+  "gl-2137": {
+   "code": "SAA064",
+   "title": "SEALUXE Niasinamidli Aydınlatıcı Yüz Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-5206": {
+   "code": "SAA065/A",
+   "title": "SEALUXE Yeşil Çaylı Makyaj Temizleme Köpüğü",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-2205": {
+   "code": "SAA066",
+   "title": "SEALUXE Gözenek Temizleme Burun Bandı",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli"
+   ],
+   "concerns": [
+    "tikali-gozenek"
+   ],
+   "routineStep": "maske",
+   "rule": "category:yuz-maskeleri"
+  },
+  "gl-5665": {
+   "code": "SAA067",
+   "title": "SEALUXE Erkekler İçin Yüz Temizleme Köpüğü",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "title:temizleme"
+  },
+  "gl-5243": {
+   "code": "SAA068",
+   "title": "SEALUXE Yüz Peelingi",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "peeling",
+   "rule": "title:peeling"
+  },
+  "gl-1156": {
+   "code": "SBA001",
+   "title": "SEALUXE Deniz Özlü Yoğun Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-508": {
+   "code": "SBA018",
+   "title": "SEALUXE Çiçek Balı Özlü Nemlendirici Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-3049": {
+   "code": "SBA018/A",
+   "title": "SEALUXE Çiçek Balı Özlü Nemlendirici Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-92": {
+   "code": "SBA025",
+   "title": "SEALUXE Erkekler İçin Nemlendirici Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:nemlendirme"
+  },
+  "gl-873": {
+   "code": "SBA044",
+   "title": "SEALUXE Edelweiss Özlü Lifting Etkili Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-676": {
+   "code": "SBA047",
+   "title": "SEALUXE Canlandırıcı Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-680": {
+   "code": "SBA048",
+   "title": "SEALUXE Nemlendirici Sıkılık Toniği",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi",
+    "isilti"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1016": {
+   "code": "SBA053",
+   "title": "SEALUXE Aydınlatıcı Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-3283": {
+   "code": "SBA053/A",
+   "title": "SEALUXE Aydınlatıcı Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1163": {
+   "code": "SBA054",
+   "title": "SEALUXE Lifting Etkili Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-694": {
+   "code": "SBA055",
+   "title": "SEALUXE Nemlendirici Lifting Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-1185": {
+   "code": "SBA058",
+   "title": "SEALUXE Niasinamidli Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-926": {
+   "code": "SBA059",
+   "title": "SEALUXE Nemlendirici Gece Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-515": {
+   "code": "SBA062",
+   "title": "SEALUXE Niasinamid ve Soğan Özlü Yumuşatıcı Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "karma",
+    "normal",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-667": {
+   "code": "SBA065",
+   "title": "SEALUXE Yoğun Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-930": {
+   "code": "SBA069",
+   "title": "SEALUXE Sodyum Hyaluronatlı Nemlendirici Tonlayıcı Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-759": {
+   "code": "SBA070",
+   "title": "SEALUXE Mikro Granüllü Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-394": {
+   "code": "SBA072",
+   "title": "SEALUXE Yüz Peelingi",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "isilti"
+   ],
+   "routineStep": "peeling",
+   "rule": "title:peeling"
+  },
+  "gl-2300": {
+   "code": "SBA073",
+   "title": "SEALUXE Ferahlatıcı Güneş Losyonu SPF45",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-935": {
+   "code": "SBA075",
+   "title": "SEALUXE Salatalıklı Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-939": {
+   "code": "SBA076",
+   "title": "SEALUXE Bifida Mayalı Bakım Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2299": {
+   "code": "SBA078",
+   "title": "SEALUXE İki Mayalı Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "nem"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-1141": {
+   "code": "SBA080",
+   "title": "SEALUXE Probiyotikli Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1057": {
+   "code": "SBA081",
+   "title": "SEALUXE Nemlendirici ve Yumuşatıcı Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "goz-cevresi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1119": {
+   "code": "SBA085",
+   "title": "SEALUXE Çiçek Balı Özlü Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi",
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-1056": {
+   "code": "SBA088",
+   "title": "SEALUXE At Yağlı Nemlendirici Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2371": {
+   "code": "SBA090",
+   "title": "SEALUXE Bose Yaşlanma Karşıtı Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1239": {
+   "code": "SBA091",
+   "title": "SEALUXE Niasinamidli Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-5080": {
+   "code": "SBA093",
+   "title": "SEALUXE Erkekler İçin Nemlendirici Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:nemlendirme"
+  },
+  "gl-2185": {
+   "code": "SBA094",
+   "title": "SEALUXE Lüks Yaşlanma Karşıtı Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2213": {
+   "code": "SBA095",
+   "title": "SEALUXE Yenileyici Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-651": {
+   "code": "SBB061",
+   "title": "SEALUXE Işıltı ve Tazelik Veren Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-655": {
+   "code": "SBB066",
+   "title": "SEALUXE Edelweiss Özlü Sıkılık Serumu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-943": {
+   "code": "SBB077",
+   "title": "SEALUXE Kolajenli Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-434": {
+   "code": "SBB079",
+   "title": "SEALUXE Hyaluronik Asitli Nemlendirici Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-2600": {
+   "code": "SBB079/A",
+   "title": "SEALUXE Hyaluronik Asitli Nemlendirici Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-659": {
+   "code": "SBB080",
+   "title": "SEALUXE Gençlik ve Güzellik Serumu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-507": {
+   "code": "SBB081",
+   "title": "SEALUXE Çiçek Balı Özlü Nemlendirici Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "isilti"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-3051": {
+   "code": "SBB081/A",
+   "title": "SEALUXE Çiçek Balı Özlü Nemlendirici Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-663": {
+   "code": "SBB083",
+   "title": "SEALUXE Canlandırıcı Ampul Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-514": {
+   "code": "SBB085",
+   "title": "SEALUXE Niasinamid ve Soğan Özlü Yumuşatıcı Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-418": {
+   "code": "SBB087",
+   "title": "SEALUXE İki Fazlı Bakım Serumu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1071": {
+   "code": "SBB097",
+   "title": "SEALUXE Astaksantinli İnci Mikro Granüllü Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1110": {
+   "code": "SBB099",
+   "title": "SEALUXE Retinollü İnci Mikro Granüllü Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1168": {
+   "code": "SBB102",
+   "title": "SEALUXE AQUA Güzellik Serumu",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "yagli",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1055": {
+   "code": "SBB103",
+   "title": "SEALUXE İki Maya Bileşenli Yumuşatıcı Esans",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1145": {
+   "code": "SBB105",
+   "title": "SEALUXE Probiyotikli Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-1338": {
+   "code": "SBB110",
+   "title": "SEALUXE Akne Eğilimli Ciltler İçin Serum",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-2121": {
+   "code": "SBB113",
+   "title": "SEALUXE Gül Esanslı Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-5085": {
+   "code": "SBB114",
+   "title": "SEALUXE Kolajenli Esans",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-2191": {
+   "code": "SBB115",
+   "title": "SEALUXE Kamelya Yağlı Kapsül Esans",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-134": {
+   "code": "SBC014",
+   "title": "SEALUXE Aloe Vera Nemlendirici Yüz Maskesi (5'li)",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-135": {
+   "code": "SBC024",
+   "title": "SEALUXE Deniz Yosunlu Nemlendirici Yüz Maskesi (5'li)",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-403": {
+   "code": "SBC038",
+   "title": "SEALUXE Enzimli Canlandırıcı Yüz Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-685": {
+   "code": "SBC039",
+   "title": "SEALUXE Ferahlatıcı Işıltı Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1706": {
+   "code": "SBC042",
+   "title": "SEALUXE Centella Asiatica Liyofilize Maske (6'lı)",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-402": {
+   "code": "SBC044",
+   "title": "SEALUXE Niasinamid ve Kremli Yüz Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1248": {
+   "code": "SBC049",
+   "title": "SEALUXE Temizleyici Jel Maske",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "normal",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1112": {
+   "code": "SBC050",
+   "title": "SEALUXE Kamelyalı Hafif Yüz Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1255": {
+   "code": "SBC054",
+   "title": "SEALUXE Çiçek Balı Özlü Maske",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1250": {
+   "code": "SBC055",
+   "title": "SEALUXE Probiyotik Esanslı Maske",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5229": {
+   "code": "SBC056",
+   "title": "SEALUXE Temizleyici ve Nemlendirici Çamur Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-1904": {
+   "code": "SBC057",
+   "title": "SEALUXE Nemlendirici ve Dengeleyici Yüz Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-2115": {
+   "code": "SBC058",
+   "title": "SEALUXE Nemlendirici Esans Maske (5'li)",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-4797": {
+   "code": "SBC058/A",
+   "title": "SEALUXE Nemlendirici Esans Maske (5'li)",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-2175": {
+   "code": "SBC059",
+   "title": "SEALUXE Canlandırıcı Yüz Maskesi Seti",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5463": {
+   "code": "SBC060",
+   "title": "SEALUXE Niasinamidli Aydınlatıcı Gece Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5591": {
+   "code": "SBC061",
+   "title": "SEALUXE Polipeptit ve Kolajenli Sıkılık Maskesi (5'li)",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-732": {
+   "code": "SBD020",
+   "title": "SEALUXE Tazelik ve Işıltı Veren Emülsiyon",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-1117": {
+   "code": "SBD024",
+   "title": "SEALUXE Edelweiss Özlü Lifting Etkili Yumuşatıcı Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2893": {
+   "code": "SBD024/A",
+   "title": "SEALUXE Edelweiss Özlü Lifting Etkili Yumuşatıcı Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1015": {
+   "code": "SBD028",
+   "title": "SEALUXE Aydınlatıcı Losyon",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-3284": {
+   "code": "SBD028/A",
+   "title": "SEALUXE Aydınlatıcı Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-735": {
+   "code": "SBD029",
+   "title": "SEALUXE Nemlendirici Lifting Emülsiyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi",
+    "isilti"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-1121": {
+   "code": "SBD033",
+   "title": "SEALUXE Derin Nemlendirici Yumuşatıcı Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "goz-cevresi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-506": {
+   "code": "SBD034",
+   "title": "SEALUXE Çiçek Balı Özlü Nemlendirici Emülsiyon",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-3048": {
+   "code": "SBD034/A",
+   "title": "SEALUXE Çiçek Balı Özlü Nemlendirici Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-726": {
+   "code": "SBD037",
+   "title": "SEALUXE Niasinamid ve Soğan Özlü Yumuşatıcı Yüz Losyonu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "yatistirma"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1107": {
+   "code": "SBD038",
+   "title": "SEALUXE Nemlendirici Emülsiyon",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-1095": {
+   "code": "SBD039",
+   "title": "SEALUXE Nemlendirici Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1125": {
+   "code": "SBD042",
+   "title": "SEALUXE Sodyum Hyaluronatlı Nemlendirici Tonik Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "normal",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1300": {
+   "code": "SBD043",
+   "title": "SEALUXE Nemlendirici Temizleyici",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-1041": {
+   "code": "SBD044",
+   "title": "SEALUXE Fullerenli Temizleme Sütü",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:cream-in-serum-category"
+  },
+  "gl-1129": {
+   "code": "SBD046",
+   "title": "SEALUXE Salatalık Özlü Tonik Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1350": {
+   "code": "SBD047",
+   "title": "SEALUXE İki Mayalı Yumuşatıcı Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1150": {
+   "code": "SBD048",
+   "title": "SEALUXE Probiyotikli Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2868": {
+   "code": "SBD048/A",
+   "title": "SEALUXE Probiyotikli Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "nemlendirme",
+   "rule": "title:nemlendirme"
+  },
+  "gl-5082": {
+   "code": "SBD057",
+   "title": "SEALUXE Ningyan Qinrun Esans Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-5917": {
+   "code": "SBD059",
+   "title": "SEALUXE Ferahlatıcı Güneş Koruyucu Krem Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-5426": {
+   "code": "SBD060",
+   "title": "SEALUXE Aydınlatıcı Güneş Koruyucu Sprey",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-5136": {
+   "code": "SBD060/A",
+   "title": "SEALUXE Aydınlatıcı Güneş Koruyucu Sprey",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-1140": {
+   "code": "SBE011",
+   "title": "SEALUXE Çiçek Balı Özlü Yumuşatıcı Yüz Toniği",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-3050": {
+   "code": "SBE011/A",
+   "title": "SEALUXE Çiçek Balı Özlü Yumuşatıcı Yüz Toniği",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "karma",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1082": {
+   "code": "SBE017",
+   "title": "SEALUXE Salatalık Özlü Yüz Toniği",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-541": {
+   "code": "SBE018",
+   "title": "SEALUXE Koix Tohumlu Yatıştırıcı His Veren Losyon",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma",
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2298": {
+   "code": "SBE019",
+   "title": "SEALUXE Hyaluronik Asitli Nemlendirici Sprey",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-4684": {
+   "code": "SBE088/A",
+   "title": "SEALUXE Nemlendirici Cilt Bakım Seti",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-2195": {
+   "code": "SBE090",
+   "title": "SEALUXE Erkekler İçin Nemlendirici Bakım Seti",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "title:nemlendirme"
+  },
+  "gl-707": {
+   "code": "SBF008",
+   "title": "SEALUXE Nemlendirici Lifting Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-513": {
+   "code": "SBF009",
+   "title": "SEALUXE İnci Özlü Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "nem"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-1022": {
+   "code": "SBF011",
+   "title": "SEALUXE Sodyum Hyaluronatlı Ferahlatıcı Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi",
+    "nem"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-409": {
+   "code": "SBF012",
+   "title": "SEALUXE Proxylane İçeren Göz Çevresi Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "ince-cizgi",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-1133": {
+   "code": "SBG003",
+   "title": "SEALUXE Kedi Gözü Göz Maskesi",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "goz-cevresi",
+    "nem"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-585": {
+   "code": "SBG004",
+   "title": "SEALUXE Anında Aydınlatıcı Göz Maskesi",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "isilti",
+    "goz-cevresi",
+    "ince-cizgi"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5481": {
+   "code": "SBG006",
+   "title": "SEALUXE Çabuk Çözünen Lifting Göz Maskesi (5 Çift)",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi",
+    "ince-cizgi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "category:goz-cevresi"
+  },
+  "gl-91": {
+   "code": "SBJ004",
+   "title": "SEALUXE Erkekler İçin Ferahlatıcı Nemlendirici Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "title:tonik"
+  },
+  "gl-717": {
+   "code": "SBJ024",
+   "title": "SEALUXE Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-710": {
+   "code": "SBJ026",
+   "title": "SEALUXE Nemlendirici Jel",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-729": {
+   "code": "SBJ030",
+   "title": "SEALUXE Edelweiss Özlü Lifting Etkili Yumuşatıcı Yüz Losyonu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2795": {
+   "code": "SBJ030/A",
+   "title": "SEALUXE Edelweiss Özlü Lifting Etkili Yumuşatıcı Yüz Losyonu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-1014": {
+   "code": "SBJ033",
+   "title": "SEALUXE Aydınlatıcı Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-720": {
+   "code": "SBJ037",
+   "title": "SEALUXE Nemlendirici ve Yumuşatıcı Cilt Losyonu",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "goz-cevresi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-723": {
+   "code": "SBJ040",
+   "title": "SEALUXE Aydınlatıcı Temizleme Jeli",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-714": {
+   "code": "SBJ042",
+   "title": "SEALUXE Niasinamid ve Soğan Özlü Yumuşatıcı Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "yatistirma"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-909": {
+   "code": "SBJ047",
+   "title": "SEALUXE Temizleyici ve Nemlendirici Misel Suyu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-1052": {
+   "code": "SBJ052",
+   "title": "SEALUXE Sodyum Hyaluronatlı Nemlendirici Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1335": {
+   "code": "SBJ055",
+   "title": "SEALUXE İki Maya Bileşenli Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-1153": {
+   "code": "SBJ056",
+   "title": "SEALUXE Probiyotik Esanslı Yüz Suyu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-900": {
+   "code": "SBJ057",
+   "title": "SEALUXE Ferahlatıcı Nemlendirici Jel (Yağ Dengesi İçin)",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "parlama-gozenek"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-5208": {
+   "code": "SBJ060",
+   "title": "SEALUXE Kalendulalı Tonik",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma",
+    "nem"
+   ],
+   "routineStep": "tonik",
+   "rule": "title:tonik"
+  },
+  "gl-1051": {
+   "code": "SBJ063",
+   "title": "SEALUXE Centella Otlu Nemlendirici Sprey",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-5194": {
+   "code": "SBJ067",
+   "title": "SEALUXE Water Aydınlatıcı Nemlendirici Yüz Suyu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "isilti"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-2168": {
+   "code": "SBJ068",
+   "title": "SEALUXE Sulu Yüz Esansı",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-5083": {
+   "code": "SBJ069",
+   "title": "SEALUXE Ningyan Qinrun Esans Temizleme Suyu",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-858": {
+   "code": "SCA011",
+   "title": "SEALUXE Şeffaf Çok Amaçlı Koruyucu Losyon 35 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-5679": {
+   "code": "SCA017",
+   "title": "Işıltı Odaklı Güneş Koruyucu Sprey",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-516": {
+   "code": "SCA018",
+   "title": "SEALUXE Nemlendirici Güneş Korumalı Renkli Krem 30 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-960": {
+   "code": "SCB059",
+   "title": "SEALUXE Kırmızı Dudak Balmı 4 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-959": {
+   "code": "SCB060",
+   "title": "PINK POINT Nemlendirici Dudak Balmı Ruju (Pembe) 3 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-1049": {
+   "code": "SCB061",
+   "title": "SEALUXE Renkli Dudak Balmı Ruju (Soluk Pembe) 2,8 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-1254": {
+   "code": "SCB062",
+   "title": "SEALUXE Shea Yağlı Dudak Balmı",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-5578": {
+   "code": "SCF028/O",
+   "title": "SEALUXE İnce Uçlu Üç Boyutlu Kaş Kalemi (Bordo) 80 mg",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "ambiguous"
+  },
+  "gl-340": {
+   "code": "SCI002",
+   "title": "SEALUXE Bitki Özütlü Üç Fazlı Makyaj Temizleyici 200 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-794": {
+   "code": "SCI005",
+   "title": "SEALUXE Kamelya Tohumu Yağlı Makyaj Temizleyici 100 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma"
+   ],
+   "routineStep": "makyaj-temizleme",
+   "rule": "title:makyaj-temizleme"
+  },
+  "gl-751": {
+   "code": "SEA009",
+   "title": "SEALUXE Yatıştırıcı Aynısefa Yağı 30 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "yatistirma"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-2706": {
+   "code": "SZA002/A",
+   "title": "SEALUXE Silikonlu Yüz Temizleyici",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "category:yuz-temizleyiciler"
+  },
+  "gl-1846": {
+   "code": "SZB004",
+   "title": "Shinos Yumuşak Nemli Kompres Havlusu 240'lı",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-5349": {
+   "code": "XNA008",
+   "title": "SEALUXE Ferahlatıcı Nemlendirici Buz Yüz Maskesi (Serumlu)",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem",
+    "isilti"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5029": {
+   "code": "XNA009",
+   "title": "SEALUXE Işıltı Veren Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-5238": {
+   "code": "XNA011",
+   "title": "SEALUXE Işıltı Odaklı Yüz Toniği",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ton-esitsizligi"
+   ],
+   "routineStep": "tonik",
+   "rule": "category:tonik-ve-losyonlar"
+  },
+  "gl-4888": {
+   "code": "XNA011/A",
+   "title": "SEALUXE Işıltı Odaklı Yüz Toniği",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-5145": {
+   "code": "XNA021",
+   "title": "Güneş Koruyucu Krem SPF 50",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ton-esitsizligi"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-5683": {
+   "code": "XNA023",
+   "title": "Sealuxe Star Diamond Şeffaf Fondöten 8 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-5921": {
+   "code": "XNA024",
+   "title": "SEALUXE Beauty Neck Boyun Maskesi 6 g x 5'li",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-5920": {
+   "code": "XNA025",
+   "title": "SEALUXE Beauty Hafif Dokulu Boyun Sticki 14 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-5787": {
+   "code": "XNA026",
+   "title": "SEALUXE Fiziksel Güneş Kremi 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-5747": {
+   "code": "XNA028",
+   "title": "SEALUXE Nemlendirici Güneş Korumalı Renkli Krem 30 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-5144": {
+   "code": "XNA028/A",
+   "title": "SEALUXE Nemlendirici Güneş Korumalı Renkli Krem 30 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-5931": {
+   "code": "XNA033",
+   "title": "SEALUXE Crystal Mineral Yüz Peelingi 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": "peeling",
+   "rule": "title:peeling"
+  },
+  "gl-5928": {
+   "code": "XNA035",
+   "title": "SEALUXE Yingrun Flawless Makeup CC Krem Kushon 12 g (Doğal Ton)",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-5922": {
+   "code": "XNA040",
+   "title": "SEALUXE Beirun Care Naneli Dudak Balmı 3 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-6085": {
+   "code": "XNA074",
+   "title": "Güneş Koruyucu Krem SPF 50 PA++++",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ton-esitsizligi"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-6308": {
+   "code": "XNA081",
+   "title": "SEALUXE Ferahlatıcı Temizleme Sütü 100 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": "temizleme",
+   "rule": "title:temizleme"
+  },
+  "gl-5492": {
+   "code": "YP0801001",
+   "title": "SEALUXE Botanical Dudak Balmı 3'lü",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-5818": {
+   "code": "YP0801002",
+   "title": "Pink Pie Doodle Lip Crystal Dudak Balmı",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": "dudak-bakimi",
+   "rule": "category:dudak-bakimi"
+  },
+  "gl-5618": {
+   "code": "YZA019",
+   "title": "Kordisepsli Yüz Esansı 120 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-5416": {
+   "code": "YZA020",
+   "title": "Kordisepsli Esans Yağı 30 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": "serum",
+   "rule": "category:serumlar"
+  },
+  "gl-5346": {
+   "code": "YZA021",
+   "title": "Moon Flore Kordisepsli Yüz Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": "nemlendirme",
+   "rule": "category:nemlendiriciler"
+  },
+  "gl-5363": {
+   "code": "YZA022",
+   "title": "Kordisepsli Göz Çevresi Kremi 30 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "goz-cevresi"
+   ],
+   "routineStep": "goz-bakimi",
+   "rule": "title:eye"
+  },
+  "gl-6060": {
+   "code": "YZA127",
+   "title": "Moon Flore Kordisepsli Kadife BB Krem Kushon 12 g x 2",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": "makeup-product"
+  },
+  "gl-6103": {
+   "code": "YZA139",
+   "title": "Yue Zhonggui Kordisepsli Cilt Bakım Hediye Seti",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ince-cizgi",
+    "goz-cevresi"
+   ],
+   "routineStep": null,
+   "rule": "ambiguous"
+  },
+  "gl-6063": {
+   "code": "YZA140",
+   "title": "Yue Zhonggui Ginseng ve Bitki Özlü Yağlı Maske 5'li",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": "maske",
+   "rule": "title:maske"
+  },
+  "gl-662": {
+   "code": "ZBA033",
+   "title": "Güneş Koruyucu Krem SPF 50",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi"
+   ],
+   "routineStep": "gunes-koruma",
+   "rule": "title:gunes-koruma"
+  },
+  "gl-999": {
+   "code": "ASB044",
+   "title": "iLiFE Nemlendirici Aloe Vera Jeli",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-998": {
+   "code": "ASB045",
+   "title": "iLiFE Aloe Vera Bakım Jeli",
+   "availability": "tr",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-996": {
+   "code": "ASB047",
+   "title": "iLiFE Papatyalı Köpük El Sabunu",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1188": {
+   "code": "CBA052",
+   "title": "CARICH Aromalı Duş Jeli",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1232": {
+   "code": "CBB017",
+   "title": "CARICH Binchotan Kömürlü El Yapımı Sabun",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1171": {
+   "code": "CBF014",
+   "title": "CARICH Aloe Vera Nemlendirici El Kremi",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1170": {
+   "code": "CBF015",
+   "title": "CARICH Shea Yağlı Nemlendirici El Kremi",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-983": {
+   "code": "DAA108",
+   "title": "iLiFE Aloe Veralı Köpük El Sabunu",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1165": {
+   "code": "DAA109",
+   "title": "iLiFE Ferahlatıcı Nemlendirici Duş Jeli",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-982": {
+   "code": "DAB087",
+   "title": "iLiFE Pembe Aloe Vera Jeli",
+   "availability": "tr",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-3303": {
+   "code": "ASB045/A",
+   "title": "iLiFE Aloe Vera Jeli 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-389": {
+   "code": "CBA003",
+   "title": "CARICH Kokulu Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-349": {
+   "code": "CBA012",
+   "title": "CARICH Ferahlatıcı Canlandırıcı Duş Jeli 1000 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-348": {
+   "code": "CBA014",
+   "title": "CARICH Sulu Şeftali Duş Jeli 1000 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-944": {
+   "code": "CBA035",
+   "title": "CARICH Dağ Keçisi Sütlü Nemlendirici Yumuşatıcı Duş Jeli 1 kg",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-395": {
+   "code": "CBA036",
+   "title": "CARICH Meyve Asitli Nemlendirici Vücut Sütü 450 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-901": {
+   "code": "CBA037",
+   "title": "CARICH Uçucu Yağlı ve Aminoasitli Kokulu Nemlendirici Duş Jeli 650 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-764": {
+   "code": "CBA038",
+   "title": "CARICH Uçucu Yağlı ve Aminoasitli Gül Kokulu Duş Jeli 650 g",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-811": {
+   "code": "CBA040",
+   "title": "GREENLEAF Altın Kaplamalı Mikro Taneli Duş Jeli Aşk Ruh Hali 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-813": {
+   "code": "CBA041",
+   "title": "GREENLEAF Altın Kaplamalı Mikro Taneli Duş Jeli Sabah Çiği 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-812": {
+   "code": "CBA042",
+   "title": "CARICH Uçucu Yağlı ve Aminoasitli Kokulu Nemlendirici Duş Jeli 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "yagli",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-760": {
+   "code": "CBA043",
+   "title": "CARICH Uçucu Yağlı ve Aminoasitli Gül Kokulu Duş Jeli 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-814": {
+   "code": "CBA044",
+   "title": "CARICH Hyaluronik Asitli Nemlendirici Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2877": {
+   "code": "CBA044/A",
+   "title": "CARICH Hyaluronik Asitli Nemlendirici Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1257": {
+   "code": "CBA049",
+   "title": "CARICH Nemlendirici Duş Jeli 1 L",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1670": {
+   "code": "CBA051",
+   "title": "CARICH Yağlı ve Sivilceye Eğilimli Ciltler İçin Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma"
+   ],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-4127": {
+   "code": "CBA051/A",
+   "title": "Carich Yağlı ve Sivilceye Eğilimli Ciltler İçin Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "goz-cevresi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1263": {
+   "code": "CBB016",
+   "title": "CARICH Shea Yağlı Nemlendirici Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-3320": {
+   "code": "CBB016/A",
+   "title": "CARICH Shea Yağlı Nemlendirici Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1662": {
+   "code": "CBD003",
+   "title": "CARICH El Temizleme Köpüğü 300 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1228": {
+   "code": "CBD004",
+   "title": "CARICH Bitki Özütlü Sıvı El Sabunu 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1143": {
+   "code": "CBE024",
+   "title": "CARICH Frezya Kokulu Yumuşatıcı Nemlendirici Jel 300 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2621": {
+   "code": "CBE027/A",
+   "title": "CARICH At Yağlı Krem 14 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-877": {
+   "code": "CBE029",
+   "title": "CARICH Kokulu Ferahlatıcı Vücut Dondurması Eriyen Buz 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1256": {
+   "code": "CBE030",
+   "title": "CARICH İpeksi Dondurma Vücut Peelingi 150 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-815": {
+   "code": "CBE031",
+   "title": "CARICH Hyaluronik Asitli Nemlendirici Vücut Losyonu 300 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "normal",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-989": {
+   "code": "CBE032",
+   "title": "CARICH Keçi Sütlü Nemlendirici Krem 250 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1264": {
+   "code": "CBE035",
+   "title": "CARICH Nemlendirici Krem 500 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1132": {
+   "code": "CBF006",
+   "title": "CARICH Aloe Vera Nemlendirici El Kremi 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-396": {
+   "code": "CBF010",
+   "title": "CARICH Parfümlü El Kremi Yabani Çan Çiçeği 80 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1127": {
+   "code": "CBF011",
+   "title": "CARICH Shea Yağlı Nemlendirici El Kremi 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-620": {
+   "code": "CBF012",
+   "title": "CARICH Shea Yağlı Nemlendirici El Kremi 300 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-3642": {
+   "code": "CBF014/A",
+   "title": "CARICH Aloe Vera Nemlendirici El Kremi 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2182": {
+   "code": "CBF016",
+   "title": "CARICH Shea Yağlı Nemlendirici El Kremi",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2780": {
+   "code": "CGA046/A",
+   "title": "CARICH Besleyici Rahatlatıcı Bitkisel Balsam 50 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-379": {
+   "code": "CIA048",
+   "title": "CARICH Uçucu Yağlı Çiçek Kokulu Ayak Banyosu Topları",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-807": {
+   "code": "CIA049",
+   "title": "CARICH Uçucu Yağlı ve Bitkili Ayak Banyosu Topları",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-816": {
+   "code": "DAA092",
+   "title": "iLiFE Ferah Nemlendirici Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1148": {
+   "code": "DAB083",
+   "title": "iLiFE Aloe Vera Nemlendirici Jel 180 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-122": {
+   "code": "DAB084",
+   "title": "LIMANCY Aloe Vera Jeli 50 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-617": {
+   "code": "DAB085",
+   "title": "iLiFE Pembe Aloe Vera Jeli 180 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-269": {
+   "code": "FM002",
+   "title": "Ayak Spreyi 50 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-216": {
+   "code": "HAG121",
+   "title": "HUAYUEQING Qianzi Vücut Bakım Kremi 30 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-217": {
+   "code": "HAG162",
+   "title": "Bitki Özlü Vücut Spreyi 70 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5424": {
+   "code": "KLA003",
+   "title": "CARICH Protein Sabunu 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "karma",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5138": {
+   "code": "KLA003/A",
+   "title": "CARICH Protein Sabunu 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5860": {
+   "code": "KLA026",
+   "title": "SEALUXE Aydınlatıcı Renk Tonlu Vücut Sütü 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5078": {
+   "code": "KLA056",
+   "title": "CARICH At Yağlı Derin Nemlendirici El Kremi 80 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5193": {
+   "code": "KLA084",
+   "title": "CARICH Şeftalili Canlandırıcı Duş Jeli",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi",
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5786": {
+   "code": "KLA085",
+   "title": "CARICH Uçucu Yağlı ve Aminoasitli Kokulu Nemlendirici Duş Jeli 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5387": {
+   "code": "KLA086",
+   "title": "CARICH Uçucu Yağlı ve Aminoasitli Gül Kokulu Duş Jeli 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5353": {
+   "code": "KLA087",
+   "title": "CARICH Dağ Keçisi Sütlü Nemlendirici Yumuşatıcı Duş Jeli 1 kg",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5147": {
+   "code": "KLA087/A",
+   "title": "CARICH Dağ Keçisi Sütlü Nemlendirici Yumuşatıcı Duş Jeli 1 kg",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5189": {
+   "code": "KLA088",
+   "title": "CARICH Cool & Refreshing Serinletici ve Ferahlatıcı Duş Jeli 1 kg",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5732": {
+   "code": "KLA091",
+   "title": "CARICH Protein Sabunu 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "yatistirma"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1137": {
+   "code": "LGB011",
+   "title": "GREENLEAF Vitaminli Nemlendirici El Kremi Seti 30 g x 3 adet",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5500": {
+   "code": "LGF015",
+   "title": "GREENLEAF Pelinli Tuvalet Sabunu 120 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-411": {
+   "code": "LGG084",
+   "title": "GREENLEAF Kiraz Çiçekli Nemlendirici Tuvalet Sabunu 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5320": {
+   "code": "LGI021",
+   "title": "GREENLEAF Dağ Keçisi Sütlü Besleyici Tuvalet Sabunu 120 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-377": {
+   "code": "LGL001",
+   "title": "GREENLEAF Parfümlü Duş Jeli Bembeyaz Işıltı 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1128": {
+   "code": "LGL003",
+   "title": "GREENLEAF Gold Perfume Parfümlü Duş Jeli Okyanus Enerjisi 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "yagli"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1124": {
+   "code": "LGL006",
+   "title": "GREENLEAF Ferahlatıcı Canlandırıcı Duş Jeli Mentol 580 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1120": {
+   "code": "LGL007",
+   "title": "GREENLEAF Bakım Yapan Besleyici Duş Jeli Kiraz Çiçeği 580 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-880": {
+   "code": "LGL008",
+   "title": "GREENLEAF Ferahlatıcı Duş Jeli Buz Nane 580 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-883": {
+   "code": "LGL009",
+   "title": "GREENLEAF Duş Jeli Tatlı Kiraz 580 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-888": {
+   "code": "LGN004",
+   "title": "GREENLEAF Durulama Gerektirmeyen El Jeli 450 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-741": {
+   "code": "LGN006",
+   "title": "GREENLEAF El Hijyen Ürünü 480 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2287": {
+   "code": "LGN007",
+   "title": "GREENLEAF El Temizleme Köpüğü 250 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1131": {
+   "code": "LGN008",
+   "title": "GREENLEAF Ferahlatıcı Sıvı El Sabunu 480 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2773": {
+   "code": "LGN008/A",
+   "title": "Greenleaf Ferahlatıcı Sıvı El Sabunu 480 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-874": {
+   "code": "LGN009",
+   "title": "GREENLEAF Köpüklü Durulama Gerektirmeyen El Hijyen Ürünü 50 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-964": {
+   "code": "LGN010",
+   "title": "GREENLEAF El Hijyen Ürünü 250 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1105": {
+   "code": "LGR596",
+   "title": "GREENLEAF Shea Yağlı Temizleyici Sabun Mine Çiçeği Kokulu 200 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-897": {
+   "code": "LGW556",
+   "title": "ZHENXI Aydınlatıcı Vücut Losyonu 300 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-779": {
+   "code": "LGW557",
+   "title": "Nazik Aydınlatıcı Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "isilti",
+    "ton-esitsizligi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2898": {
+   "code": "LGW557/A",
+   "title": "Nazik Aydınlatıcı Duş Jeli 500 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "isilti"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-431": {
+   "code": "LGZ049",
+   "title": "GREENLEAF Dağ Keçisi Sütlü Besleyici Tuvalet Sabunu 120 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-518": {
+   "code": "LGZ050",
+   "title": "GREENLEAF Gül Uçucu Yağlı Banyo Sabunu 200 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2011": {
+   "code": "LGZ050/O",
+   "title": "GREENLEAF Gül Uçucu Yağlı Banyo Sabunu 200 g (Yenilenmiş Versiyon)",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-221": {
+   "code": "LMC008",
+   "title": "LIMANCY Uçucu Yağlı ve Japon Beyaz Kömürlü Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "yagli",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-634": {
+   "code": "LPA024",
+   "title": "BLUE POINT Niasinamidli Vücut Losyonu 230 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ton-esitsizligi",
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-628": {
+   "code": "LPA027",
+   "title": "BLUE POINT Deniz Tuzlu Nazik Temizleyici Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-435": {
+   "code": "LPA035",
+   "title": "BLUE POINT Kokulu Hafif Duş Köpüğü 350 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "ince-cizgi",
+    "goz-cevresi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1898": {
+   "code": "LPA043",
+   "title": "BLUE POINT Deniz Tuzlu Nazik Temizleyici Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1378": {
+   "code": "LYA030",
+   "title": "Greenleaf Temizleyici Sabun 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5200": {
+   "code": "LYA068",
+   "title": "Greenleaf Mine Çiçeği Kokulu Shea Yağlı Temizleyici Sabun 200 g",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-6174": {
+   "code": "LYA123",
+   "title": "Greenleaf Buz Nane Ferahlatıcı Duş Jeli 580 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-257": {
+   "code": "MZA333",
+   "title": "HUAYUEQING Vücut Bakım Kremi 100 g",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-132": {
+   "code": "SBA024",
+   "title": "SEALUXE Besleyici Boyun Kremi",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-3533": {
+   "code": "SBA087/A",
+   "title": "SEALUXE At Yağlı Krem",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "hassas",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-4865": {
+   "code": "SBA098/A",
+   "title": "SEALUXE Usta Serisi Amber Katı Balm",
+   "availability": "yakinda",
+   "skinType": [
+    "kuru",
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2231": {
+   "code": "YP2410008-3",
+   "title": "Kiraz Çiçekli Nemlendirici Tuvalet Sabunu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-537": {
+   "code": "YZA007",
+   "title": "Yue Zhonggui Arı Sütlü Duş Jeli 450 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-519": {
+   "code": "YZA009",
+   "title": "Yue Zhonggui Deniz Tuzlu Temizleyici Duş Jeli 450 ml",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2908": {
+   "code": "YZA009/A",
+   "title": "Yue Zhonggui Deniz Tuzlu Temizleyici Duş Jeli 450 ml",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "tr-182": {
+   "code": "SBE042",
+   "title": "Greenleaf Fulleren Seti",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem",
+    "isilti"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "tr-6481": {
+   "code": "T001",
+   "title": "CARICH Başlangıç Seti",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "tr-6482": {
+   "code": "T003",
+   "title": "SEALUXE Hydra Genesis Cilt Bakım Seti",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "tr-6483": {
+   "code": "T006",
+   "title": "SEALUXE Bifida Maya Cilt Bakım Koleksiyonu",
+   "availability": "tr",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1282": {
+   "code": "MZA362",
+   "title": "Okyanus Ferahlığı Seyahat Seti 3'ü 1 Arada",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1177": {
+   "code": "SBB089",
+   "title": "SEALUXE Yüz Esansı Seti",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1053": {
+   "code": "SBE078",
+   "title": "SEALUXE Lüks Cilt Bakım Seti Kutusu",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-1249": {
+   "code": "SBE087",
+   "title": "Sinos Polipeptit Kolajen Cilt Bakım Seti",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-2220": {
+   "code": "SBE088",
+   "title": "SEALUXE Nemlendirici Cilt Bakım Seti",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "nem",
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-929": {
+   "code": "WJA027",
+   "title": "QIANSEWAN Kişisel Hijyen Hediye Seti",
+   "availability": "yakinda",
+   "skinType": [],
+   "concerns": [
+    "nem"
+   ],
+   "routineStep": null,
+   "rule": null
+  },
+  "gl-5377": {
+   "code": "YZA026",
+   "title": "Yue Zhonggui Kordisepsli Cilt Bakım Hediye Seti",
+   "availability": "yakinda",
+   "skinType": [
+    "tum-ciltler"
+   ],
+   "concerns": [
+    "ince-cizgi"
+   ],
+   "routineStep": null,
+   "rule": null
+  }
+ }
+}

@@ -1,0 +1,258 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+/* ---------- Fonts (K-042): html[data-font] picks the variant, default = Jost ---------- */
+@theme inline {
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: var(--font-heading), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+:root {
+  --font-body: var(--font-jost);
+  --font-heading: var(--font-jost);
+  --heading-weight: 600; /* ≈ FuturaDemiC */
+  --heading-tracking: -0.015em;
+}
+:root[data-font="poppins"] {
+  --font-body: var(--font-poppins);
+  --font-heading: var(--font-poppins);
+  --heading-tracking: -0.025em;
+}
+:root[data-font="comfortaa"] {
+  --font-body: var(--font-jost);
+  --font-heading: var(--font-comfortaa);
+  --heading-weight: 700; /* Comfortaa Bold, as in the brandbook */
+  --heading-tracking: -0.02em;
+}
+
+/* ---------- Premium display font (K-082 preview option; frontend-mimar) ----------
+   Use class "font-premium" + "premium-display" on premium headings only. Default = Jost light tracked (option A);
+   ?premiumFont=cormorant switches to Cormorant Garamond (option B, >= 32px only). */
+@theme inline {
+  --font-premium: var(--font-premium-display);
+}
+[data-theme="premium-gold"] {
+  --font-premium-display: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --premium-display-weight: 400;
+  --premium-display-tracking: var(--tracking-premium);
+  --premium-display-transform: uppercase;
+}
+:root[data-premium-font="cormorant"] [data-theme="premium-gold"] {
+  --font-premium-display: var(--font-cormorant), Georgia, serif;
+  --premium-display-weight: 600;
+  --premium-display-tracking: 0;
+  --premium-display-transform: none;
+}
+@utility premium-display {
+  font-family: var(--font-premium-display);
+  font-weight: var(--premium-display-weight);
+  letter-spacing: var(--premium-display-tracking);
+  text-transform: var(--premium-display-transform);
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  html {
+    color: var(--color-ink);
+    background: var(--color-surface);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+  }
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: var(--heading-weight);
+    letter-spacing: var(--heading-tracking);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-green-200);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-blue-700);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+/* ---------- Brand stripe signature (brandbook cover / letterhead) ---------- */
+@utility brand-stripe {
+  display: grid;
+  gap: 4px;
+  & > span {
+    display: block;
+    width: 100%;
+  }
+  & > span:nth-child(1) {
+    height: 10px;
+    background: var(--color-brand-green);
+  }
+  & > span:nth-child(2) {
+    height: 6px;
+    background: var(--color-brand-lime);
+  }
+  & > span:nth-child(3) {
+    height: 8px;
+    background: var(--color-brand-blue);
+  }
+}
+
+/* ---------- Card lift: shadow lives on a pseudo-element so only opacity/transform animate ---------- */
+@utility card-lift {
+  position: relative;
+  transition: transform var(--duration-sm) var(--ease-out-expo);
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: var(--shadow-lift);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-sm) var(--ease-out-expo);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: translateY(-4px);
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+/* ---------- Motion (transform/opacity only; everything off under reduced motion) ---------- */
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+@keyframes enter-rise {
+  from {
+    transform: translateY(14px);
+  }
+}
+@keyframes enter-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+}
+@keyframes stripe-grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+/* One swing that starts and ends at rest (K-158: ambient motion plays once, <= 5 s). */
+@keyframes sway {
+  30% {
+    transform: rotate(-2.5deg);
+  }
+  70% {
+    transform: rotate(2.5deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html:not([data-motion="on"]) {
+    scroll-behavior: smooth;
+  }
+
+  /* Hero entrance — stagger with style={{"--d": "120ms"}} */
+  .anim-enter {
+    animation: enter-up var(--duration-xl) var(--ease-out-expo) both;
+    animation-delay: var(--d, 0ms);
+  }
+  /* LCP-safe: transform only, text is visible from the first frame */
+  .anim-rise {
+    animation: enter-rise var(--duration-xl) var(--ease-out-expo) both;
+    animation-delay: var(--d, 0ms);
+  }
+  .anim-pop {
+    animation: enter-scale var(--duration-xl) var(--ease-out-expo) both;
+    animation-delay: var(--d, 0ms);
+  }
+
+  /*
+   * K-158 / WCAG 2.2.2: one 4.2 s swing, then rest. LeafCluster still passes the old negative phase offsets
+   * (--d: 0 ... -12s); they map to a small positive stagger (0 ... 0.6 s), so every leaf plays once and the
+   * whole cluster is still by 4.8 s. The infinite .anim-float / .anim-ping loops were removed (no users).
+   */
+  .anim-sway {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    animation: sway 4.2s ease-in-out 1 both;
+    animation-delay: calc(var(--d, 0s) * -0.05);
+  }
+
+  .stripe-grow > span {
+    transform-origin: left center;
+    animation: stripe-grow 1.1s var(--ease-out-expo) both;
+  }
+  .stripe-grow > span:nth-child(2) {
+    animation-delay: 120ms;
+  }
+  .stripe-grow > span:nth-child(3) {
+    animation-delay: 240ms;
+  }
+
+  /* Scroll reveal: CSS scroll-driven animations, zero JS. Browsers without support just show content. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timing-function: var(--ease-out-expo);
+      animation-timeline: view();
+      animation-range: entry 0% entry 240px;
+    }
+    .reveal-stripe > span {
+      transform-origin: left center;
+      animation: stripe-grow linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+    }
+  }
+}
+
+/* ---------- Header sub-navigation link (header.md §3): underline in --accent-decor on hover / aria-current ---------- */
+@utility subnav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent-decor);
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+  &:hover::after,
+  &[aria-current="page"]::after {
+    transform: scaleX(1);
+  }
+}

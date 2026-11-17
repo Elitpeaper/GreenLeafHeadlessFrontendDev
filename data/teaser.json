@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-11-16",
+  "currency": "TRY",
+  "listPriceMultiplier": 2,
+  "items": [
+    {
+      "code": "SAA069",
+      "brand": "SEALUXE",
+      "name": "Yeşil Çaylı Nemlendirici Temizleme Macunu",
+      "volume": null,
+      "category": "Cilt Bakımı",
+      "memberPrice": 130,
+      "listPrice": 260,
+      "pv": 0.2,
+      "image": "https://greenleaf-global.com/data/files/goods/9627/2501101047fpK3EXPnfj.jpg"
+    },
+    {
+      "code": "SBJ064",
+      "brand": "SEALUXE",
+      "name": "Aydınlatıcı Temizleme Jeli",
+      "volume": "120 g",
+      "category": "Cilt Bakımı",
+      "memberPrice": 268,
+      "listPrice": 536,
+      "pv": 2,
+      "image": "https://greenleaf-global.com/data/files/goods/1186/2408131201R9mDkPAqV0.png"
+    },
+    {
+      "code": "CBF015",
+      "brand": "CARICH",
+      "name": "Shea Yağlı Nemlendirici El Kremi",
+      "volume": null,
+      "category": "El & Vücut",
+      "memberPrice": 74,
+      "listPrice": 148,
+      "pv": 0.2,
+      "image": "https://greenleaf-global.com/data/files/goods/1186/2408131157gT0xH5iCzX.png"
+    },
+    {
+      "code": "FPA151",
+      "brand": "pinkpoint",
+      "name": "İnci Nude Ton-Up Kremi",
+      "volume": "50 g",
+      "category": "Cilt Bakımı",
+      "memberPrice": 436,
+      "listPrice": 872,
+      "pv": 3,
+      "image": "https://greenleaf-global.com/data/files/goods/8281/25080512072nYwGx85qu.jpeg"
+    },
+    {
+      "code": "CAA038",
+      "brand": "CARICH",
+      "name": "Zencefil Hacim Şampuanı",
+      "volume": "450 ml",
+      "category": "Saç Bakımı",
+      "memberPrice": 296,
+      "listPrice": 592,
+      "pv": 0.5,
+      "image": "https://greenleaf-global.com/data/files/goods/9627/241213164388LyiKTPUH.jpg"
+    },
+    {
+      "code": "DAA108",
+      "brand": "iLiFE",
+      "name": "Aloe Veralı Köpük El Sabunu",
+      "volume": "500 ml",
+      "category": "El & Vücut",
+      "memberPrice": 241,
+      "listPrice": 482,
+      "pv": 0.5,
+      "image": "https://greenleaf-global.com/data/files/goods/1186/2408131159HCkBQZHj5w.png"
+    },
+    {
+      "code": "EBB018",
+      "brand": "YIBEILE",
+      "name": "Çocuk Yulaf Özlü Vücut Kremi",
+      "volume": "200 g",
+      "category": "Bebek & Çocuk",
+      "memberPrice": 314,
+      "listPrice": 628,
+      "pv": 2,
+      "image": "https://greenleaf-global.com/data/files/goods/9627/2601271741FJTj0JwwzP.jpg"
+    },
+    {
+      "code": "ASA086",
+      "brand": "iLiFE",
+      "name": "Bambu Özlü Bulaşık Deterjanı",
+      "volume": "1,1 kg",
+      "category": "Ev & Temizlik",
+      "memberPrice": 288,
+      "listPrice": 576,
+      "pv": 0.5,
+      "image": "https://greenleaf-global.com/data/files/goods/2/2509091644GcJkMjR3Fh.jpg"
+    }
+  ]
+}

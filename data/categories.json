@@ -1,0 +1,3662 @@
+{
+ "consumer": [
+  {
+   "slug": "cilt-bakimi",
+   "title_tr": "Cilt Bakımı",
+   "parent": null,
+   "order": 1,
+   "productCount": 253,
+   "trCount": 9,
+   "icon": null,
+   "image": "/products/ilife-sod-ipek-yuz-kremi/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASB046"
+  },
+  {
+   "slug": "cilt-bakimi/yuz-temizleyiciler",
+   "title_tr": "Yüz Temizleyiciler",
+   "parent": "cilt-bakimi",
+   "order": 1,
+   "productCount": 38,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/sealuxe-yesil-cayli-nemlendirici-temizleyici/main.webp",
+   "description_tr": null,
+   "imageProduct": "SAA069"
+  },
+  {
+   "slug": "cilt-bakimi/tonik-ve-losyonlar",
+   "title_tr": "Tonik ve Losyonlar",
+   "parent": "cilt-bakimi",
+   "order": 2,
+   "productCount": 28,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/1000819-ilife-toner-dlya-lica-s-aloe-vera--350-ml-800x800.png",
+   "description_tr": null,
+   "imageProduct": "DAB088"
+  },
+  {
+   "slug": "cilt-bakimi/serumlar",
+   "title_tr": "Serumlar ve Yüz Yağları",
+   "parent": "cilt-bakimi",
+   "order": 3,
+   "productCount": 41,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/carich-e-vitaminli-cilt-sutu/main.webp",
+   "description_tr": null,
+   "imageProduct": "CBE034"
+  },
+  {
+   "slug": "cilt-bakimi/nemlendiriciler",
+   "title_tr": "Nemlendiriciler ve Kremler",
+   "parent": "cilt-bakimi",
+   "order": 4,
+   "productCount": 66,
+   "trCount": 4,
+   "icon": null,
+   "image": "/products/ilife-sod-ipek-yuz-kremi/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASB046"
+  },
+  {
+   "slug": "cilt-bakimi/yuz-maskeleri",
+   "title_tr": "Yüz Maskeleri",
+   "parent": "cilt-bakimi",
+   "order": 5,
+   "productCount": 22,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/sealuxe-aloe-vera-nemlendirici-maske/main.webp",
+   "description_tr": null,
+   "imageProduct": "SBC053"
+  },
+  {
+   "slug": "cilt-bakimi/goz-cevresi",
+   "title_tr": "Göz Çevresi Bakımı",
+   "parent": "cilt-bakimi",
+   "order": 6,
+   "productCount": 19,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/167_Sogrevaiushchaia_parovaia__maska_dlia_glaz_s_lavandoi-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CIA012"
+  },
+  {
+   "slug": "cilt-bakimi/dudak-bakimi",
+   "title_tr": "Dudak Bakımı",
+   "parent": "cilt-bakimi",
+   "order": 7,
+   "productCount": 10,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/320-pink-point-balzam-dlya-gub-s-effektom-glubokogo-uvlazhneniya-aromat-rozy-800x800.png",
+   "description_tr": null,
+   "imageProduct": "FPA144"
+  },
+  {
+   "slug": "cilt-bakimi/gunes-koruma",
+   "title_tr": "Güneş Koruma",
+   "parent": "cilt-bakimi",
+   "order": 8,
+   "productCount": 8,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2855-----------spf45-pa---800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "SBA073"
+  },
+  {
+   "slug": "cilt-bakimi/erkek-cilt-bakimi",
+   "title_tr": "Erkek Cilt Bakımı",
+   "parent": "cilt-bakimi",
+   "order": 9,
+   "productCount": 8,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2508091238fmujhqWrL2-800x800.jpeg",
+   "description_tr": null,
+   "imageProduct": "LGF005"
+  },
+  {
+   "slug": "makyaj",
+   "title_tr": "Makyaj",
+   "parent": null,
+   "order": 2,
+   "productCount": 81,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/sealuxe-dogal-tonlu-krem-pudra/main.webp",
+   "description_tr": null,
+   "imageProduct": "SCA016"
+  },
+  {
+   "slug": "makyaj/yuz-makyaji",
+   "title_tr": "Yüz Makyajı",
+   "parent": "makyaj",
+   "order": 1,
+   "productCount": 25,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/sealuxe-dogal-tonlu-krem-pudra/main.webp",
+   "description_tr": null,
+   "imageProduct": "SCA016"
+  },
+  {
+   "slug": "makyaj/goz-makyaji",
+   "title_tr": "Göz Makyajı",
+   "parent": "makyaj",
+   "order": 2,
+   "productCount": 16,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/sealuxe-star-eyes-charm-goz-kalemi-siyah-cay/main.webp",
+   "description_tr": null,
+   "imageProduct": "XNA038"
+  },
+  {
+   "slug": "makyaj/kas",
+   "title_tr": "Kaş",
+   "parent": "makyaj",
+   "order": 3,
+   "productCount": 14,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/289-pink-point-karandash-dlya-brovej-so-stojkim-obyomnym-cvetom-estestvennyj-tyomno-korichnevyj--800x800.png",
+   "description_tr": null,
+   "imageProduct": "FPA137"
+  },
+  {
+   "slug": "makyaj/dudak-makyaji",
+   "title_tr": "Dudak Makyajı",
+   "parent": "makyaj",
+   "order": 4,
+   "productCount": 17,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/811-pink-point-smyagchayushaya-uvlajnyayushaya-pomada-seriya--mlechnyiy-put----leto-na-ekvatore-01--800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "LGG111"
+  },
+  {
+   "slug": "makyaj/makyaj-aksesuarlari",
+   "title_tr": "Makyaj Aksesuarları",
+   "parent": "makyaj",
+   "order": 5,
+   "productCount": 8,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/1382-greenleaf-makeup---greenleaf-dlya-makiyaja--200list-sht-v-pachke--48-pachki-v-korobke--800x800.png",
+   "description_tr": null,
+   "imageProduct": "LGE061"
+  },
+  {
+   "slug": "sac-bakimi",
+   "title_tr": "Saç Bakımı",
+   "parent": null,
+   "order": 3,
+   "productCount": 96,
+   "trCount": 5,
+   "icon": null,
+   "image": "/products/carich-zencefil-hacim-sampuani/main.webp",
+   "description_tr": null,
+   "imageProduct": "CAA038"
+  },
+  {
+   "slug": "sac-bakimi/sampuanlar",
+   "title_tr": "Şampuanlar",
+   "parent": "sac-bakimi",
+   "order": 1,
+   "productCount": 51,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/carich-zencefil-hacim-sampuani/main.webp",
+   "description_tr": null,
+   "imageProduct": "CAA038"
+  },
+  {
+   "slug": "sac-bakimi/sac-kremleri",
+   "title_tr": "Saç Kremleri",
+   "parent": "sac-bakimi",
+   "order": 2,
+   "productCount": 13,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/carich-zencefil-hacim-sac-kremi/main.webp",
+   "description_tr": null,
+   "imageProduct": "CAB040"
+  },
+  {
+   "slug": "sac-bakimi/sac-maskesi-ve-yaglari",
+   "title_tr": "Saç Maskesi ve Bakım Yağları",
+   "parent": "sac-bakimi",
+   "order": 3,
+   "productCount": 13,
+   "trCount": 1,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/1142-carich-75-ml-uvlajnyayushee-i-shelkovistoe-maslo-dlya-volos-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CAB003"
+  },
+  {
+   "slug": "sac-bakimi/sac-boyalari",
+   "title_tr": "Saç Boyaları",
+   "parent": "sac-bakimi",
+   "order": 4,
+   "productCount": 12,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/1088-kailanduo-kraska-dlya-volos--10-10ml-paketik---svetlyiy-kashtanovyiy-cvet-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "DFD112"
+  },
+  {
+   "slug": "sac-bakimi/sekillendiriciler",
+   "title_tr": "Şekillendiriciler",
+   "parent": "sac-bakimi",
+   "order": 5,
+   "productCount": 4,
+   "trCount": 1,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2309261734Bl5VU2jxcB-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CAC002/A"
+  },
+  {
+   "slug": "vucut-bakimi",
+   "title_tr": "Vücut Bakımı",
+   "parent": null,
+   "order": 4,
+   "productCount": 141,
+   "trCount": 10,
+   "icon": null,
+   "image": "/products/ilife-nemlendirici-aloe-vera-jeli/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASB044"
+  },
+  {
+   "slug": "vucut-bakimi/dus-jelleri",
+   "title_tr": "Duş Jelleri",
+   "parent": "vucut-bakimi",
+   "order": 1,
+   "productCount": 34,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/carich-aromali-dus-jeli/main.webp",
+   "description_tr": null,
+   "imageProduct": "CBA052"
+  },
+  {
+   "slug": "vucut-bakimi/sivi-sabunlar",
+   "title_tr": "Sıvı Sabunlar",
+   "parent": "vucut-bakimi",
+   "order": 2,
+   "productCount": 26,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/ilife-papatyali-kopuk-el-sabunu/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASB047"
+  },
+  {
+   "slug": "vucut-bakimi/kati-sabunlar",
+   "title_tr": "Katı Sabunlar",
+   "parent": "vucut-bakimi",
+   "order": 3,
+   "productCount": 8,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/carich-binchotan-komurlu-el-yapimi-sabun/main.webp",
+   "description_tr": null,
+   "imageProduct": "CBB017"
+  },
+  {
+   "slug": "vucut-bakimi/vucut-kremleri",
+   "title_tr": "Vücut Kremi ve Losyonları",
+   "parent": "vucut-bakimi",
+   "order": 4,
+   "productCount": 26,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/ilife-nemlendirici-aloe-vera-jeli/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASB044"
+  },
+  {
+   "slug": "vucut-bakimi/el-bakimi",
+   "title_tr": "El Bakımı",
+   "parent": "vucut-bakimi",
+   "order": 5,
+   "productCount": 8,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/carich-aloe-vera-nemlendirici-el-kremi/main.webp",
+   "description_tr": null,
+   "imageProduct": "CBF014"
+  },
+  {
+   "slug": "vucut-bakimi/ayak-bakimi",
+   "title_tr": "Ayak Bakımı",
+   "parent": "vucut-bakimi",
+   "order": 6,
+   "productCount": 3,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/325-carich-shariki-dlya-nozhnykh-vann-s-ehfirnymi-maslami-i-cvetochnym-aromatom-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CIA048"
+  },
+  {
+   "slug": "vucut-bakimi/tiras-ve-tuy-alma",
+   "title_tr": "Tıraş ve Tüy Alma",
+   "parent": "vucut-bakimi",
+   "order": 7,
+   "productCount": 9,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/797-carich-krem-dlya-depilyacii-s-rastitel-nyimi-ekstraktami-60g-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CBE028"
+  },
+  {
+   "slug": "vucut-bakimi/deodorant-parfum",
+   "title_tr": "Deodorantlar ve Parfümler",
+   "parent": "vucut-bakimi",
+   "order": 8,
+   "productCount": 14,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/146_Zhenskie_dukhi_Diva-800x800.png",
+   "description_tr": null,
+   "imageProduct": "BEAUTY15"
+  },
+  {
+   "slug": "vucut-bakimi/banyo-aksesuarlari",
+   "title_tr": "Banyo Aksesuarları",
+   "parent": "vucut-bakimi",
+   "order": 9,
+   "productCount": 11,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/805-carich-mineral-naya-sol--dlya-vann-okean-200g-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CBA045"
+  },
+  {
+   "slug": "agiz-ve-dis-bakimi",
+   "title_tr": "Ağız ve Diş Bakımı",
+   "parent": null,
+   "order": 5,
+   "productCount": 74,
+   "trCount": 4,
+   "icon": null,
+   "image": "/products/carich-florursuz-deniz-yosunu-dis-macunu/main.webp",
+   "description_tr": null,
+   "imageProduct": "CCA016"
+  },
+  {
+   "slug": "agiz-ve-dis-bakimi/dis-macunlari",
+   "title_tr": "Diş Macunları",
+   "parent": "agiz-ve-dis-bakimi",
+   "order": 1,
+   "productCount": 40,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/carich-florursuz-deniz-yosunu-dis-macunu/main.webp",
+   "description_tr": null,
+   "imageProduct": "CCA016"
+  },
+  {
+   "slug": "agiz-ve-dis-bakimi/dis-fircalari",
+   "title_tr": "Diş Fırçaları",
+   "parent": "agiz-ve-dis-bakimi",
+   "order": 2,
+   "productCount": 18,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/carich-komurlu-dis-fircasi-2-li/main.webp",
+   "description_tr": null,
+   "imageProduct": "CCC001"
+  },
+  {
+   "slug": "agiz-ve-dis-bakimi/dis-ipi-ve-agiz-bakimi",
+   "title_tr": "Diş İpi ve Ağız Bakımı",
+   "parent": "agiz-ve-dis-bakimi",
+   "order": 3,
+   "productCount": 15,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/110_Osvezhitel_dykhaniia_na_osnove_zelenogo_chaia__sprei_-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CCB005"
+  },
+  {
+   "slug": "setler",
+   "title_tr": "Setler",
+   "parent": null,
+   "order": 6,
+   "productCount": 11,
+   "trCount": 4,
+   "icon": null,
+   "image": "/products/carich-baslangic-seti/main.webp",
+   "description_tr": null,
+   "imageProduct": "T001"
+  },
+  {
+   "slug": "setler/baslangic-setleri",
+   "title_tr": "Başlangıç Setleri",
+   "parent": "setler",
+   "order": 1,
+   "productCount": 3,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/carich-baslangic-seti/main.webp",
+   "description_tr": null,
+   "imageProduct": "T001"
+  },
+  {
+   "slug": "setler/bakim-setleri",
+   "title_tr": "Bakım Setleri",
+   "parent": "setler",
+   "order": 2,
+   "productCount": 8,
+   "trCount": 1,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/767-sealuxe-nabor-essenciy-dlya-lica--utro-vecher--800x800.png",
+   "description_tr": null,
+   "imageProduct": "SBB089"
+  },
+  {
+   "slug": "ev-ve-temizlik",
+   "title_tr": "Ev ve Temizlik",
+   "parent": null,
+   "order": 7,
+   "productCount": 216,
+   "trCount": 8,
+   "icon": null,
+   "image": "/products/ilife-cicek-kokulu-camasir-jeli/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASA017"
+  },
+  {
+   "slug": "ev-ve-temizlik/camasir-deterjanlari",
+   "title_tr": "Çamaşır Deterjanları",
+   "parent": "ev-ve-temizlik",
+   "order": 1,
+   "productCount": 79,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/ilife-cicek-kokulu-camasir-jeli/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASA017"
+  },
+  {
+   "slug": "ev-ve-temizlik/camasir-yardimcilari",
+   "title_tr": "Yumuşatıcı ve Çamaşır Yardımcıları",
+   "parent": "ev-ve-temizlik",
+   "order": 2,
+   "productCount": 1,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/ilife-camasir-sabunu/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASF066"
+  },
+  {
+   "slug": "ev-ve-temizlik/bulasik",
+   "title_tr": "Bulaşık Deterjanları",
+   "parent": "ev-ve-temizlik",
+   "order": 3,
+   "productCount": 14,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/ilife-bambu-ozlu-bulasik-deterjani/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASA086"
+  },
+  {
+   "slug": "ev-ve-temizlik/mutfak-temizleyiciler",
+   "title_tr": "Mutfak ve Yüzey Temizleyiciler",
+   "parent": "ev-ve-temizlik",
+   "order": 4,
+   "productCount": 42,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/ilife-bulasik-deterjani/main.webp",
+   "description_tr": null,
+   "imageProduct": "ASF055"
+  },
+  {
+   "slug": "ev-ve-temizlik/kirec-ve-gider",
+   "title_tr": "Kireç ve Gider Açıcılar",
+   "parent": "ev-ve-temizlik",
+   "order": 5,
+   "productCount": 0,
+   "trCount": 0,
+   "icon": null,
+   "image": null,
+   "description_tr": null,
+   "imageProduct": null
+  },
+  {
+   "slug": "ev-ve-temizlik/oda-kokulari",
+   "title_tr": "Oda Kokuları",
+   "parent": "ev-ve-temizlik",
+   "order": 6,
+   "productCount": 13,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/308-carich-aromaticheskie-shariki-cvety-vishni-330g-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CGA104"
+  },
+  {
+   "slug": "ev-ve-temizlik/temizlik-aksesuarlari",
+   "title_tr": "Temizlik Bezleri ve Aksesuarları",
+   "parent": "ev-ve-temizlik",
+   "order": 7,
+   "productCount": 40,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/967-greenleaf-ilife-meshok-dlya-musora-700x700-800x800.png",
+   "description_tr": null,
+   "imageProduct": "ASG019"
+  },
+  {
+   "slug": "ev-ve-temizlik/hasere-kovucular",
+   "title_tr": "Haşere Kovucular",
+   "parent": "ev-ve-temizlik",
+   "order": 8,
+   "productCount": 22,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/836-baozhongbao-cvetochnaya-voda-ot-komarov-190-ml-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "BZA001"
+  },
+  {
+   "slug": "anne-ve-cocuk",
+   "title_tr": "Anne ve Çocuk",
+   "parent": null,
+   "order": 8,
+   "productCount": 104,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/yibeile-cocuk-dis-macunu-portakal/main.webp",
+   "description_tr": null,
+   "imageProduct": "EAA022"
+  },
+  {
+   "slug": "anne-ve-cocuk/bebek-bezi",
+   "title_tr": "Bebek Bezleri",
+   "parent": "anne-ve-cocuk",
+   "order": 1,
+   "productCount": 16,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/909-ilife-detskie-podguzniki-xxl26-sht_2-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "DAE040"
+  },
+  {
+   "slug": "anne-ve-cocuk/cocuk-agiz-bakimi",
+   "title_tr": "Çocuk Ağız Bakımı",
+   "parent": "anne-ve-cocuk",
+   "order": 2,
+   "productCount": 24,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/yibeile-cocuk-dis-macunu-portakal/main.webp",
+   "description_tr": null,
+   "imageProduct": "EAA022"
+  },
+  {
+   "slug": "anne-ve-cocuk/cocuk-banyo-cilt",
+   "title_tr": "Çocuk Banyo ve Cilt Bakımı",
+   "parent": "anne-ve-cocuk",
+   "order": 3,
+   "productCount": 30,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/yibeile-cocuk-yulaf-ozlu-vucut-kremi/main.webp",
+   "description_tr": null,
+   "imageProduct": "EBB018"
+  },
+  {
+   "slug": "anne-ve-cocuk/bebek-mendil",
+   "title_tr": "Bebek Mendilleri",
+   "parent": "anne-ve-cocuk",
+   "order": 4,
+   "productCount": 9,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/11_Detskie_vlazhnye_salfetki-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CBC002"
+  },
+  {
+   "slug": "anne-ve-cocuk/beslenme-gerecleri",
+   "title_tr": "Beslenme ve Bakım Gereçleri",
+   "parent": "anne-ve-cocuk",
+   "order": 5,
+   "productCount": 7,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2508091212IRu93u1uet-800x800.png",
+   "description_tr": null,
+   "imageProduct": "JKC059"
+  },
+  {
+   "slug": "anne-ve-cocuk/cocuk-giyim",
+   "title_tr": "Çocuk Giyim",
+   "parent": "anne-ve-cocuk",
+   "order": 6,
+   "productCount": 18,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/161_Detskie_trusy-brify_razmer_M-800x800.png",
+   "description_tr": null,
+   "imageProduct": "KAC082"
+  },
+  {
+   "slug": "hijyen-ve-kagit",
+   "title_tr": "Hijyen ve Kâğıt Ürünleri",
+   "parent": null,
+   "order": 9,
+   "productCount": 103,
+   "trCount": 3,
+   "icon": null,
+   "image": "/products/carich-bambu-cep-mendili/main.webp",
+   "description_tr": null,
+   "imageProduct": "CEA069"
+  },
+  {
+   "slug": "hijyen-ve-kagit/kadin-hijyeni",
+   "title_tr": "Kadın Hijyeni",
+   "parent": "hijyen-ve-kagit",
+   "order": 1,
+   "productCount": 59,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/jinghuxi-gece-hijyenik-ped/main.webp",
+   "description_tr": null,
+   "imageProduct": "LGZ042"
+  },
+  {
+   "slug": "hijyen-ve-kagit/kagit-mendil",
+   "title_tr": "Kâğıt ve Islak Mendiller",
+   "parent": "hijyen-ve-kagit",
+   "order": 2,
+   "productCount": 27,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/carich-bambu-cep-mendili/main.webp",
+   "description_tr": null,
+   "imageProduct": "CEA069"
+  },
+  {
+   "slug": "hijyen-ve-kagit/tuvalet-kagidi",
+   "title_tr": "Tuvalet Kâğıdı",
+   "parent": "hijyen-ve-kagit",
+   "order": 3,
+   "productCount": 9,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/300-carich-rulon-bumagi-iz-natural-nogo-nebelyonogo-bambukovogo-volokna-bez-vtulki-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CEA010"
+  },
+  {
+   "slug": "hijyen-ve-kagit/pamuk",
+   "title_tr": "Pamuk ve Kulak Çubuğu",
+   "parent": "hijyen-ve-kagit",
+   "order": 4,
+   "productCount": 4,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/655-carich-vatnyie-palochki-dvustoronnie-s-bumajnyim-stikom--belyie--800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CBG004"
+  },
+  {
+   "slug": "saglik-ve-takviye",
+   "title_tr": "Sağlık ve Takviye",
+   "parent": null,
+   "order": 10,
+   "productCount": 106,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/nilrich-krill-yagi-yumusak-kapsul/main.webp",
+   "description_tr": null,
+   "imageProduct": "NWA052"
+  },
+  {
+   "slug": "saglik-ve-takviye/gida-takviyeleri",
+   "title_tr": "Gıda Takviyeleri",
+   "parent": "saglik-ve-takviye",
+   "order": 1,
+   "productCount": 60,
+   "trCount": 1,
+   "icon": null,
+   "image": "/products/nilrich-krill-yagi-yumusak-kapsul/main.webp",
+   "description_tr": null,
+   "imageProduct": "NWA052"
+  },
+  {
+   "slug": "saglik-ve-takviye/vitaminler",
+   "title_tr": "Vitaminler",
+   "parent": "saglik-ve-takviye",
+   "order": 2,
+   "productCount": 14,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/271_Shipuchie_tabletki_vitamina_S_so_vkusom_apelsina-800x800.png",
+   "description_tr": null,
+   "imageProduct": "HAA141"
+  },
+  {
+   "slug": "saglik-ve-takviye/masaj",
+   "title_tr": "Masaj Ürünleri",
+   "parent": "saglik-ve-takviye",
+   "order": 3,
+   "productCount": 8,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/458_carich-uspokaivayushchaya-uvlazhnyayushchaya-antibakterialnaya-maz-s-polynyu-30-g-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CCA026"
+  },
+  {
+   "slug": "saglik-ve-takviye/bant-ve-yamalar",
+   "title_tr": "Bant ve Yamalar",
+   "parent": "saglik-ve-takviye",
+   "order": 4,
+   "productCount": 14,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/1022-carich-sogrevayushie-patchi-dlya-shei--4-sht--800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CGA126"
+  },
+  {
+   "slug": "saglik-ve-takviye/diger-saglik-urunleri",
+   "title_tr": "Diğer Sağlık Ürünleri",
+   "parent": "saglik-ve-takviye",
+   "order": 5,
+   "productCount": 0,
+   "trCount": 0,
+   "icon": null,
+   "image": null,
+   "description_tr": null,
+   "imageProduct": null
+  },
+  {
+   "slug": "mutfak-ve-gida",
+   "title_tr": "Mutfak ve Gıda",
+   "parent": null,
+   "order": 11,
+   "productCount": 81,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/164_Zelenyi_chai_s_zhasminom-800x800.png",
+   "description_tr": null,
+   "imageProduct": "HAA121"
+  },
+  {
+   "slug": "mutfak-ve-gida/mutfak-gerecleri",
+   "title_tr": "Mutfak Gereçleri",
+   "parent": "mutfak-ve-gida",
+   "order": 1,
+   "productCount": 48,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2507150906MMzKFUJTlj-800x800.png",
+   "description_tr": null,
+   "imageProduct": "JDA095"
+  },
+  {
+   "slug": "mutfak-ve-gida/cay-ve-icecek",
+   "title_tr": "Çay ve İçecekler",
+   "parent": "mutfak-ve-gida",
+   "order": 2,
+   "productCount": 16,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/164_Zelenyi_chai_s_zhasminom-800x800.png",
+   "description_tr": null,
+   "imageProduct": "HAA121"
+  },
+  {
+   "slug": "mutfak-ve-gida/gida",
+   "title_tr": "Gıda",
+   "parent": "mutfak-ve-gida",
+   "order": 3,
+   "productCount": 17,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2407031346p5518gUE62-800x800.png",
+   "description_tr": null,
+   "imageProduct": "NAG019/A"
+  },
+  {
+   "slug": "giyim-ve-aksesuar",
+   "title_tr": "Giyim ve Aksesuar",
+   "parent": null,
+   "order": 12,
+   "productCount": 420,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/marvisia-rls190501-polarize-gunes-gozlugu/main.webp",
+   "description_tr": null,
+   "imageProduct": "MAH723"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/kadin-giyim",
+   "title_tr": "Kadın İç Giyim ve Çorap",
+   "parent": "giyim-ve-aksesuar",
+   "order": 1,
+   "productCount": 71,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2312181229CtNewjKVvV-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "BNA010"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/erkek-giyim",
+   "title_tr": "Erkek İç Giyim ve Çorap",
+   "parent": "giyim-ve-aksesuar",
+   "order": 2,
+   "productCount": 73,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/181_Muzhskie_noski_ot_pota_i_zapakha-800x800.png",
+   "description_tr": null,
+   "imageProduct": "FZA075"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/havlular",
+   "title_tr": "Havlular",
+   "parent": "giyim-ve-aksesuar",
+   "order": 3,
+   "productCount": 31,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/2240-carich-myagkoe-hlopkovoe-pressovannoe-polotence-uvelichit--bol-shoy-utolshat-sya--800x800.png",
+   "description_tr": null,
+   "imageProduct": "CGA132"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/terlikler",
+   "title_tr": "Terlikler",
+   "parent": "giyim-ve-aksesuar",
+   "order": 4,
+   "productCount": 110,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/23092613476F4qwqXjlL-800x800.png",
+   "description_tr": null,
+   "imageProduct": "KAC072/A"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/ayakkabi-bakimi",
+   "title_tr": "Ayakkabı Bakımı",
+   "parent": "giyim-ve-aksesuar",
+   "order": 5,
+   "productCount": 8,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/359-asg040-800x800.png",
+   "description_tr": null,
+   "imageProduct": "ASG040"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/gozlukler",
+   "title_tr": "Gözlükler",
+   "parent": "giyim-ve-aksesuar",
+   "order": 6,
+   "productCount": 45,
+   "trCount": 2,
+   "icon": null,
+   "image": "/products/marvisia-rls190501-polarize-gunes-gozlugu/main.webp",
+   "description_tr": null,
+   "imageProduct": "MAH723"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/valiz-ve-semsiye",
+   "title_tr": "Çanta, Valiz ve Şemsiye",
+   "parent": "giyim-ve-aksesuar",
+   "order": 7,
+   "productCount": 24,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/295_OKFAD_Chemodan_X_20_diuimy-800x800.png",
+   "description_tr": null,
+   "imageProduct": "JJA107"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/tarak-ve-fircalar",
+   "title_tr": "Saç Fırçası ve Taraklar",
+   "parent": "giyim-ve-aksesuar",
+   "order": 8,
+   "productCount": 12,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/1090-carich-bol-shaya-izognutaya-rascheska--fioletovaya-_2-800x800.jpg",
+   "description_tr": null,
+   "imageProduct": "CGA113"
+  },
+  {
+   "slug": "giyim-ve-aksesuar/arac-ve-kirtasiye",
+   "title_tr": "Araç ve Kırtasiye",
+   "parent": "giyim-ve-aksesuar",
+   "order": 9,
+   "productCount": 7,
+   "trCount": 0,
+   "icon": null,
+   "image": "https://global.green-leaf.shop/image/cache/catalog/product/203_Bloknot__miagkaia_oblozhka___168_mm_X_228_mm-800x800.png",
+   "description_tr": null,
+   "imageProduct": "CFA004"
+  }
+ ],
+ "source": [
+  {
+   "id": "uhod-za-domom",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Уход за домом",
+   "path_ru": [
+    "Уход за домом"
+   ],
+   "url": "https://global.green-leaf.shop/tovari-dlya-doma",
+   "productCount": 202,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": null
+   }
+  },
+  {
+   "id": "uhod-za-domom/aksessuary-dlya-uborki",
+   "level": 2,
+   "parent": "uhod-za-domom",
+   "title_ru": "Аксессуары для уборки",
+   "path_ru": [
+    "Уход за домом",
+    "Аксессуары для уборки"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=61_206",
+   "productCount": 20,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "temizlik-aksesuarlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/dom",
+   "level": 2,
+   "parent": "uhod-za-domom",
+   "title_ru": "Дом",
+   "path_ru": [
+    "Уход за домом",
+    "Дом"
+   ],
+   "url": "https://global.green-leaf.shop/uhod-dlya-doma",
+   "productCount": 41,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhod-za-domom/dom/aromatizatory-dlya-doma",
+   "level": 3,
+   "parent": "uhod-za-domom/dom",
+   "title_ru": "Ароматизаторы для дома",
+   "path_ru": [
+    "Уход за домом",
+    "Дом",
+    "Ароматизаторы для дома"
+   ],
+   "url": "https://global.green-leaf.shop/aromatizator-dlya-doma",
+   "productCount": 13,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "oda-kokulari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/dom/pakety-plenka-tsellofan",
+   "level": 3,
+   "parent": "uhod-za-domom/dom",
+   "title_ru": "Пакеты, пленка, целлофан",
+   "path_ru": [
+    "Уход за домом",
+    "Дом",
+    "Пакеты, пленка, целлофан"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=61_62_209",
+   "productCount": 11,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "temizlik-aksesuarlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/dom/sredstva-dlya-mytya-polov",
+   "level": 3,
+   "parent": "uhod-za-domom/dom",
+   "title_ru": "Средства для мытья полов",
+   "path_ru": [
+    "Уход за домом",
+    "Дом",
+    "Средства для мытья полов"
+   ],
+   "url": "https://global.green-leaf.shop/sredstvo-dlya-mytya-polov",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhod-za-domom/dom/sredstva-dlya-udaleniya-nakipi",
+   "level": 3,
+   "parent": "uhod-za-domom/dom",
+   "title_ru": "Средства для удаления накипи",
+   "path_ru": [
+    "Уход за домом",
+    "Дом",
+    "Средства для удаления накипи"
+   ],
+   "url": "https://global.green-leaf.shop/sredstvo-dlya-udaleniya-nakipi",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhod-za-domom/dom/chistka-trub",
+   "level": 3,
+   "parent": "uhod-za-domom/dom",
+   "title_ru": "Чистка труб",
+   "path_ru": [
+    "Уход за домом",
+    "Дом",
+    "Чистка труб"
+   ],
+   "url": "https://global.green-leaf.shop/chistka-trub",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhod-za-domom/kuhnya",
+   "level": 2,
+   "parent": "uhod-za-domom",
+   "title_ru": "Кухня",
+   "path_ru": [
+    "Уход за домом",
+    "Кухня"
+   ],
+   "url": "https://global.green-leaf.shop/kuhnya",
+   "productCount": 47,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhod-za-domom/kuhnya/salfetki-dlya-uborki",
+   "level": 3,
+   "parent": "uhod-za-domom/kuhnya",
+   "title_ru": "Салфетки для уборки",
+   "path_ru": [
+    "Уход за домом",
+    "Кухня",
+    "Салфетки для уборки"
+   ],
+   "url": "https://global.green-leaf.shop/salfetki-dlya-uborki",
+   "productCount": 9,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "temizlik-aksesuarlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/kuhnya/sredstvo-dlya-mytya-posudy",
+   "level": 3,
+   "parent": "uhod-za-domom/kuhnya",
+   "title_ru": "Средство для мытья посуды",
+   "path_ru": [
+    "Уход за домом",
+    "Кухня",
+    "Средство для мытья посуды"
+   ],
+   "url": "https://global.green-leaf.shop/sredstvo-dlya-mytya-posudy",
+   "productCount": 15,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "bulasik"
+   }
+  },
+  {
+   "id": "uhod-za-domom/kuhnya/chistyaschee-sredstvo-dlya-kuhni",
+   "level": 3,
+   "parent": "uhod-za-domom/kuhnya",
+   "title_ru": "Чистящее средство для кухни",
+   "path_ru": [
+    "Уход за домом",
+    "Кухня",
+    "Чистящее средство для кухни"
+   ],
+   "url": "https://global.green-leaf.shop/chistyashchee-sredstvo-dlya-kukhni",
+   "productCount": 12,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhod-za-domom/sredstva-ot-nasekomyh",
+   "level": 2,
+   "parent": "uhod-za-domom",
+   "title_ru": "Средства от насекомых",
+   "path_ru": [
+    "Уход за домом",
+    "Средства от насекомых"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=61_205",
+   "productCount": 18,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "hasere-kovucular"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka",
+   "level": 2,
+   "parent": "uhod-za-domom",
+   "title_ru": "Стирка",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка"
+   ],
+   "url": "https://global.green-leaf.shop/stirka",
+   "productCount": 78,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka/dlya-stiralnoy-mashiny",
+   "level": 3,
+   "parent": "uhod-za-domom/stirka",
+   "title_ru": "Для стиральной машины",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка",
+    "Для стиральной машины"
+   ],
+   "url": "https://global.green-leaf.shop/dlya-stiralnoj-mashiny",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka/zhidkoe-sredstvo-dlya-stirki",
+   "level": 3,
+   "parent": "uhod-za-domom/stirka",
+   "title_ru": "Жидкое средство для стирки",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка",
+    "Жидкое средство для стирки"
+   ],
+   "url": "https://global.green-leaf.shop/zhidkoe-sredstvo-dlya-stirki",
+   "productCount": 33,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka/konditsioner-dlya-belya",
+   "level": 3,
+   "parent": "uhod-za-domom/stirka",
+   "title_ru": "Кондиционер для белья",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка",
+    "Кондиционер для белья"
+   ],
+   "url": "https://global.green-leaf.shop/kondicioner-dlya-belya",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka/listy-dlya-stirki-raznotsvetnogo-belya",
+   "level": 3,
+   "parent": "uhod-za-domom/stirka",
+   "title_ru": "Листы для стирки разноцветного белья",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка",
+    "Листы для стирки разноцветного белья"
+   ],
+   "url": "https://global.green-leaf.shop/stirka-raznocvetnogo-belya",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka/mylo-dlya-stirki",
+   "level": 3,
+   "parent": "uhod-za-domom/stirka",
+   "title_ru": "Мыло для стирки",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка",
+    "Мыло для стирки"
+   ],
+   "url": "https://global.green-leaf.shop/mnogofunkcionalnaya-stirka",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/stirka/stiralnyy-poroshok",
+   "level": 3,
+   "parent": "uhod-za-domom/stirka",
+   "title_ru": "Стиральный порошок",
+   "path_ru": [
+    "Уход за домом",
+    "Стирка",
+    "Стиральный порошок"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=61_65_207",
+   "productCount": 14,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "uhod-za-domom/tualet",
+   "level": 2,
+   "parent": "uhod-za-domom",
+   "title_ru": "Туалет",
+   "path_ru": [
+    "Уход за домом",
+    "Туалет"
+   ],
+   "url": "https://global.green-leaf.shop/tualet",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "mutfak-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Уходовая косметика",
+   "path_ru": [
+    "Уходовая косметика"
+   ],
+   "url": "https://global.green-leaf.shop/uhodovaya-kosmetika",
+   "productCount": 405,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": null
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Волосы",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы"
+   ],
+   "url": "https://global.green-leaf.shop/volosi",
+   "productCount": 94,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": null
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/dlya-ukladki",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Для укладки",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Для укладки"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=60_83_234",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sekillendiriciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/konditsioner-opolaskivatel",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Кондиционер-ополаскиватель",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Кондиционер-ополаскиватель"
+   ],
+   "url": "https://global.green-leaf.shop/kondicioner",
+   "productCount": 13,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sac-kremleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/kraska-dlya-volos",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Краска для волос",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Краска для волос"
+   ],
+   "url": "https://global.green-leaf.shop/kraska-dlya-volos",
+   "productCount": 12,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sac-boyalari"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/loson",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Лосьон",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Лосьон"
+   ],
+   "url": "https://global.green-leaf.shop/loson",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sac-maskesi-ve-yaglari"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/maska",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Маска",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Маска"
+   ],
+   "url": "https://global.green-leaf.shop/maska",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sac-maskesi-ve-yaglari"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/maslo",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Масло",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Масло"
+   ],
+   "url": "https://global.green-leaf.shop/maslo",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sac-maskesi-ve-yaglari"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/volosy/shampun",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/volosy",
+   "title_ru": "Шампунь",
+   "path_ru": [
+    "Уходовая косметика",
+    "Волосы",
+    "Шампунь"
+   ],
+   "url": "https://global.green-leaf.shop/shampun-kosmetika",
+   "productCount": 51,
+   "consumerCategory": {
+    "parent": "sac-bakimi",
+    "child": "sampuanlar"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/glaza",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Глаза",
+   "path_ru": [
+    "Уходовая косметика",
+    "Глаза"
+   ],
+   "url": "https://global.green-leaf.shop/uhod-za-glazami",
+   "productCount": 19,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "goz-cevresi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/glaza/krema-dlya-glaz",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/glaza",
+   "title_ru": "Крема для глаз",
+   "path_ru": [
+    "Уходовая косметика",
+    "Глаза",
+    "Крема для глаз"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=60_80_208",
+   "productCount": 9,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "goz-cevresi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/glaza/maski-sogrevayuschie",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/glaza",
+   "title_ru": "Маски согревающие",
+   "path_ru": [
+    "Уходовая косметика",
+    "Глаза",
+    "Маски согревающие"
+   ],
+   "url": "https://global.green-leaf.shop/maski-sogrevayushchie",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "goz-cevresi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/glaza/patchi-dlya-glaz",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/glaza",
+   "title_ru": "Патчи для глаз",
+   "path_ru": [
+    "Уходовая косметика",
+    "Глаза",
+    "Патчи для глаз"
+   ],
+   "url": "https://global.green-leaf.shop/patchi-dlya-glaz",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "goz-cevresi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/zaschita-ot-solntsa",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Защита от солнца",
+   "path_ru": [
+    "Уходовая косметика",
+    "Защита от солнца"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=60_232",
+   "productCount": 8,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "gunes-koruma"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Лицо",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо"
+   ],
+   "url": "https://global.green-leaf.shop/uhod-za-licom",
+   "productCount": 210,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "nemlendiriciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/balzam-dlya-gub",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Бальзам для губ",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Бальзам для губ"
+   ],
+   "url": "https://global.green-leaf.shop/balzam-dlya-gub",
+   "productCount": 10,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "dudak-bakimi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/kosmeticheskie-nabory",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Косметические наборы",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Косметические наборы"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=60_79_231",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "setler",
+    "child": "bakim-setleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/krema",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Крема",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Крема"
+   ],
+   "url": "https://global.green-leaf.shop/krema",
+   "productCount": 43,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "nemlendiriciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/loson",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Лосьон",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Лосьон"
+   ],
+   "url": "https://global.green-leaf.shop/loson-ukhodovyj",
+   "productCount": 28,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "tonik-ve-losyonlar"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/maska-kosmeticheskaya",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Маска косметическая",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Маска косметическая"
+   ],
+   "url": "https://global.green-leaf.shop/maska-kosmeticheskaya",
+   "productCount": 22,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "yuz-maskeleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/maslo-dlya-litsa",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Масло для лица",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Масло для лица"
+   ],
+   "url": "https://global.green-leaf.shop/maslo-dlya-lica",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "serumlar"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/osnova-pod-makiyazh",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Основа под макияж",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Основа под макияж"
+   ],
+   "url": "https://global.green-leaf.shop/osnova-pod-makiyazh-lico",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "yuz-makyaji"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/skrab-dlya-litsa",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Скраб для лица",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Скраб для лица"
+   ],
+   "url": "https://global.green-leaf.shop/skrab-dlya-lica",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "yuz-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/snyatie-makiyazha",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Снятие макияжа",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Снятие макияжа"
+   ],
+   "url": "https://global.green-leaf.shop/snyatie-makiyazha",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "yuz-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/sredstvo-dlya-umyvaniya",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Средство для умывания",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Средство для умывания"
+   ],
+   "url": "https://global.green-leaf.shop/sredstvo-dlya-umyvaniya",
+   "productCount": 29,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "yuz-temizleyiciler"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/litso/syvorotka",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/litso",
+   "title_ru": "Сыворотка",
+   "path_ru": [
+    "Уходовая косметика",
+    "Лицо",
+    "Сыворотка"
+   ],
+   "url": "https://global.green-leaf.shop/syvorotka-lico",
+   "productCount": 38,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "serumlar"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/nogi",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Ноги",
+   "path_ru": [
+    "Уходовая косметика",
+    "Ноги"
+   ],
+   "url": "https://global.green-leaf.shop/nogi",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "ayak-bakimi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/nogi/sprey-dlya-nog",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/nogi",
+   "title_ru": "Спрей для ног",
+   "path_ru": [
+    "Уходовая косметика",
+    "Ноги",
+    "Спрей для ног"
+   ],
+   "url": "https://global.green-leaf.shop/sprej-dlya-nog",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "ayak-bakimi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/ruki",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Руки",
+   "path_ru": [
+    "Уходовая косметика",
+    "Руки"
+   ],
+   "url": "https://global.green-leaf.shop/uhod-za-rukami",
+   "productCount": 8,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "el-bakimi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/ruki/krem-dlya-ruk",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/ruki",
+   "title_ru": "Крем для рук",
+   "path_ru": [
+    "Уходовая косметика",
+    "Руки",
+    "Крем для рук"
+   ],
+   "url": "https://global.green-leaf.shop/krem-dlya-ruk",
+   "productCount": 8,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "el-bakimi"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/telo",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Тело",
+   "path_ru": [
+    "Уходовая косметика",
+    "Тело"
+   ],
+   "url": "https://global.green-leaf.shop/telo",
+   "productCount": 28,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "vucut-kremleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/telo/gel",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/telo",
+   "title_ru": "Гель",
+   "path_ru": [
+    "Уходовая косметика",
+    "Тело",
+    "Гель"
+   ],
+   "url": "https://global.green-leaf.shop/gel",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "vucut-kremleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/telo/krem-dlya-tela",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/telo",
+   "title_ru": "Крем для тела",
+   "path_ru": [
+    "Уходовая косметика",
+    "Тело",
+    "Крем для тела"
+   ],
+   "url": "https://global.green-leaf.shop/krem-dlya-tela",
+   "productCount": 18,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "vucut-kremleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/telo/skrab",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/telo",
+   "title_ru": "Скраб",
+   "path_ru": [
+    "Уходовая косметика",
+    "Тело",
+    "Скраб"
+   ],
+   "url": "https://global.green-leaf.shop/skrab",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "vucut-kremleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/telo/sprey",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/telo",
+   "title_ru": "Спрей",
+   "path_ru": [
+    "Уходовая косметика",
+    "Тело",
+    "Спрей"
+   ],
+   "url": "https://global.green-leaf.shop/sprej",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "vucut-kremleri"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/telo/depilyatsiya",
+   "level": 3,
+   "parent": "uhodovaya-kosmetika/telo",
+   "title_ru": "Депиляция",
+   "path_ru": [
+    "Уходовая косметика",
+    "Тело",
+    "Депиляция"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=60_85_214",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "tiras-ve-tuy-alma"
+   }
+  },
+  {
+   "id": "uhodovaya-kosmetika/parfyumeriya",
+   "level": 2,
+   "parent": "uhodovaya-kosmetika",
+   "title_ru": "Парфюмерия",
+   "path_ru": [
+    "Уходовая косметика",
+    "Парфюмерия"
+   ],
+   "url": "https://global.green-leaf.shop/parfumeriya",
+   "productCount": 13,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "deodorant-parfum"
+   }
+  },
+  {
+   "id": "gigiena",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Гигиена",
+   "path_ru": [
+    "Гигиена"
+   ],
+   "url": "https://global.green-leaf.shop/hygiene",
+   "productCount": 288,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": null
+   }
+  },
+  {
+   "id": "gigiena/zhenskaya",
+   "level": 2,
+   "parent": "gigiena",
+   "title_ru": "Женская",
+   "path_ru": [
+    "Гигиена",
+    "Женская"
+   ],
+   "url": "https://global.green-leaf.shop/zhenskaya",
+   "productCount": 58,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "kadin-hijyeni"
+   }
+  },
+  {
+   "id": "gigiena/zhenskaya/britvy",
+   "level": 3,
+   "parent": "gigiena/zhenskaya",
+   "title_ru": "Бритвы",
+   "path_ru": [
+    "Гигиена",
+    "Женская",
+    "Бритвы"
+   ],
+   "url": "https://global.green-leaf.shop/britvy",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "tiras-ve-tuy-alma"
+   }
+  },
+  {
+   "id": "gigiena/zhenskaya/prokladki",
+   "level": 3,
+   "parent": "gigiena/zhenskaya",
+   "title_ru": "Прокладки",
+   "path_ru": [
+    "Гигиена",
+    "Женская",
+    "Прокладки"
+   ],
+   "url": "https://global.green-leaf.shop/prokladki",
+   "productCount": 54,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "kadin-hijyeni"
+   }
+  },
+  {
+   "id": "gigiena/zhenskaya/rastvory",
+   "level": 3,
+   "parent": "gigiena/zhenskaya",
+   "title_ru": "Растворы",
+   "path_ru": [
+    "Гигиена",
+    "Женская",
+    "Растворы"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=66_71_212",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "kadin-hijyeni"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya",
+   "level": 2,
+   "parent": "gigiena",
+   "title_ru": "Личная",
+   "path_ru": [
+    "Гигиена",
+    "Личная"
+   ],
+   "url": "https://global.green-leaf.shop/lichnaya",
+   "productCount": 85,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": null
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/bombochki-dlya-vanny",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Бомбочки для ванны",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Бомбочки для ванны"
+   ],
+   "url": "https://global.green-leaf.shop/bombochki-dlya-vanny",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "banyo-aksesuarlari"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/geli-dlya-dusha",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Гели для душа",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Гели для душа"
+   ],
+   "url": "https://global.green-leaf.shop/gel-dlya-dusha",
+   "productCount": 34,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "dus-jelleri"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/dezodoranty",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Дезодоранты",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Дезодоранты"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=66_73_201",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "deodorant-parfum"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/zhidkoe-mylo",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Жидкое мыло",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Жидкое мыло"
+   ],
+   "url": "https://global.green-leaf.shop/zhidkoe-mylo",
+   "productCount": 26,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "sivi-sabunlar"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/instrumenty",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Инструменты",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Инструменты"
+   ],
+   "url": "https://global.green-leaf.shop/trimmer-kosmeticheskij",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "tiras-ve-tuy-alma"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/mochalki-dlya-dusha",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Мочалки для душа",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Мочалки для душа"
+   ],
+   "url": "https://global.green-leaf.shop/mochalki-dlya-dusha",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "banyo-aksesuarlari"
+   }
+  },
+  {
+   "id": "gigiena/lichnaya/tverdoe-mylo",
+   "level": 3,
+   "parent": "gigiena/lichnaya",
+   "title_ru": "Твердое мыло",
+   "path_ru": [
+    "Гигиена",
+    "Личная",
+    "Твердое мыло"
+   ],
+   "url": "https://global.green-leaf.shop/tverdoe-mylo",
+   "productCount": 10,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "kati-sabunlar"
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta",
+   "level": 2,
+   "parent": "gigiena",
+   "title_ru": "Полости рта",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта"
+   ],
+   "url": "https://global.green-leaf.shop/polosti-rta",
+   "productCount": 96,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": null
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta/zubnye-niti",
+   "level": 3,
+   "parent": "gigiena/polosti-rta",
+   "title_ru": "Зубные нити",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта",
+    "Зубные нити"
+   ],
+   "url": "https://global.green-leaf.shop/zubnye-niti",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": "dis-ipi-ve-agiz-bakimi"
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta/zubnye-pasty",
+   "level": 3,
+   "parent": "gigiena/polosti-rta",
+   "title_ru": "Зубные пасты",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта",
+    "Зубные пасты"
+   ],
+   "url": "https://global.green-leaf.shop/zubnye-pasty",
+   "productCount": 41,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": "dis-macunlari"
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta/zubnye-schetki",
+   "level": 3,
+   "parent": "gigiena/polosti-rta",
+   "title_ru": "Зубные щетки",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта",
+    "Зубные щетки"
+   ],
+   "url": "https://global.green-leaf.shop/zubnye-schetki",
+   "productCount": 24,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": "dis-fircalari"
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta/opolaskivateli",
+   "level": 3,
+   "parent": "gigiena/polosti-rta",
+   "title_ru": "Ополаскиватели",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта",
+    "Ополаскиватели"
+   ],
+   "url": "https://global.green-leaf.shop/opolaskivateli",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": "dis-ipi-ve-agiz-bakimi"
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta/sprei",
+   "level": 3,
+   "parent": "gigiena/polosti-rta",
+   "title_ru": "Спреи",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта",
+    "Спреи"
+   ],
+   "url": "https://global.green-leaf.shop/sprei",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": "dis-ipi-ve-agiz-bakimi"
+   }
+  },
+  {
+   "id": "gigiena/polosti-rta/dopolnitelnyy-uhod",
+   "level": 3,
+   "parent": "gigiena/polosti-rta",
+   "title_ru": "Дополнительный уход",
+   "path_ru": [
+    "Гигиена",
+    "Полости рта",
+    "Дополнительный уход"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=66_74_213",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "agiz-ve-dis-bakimi",
+    "child": "dis-ipi-ve-agiz-bakimi"
+   }
+  },
+  {
+   "id": "gigiena/salfetki-i-bumaga",
+   "level": 2,
+   "parent": "gigiena",
+   "title_ru": "Салфетки и бумага",
+   "path_ru": [
+    "Гигиена",
+    "Салфетки и бумага"
+   ],
+   "url": "https://global.green-leaf.shop/salfetki-i-bumaga",
+   "productCount": 49,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": null
+   }
+  },
+  {
+   "id": "gigiena/salfetki-i-bumaga/vatnye-diski-i-palochki",
+   "level": 3,
+   "parent": "gigiena/salfetki-i-bumaga",
+   "title_ru": "Ватные диски и палочки",
+   "path_ru": [
+    "Гигиена",
+    "Салфетки и бумага",
+    "Ватные диски и палочки"
+   ],
+   "url": "https://global.green-leaf.shop/vatnye-diski",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "pamuk"
+   }
+  },
+  {
+   "id": "gigiena/salfetki-i-bumaga/vlazhnye-salfetki",
+   "level": 3,
+   "parent": "gigiena/salfetki-i-bumaga",
+   "title_ru": "Влажные салфетки",
+   "path_ru": [
+    "Гигиена",
+    "Салфетки и бумага",
+    "Влажные салфетки"
+   ],
+   "url": "https://global.green-leaf.shop/vlazhnye-kosmeticheskie-salfetki",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "kagit-mendil"
+   }
+  },
+  {
+   "id": "gigiena/salfetki-i-bumaga/salfetki-polotentsa-platochki",
+   "level": 3,
+   "parent": "gigiena/salfetki-i-bumaga",
+   "title_ru": "Салфетки, полотенца, платочки",
+   "path_ru": [
+    "Гигиена",
+    "Салфетки и бумага",
+    "Салфетки, полотенца, платочки"
+   ],
+   "url": "https://global.green-leaf.shop/salfetki-platochki",
+   "productCount": 22,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "kagit-mendil"
+   }
+  },
+  {
+   "id": "gigiena/salfetki-i-bumaga/tualetnaya-bumaga",
+   "level": 3,
+   "parent": "gigiena/salfetki-i-bumaga",
+   "title_ru": "Туалетная бумага",
+   "path_ru": [
+    "Гигиена",
+    "Салфетки и бумага",
+    "Туалетная бумага"
+   ],
+   "url": "https://global.green-leaf.shop/tualetnaya-bumaga",
+   "productCount": 10,
+   "consumerCategory": {
+    "parent": "hijyen-ve-kagit",
+    "child": "tuvalet-kagidi"
+   }
+  },
+  {
+   "id": "makiyazh",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Макияж",
+   "path_ru": [
+    "Макияж"
+   ],
+   "url": "https://global.green-leaf.shop/makiyazh",
+   "productCount": 86,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": null
+   }
+  },
+  {
+   "id": "makiyazh/aksessuary-dlya-makiyazha",
+   "level": 2,
+   "parent": "makiyazh",
+   "title_ru": "Аксессуары для макияжа",
+   "path_ru": [
+    "Макияж",
+    "Аксессуары для макияжа"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=67_227",
+   "productCount": 9,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "makyaj-aksesuarlari"
+   }
+  },
+  {
+   "id": "makiyazh/brovi",
+   "level": 2,
+   "parent": "makiyazh",
+   "title_ru": "Брови",
+   "path_ru": [
+    "Макияж",
+    "Брови"
+   ],
+   "url": "https://global.green-leaf.shop/brovi",
+   "productCount": 15,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "kas"
+   }
+  },
+  {
+   "id": "makiyazh/brovi/okrashivanie-brovey",
+   "level": 3,
+   "parent": "makiyazh/brovi",
+   "title_ru": "Окрашивание бровей",
+   "path_ru": [
+    "Макияж",
+    "Брови",
+    "Окрашивание бровей"
+   ],
+   "url": "https://global.green-leaf.shop/okrashivanie-brovej",
+   "productCount": 8,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "kas"
+   }
+  },
+  {
+   "id": "makiyazh/brovi/uhod-za-resnitsami-i-brovyami",
+   "level": 3,
+   "parent": "makiyazh/brovi",
+   "title_ru": "Уход за ресницами и бровями",
+   "path_ru": [
+    "Макияж",
+    "Брови",
+    "Уход за ресницами и бровями"
+   ],
+   "url": "https://global.green-leaf.shop/ukhod-za-resnicami-i-brovyami",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "kas"
+   }
+  },
+  {
+   "id": "makiyazh/glaza",
+   "level": 2,
+   "parent": "makiyazh",
+   "title_ru": "Глаза",
+   "path_ru": [
+    "Макияж",
+    "Глаза"
+   ],
+   "url": "https://global.green-leaf.shop/glaza",
+   "productCount": 17,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "goz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/glaza/podvodka-dlya-glaz",
+   "level": 3,
+   "parent": "makiyazh/glaza",
+   "title_ru": "Подводка для глаз",
+   "path_ru": [
+    "Макияж",
+    "Глаза",
+    "Подводка для глаз"
+   ],
+   "url": "https://global.green-leaf.shop/podvodka-dlya-glaz",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "goz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/glaza/teni-dlya-glaz",
+   "level": 3,
+   "parent": "makiyazh/glaza",
+   "title_ru": "Тени для глаз",
+   "path_ru": [
+    "Макияж",
+    "Глаза",
+    "Тени для глаз"
+   ],
+   "url": "https://global.green-leaf.shop/teni-dlya-glaz",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "goz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/glaza/resnitsy",
+   "level": 3,
+   "parent": "makiyazh/glaza",
+   "title_ru": "Ресницы",
+   "path_ru": [
+    "Макияж",
+    "Глаза",
+    "Ресницы"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=67_77_215",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "goz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/guby",
+   "level": 2,
+   "parent": "makiyazh",
+   "title_ru": "Губы",
+   "path_ru": [
+    "Макияж",
+    "Губы"
+   ],
+   "url": "https://global.green-leaf.shop/guby",
+   "productCount": 23,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "dudak-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/guby/pomada-dlya-gub",
+   "level": 3,
+   "parent": "makiyazh/guby",
+   "title_ru": "Помада для губ",
+   "path_ru": [
+    "Макияж",
+    "Губы",
+    "Помада для губ"
+   ],
+   "url": "https://global.green-leaf.shop/pomada-dlya-gub",
+   "productCount": 16,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "dudak-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/litso",
+   "level": 2,
+   "parent": "makiyazh",
+   "title_ru": "Лицо",
+   "path_ru": [
+    "Макияж",
+    "Лицо"
+   ],
+   "url": "https://global.green-leaf.shop/lica",
+   "productCount": 31,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "yuz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/litso/konsiler",
+   "level": 3,
+   "parent": "makiyazh/litso",
+   "title_ru": "Консилер",
+   "path_ru": [
+    "Макияж",
+    "Лицо",
+    "Консилер"
+   ],
+   "url": "https://global.green-leaf.shop/konsiler",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "yuz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/litso/osnova-pod-makiyazh",
+   "level": 3,
+   "parent": "makiyazh/litso",
+   "title_ru": "Основа под макияж",
+   "path_ru": [
+    "Макияж",
+    "Лицо",
+    "Основа под макияж"
+   ],
+   "url": "https://global.green-leaf.shop/osnova-pod-makiyazh",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "yuz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/litso/pudra",
+   "level": 3,
+   "parent": "makiyazh/litso",
+   "title_ru": "Пудра",
+   "path_ru": [
+    "Макияж",
+    "Лицо",
+    "Пудра"
+   ],
+   "url": "https://global.green-leaf.shop/pudra",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "yuz-makyaji"
+   }
+  },
+  {
+   "id": "makiyazh/litso/tonalnoe-sredstvo",
+   "level": 3,
+   "parent": "makiyazh/litso",
+   "title_ru": "Тональное средство",
+   "path_ru": [
+    "Макияж",
+    "Лицо",
+    "Тональное средство"
+   ],
+   "url": "https://global.green-leaf.shop/tonalnoe-sredstvo",
+   "productCount": 13,
+   "consumerCategory": {
+    "parent": "makyaj",
+    "child": "yuz-makyaji"
+   }
+  },
+  {
+   "id": "aksessuary",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Аксессуары",
+   "path_ru": [
+    "Аксессуары"
+   ],
+   "url": "https://global.green-leaf.shop/aksessuary",
+   "productCount": 124,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": null
+   }
+  },
+  {
+   "id": "aksessuary/dlya-avtomobilya",
+   "level": 2,
+   "parent": "aksessuary",
+   "title_ru": "Для автомобиля",
+   "path_ru": [
+    "Аксессуары",
+    "Для автомобиля"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=70_235",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "arac-ve-kirtasiye"
+   }
+  },
+  {
+   "id": "aksessuary/zonty",
+   "level": 2,
+   "parent": "aksessuary",
+   "title_ru": "Зонты",
+   "path_ru": [
+    "Аксессуары",
+    "Зонты"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=70_218",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "valiz-ve-semsiye"
+   }
+  },
+  {
+   "id": "aksessuary/ochki-s-zaschitoy",
+   "level": 2,
+   "parent": "aksessuary",
+   "title_ru": "Очки с защитой",
+   "path_ru": [
+    "Аксессуары",
+    "Очки с защитой"
+   ],
+   "url": "https://global.green-leaf.shop/ochki-dlya-raboty-za-kompyuterom",
+   "productCount": 31,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "gozlukler"
+   }
+  },
+  {
+   "id": "aksessuary/raschestka",
+   "level": 2,
+   "parent": "aksessuary",
+   "title_ru": "Расчестка",
+   "path_ru": [
+    "Аксессуары",
+    "Расчестка"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=70_203",
+   "productCount": 12,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "tarak-ve-fircalar"
+   }
+  },
+  {
+   "id": "aksessuary/solntsezaschitnye-ochki",
+   "level": 2,
+   "parent": "aksessuary",
+   "title_ru": "Солнцезащитные очки",
+   "path_ru": [
+    "Аксессуары",
+    "Солнцезащитные очки"
+   ],
+   "url": "https://global.green-leaf.shop/solncezashchitnye-ochki",
+   "productCount": 26,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "gozlukler"
+   }
+  },
+  {
+   "id": "aksessuary/chemodan",
+   "level": 2,
+   "parent": "aksessuary",
+   "title_ru": "Чемодан",
+   "path_ru": [
+    "Аксессуары",
+    "Чемодан"
+   ],
+   "url": "https://global.green-leaf.shop/chemodan",
+   "productCount": 18,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "valiz-ve-semsiye"
+   }
+  },
+  {
+   "id": "kantselyarskie-tovary",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Канцелярские товары",
+   "path_ru": [
+    "Канцелярские товары"
+   ],
+   "url": "https://global.green-leaf.shop/kantseliarskie-tovary",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "arac-ve-kirtasiye"
+   }
+  },
+  {
+   "id": "obuv-i-uhod",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Обувь и уход",
+   "path_ru": [
+    "Обувь и уход"
+   ],
+   "url": "https://global.green-leaf.shop/obuv-i-ukhod",
+   "productCount": 118,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "terlikler"
+   }
+  },
+  {
+   "id": "obuv-i-uhod/zhenskie-tapochki",
+   "level": 2,
+   "parent": "obuv-i-uhod",
+   "title_ru": "Женские тапочки",
+   "path_ru": [
+    "Обувь и уход",
+    "Женские тапочки"
+   ],
+   "url": "https://global.green-leaf.shop/zhenskie-tapochki",
+   "productCount": 55,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "terlikler"
+   }
+  },
+  {
+   "id": "obuv-i-uhod/krem-dlya-obuvi",
+   "level": 2,
+   "parent": "obuv-i-uhod",
+   "title_ru": "Крем для обуви",
+   "path_ru": [
+    "Обувь и уход",
+    "Крем для обуви"
+   ],
+   "url": "https://global.green-leaf.shop/krem-dlya-obuvi",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "ayakkabi-bakimi"
+   }
+  },
+  {
+   "id": "obuv-i-uhod/muzhskie-tapochki",
+   "level": 2,
+   "parent": "obuv-i-uhod",
+   "title_ru": "Мужские тапочки",
+   "path_ru": [
+    "Обувь и уход",
+    "Мужские тапочки"
+   ],
+   "url": "https://global.green-leaf.shop/muzhskie-tapochki",
+   "productCount": 44,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "terlikler"
+   }
+  },
+  {
+   "id": "obuv-i-uhod/stelki",
+   "level": 2,
+   "parent": "obuv-i-uhod",
+   "title_ru": "Стельки",
+   "path_ru": [
+    "Обувь и уход",
+    "Стельки"
+   ],
+   "url": "https://global.green-leaf.shop/stelki",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "ayakkabi-bakimi"
+   }
+  },
+  {
+   "id": "obuv-i-uhod/shariki-dlya-obuvi",
+   "level": 2,
+   "parent": "obuv-i-uhod",
+   "title_ru": "Шарики для обуви",
+   "path_ru": [
+    "Обувь и уход",
+    "Шарики для обуви"
+   ],
+   "url": "https://global.green-leaf.shop/shariki-dlya-obuvi",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "ayakkabi-bakimi"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Одежда и текстиль",
+   "path_ru": [
+    "Одежда и текстиль"
+   ],
+   "url": "https://global.green-leaf.shop/tekstil-i-odezhda",
+   "productCount": 190,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": null
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/zhenskaya",
+   "level": 2,
+   "parent": "odezhda-i-tekstil",
+   "title_ru": "Женская",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Женская"
+   ],
+   "url": "https://global.green-leaf.shop/dlia-vzroslykh",
+   "productCount": 86,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "kadin-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/zhenskaya/zhenskie-golfy",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/zhenskaya",
+   "title_ru": "Женские гольфы",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Женская",
+    "Женские гольфы"
+   ],
+   "url": "https://global.green-leaf.shop/zhenskie-golfy-vzroslie",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "kadin-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/zhenskaya/zhenskie-noski",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/zhenskaya",
+   "title_ru": "Женские носки",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Женская",
+    "Женские носки"
+   ],
+   "url": "https://global.green-leaf.shop/zhenskie-noski",
+   "productCount": 24,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "kadin-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/zhenskaya/zhenskoe-nizhnee-bele",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/zhenskaya",
+   "title_ru": "Женское нижнее белье",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Женская",
+    "Женское нижнее белье"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=86_88_221",
+   "productCount": 29,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "kadin-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/zhenskaya/kolgotki",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/zhenskaya",
+   "title_ru": "Колготки",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Женская",
+    "Колготки"
+   ],
+   "url": "https://global.green-leaf.shop/kolgotki",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "kadin-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/muzhskaya",
+   "level": 2,
+   "parent": "odezhda-i-tekstil",
+   "title_ru": "Мужская",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Мужская"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=86_229",
+   "productCount": 57,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "erkek-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/muzhskaya/galstuki",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/muzhskaya",
+   "title_ru": "Галстуки",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Мужская",
+    "Галстуки"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=86_229_220",
+   "productCount": 15,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "erkek-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/muzhskaya/muzhskie-golfy",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/muzhskaya",
+   "title_ru": "Мужские гольфы",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Мужская",
+    "Мужские гольфы"
+   ],
+   "url": "https://global.green-leaf.shop/muzhskie-golfy-vzroslie",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "erkek-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/muzhskaya/muzhskie-noski",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/muzhskaya",
+   "title_ru": "Мужские носки",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Мужская",
+    "Мужские носки"
+   ],
+   "url": "https://global.green-leaf.shop/muzhskie-noski",
+   "productCount": 19,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "erkek-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/muzhskaya/muzhskie-trusy",
+   "level": 3,
+   "parent": "odezhda-i-tekstil/muzhskaya",
+   "title_ru": "Мужские трусы",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Мужская",
+    "Мужские трусы"
+   ],
+   "url": "https://global.green-leaf.shop/muzhskie-trusy",
+   "productCount": 36,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "erkek-giyim"
+   }
+  },
+  {
+   "id": "odezhda-i-tekstil/polotentsa",
+   "level": 2,
+   "parent": "odezhda-i-tekstil",
+   "title_ru": "Полотенца",
+   "path_ru": [
+    "Одежда и текстиль",
+    "Полотенца"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=86_219",
+   "productCount": 31,
+   "consumerCategory": {
+    "parent": "giyim-ve-aksesuar",
+    "child": "havlular"
+   }
+  },
+  {
+   "id": "posuda",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Посуда",
+   "path_ru": [
+    "Посуда"
+   ],
+   "url": "https://global.green-leaf.shop/posuda",
+   "productCount": 52,
+   "consumerCategory": {
+    "parent": "mutfak-ve-gida",
+    "child": "mutfak-gerecleri"
+   }
+  },
+  {
+   "id": "produkty-i-napitki",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Продукты и напитки",
+   "path_ru": [
+    "Продукты и напитки"
+   ],
+   "url": "https://global.green-leaf.shop/produkti-i-napitki",
+   "productCount": 34,
+   "consumerCategory": {
+    "parent": "mutfak-ve-gida",
+    "child": "gida"
+   }
+  },
+  {
+   "id": "produkty-i-napitki/napitki",
+   "level": 2,
+   "parent": "produkty-i-napitki",
+   "title_ru": "Напитки",
+   "path_ru": [
+    "Продукты и напитки",
+    "Напитки"
+   ],
+   "url": "https://global.green-leaf.shop/chaj-v-paketikakh",
+   "productCount": 16,
+   "consumerCategory": {
+    "parent": "mutfak-ve-gida",
+    "child": "cay-ve-icecek"
+   }
+  },
+  {
+   "id": "produkty-i-napitki/produkty",
+   "level": 2,
+   "parent": "produkty-i-napitki",
+   "title_ru": "Продукты",
+   "path_ru": [
+    "Продукты и напитки",
+    "Продукты"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=89_236",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "mutfak-ve-gida",
+    "child": "gida"
+   }
+  },
+  {
+   "id": "produkty-i-napitki/sahar",
+   "level": 2,
+   "parent": "produkty-i-napitki",
+   "title_ru": "Сахар",
+   "path_ru": [
+    "Продукты и напитки",
+    "Сахар"
+   ],
+   "url": "https://global.green-leaf.shop/sakhar",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "mutfak-ve-gida",
+    "child": "gida"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Товары для детей",
+   "path_ru": [
+    "Товары для детей"
+   ],
+   "url": "https://global.green-leaf.shop/dlya-detey",
+   "productCount": 92,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-banyo-cilt"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/destkaya-posuda",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Десткая посуда",
+   "path_ru": [
+    "Товары для детей",
+    "Десткая посуда"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=69_228",
+   "productCount": 7,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "beslenme-gerecleri"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/detskie-vlazhnye-salfetki",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Детские влажные салфетки",
+   "path_ru": [
+    "Товары для детей",
+    "Детские влажные салфетки"
+   ],
+   "url": "https://global.green-leaf.shop/detskie-vlazhnye-salfetki-salfetki",
+   "productCount": 9,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "bebek-mendil"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/detskie-zubnye-pasty",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Детские зубные пасты",
+   "path_ru": [
+    "Товары для детей",
+    "Детские зубные пасты"
+   ],
+   "url": "https://global.green-leaf.shop/detskie-zubnye-pasty",
+   "productCount": 16,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-agiz-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/detskie-zubnye-schetki",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Детские зубные щетки",
+   "path_ru": [
+    "Товары для детей",
+    "Детские зубные щетки"
+   ],
+   "url": "https://global.green-leaf.shop/detskie-zubnye-shchetki",
+   "productCount": 9,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-agiz-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/zubnaya-pasta",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Зубная паста",
+   "path_ru": [
+    "Товары для детей",
+    "Зубная паста"
+   ],
+   "url": "https://global.green-leaf.shop/zubnaya-pasta",
+   "productCount": 10,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-agiz-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/zubnaya-schetka",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Зубная щетка",
+   "path_ru": [
+    "Товары для детей",
+    "Зубная щетка"
+   ],
+   "url": "https://global.green-leaf.shop/zubnaya-shchetka",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-agiz-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/krem",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Крем",
+   "path_ru": [
+    "Товары для детей",
+    "Крем"
+   ],
+   "url": "https://global.green-leaf.shop/krem-gel",
+   "productCount": 6,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-banyo-cilt"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/molochko-dlya-tela",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Молочко для тела",
+   "path_ru": [
+    "Товары для детей",
+    "Молочко для тела"
+   ],
+   "url": "https://global.green-leaf.shop/molochko-dlya-tela",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-banyo-cilt"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/pena-dlya-vanny",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Пена для ванны",
+   "path_ru": [
+    "Товары для детей",
+    "Пена для ванны"
+   ],
+   "url": "https://global.green-leaf.shop/pena-dlya-vanny",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-banyo-cilt"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/podguzniki",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Подгузники",
+   "path_ru": [
+    "Товары для детей",
+    "Подгузники"
+   ],
+   "url": "https://global.green-leaf.shop/podguzniki",
+   "productCount": 16,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "bebek-bezi"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/predmety-uhoda",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Предметы ухода",
+   "path_ru": [
+    "Товары для детей",
+    "Предметы ухода"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=69_230",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-banyo-cilt"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/salfetki",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Салфетки",
+   "path_ru": [
+    "Товары для детей",
+    "Салфетки"
+   ],
+   "url": "https://global.green-leaf.shop/salfetki",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "bebek-mendil"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/stirka",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Стирка",
+   "path_ru": [
+    "Товары для детей",
+    "Стирка"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=69_217",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "camasir-deterjanlari"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/shampun-gel",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Шампунь, Гель",
+   "path_ru": [
+    "Товары для детей",
+    "Шампунь, Гель"
+   ],
+   "url": "https://global.green-leaf.shop/shampun",
+   "productCount": 11,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-banyo-cilt"
+   }
+  },
+  {
+   "id": "tovary-dlya-detey/detskaya-odezhda",
+   "level": 2,
+   "parent": "tovary-dlya-detey",
+   "title_ru": "Детская одежда",
+   "path_ru": [
+    "Товары для детей",
+    "Детская одежда"
+   ],
+   "url": "https://global.green-leaf.shop/dlia-detei",
+   "productCount": 22,
+   "consumerCategory": {
+    "parent": "anne-ve-cocuk",
+    "child": "cocuk-giyim"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Товары для здоровья",
+   "path_ru": [
+    "Товары для здоровья"
+   ],
+   "url": "https://global.green-leaf.shop/zdorovie",
+   "productCount": 117,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": null
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/bady",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "БАДы",
+   "path_ru": [
+    "Товары для здоровья",
+    "БАДы"
+   ],
+   "url": "https://global.green-leaf.shop/bad",
+   "productCount": 60,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "gida-takviyeleri"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/vitaminy",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "Витамины",
+   "path_ru": [
+    "Товары для здоровья",
+    "Витамины"
+   ],
+   "url": "https://global.green-leaf.shop/vitaminy",
+   "productCount": 15,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "vitaminler"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/lechebnye-plastyri",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "Лечебные пластыри",
+   "path_ru": [
+    "Товары для здоровья",
+    "Лечебные пластыри"
+   ],
+   "url": "https://global.green-leaf.shop/plastyr",
+   "productCount": 14,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "bant-ve-yamalar"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/massazhnoe-sredstvo",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "Массажное средство",
+   "path_ru": [
+    "Товары для здоровья",
+    "Массажное средство"
+   ],
+   "url": "https://global.green-leaf.shop/massazhnoe-sredstvo",
+   "productCount": 3,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "masaj"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/omolazhivayuschiy-gel",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "Омолаживающий гель",
+   "path_ru": [
+    "Товары для здоровья",
+    "Омолаживающий гель"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=59_200",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "masaj"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/sredstva-ot-ukusov-nasekomyh",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "Средства от укусов насекомых",
+   "path_ru": [
+    "Товары для здоровья",
+    "Средства от укусов насекомых"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=59_204",
+   "productCount": 4,
+   "consumerCategory": {
+    "parent": "ev-ve-temizlik",
+    "child": "hasere-kovucular"
+   }
+  },
+  {
+   "id": "tovary-dlya-zdorovya/mazi-sprei-i-dr",
+   "level": 2,
+   "parent": "tovary-dlya-zdorovya",
+   "title_ru": "Мази, спреи и др.",
+   "path_ru": [
+    "Товары для здоровья",
+    "Мази, спреи и др."
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=59_216",
+   "productCount": 5,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "masaj"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin",
+   "level": 1,
+   "parent": null,
+   "title_ru": "Товары для мужчин",
+   "path_ru": [
+    "Товары для мужчин"
+   ],
+   "url": "https://global.green-leaf.shop/dlya-muzhchin",
+   "productCount": 13,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "erkek-cilt-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/gigiena",
+   "level": 2,
+   "parent": "tovary-dlya-muzhchin",
+   "title_ru": "Гигиена",
+   "path_ru": [
+    "Товары для мужчин",
+    "Гигиена"
+   ],
+   "url": "https://global.green-leaf.shop/muzhskaya",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "tiras-ve-tuy-alma"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/gigiena/britvy",
+   "level": 3,
+   "parent": "tovary-dlya-muzhchin/gigiena",
+   "title_ru": "Бритвы",
+   "path_ru": [
+    "Товары для мужчин",
+    "Гигиена",
+    "Бритвы"
+   ],
+   "url": "https://global.green-leaf.shop/britvy-muzhskie",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "tiras-ve-tuy-alma"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/dlya-britya",
+   "level": 2,
+   "parent": "tovary-dlya-muzhchin",
+   "title_ru": "Для бритья",
+   "path_ru": [
+    "Товары для мужчин",
+    "Для бритья"
+   ],
+   "url": "https://global.green-leaf.shop/britvennyj-stanok",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "vucut-bakimi",
+    "child": "tiras-ve-tuy-alma"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/dlya-zdorovya",
+   "level": 2,
+   "parent": "tovary-dlya-muzhchin",
+   "title_ru": "Для здоровья",
+   "path_ru": [
+    "Товары для мужчин",
+    "Для здоровья"
+   ],
+   "url": "https://global.green-leaf.shop?route=product/category&path=68_199",
+   "productCount": 1,
+   "consumerCategory": {
+    "parent": "saglik-ve-takviye",
+    "child": "diger-saglik-urunleri"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/uhod",
+   "level": 2,
+   "parent": "tovary-dlya-muzhchin",
+   "title_ru": "Уход",
+   "path_ru": [
+    "Товары для мужчин",
+    "Уход"
+   ],
+   "url": "https://global.green-leaf.shop/uhodovaya-kosmetika-dlya-muzhchin",
+   "productCount": 9,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "erkek-cilt-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/uhod/krem",
+   "level": 3,
+   "parent": "tovary-dlya-muzhchin/uhod",
+   "title_ru": "Крем",
+   "path_ru": [
+    "Товары для мужчин",
+    "Уход",
+    "Крем"
+   ],
+   "url": "https://global.green-leaf.shop/krem",
+   "productCount": 0,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "erkek-cilt-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/uhod/loson",
+   "level": 3,
+   "parent": "tovary-dlya-muzhchin/uhod",
+   "title_ru": "Лосьон",
+   "path_ru": [
+    "Товары для мужчин",
+    "Уход",
+    "Лосьон"
+   ],
+   "url": "https://global.green-leaf.shop/loson-muzhskoi",
+   "productCount": 0,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "erkek-cilt-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/uhod/syvorotka",
+   "level": 3,
+   "parent": "tovary-dlya-muzhchin/uhod",
+   "title_ru": "Сыворотка",
+   "path_ru": [
+    "Товары для мужчин",
+    "Уход",
+    "Сыворотка"
+   ],
+   "url": "https://global.green-leaf.shop/syvorotka",
+   "productCount": 0,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "erkek-cilt-bakimi"
+   }
+  },
+  {
+   "id": "tovary-dlya-muzhchin/uhod/naturalnye-resheniya-dlya-luchshey",
+   "level": 3,
+   "parent": "tovary-dlya-muzhchin/uhod",
+   "title_ru": "Натуральные решения для лучшей жизни",
+   "path_ru": [
+    "Товары для мужчин",
+    "Уход",
+    "Натуральные решения для лучшей жизни"
+   ],
+   "url": "https://global.green-leaf.shop/britvy-muzhskie",
+   "productCount": 2,
+   "consumerCategory": {
+    "parent": "cilt-bakimi",
+    "child": "erkek-cilt-bakimi"
+   }
+  }
+ ]
+}

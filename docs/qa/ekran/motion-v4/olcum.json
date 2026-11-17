@@ -1,0 +1,227 @@
+{
+  "desktop": {
+    "t0": {
+      "swiper": {
+        "init": false
+      },
+      "html": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis"
+    },
+    "afterIntro": {
+      "swiper": {
+        "init": true,
+        "active": 0,
+        "running": false,
+        "paused": false
+      },
+      "html": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis",
+      "cls": 0
+    },
+    "hover": {
+      "init": true,
+      "active": 0,
+      "running": true,
+      "paused": true
+    },
+    "leave": {
+      "init": true,
+      "active": 0,
+      "running": true,
+      "paused": false
+    },
+    "firstAutoAdvanceAfterLeaveMs": 6583,
+    "inertInactive": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "liveRegion": "off",
+    "lenisWheel": {
+      "html": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis",
+      "ys": [
+        30,
+        131,
+        205,
+        260,
+        291,
+        321,
+        343,
+        356,
+        368,
+        375,
+        382,
+        386,
+        390,
+        392,
+        394,
+        396,
+        397,
+        398,
+        398,
+        399,
+        399,
+        399,
+        399,
+        400,
+        400
+      ]
+    },
+    "lockedClass": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis lenis-stopped",
+    "unlockedClass": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis",
+    "megaOpenClass": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis lenis-stopped",
+    "megaWheelScrollY": 0,
+    "megaClosedClass": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased lenis",
+    "pin": {
+      "pinned": true,
+      "hasSpacer": true,
+      "header": 81,
+      "start": 3499,
+      "end": 4475,
+      "dist": 976
+    },
+    "pinFrames": [
+      {
+        "p": 0,
+        "sectionTop": 81,
+        "trackX": 0,
+        "bar": 0
+      },
+      {
+        "p": 0.25,
+        "sectionTop": 81,
+        "trackX": -244,
+        "bar": 0.25
+      },
+      {
+        "p": 0.5,
+        "sectionTop": 81,
+        "trackX": -488,
+        "bar": 0.5
+      },
+      {
+        "p": 0.75,
+        "sectionTop": 81,
+        "trackX": -732,
+        "bar": 0.75
+      },
+      {
+        "p": 1,
+        "sectionTop": 81,
+        "trackX": -976,
+        "bar": 1
+      }
+    ],
+    "focusLast": {
+      "left": 976,
+      "right": 1408,
+      "top": 276,
+      "vw": 1440,
+      "scrollY": 4475
+    },
+    "anchor": {
+      "ys": [
+        1526,
+        1227,
+        594,
+        390,
+        283,
+        211,
+        163,
+        139
+      ],
+      "hash": "#icerik",
+      "scrollY": 96,
+      "focus": "icerik"
+    },
+    "cls": 0,
+    "jsLoaded": [
+      "1pcw6gskne7pf.js",
+      "turbopack-2u1d16houkiyo.js",
+      "3mwm0pfu8c8me.js",
+      "16t3h02tb1kc6.js",
+      "2fuxlcqleg9x-.js",
+      "1qedsz3b7_dq1.js",
+      "19mckt86slocg.js",
+      "3iz8_hoapa1o_.js",
+      "3hx2g7vdw5nfm.js",
+      "0pkve0426z_f0.js",
+      "15uqo0s8pwd_d.js",
+      "2nj40ff39vagr.js",
+      "2j1qdg6u05qhu.js",
+      "2a3iml0rheide.js",
+      "04s0sdy-i_vwo.js",
+      "0auklcqfzael4.js",
+      "2_yw8attvw1u5.js",
+      "39s5gzi7d6gcy.js",
+      "39rcbdp1kvbyu.js",
+      "32rs5z87z-9b2.js",
+      "2p7q2nz7ehdq0.js"
+    ],
+    "errors": []
+  },
+  "laptop": {
+    "pin": {
+      "pinned": true,
+      "hasSpacer": true,
+      "header": 81,
+      "start": 3403,
+      "end": 4339,
+      "dist": 936
+    },
+    "panelHeight": 428
+  },
+  "reduced": {
+    "html": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased",
+    "motion": "reduced",
+    "swiper": {
+      "init": true,
+      "active": 0,
+      "running": false,
+      "paused": false
+    },
+    "pin": {
+      "pinned": false,
+      "hasSpacer": false
+    },
+    "cls": 0
+  },
+  "mobile": {
+    "html": "MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased",
+    "swiper": {
+      "init": true,
+      "active": 0,
+      "running": true,
+      "paused": false
+    },
+    "pin": {
+      "pinned": false,
+      "hasSpacer": false
+    },
+    "stripScroll": {
+      "scrollLeft": 1366,
+      "max": 1366
+    },
+    "cls": 0,
+    "jsLoaded": [
+      "1pcw6gskne7pf.js",
+      "3mwm0pfu8c8me.js",
+      "3iz8_hoapa1o_.js",
+      "2fuxlcqleg9x-.js",
+      "turbopack-2u1d16houkiyo.js",
+      "16t3h02tb1kc6.js",
+      "1qedsz3b7_dq1.js",
+      "19mckt86slocg.js",
+      "3hx2g7vdw5nfm.js",
+      "0pkve0426z_f0.js",
+      "15uqo0s8pwd_d.js",
+      "2nj40ff39vagr.js",
+      "0auklcqfzael4.js",
+      "39s5gzi7d6gcy.js",
+      "39rcbdp1kvbyu.js",
+      "32rs5z87z-9b2.js",
+      "2p7q2nz7ehdq0.js"
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "360": {
+    "vw": 360,
+    "vh": 780,
+    "scrollW": 360,
+    "bandTop": 952,
+    "bandVisiblePx": -172,
+    "heroH": 831,
+    "h1": {
+      "fs": "56px",
+      "h": 151,
+      "top": 249
+    },
+    "tabs": [
+      "Vücut Bakımı",
+      "Ev ve Temizlik",
+      "Ağız ve Diş Bakımı"
+    ],
+    "tabCards": 16,
+    "bodyText": null
+  },
+  "390": {
+    "vw": 390,
+    "vh": 844,
+    "scrollW": 390,
+    "bandTop": 952,
+    "bandVisiblePx": -108,
+    "heroH": 831,
+    "h1": {
+      "fs": "56px",
+      "h": 151,
+      "top": 249
+    },
+    "tabs": [
+      "Vücut Bakımı",
+      "Ev ve Temizlik",
+      "Ağız ve Diş Bakımı"
+    ],
+    "tabCards": 16,
+    "bodyText": null
+  },
+  "768": {
+    "vw": 768,
+    "vh": 1024,
+    "scrollW": 768,
+    "bandTop": 1051,
+    "bandVisiblePx": -27,
+    "heroH": 942,
+    "h1": {
+      "fs": "85.44px",
+      "h": 231,
+      "top": 237
+    },
+    "tabs": [
+      "Vücut Bakımı",
+      "Ev ve Temizlik",
+      "Ağız ve Diş Bakımı"
+    ],
+    "tabCards": 16,
+    "bodyText": null
+  },
+  "1440": {
+    "vw": 1440,
+    "vh": 900,
+    "scrollW": 1440,
+    "bandTop": 850,
+    "bandVisiblePx": 50,
+    "heroH": 684,
+    "h1": {
+      "fs": "112.593px",
+      "h": 304,
+      "top": 358
+    },
+    "tabs": [
+      "Vücut Bakımı",
+      "Ev ve Temizlik",
+      "Ağız ve Diş Bakımı"
+    ],
+    "tabCards": 16,
+    "bodyText": null
+  },
+  "megaRoots": [
+    "cilt-bakimi",
+    "makyaj",
+    "sac-bakimi",
+    "vucut-bakimi",
+    "agiz-ve-dis-bakimi",
+    "setler",
+    "ev-ve-temizlik",
+    "anne-ve-cocuk",
+    "hijyen-ve-kagit",
+    "saglik-ve-takviye",
+    "mutfak-ve-gida",
+    "giyim-ve-aksesuar"
+  ],
+  "megaText": "Cilt Bakımı\n252 ürün · 8 tanesi Türkiye'de\nMakyaj\n81 ürün · 2 tanesi Türkiye'de\nSaç Bakımı\n96 ürün · 5 tanesi Türkiye'de\nVücut Bakımı\n141 ürün · 10 tanesi Türkiye'de\nAğız ve Diş Bakımı\n74 ürün · 4 tanesi Türkiye'de\nSetler\n11 ürün · 4 tanesi Türkiye'de\nEv ve Temizlik\n216 ürün · 8 tanesi Türkiye'de\nAnne ve Çocuk\n104 ürün · 3 tanesi Türkiye'de\nHijyen ve Kâğıt Ürünleri\n103 ürün · 3 tanesi Türkiye'de\nSağlık ve Takviye\n106 ürün · 1 tanesi Türkiye'de\nMutfak ve Gıda\n81 ürün\nGiyim ve Aksesuar\n420 ürün · 2 tanesi Türkiye'de\nTüm ürünler\n\nCilt Bakımı\n\nCilt Bakımı kategorisinin tümü (252)\nNemlendiriciler ve Kremler\n65 ürün\nSerumlar ve Yüz Yağları\n41 ürün\nYüz Temizleyiciler\n38 ürün\nTonik ve Losyonlar\n28 ürün\n· yakında\nYüz Maskeleri\n22 ürün\nGöz Çevresi Bakımı\n19 ürün\n· yakında\nDudak Bakımı\n10 ürün\n· yakında\nGüneş Koruma\n8 ürün\n· yakında\nErkek Cilt Bakımı\n8 ürün\n· yakında\n\nÖNE ÇIKAN\n\nİLİFE\niLiFE SOD İpek Yüz Kremi\nFiyat\n₺290\n290 TL\nÜye fiyatı\n₺145\n145 TL\nPV 0,7\nPV 0,7, puan değeri\nCildine uygun ürünleri bul\nCilt tipini seç, sana uygun ürünleri ve kısa bir rutin önerisini gör.\nBulucuyu aç",
+  "mega-setler": "Cilt Bakımı\n\nCilt Bakımı kategorisinin tümü (252)\nNemlendiriciler ve Kremler\n65 ürün\nSerumlar ve Yüz Yağları\n41 ürün\nYüz Temizleyiciler\n38 ürün\nTonik ve Losyonlar\n28 ürün\n· yakında\nYüz Maskeleri\n22 ürün\nGöz Çevresi Bakımı\n19 ürün\n· yakında\nDudak Bakımı\n10 ürün\n· yakında\nGüneş Koruma\n8 ürün\n· yakında\nErkek Cilt Bakımı\n8 ürün\n· yakında",
+  "mega-vucut-bakimi": "Cilt Bakımı\n\nCilt Bakımı kategorisinin tümü (252)\nNemlendiriciler ve Kremler\n65 ürün\nSerumlar ve Yüz Yağları\n41 ürün\nYüz Temizleyiciler\n38 ürün\nTonik ve Losyonlar\n28 ürün\n· yakında\nYüz Maskeleri\n22 ürün\nGöz Çevresi Bakımı\n19 ürün\n· yakında\nDudak Bakımı\n10 ürün\n· yakında\nGüneş Koruma\n8 ürün\n· yakında\nErkek Cilt Bakımı\n8 ürün\n· yakında",
+  "mega-cilt-bakimi": "Cilt Bakımı\n\nCilt Bakımı kategorisinin tümü (252)\nNemlendiriciler ve Kremler\n65 ürün\nSerumlar ve Yüz Yağları\n41 ürün\nYüz Temizleyiciler\n38 ürün\nTonik ve Losyonlar\n28 ürün\n· yakında\nYüz Maskeleri\n22 ürün\nGöz Çevresi Bakımı\n19 ürün\n· yakında\nDudak Bakımı\n10 ürün\n· yakında\nGüneş Koruma\n8 ürün\n· yakında\nErkek Cilt Bakımı\n8 ürün\n· yakında"
+}

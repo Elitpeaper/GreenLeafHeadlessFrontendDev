@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "key": "siparis",
+      "title": "Alışveriş ve sipariş",
+      "intro": "Sepet, ödeme ve sipariş süreciyle ilgili sorular.",
+      "items": [
+        {
+          "id": "siparis-simdi-alabilir-miyim",
+          "q": "Şu an siteden sipariş verebilir miyim?",
+          "a": "Henüz hayır. Online ödeme altyapısı hazırlanıyor ve çok yakında açılacak. Bu süre içinde ürünleri inceleyebilir, sepetini hazırlayabilir ve üye fiyatlarını görebilirsin."
+        },
+        {
+          "id": "siparis-odeme-ne-zaman",
+          "q": "Online ödeme ne zaman açılacak?",
+          "a": "Kesin bir tarih veremiyoruz. Altyapı hazır olduğunda sepetteki \"Ödemeye geç\" düğmesi aktif hale gelecek ve bunu sitede duyuracağız."
+        },
+        {
+          "id": "siparis-sepet-ne-ise-yarar",
+          "q": "Ödeme kapalıyken sepet ne işe yarıyor?",
+          "a": "Sepet, beğendiğin ürünleri bir arada görmen ve toplam tutarı hesaplaman için bir alışveriş listesi gibi çalışır. Sepetin tarayıcında saklanır; bu cihazda siteyi tekrar açtığında yerinde durur."
+        },
+        {
+          "id": "siparis-sepete-eklenemeyen",
+          "q": "Bazı ürünleri neden sepete ekleyemiyorum?",
+          "a": "Üzerinde \"Türkiye'ye yakında\" rozeti olan ürünler henüz Türkiye'de satışta değil. Bunları inceleyebilir, favorilerine ekleyebilirsin; satışa çıktığında sepete eklenebilir hale gelirler."
+        },
+        {
+          "id": "siparis-fiyat-kdv",
+          "q": "Fiyatlara KDV dahil mi?",
+          "a": "Evet, sitede gösterilen fiyatlara KDV dahildir."
+        },
+        {
+          "id": "siparis-favoriler",
+          "q": "Favorilerim nerede saklanıyor?",
+          "a": "Favorilerin yalnızca kullandığın cihazın tarayıcısında saklanır. Tarayıcı verilerini temizlersen ya da başka bir cihaza geçersen favorilerin görünmez. [Favorilerine git](/favoriler)."
+        }
+      ]
+    },
+    {
+      "key": "uyelik",
+      "title": "Üyelik ve üye fiyatı",
+      "intro": "İki fiyatın ne anlama geldiği ve nasıl üye olunacağı.",
+      "items": [
+        {
+          "id": "uyelik-iki-fiyat",
+          "q": "Üründe neden iki fiyat görüyorum?",
+          "a": "\"Fiyat\" herkes için geçerli normal fiyattır. \"Üye fiyatı\" ise Greenleaf üyelerinin ödediği fiyattır. İkisini yan yana gösteriyoruz ki farkı kendin görebilesin."
+        },
+        {
+          "id": "uyelik-nasil-uye-olunur",
+          "q": "Nasıl üye olurum?",
+          "a": "[Üye ol](/uye-ol) sayfasındaki düğme seni Greenleaf'in kayıt sayfasına yönlendirir. Kaydını orada tamamlarsın; üyelik Greenleaf'in kendi sisteminde açılır."
+        },
+        {
+          "id": "uyelik-ucret",
+          "q": "Üyelik ücretli mi?",
+          "a": "Bu konuda kesin bir bilgi vermiyoruz; üyelik koşullarını kayıt sırasında Greenleaf'in kendi sayfasında görürsün. Sitedeki bilgi ile Greenleaf'in sayfasındaki bilgi farklıysa Greenleaf'in sayfası esas alınır."
+        },
+        {
+          "id": "uyelik-giris",
+          "q": "Bu sitede hesap açmam ya da giriş yapmam gerekiyor mu?",
+          "a": "Hayır. Bu sitede kullanıcı hesabı yok; gezmek, sepet hazırlamak ve favori eklemek için giriş gerekmez. Üyelik işlemleri Greenleaf'in kendi sayfasında yapılır."
+        },
+        {
+          "id": "uyelik-uye-fiyati-nerede",
+          "q": "Üye fiyatından nasıl yararlanırım?",
+          "a": "Üye fiyatı Greenleaf üyeleri içindir. Üye olduktan sonra sipariş sürecinde bu fiyat geçerli olur. Siparişlerin bu sitede nasıl tamamlanacağını ödeme altyapısı açıldığında duyuracağız."
+        }
+      ]
+    },
+    {
+      "key": "pv",
+      "title": "PV (puan değeri)",
+      "intro": "Ürünlerin üzerindeki PV çipinin anlamı.",
+      "items": [
+        {
+          "id": "pv-nedir",
+          "q": "PV nedir?",
+          "a": "PV, Greenleaf üyelerinin alışverişlerinde hesaplanan puan değeridir. Her ürünün PV'si ürün kartında ve ürün sayfasında görünür.\n\nAyrıntılı anlatım için [PV nedir?](/pv-nedir) sayfasına bakabilirsin."
+        },
+        {
+          "id": "pv-yakinda-urun",
+          "q": "\"Yakında\" ürünlerde gördüğüm PV kesin mi?",
+          "a": "Türkiye'de satışa çıkmamış ürünlerde gösterilen PV tahmini bir değerdir ve ürün Türkiye'de satışa çıktığında değişebilir."
+        },
+        {
+          "id": "pv-fiyatla-iliski",
+          "q": "PV, ürünün fiyatını etkiler mi?",
+          "a": "Hayır. Fiyat ve üye fiyatı ayrı değerlerdir; PV yalnızca puan bilgisidir."
+        },
+        {
+          "id": "pv-detay",
+          "q": "PV ile ilgili daha fazla bilgiyi nerede bulurum?",
+          "a": "PV'nin nasıl hesaplandığı ve Greenleaf'in kendi iş planıyla ilgili bilgiler [PV nedir?](/pv-nedir) sayfasında yer alır."
+        }
+      ]
+    },
+    {
+      "key": "urunler",
+      "title": "Ürünler ve içerik",
+      "intro": "Ürün bilgileri, kullanım ve içerik hakkında.",
+      "items": [
+        {
+          "id": "urunler-orijinal",
+          "q": "Ürünler orijinal Greenleaf ürünleri mi?",
+          "a": "Evet. Sitedeki ürün görselleri ve bilgileri Greenleaf'in resmî kaynaklarına dayanır."
+        },
+        {
+          "id": "urunler-kozmetik-dil",
+          "q": "Ürün sayfalarında neden \"tedavi\" ya da \"iyileştirir\" gibi ifadeler yok?",
+          "a": "Kozmetik ve kişisel bakım ürünleri hastalıkları tedavi etmek için değildir. Bu yüzden ürünleri yalnızca görünümüne, hissine ve kullanım amacına göre anlatıyoruz. Sağlıkla ilgili bir sorun yaşıyorsan bir uzmana danışmalısın."
+        },
+        {
+          "id": "urunler-takviye",
+          "q": "Gıda takviyesi ve sağlık kategorisindeki ürünler ilaç mı?",
+          "a": "Hayır. Bu kategorideki ürünler ilaç değildir ve ilaç yerine kullanılmamalıdır. Kullanmadan önce ürün üzerindeki bilgileri oku; kronik rahatsızlığın varsa, hamileysen ya da düzenli ilaç kullanıyorsan doktoruna danış."
+        },
+        {
+          "id": "urunler-hassasiyet",
+          "q": "Cildim hassas, ürünü nasıl güvenle denerim?",
+          "a": "Yeni bir bakım ürününü ilk kez kullanırken ürünün üzerindeki kullanım uyarılarını oku. Genel bir öneri olarak ürünü önce küçük bir bölgede dene. Tahriş olursa kullanmayı bırak."
+        },
+        {
+          "id": "urunler-icerik-listesi",
+          "q": "Ürünün içerik listesini nerede görürüm?",
+          "a": "İçerik bilgisi mevcut olan ürünlerde ürün sayfasında \"İçerik\" bölümü yer alır. Güncel ve eksiksiz liste her zaman ürün ambalajındadır."
+        },
+        {
+          "id": "urunler-hacim",
+          "q": "Ürün hacmi ya da kullanım bilgisi neden bazı sayfalarda yok?",
+          "a": "Bilgiyi yalnızca doğrulayabildiğimiz kaynaktan yayınlıyoruz. Doğrulanmamış bilgi sayfada yer almaz; eksik bilgiler tamamlandıkça sayfalara eklenir."
+        },
+        {
+          "id": "urunler-yakinda",
+          "q": "\"Türkiye'ye yakında\" rozeti ne demek?",
+          "a": "Greenleaf'in dünya genelinde sattığı, ama Türkiye'de henüz satışa çıkmamış ürünleri bu rozetle gösteriyoruz. Fiyat bilgisi yoktur ve sepete eklenemezler."
+        }
+      ]
+    },
+    {
+      "key": "kargo",
+      "title": "Kargo ve iade",
+      "intro": "Teslimat ve iade koşulları ödeme açıldığında netleşecek.",
+      "items": [
+        {
+          "id": "kargo-sureler",
+          "q": "Kargo ücreti ve teslim süresi nedir?",
+          "a": "Online ödeme açılmadığı için kargo ücreti ve teslim süresi şu an belirlenmedi. Bilgiler ödeme altyapısı açıldığında bu sayfada ve ilgili yasal sayfalarda duyurulacak."
+        },
+        {
+          "id": "kargo-iade",
+          "q": "İade ve cayma hakkı nasıl işleyecek?",
+          "a": "İade ve cayma koşulları, satış başladığında yürürlüğe girecek mesafeli satış sözleşmesinde yer alacak. Şu an siteden satış yapılmadığı için iade süreci de yok."
+        },
+        {
+          "id": "kargo-yurt-disi",
+          "q": "Yurt dışına gönderim yapılıyor mu?",
+          "a": "Site yalnızca Türkiye'ye yönelik hazırlanmıştır. Gönderim koşulları ödeme açıldığında duyurulacak."
+        }
+      ]
+    },
+    {
+      "key": "greenleaf",
+      "title": "Greenleaf hakkında",
+      "intro": "Marka ve bu sitenin kim tarafından işletildiği.",
+      "items": [
+        {
+          "id": "greenleaf-nedir",
+          "q": "Greenleaf nedir, merkezi nerede?",
+          "a": "Greenleaf, merkezi Çin'in Suzhou kentinde olan bir şirkettir. Cilt bakımı, makyaj, kişisel bakım, ev ve temizlik gibi pek çok alanda ürün sunar. Daha fazlası için [Hakkımızda](/hakkimizda) sayfasına bakabilirsin."
+        },
+        {
+          "id": "greenleaf-resmi-site",
+          "q": "Bu, Greenleaf'in resmî sitesi mi?",
+          "a": "Hayır. Bu site bağımsız bir Greenleaf distribütörü tarafından işletilir. Greenleaf adı ve logosu marka sahibine aittir."
+        },
+        {
+          "id": "greenleaf-alt-markalar",
+          "q": "Sitede gördüğüm Carich, Easylove, iLife gibi isimler nedir?",
+          "a": "Bunlar Greenleaf çatısı altındaki alt markalardır. Ürünleri [tüm ürünler](/urunler) sayfasında marka filtresiyle ayırabilirsin."
+        },
+        {
+          "id": "greenleaf-iletisim",
+          "q": "Sizinle nasıl iletişime geçerim?",
+          "a": "İletişim bilgileri hazır olduğunda [Hakkımızda](/hakkimizda) sayfasında yer alacak."
+        }
+      ]
+    },
+    {
+      "key": "bulucu",
+      "title": "Cilt tipine göre bulucu",
+      "intro": "Cildine uygun ürünleri bulma aracı hakkında.",
+      "items": [
+        {
+          "id": "bulucu-nasil-calisir",
+          "q": "Cilt tipine göre bulucu nasıl çalışıyor?",
+          "a": "Cilt tipini, hassasiyetini ve öncelik vermek istediğin ihtiyaçları seçersin; sonuçlar hemen listelenir. Aracı [Cilt tipine göre ürün bul](/cilt-tipine-gore) sayfasında kullanabilirsin."
+        },
+        {
+          "id": "bulucu-dermatolog",
+          "q": "Bulucunun sonucu bir dermatolog önerisi yerine geçer mi?",
+          "a": "Hayır. Bulucu yalnızca ürün seçimini kolaylaştıran genel bir rehberdir; tıbbi bir değerlendirme ya da teşhis değildir. Cildinle ilgili bir sorun yaşıyorsan bir dermatoloğa danış."
+        },
+        {
+          "id": "bulucu-eposta",
+          "q": "Bulucuyu kullanmak için e-posta vermem gerekiyor mu?",
+          "a": "Hayır. Sonuçlar e-posta istenmeden hemen görünür. E-posta ile sonuç gönderme seçeneği hazır olduğunda isteğe bağlı olarak sunulacak."
+        },
+        {
+          "id": "bulucu-secimler",
+          "q": "Seçimlerim kaydediliyor mu?",
+          "a": "Seçimlerin sayfanın adresine yansır; böylece sonucu bağlantı olarak paylaşabilir ya da sonra tekrar açabilirsin."
+        }
+      ]
+    },
+    {
+      "key": "sertifikalar",
+      "title": "Sertifikalar",
+      "intro": "Üretici belgeleri hakkında.",
+      "items": [
+        {
+          "id": "sertifika-hangileri",
+          "q": "Hangi sertifikalardan söz ediliyor?",
+          "a": "Greenleaf üretici belgeleri arasında ISO 22716, GMP ve Helal belgeleri yer alır. Belgeler hazır oldukça [Sertifikalar](/sertifikalar) sayfasında yayınlanır."
+        },
+        {
+          "id": "sertifika-urun-duzeyi",
+          "q": "Her ürün bu belgelerin hepsine sahip mi?",
+          "a": "Belgeler üretici düzeyindedir; her ürünün her belgeyi taşıdığı anlamına gelmez. Ürüne özel bir belge varsa ürün sayfasında ayrıca belirtilir."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Ham araştırma/kazıma önbelleği — üçüncü taraf HTML'leri ve kişisel veri içerebilir
+.cache/
+# Panel export'ları — distribütör hesabına ait veri
+kaynaklar/panel/
+node_modules/
+.next/
+.vercel/
+.env*
+# --- Next.js scaffold ---
+/out/
+/build
+/coverage
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+.DS_Store
+*.pem

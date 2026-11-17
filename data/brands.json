@@ -1,0 +1,345 @@
+[
+ {
+  "slug": "carich",
+  "title": "CARICH",
+  "aliases": [
+   "CARICH"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 244,
+  "trCount": 16
+ },
+ {
+  "slug": "sealuxe",
+  "title": "SEALUXE",
+  "aliases": [
+   "SEALUXE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 228,
+  "trCount": 7
+ },
+ {
+  "slug": "kardli",
+  "title": "KARDLI",
+  "aliases": [
+   "KARDLI"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 196,
+  "trCount": 0
+ },
+ {
+  "slug": "ilife",
+  "title": "iLiFE",
+  "aliases": [
+   "ILIFE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 193,
+  "trCount": 16
+ },
+ {
+  "slug": "greenleaf",
+  "title": "Greenleaf",
+  "aliases": [
+   "GREENLEAF"
+  ],
+  "parent": null,
+  "logo": null,
+  "description_tr": null,
+  "productCount": 426,
+  "trCount": 3
+ },
+ {
+  "slug": "nilrich",
+  "title": "Nilrich",
+  "aliases": [
+   "NILRICH",
+   "NIRLICH",
+   "NLIRICH"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 76,
+  "trCount": 1
+ },
+ {
+  "slug": "marvisia",
+  "title": "MARVISIA",
+  "aliases": [
+   "MARVISIA"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 62,
+  "trCount": 2
+ },
+ {
+  "slug": "yibeile",
+  "title": "YIBEILE",
+  "aliases": [
+   "YIBEILE",
+   "YIBEIL",
+   "YIBELLE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 50,
+  "trCount": 3
+ },
+ {
+  "slug": "maiweis",
+  "title": "MAIWEIS",
+  "aliases": [
+   "MAIWEIS"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 46,
+  "trCount": 0
+ },
+ {
+  "slug": "pinkpoint",
+  "title": "Pink Point",
+  "aliases": [
+   "PINK POINT",
+   "PINKPOINT"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 29,
+  "trCount": 1
+ },
+ {
+  "slug": "okfad",
+  "title": "OKFAD",
+  "aliases": [
+   "OKFAD"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 22,
+  "trCount": 0
+ },
+ {
+  "slug": "jiadeli",
+  "title": "JIADELI",
+  "aliases": [
+   "JIADELI"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 10,
+  "trCount": 0
+ },
+ {
+  "slug": "berclean",
+  "title": "BERCLEAN",
+  "aliases": [
+   "BERCLEAN"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 10,
+  "trCount": 0
+ },
+ {
+  "slug": "yuezhonggui",
+  "title": "YUE ZHONGGUI",
+  "aliases": [
+   "YUE ZHONGGUI",
+   "YUEZHONGGUI"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 10,
+  "trCount": 0
+ },
+ {
+  "slug": "suting",
+  "title": "SUTING",
+  "aliases": [
+   "SUTING"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 9,
+  "trCount": 0
+ },
+ {
+  "slug": "yijian",
+  "title": "YIJIAN",
+  "aliases": [
+   "YIJIAN"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 8,
+  "trCount": 0
+ },
+ {
+  "slug": "newitz",
+  "title": "NEWITZ",
+  "aliases": [
+   "NEWITZ"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 8,
+  "trCount": 0
+ },
+ {
+  "slug": "morefuture",
+  "title": "MOREFUTURE",
+  "aliases": [
+   "MOREFUTURE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 7,
+  "trCount": 0
+ },
+ {
+  "slug": "limancy",
+  "title": "LIMANCY",
+  "aliases": [
+   "LIMANCY"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 6,
+  "trCount": 0
+ },
+ {
+  "slug": "kailanduo",
+  "title": "KAILANDUO",
+  "aliases": [
+   "KAILANDUO"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 5,
+  "trCount": 0
+ },
+ {
+  "slug": "zhengai",
+  "title": "ZHENGAI",
+  "aliases": [
+   "ZHENGAI"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 5,
+  "trCount": 0
+ },
+ {
+  "slug": "miaorou",
+  "title": "MIAOROU",
+  "aliases": [
+   "MIAOROU"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 5,
+  "trCount": 0
+ },
+ {
+  "slug": "moonflore",
+  "title": "MOON FLORE",
+  "aliases": [
+   "MOON FLORE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 4,
+  "trCount": 0
+ },
+ {
+  "slug": "marion",
+  "title": "MARION",
+  "aliases": [
+   "MARION"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 4,
+  "trCount": 0
+ },
+ {
+  "slug": "easylove",
+  "title": "EASYLOVE",
+  "aliases": [
+   "EASYLOVE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 3,
+  "trCount": 0
+ },
+ {
+  "slug": "surefire",
+  "title": "SUREFIRE",
+  "aliases": [
+   "SUREFIRE"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 3,
+  "trCount": 0
+ },
+ {
+  "slug": "bluepoint",
+  "title": "BLUE POINT",
+  "aliases": [
+   "BLUE POINT",
+   "BLUEPOINT"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 16,
+  "trCount": 1
+ },
+ {
+  "slug": "jinghuxi",
+  "title": "JINGHUXI",
+  "aliases": [
+   "JINGHUXI"
+  ],
+  "parent": "greenleaf",
+  "logo": null,
+  "description_tr": null,
+  "productCount": 1,
+  "trCount": 1
+ }
+]

@@ -1,0 +1,905 @@
+{
+  "home-def-360": {
+    "lcp": {
+      "t": 1040,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased data-recolor-header= data-intro= data-motion=reduced data-motion-first= data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 360,
+      "vw": 360,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "56px",
+          "w": 326
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 831,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 170,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 1016,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 916,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 656,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 1200,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 911,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "home-def-390": {
+    "lcp": {
+      "t": 828,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased data-recolor-header= data-intro= data-motion=reduced data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 390,
+      "vw": 390,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "56px",
+          "w": 355
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 831,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 170,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 1020,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 903,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 660,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 1240,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 914,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "home-def-768": {
+    "lcp": {
+      "t": 708,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0.0004659852323432763,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased data-recolor-header= data-intro= data-motion=reduced data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 768,
+      "vw": 768,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "85.44px",
+          "w": 718
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 942,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 170,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 1058,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 959,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 710,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 3060,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 552,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0.0004659852323432763
+  },
+  "home-def-1440": {
+    "lcp": {
+      "t": 748,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0.12050978913483795,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased data-recolor-header= data-intro= data-motion=reduced data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 1440,
+      "vw": 1440,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "112.593px",
+          "w": 789
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 684,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 290,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 928,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 1512,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 1256,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 1636,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 614,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0.12050978913483795
+  },
+  "home-full-360": {
+    "lcp": {
+      "t": 720,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis data-recolor-header= data-intro= data-motion=on data-motion-forced= data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 360,
+      "vw": 360,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "56px",
+          "w": 326
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 831,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 170,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 1016,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 916,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 656,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 1200,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 411,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "home-full-390": {
+    "lcp": {
+      "t": 568,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis data-recolor-header= data-intro= data-motion=on data-motion-forced= data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 390,
+      "vw": 390,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "56px",
+          "w": 355
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 831,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 170,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 1020,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 903,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 660,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 1240,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 414,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "home-full-768": {
+    "lcp": {
+      "t": 700,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0.000021612737327814102,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis data-recolor-header= data-intro= data-motion=on data-motion-forced= data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 768,
+      "vw": 768,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "85.44px",
+          "w": 718
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 942,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 170,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 1058,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 959,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 710,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 3060,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 452,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0.000021612737327814102
+  },
+  "home-full-1440": {
+    "lcp": {
+      "t": 776,
+      "el": "IMG.object-cover"
+    },
+    "clsInitial": 0.000009326171875000001,
+    "html": "jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis lang=tr class=jost_2cde8c9a-module__MoCD6G__variable poppins_368082d4-module__QCrZHG__variable comfortaa_7e12807f-module__w0p8cq__variable antialiased lenis data-recolor-header= data-intro= data-motion=on data-motion-forced= data-motion-runtime= data-motion-ready= data-motion-live=",
+    "audit": {
+      "scrollW": 1440,
+      "vw": 1440,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Doğadan / gelen / bakım.",
+          "lines": 3,
+          "fs": "112.593px",
+          "w": 789
+        }
+      ],
+      "cardSummary": {
+        "n": 32,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 684,
+          "bg": "rgb(20, 72, 47)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 290,
+          "bg": "rgb(10, 42, 24)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "shelves-title",
+          "h": 928,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "vitrin1-title",
+          "h": 1512,
+          "bg": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 1795,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "discover-title",
+          "h": 1636,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "brands-title",
+          "h": 514,
+          "bg": "rgb(134, 183, 38)"
+        }
+      ]
+    },
+    "cls": 0.000009326171875000001
+  },
+  "urunler-390": {
+    "audit": {
+      "scrollW": 390,
+      "vw": 390,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Tüm ürünler",
+          "lines": 1,
+          "fs": "38.08px",
+          "w": 315
+        }
+      ],
+      "cardSummary": {
+        "n": 24,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 6068,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "urunler-1440": {
+    "audit": {
+      "scrollW": 1440,
+      "vw": 1440,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Tüm ürünler",
+          "lines": 1,
+          "fs": "64px",
+          "w": 513
+        }
+      ],
+      "cardSummary": {
+        "n": 24,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 3699,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "kategori-390": {
+    "audit": {
+      "scrollW": 390,
+      "vw": 390,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Cilt Bakımı",
+          "lines": 1,
+          "fs": "38.08px",
+          "w": 246
+        }
+      ],
+      "cardSummary": {
+        "n": 24,
+        "missingMember": 0,
+        "missingPv": 5
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 6581,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "kategori-1440": {
+    "audit": {
+      "scrollW": 1440,
+      "vw": 1440,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "Cilt Bakımı",
+          "lines": 1,
+          "fs": "64px",
+          "w": 297
+        }
+      ],
+      "cardSummary": {
+        "n": 24,
+        "missingMember": 0,
+        "missingPv": 5
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 4259,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "urun-390": {
+    "audit": {
+      "scrollW": 390,
+      "vw": 390,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "iLiFE SOD İpek Yüz Kremi",
+          "lines": 2,
+          "fs": "38.08px",
+          "w": 355
+        }
+      ],
+      "cardSummary": {
+        "n": 4,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 1507,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 424,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "benzer",
+          "h": 698,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 99,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 51,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 73,
+          "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "urun-1440": {
+    "audit": {
+      "scrollW": 1440,
+      "vw": 1440,
+      "overflow": [],
+      "badLinks": [],
+      "internalNotes": [],
+      "h1": [
+        {
+          "t": "iLiFE SOD İpek Yüz Kremi",
+          "lines": 2,
+          "fs": "64px",
+          "w": 452
+        }
+      ],
+      "cardSummary": {
+        "n": 4,
+        "missingMember": 0,
+        "missingPv": 0
+      },
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "imgNoAlt": 0,
+      "brokenImgs": [],
+      "sections": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 1074,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 374,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "benzer",
+          "h": 811,
+          "bg": "rgb(251, 247, 239)"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "h": 120,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 93,
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "h": 0,
+          "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)"
+        }
+      ]
+    },
+    "cls": 0
+  },
+  "errors": [
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"string\",\"value\":\"%c%s%c Each child in a list should have a unique \\\"key\\\" prop.%s%s See https://react.dev/link/warning-keys for more information.\"},{\"type\":\"string\",\"value\":\"background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #0",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Route \\\"/kategori/[kok]/[[...alt]]\\\": Next.js encountered URL data during prerendering or a navigation.\\n\\n`params` or `searchParams` accessed outside of `<Suspense>` may prevent the navigation from ",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Route \\\"/kategori/[kok]/[[...alt]]\\\": Next.js encountered URL data during prerendering or a navigation.\\n\\n`params` or `searchParams` accessed outside of `<Suspense>` may prevent the navigation from ",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Route \\\"/urun/[slug]\\\": Next.js encountered URL data during prerendering or a navigation.\\n\\n`params` or `searchParams` accessed outside of `<Suspense>` may prevent the navigation from being instant,",
+    "{\"type\":\"error\",\"args\":[{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"Error\",\"description\":\"Error: Route \\\"/urun/[slug]\\\": Next.js encountered URL data during prerendering or a navigation.\\n\\n`params` or `searchParams` accessed outside of `<Suspense>` may prevent the navigation from being instant,"
+  ]
+}

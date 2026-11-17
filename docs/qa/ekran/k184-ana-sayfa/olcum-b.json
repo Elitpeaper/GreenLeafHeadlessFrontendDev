@@ -1,0 +1,24 @@
+{
+  "motion": "reduced",
+  "shiftsLoad": [],
+  "kesfetHidden": 16,
+  "hiddenAll": 16,
+  "shiftsFull": [],
+  "doors390": {
+    "w": 390,
+    "cw": 390,
+    "html": 36247
+  },
+  "fold360": {
+    "bandTop": 121,
+    "vh": 780
+  },
+  "fold390": {
+    "bandTop": 121,
+    "vh": 844
+  },
+  "fold1440": {
+    "bandTop": 166,
+    "vh": 900
+  }
+}

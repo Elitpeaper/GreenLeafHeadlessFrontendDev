@@ -1,0 +1,595 @@
+{
+  "A-os-reduced-gentle": {
+    "state": {
+      "dataMotion": "reduced",
+      "runtime": true,
+      "reducedMQ": true,
+      "hoverFine": true
+    },
+    "before": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": false,
+      "zoneWashOpacity": "0",
+      "zoneStripeScale": "0 1",
+      "headerActive": false,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0",
+      "revealOpacity": "0",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0",
+      "bandScale": "none"
+    },
+    "t160": {
+      "zoneAccentSoft": "rgb(252, 237, 238)",
+      "zoneAccentDecor": "rgb(223, 77, 88)",
+      "zoneBg": "rgb(252, 237, 238)",
+      "zoneActive": true,
+      "zoneWashOpacity": "0.0123225",
+      "zoneStripeScale": "1",
+      "headerActive": true,
+      "headerStripe1": "rgb(223, 77, 88)",
+      "headerWashOpacity": "0.0123225",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0.967503",
+      "revealOpacity": "1",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0.999195",
+      "bandScale": "none"
+    },
+    "after": {
+      "zoneAccentSoft": "rgb(252, 237, 238)",
+      "zoneAccentDecor": "rgb(223, 77, 88)",
+      "zoneBg": "rgb(252, 237, 238)",
+      "zoneActive": true,
+      "zoneWashOpacity": "1",
+      "zoneStripeScale": "1",
+      "headerActive": true,
+      "headerStripe1": "rgb(223, 77, 88)",
+      "headerWashOpacity": "1",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "1",
+      "revealOpacity": "1",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "1",
+      "bandScale": "none"
+    },
+    "released": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": false,
+      "zoneWashOpacity": "0",
+      "zoneStripeScale": "0 1",
+      "headerActive": false,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0",
+      "revealOpacity": "0",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0",
+      "bandScale": "none"
+    }
+  },
+  "B-full": {
+    "state": {
+      "dataMotion": "on",
+      "runtime": true,
+      "reducedMQ": false,
+      "hoverFine": true
+    },
+    "before": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": false,
+      "zoneWashOpacity": "0",
+      "zoneStripeScale": "0 1",
+      "headerActive": false,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0",
+      "revealOpacity": "0",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0",
+      "bandScale": "0.4 1"
+    },
+    "t160": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(80, 173, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": true,
+      "zoneWashOpacity": "0.0124236",
+      "zoneStripeScale": "0.164355 1",
+      "headerActive": true,
+      "headerStripe1": "rgb(80, 173, 54)",
+      "headerWashOpacity": "0.0124236",
+      "cardTranslate": "0px -5.82422px",
+      "cardGlowOpacity": "0.970703",
+      "revealOpacity": "0.994772",
+      "mediaScale": "1.06042",
+      "mediaRotate": "-1.13288deg",
+      "bandOpacity": "0.999467",
+      "bandScale": "0.982422 1"
+    },
+    "after": {
+      "zoneAccentSoft": "rgb(252, 237, 238)",
+      "zoneAccentDecor": "rgb(223, 77, 88)",
+      "zoneBg": "rgb(252, 237, 238)",
+      "zoneActive": true,
+      "zoneWashOpacity": "1",
+      "zoneStripeScale": "1",
+      "headerActive": true,
+      "headerStripe1": "rgb(223, 77, 88)",
+      "headerWashOpacity": "1",
+      "cardTranslate": "0px -6px",
+      "cardGlowOpacity": "1",
+      "revealOpacity": "1",
+      "mediaScale": "1.08",
+      "mediaRotate": "-1.5deg",
+      "bandOpacity": "1",
+      "bandScale": "none"
+    },
+    "released": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": false,
+      "zoneWashOpacity": "0",
+      "zoneStripeScale": "0 1",
+      "headerActive": false,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0",
+      "revealOpacity": "0",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0",
+      "bandScale": "0.4 1"
+    }
+  },
+  "C-forced-full": {
+    "state": {
+      "dataMotion": "on",
+      "runtime": true,
+      "reducedMQ": true,
+      "hoverFine": true
+    },
+    "before": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": false,
+      "zoneWashOpacity": "0",
+      "zoneStripeScale": "0 1",
+      "headerActive": false,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0",
+      "revealOpacity": "0",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0",
+      "bandScale": "0.4 1"
+    },
+    "t160": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": true,
+      "zoneWashOpacity": "0.00068901",
+      "zoneStripeScale": "0.0437497 1",
+      "headerActive": true,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0.00068901",
+      "cardTranslate": "0px -5.70489px",
+      "cardGlowOpacity": "0.950815",
+      "revealOpacity": "1",
+      "mediaScale": "1.05626",
+      "mediaRotate": "-1.05484deg",
+      "bandOpacity": "0.996935",
+      "bandScale": "0.970489 1"
+    },
+    "after": {
+      "zoneAccentSoft": "rgb(252, 237, 238)",
+      "zoneAccentDecor": "rgb(223, 77, 88)",
+      "zoneBg": "rgb(252, 237, 238)",
+      "zoneActive": true,
+      "zoneWashOpacity": "1",
+      "zoneStripeScale": "1",
+      "headerActive": true,
+      "headerStripe1": "rgb(223, 77, 88)",
+      "headerWashOpacity": "1",
+      "cardTranslate": "0px -6px",
+      "cardGlowOpacity": "1",
+      "revealOpacity": "1",
+      "mediaScale": "1.08",
+      "mediaRotate": "-1.5deg",
+      "bandOpacity": "1",
+      "bandScale": "none"
+    },
+    "released": {
+      "zoneAccentSoft": "rgb(241, 248, 238)",
+      "zoneAccentDecor": "rgb(78, 174, 54)",
+      "zoneBg": "rgb(241, 248, 238)",
+      "zoneActive": false,
+      "zoneWashOpacity": "0",
+      "zoneStripeScale": "0 1",
+      "headerActive": false,
+      "headerStripe1": "rgb(78, 174, 54)",
+      "headerWashOpacity": "0",
+      "cardTranslate": "none",
+      "cardGlowOpacity": "0",
+      "revealOpacity": "0",
+      "mediaScale": "none",
+      "mediaRotate": "none",
+      "bandOpacity": "0",
+      "bandScale": "0.4 1"
+    }
+  },
+  "button": {
+    "ctaMotion": "cta-member",
+    "ctaHasShine": false,
+    "ctaHover": {
+      "translate": "0px -2px",
+      "shineTranslate": "-42.4211%"
+    }
+  },
+  "smooth": {
+    "wheel400": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      48,
+      70,
+      90,
+      110,
+      119,
+      136,
+      153,
+      160,
+      175,
+      182,
+      202,
+      208,
+      215,
+      226,
+      231,
+      237,
+      242,
+      247,
+      251,
+      256,
+      261,
+      265,
+      269,
+      273,
+      278,
+      281,
+      285,
+      289,
+      292,
+      295,
+      299,
+      302,
+      305,
+      308,
+      311,
+      314,
+      316,
+      319,
+      322,
+      326,
+      329,
+      331,
+      333,
+      335,
+      337,
+      339,
+      341,
+      343,
+      345,
+      347,
+      348,
+      351,
+      353,
+      365,
+      366
+    ],
+    "afterPageDown": 787,
+    "lock": {
+      "dialogOpen": true,
+      "before": 0,
+      "after": 0,
+      "htmlOverflow": "hidden"
+    },
+    "anchor": {
+      "samples": [
+        0,
+        164,
+        283,
+        388,
+        494,
+        700,
+        899,
+        995,
+        1182,
+        1352,
+        1520,
+        1599,
+        2112,
+        2178,
+        2244,
+        2428,
+        2545,
+        2601,
+        3002,
+        3048,
+        3092,
+        3177,
+        3218,
+        3258,
+        3296,
+        3336,
+        3410,
+        3444,
+        3478,
+        4547,
+        4555,
+        4572,
+        4587,
+        4602,
+        4609,
+        4793,
+        4800,
+        4802,
+        4819,
+        4826,
+        4828,
+        4830,
+        4831,
+        4835,
+        4836,
+        4839,
+        4840,
+        4842,
+        4844,
+        4849,
+        4851,
+        4852,
+        4854,
+        4855,
+        4857,
+        4858,
+        4859,
+        4861,
+        4862,
+        4863,
+        4865,
+        4866,
+        4867,
+        4868,
+        4869,
+        4870,
+        4871,
+        4873,
+        4874,
+        4875,
+        4876,
+        4877,
+        4878,
+        4879,
+        4880,
+        4881,
+        4882
+      ],
+      "footerTop": 233,
+      "hash": "#test-anchor",
+      "focused": "FOOTER"
+    }
+  },
+  "svg": {
+    "bloom": {
+      "name": "divider-leaf-diamond",
+      "before": {
+        "hot": false,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "lines t=none r=none s=none",
+          "diamond t=none r=none s=none"
+        ]
+      },
+      "mid": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "lines t=none r=none s=none",
+          "diamond t=0px -1.97127px r=none s=1.10951"
+        ]
+      },
+      "late": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "lines t=none r=none s=none",
+          "diamond t=0px -2px r=none s=1.1"
+        ]
+      }
+    },
+    "sway": {
+      "name": "scene-finder-leaves",
+      "before": {
+        "hot": false,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "backdrop t=none r=none s=none",
+          "leaf t=none r=none s=none",
+          "leaf t=none r=none s=none",
+          "leaf t=none r=none s=none"
+        ]
+      },
+      "mid": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "backdrop t=none r=none s=none",
+          "leaf t=none r=-7.05361deg s=none",
+          "leaf t=none r=-7.95919deg s=none",
+          "leaf t=none r=-7.80037deg s=none"
+        ]
+      },
+      "late": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "backdrop t=none r=none s=none",
+          "leaf t=none r=-1.56239deg s=none",
+          "leaf t=none r=1.37598deg s=none",
+          "leaf t=none r=4.77949deg s=none"
+        ]
+      }
+    },
+    "draw": {
+      "name": "scene-premium-frame",
+      "before": {
+        "hot": false,
+        "drawable": 2,
+        "dashoffset": "0px",
+        "parts": [
+          "frame t=none r=none s=none",
+          "corners t=none r=none s=none",
+          "crest-top t=none r=none s=none",
+          "crest-bottom t=none r=none s=none"
+        ]
+      },
+      "mid": {
+        "hot": true,
+        "drawable": 2,
+        "dashoffset": "0.614607px",
+        "parts": [
+          "frame t=none r=none s=none",
+          "corners t=none r=none s=0.6",
+          "crest-top t=none r=none s=none",
+          "crest-bottom t=none r=none s=none"
+        ]
+      },
+      "late": {
+        "hot": true,
+        "drawable": 2,
+        "dashoffset": "0px",
+        "parts": [
+          "frame t=none r=none s=none",
+          "corners t=none r=none s=1.02839",
+          "crest-top t=none r=none s=none",
+          "crest-bottom t=none r=none s=none"
+        ]
+      }
+    },
+    "spin": {
+      "name": "empty-cookie",
+      "before": {
+        "hot": false,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "backdrop t=none r=none s=none",
+          "leaves t=none r=none s=none",
+          "object t=none r=none s=none",
+          "crumbs t=none r=none s=none"
+        ]
+      },
+      "mid": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "backdrop t=none r=none s=none",
+          "leaves t=none r=none s=none",
+          "object t=none r=25.5496deg s=none",
+          "crumbs t=7.22357px -2.63864px r=19.0585deg s=none"
+        ]
+      },
+      "late": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "backdrop t=none r=none s=none",
+          "leaves t=none r=none s=none",
+          "object t=none r=261.469deg s=none",
+          "crumbs t=7.512px -2.744px r=18deg s=none"
+        ]
+      }
+    },
+    "parallax": {
+      "name": "scene-hero-botanical",
+      "before": {
+        "hot": false,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "sun t=0px r=none s=none",
+          "branch-back t=0px r=none s=none",
+          "leaves-front t=0px r=none s=none",
+          "drops t=0px r=none s=none"
+        ]
+      },
+      "mid": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "sun t=3.8052px -3px r=0.991332deg s=none",
+          "branch-back t=1.9026px -1.5px r=none s=none",
+          "leaves-front t=6.342px -5px r=none s=none",
+          "drops t=3.8052px -3px r=none s=none"
+        ]
+      },
+      "late": {
+        "hot": true,
+        "drawable": 0,
+        "dashoffset": null,
+        "parts": [
+          "sun t=7.5348px 3.6px r=10.7684deg s=none",
+          "branch-back t=3.7674px 1.8px r=none s=none",
+          "leaves-front t=12.558px 6px r=none s=none",
+          "drops t=7.5348px 3.6px r=none s=none"
+        ]
+      }
+    }
+  },
+  "loader": {
+    "link": {
+      "x": 184,
+      "y": 380.78125,
+      "href": "/kategori/cilt-bakimi"
+    },
+    "pendingSeen": true,
+    "pillOpacity": "1",
+    "turn": "gl-loader-turn",
+    "clearedAt": "/kategori/cilt-bakimi"
+  },
+  "cls": 0,
+  "clsSources": [],
+  "consoleErrors": []
+}

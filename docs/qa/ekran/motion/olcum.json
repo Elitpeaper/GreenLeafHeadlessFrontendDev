@@ -1,0 +1,41 @@
+{
+  "htmlAttrs": "lang=tr class=MoCD6G_variable QCrZHG_variable w0p8cq_variable antialiased data-motion=on data-motion-first= data-motion-runtime=",
+  "recolor": {
+    "before": "rgb(241, 248, 238)",
+    "duringAt80ms": "rgb(241, 248, 238)",
+    "after": "rgb(252, 245, 235)",
+    "after2": "rgb(253, 247, 246)",
+    "released": "rgb(241, 248, 238)",
+    "frames": {
+      "n": 115,
+      "p50": 4.199999999999818,
+      "p95": 25,
+      "max": 25.100000000000364
+    }
+  },
+  "megamenu": {
+    "headerSoft": "rgb(252, 237, 238)",
+    "headerStripe1": "rgb(223, 77, 88)",
+    "released": "rgb(241, 248, 238)"
+  },
+  "pvTotal": "1,7",
+  "compact": true,
+  "backtop": true,
+  "clsMotionOn": 0,
+  "touch": {
+    "soft": "rgb(241, 248, 238)"
+  },
+  "contrastMore": {
+    "soft": "rgb(241, 248, 238)"
+  },
+  "reducedAttrs": "lang class data-motion-runtime",
+  "reduced": {
+    "soft": "rgb(241, 248, 238)",
+    "hiddenCount": 0
+  },
+  "reducedInstant": {
+    "soft": "rgb(252, 245, 235)"
+  },
+  "clsMobile": 0,
+  "consoleErrors": []
+}
