@@ -7,6 +7,8 @@ import type { FaqCategory, FaqData } from "@/components/faq/types";
 import { ComingSoonBadge } from "@/components/coming-soon/ComingSoonBadge";
 import { HeroPhoto, PageHero, creamCta } from "@/components/sections/PageHero";
 import { t } from "@/components/sections/copy";
+import { SceneFinderLeaves } from "@/components/illustrations/scenes";
+import { ScrollSvg } from "@/components/motion";
 
 export const metadata: Metadata = { title: t("sss.title"), description: t("sss.intro"), alternates: { canonical: "/sss" } };
 
@@ -50,17 +52,22 @@ export default function FaqPage() {
         {categories.length > 0 ? (
           <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-            <Faq
-              categories={categories}
-              labels={{
-                searchLabel: t("sss.search.label"),
-                placeholder: t("sss.search.placeholder"),
-                empty: t("sss.search.empty"),
-                clear: t("sss.search.clear"),
-                count: t("sss.search.count", { count: "{count}" }),
-                tabsAria: t("sss.tabs.aria"),
-              }}
-            />
+            <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_16rem] lg:gap-12 xl:grid-cols-[minmax(0,1fr)_20rem]">
+              <Faq
+                categories={categories}
+                labels={{
+                  searchLabel: t("sss.search.label"),
+                  placeholder: t("sss.search.placeholder"),
+                  empty: t("sss.search.empty"),
+                  clear: t("sss.search.clear"),
+                  count: t("sss.search.count", { count: "{count}" }),
+                  tabsAria: t("sss.tabs.aria"),
+                }}
+              />
+              <ScrollSvg mode="near view" className="pointer-events-none sticky top-32 hidden self-start lg:block">
+                <SceneFinderLeaves className="h-auto w-full" />
+              </ScrollSvg>
+            </div>
           </>
         ) : (
           <p className="flex items-center gap-3 text-lg text-ink">

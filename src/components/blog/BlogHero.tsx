@@ -29,7 +29,7 @@ export function BlogHero({
 }) {
   const photo = slot ? getStockImage(slot) : null;
   return (
-    <header className="relative overflow-hidden text-cream-100" style={{ backgroundImage: FOREST_HERO }}>
+    <header data-page-hero="" className="relative overflow-hidden text-cream-100" style={{ backgroundImage: FOREST_HERO }}>
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <TextureGrain strength={0.12} />
       </div>
@@ -49,7 +49,7 @@ export function BlogHero({
           )}
         </div>
         {photo ? (
-          <div className="relative order-1 h-44 w-full overflow-hidden rounded-panel rounded-bl-2xl bg-forest-800 shadow-long sm:h-52 md:order-2 md:h-72 lg:h-80" data-motion="reveal-scale">
+          <div className="relative order-1 h-44 w-full overflow-hidden rounded-panel rounded-bl-2xl bg-forest-800 shadow-long sm:h-52 md:order-2 md:h-72 lg:h-80">
             <Image
               src={photo.src}
               alt={photo.alt}

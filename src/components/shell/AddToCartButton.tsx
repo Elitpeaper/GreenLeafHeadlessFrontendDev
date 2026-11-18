@@ -16,6 +16,9 @@ import { Check, ShoppingBag } from "@/components/ui/lucide";
 import { useAddToCart } from "@/lib/cart";
 import { useT } from "@/lib/ui-text/client";
 
+/** Caller-supplied positioning replaces the default `relative`. */
+const POSITIONED = /(^|s)(absolute|fixed|sticky)(s|$)/;
+
 export function AddToCartButton({
   code,
   name,
@@ -54,21 +57,22 @@ export function AddToCartButton({
     // The pill is a SIBLING behind the button (the motion layer gives [data-motion=add-to-cart] overflow:hidden for its
     // shine): a clip window ([data-qa-pill]) whose inner pill slides out from under the button — transform only, no
     // layout animation (motion.css "K-272 quick add"). Gentle tier: the pill fades in place.
+    // K-288: the button comes FIRST so the focus state reaches the pill with a sibling selector (no :has()).
     return (
-      <span data-qa="" data-state={added ? "added" : "idle"} className={`group/qa relative z-10 inline-flex ${className}`}>
-        <span aria-hidden="true" data-qa-pill="">
-          <span>{added ? t("product.card.added") : t("product.card.addToCart")}</span>
-        </span>
+      <span data-qa="" data-state={added ? "added" : "idle"} className={`${POSITIONED.test(className) ? "" : "relative"} z-10 inline-flex ${className}`}>
         <button
           type="button"
           onClick={onClick}
           aria-label={aria ?? t("product.card.addToCart")}
           data-motion="add-to-cart"
           data-state={added ? "added" : "idle"}
-          className="relative inline-flex size-11 items-center justify-center rounded-pill bg-green-700 text-white shadow-button transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:bg-green-800 active:bg-green-800"
+          className="relative z-[1] inline-flex size-11 items-center justify-center rounded-pill bg-green-700 text-white shadow-button transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:bg-green-800 active:bg-green-800"
         >
           {added ? <Check size={20} /> : <ShoppingBag size={20} />}
         </button>
+        <span aria-hidden="true" data-qa-pill="">
+          <span>{added ? t("product.card.added") : t("product.card.addToCart")}</span>
+        </span>
       </span>
     );
   }

@@ -39,12 +39,9 @@ export const Search = icon(
   </>,
   "Search",
 );
+// K-288: one <path> per icon where the strokes are identical (fewer DOM nodes on every product card)
 export const ShoppingBag = icon(
-  <>
-    <path d="M16 10a4 4 0 0 1-8 0" />
-    <path d="M3.103 6.034h17.794" />
-    <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
-  </>,
+  <path d="M16 10a4 4 0 0 1-8 0M3.103 6.034h17.794M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />,
   "ShoppingBag",
 );
 export const Heart = icon(
@@ -86,10 +83,7 @@ export const ChevronRight = icon(<path d="m9 18 6-6-6-6" />, "ChevronRight");
 export const ChevronLeft = icon(<path d="m15 18-6-6 6-6" />, "ChevronLeft");
 export const ChevronDown = icon(<path d="m6 9 6 6 6-6" />, "ChevronDown");
 export const ArrowRight = icon(
-  <>
-    <path d="M5 12h14" />
-    <path d="m12 5 7 7-7 7" />
-  </>,
+  <path d="M5 12h14m-7-7 7 7-7 7" />,
   "ArrowRight",
 );
 export const ArrowUpRight = icon(
@@ -100,11 +94,7 @@ export const ArrowUpRight = icon(
   "ArrowUpRight",
 );
 export const Info = icon(
-  <>
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 16v-4" />
-    <path d="M12 8h.01" />
-  </>,
+  <path d="M22 12A10 10 0 1 1 2 12a10 10 0 0 1 20 0ZM12 16v-4M12 8h.01" />,
   "Info",
 );
 export const Lock = icon(
@@ -221,4 +211,12 @@ export const Package = icon(
     <path d="m7.5 4.27 9 5.15" />
   </>,
   "Package",
+);
+
+export const Compass = icon(
+  <>
+    <circle cx="12" cy="12" r="10" />
+    <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+  </>,
+  "Compass",
 );

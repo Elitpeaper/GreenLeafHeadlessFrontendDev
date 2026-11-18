@@ -1,5 +1,6 @@
 import Image, { getImageProps } from "next/image";
 import type { ReactNode } from "react";
+import { preload } from "react-dom";
 import { PvChip } from "@/components/product/PvChip";
 import { cssVars } from "@/lib/css";
 import type { ProductSummary } from "@/lib/products";
@@ -131,6 +132,11 @@ function ArtDirected({ image, mobile, priority, sizes }: { image: StockImage; mo
   const {
     props: { srcSet: mobileSet, ...rest },
   } = getImageProps({ ...common, src: mobile.src, sizes: "80vw" });
+  if (priority) {
+    // LCP: React 19 hoists these into <head>; each preload only fires for its own viewport (P-04).
+    preload(desktopSet?.split(" ")[0] ?? image.src, { as: "image", imageSrcSet: desktopSet, imageSizes: sizes, media: "(min-width: 640px)", fetchPriority: "high" });
+    preload(mobileSet?.split(" ")[0] ?? mobile.src, { as: "image", imageSrcSet: mobileSet, imageSizes: "80vw", media: "(max-width: 639px)", fetchPriority: "high" });
+  }
   return (
     <picture>
       <source media="(min-width: 640px)" srcSet={desktopSet} sizes={sizes} />

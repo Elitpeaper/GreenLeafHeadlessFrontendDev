@@ -10,7 +10,7 @@ import { IconBadge, type BadgeGlyph } from "@/components/illustrations/badges";
 import { PatternLeafVeinEmboss } from "@/components/illustrations/patterns";
 import { ArrowRight, Gem } from "@/components/ui/lucide";
 import { t } from "@/lib/ui-text";
-import type { MenuPromo } from "./menu-data";
+import type { MenuPromo } from "./menu-model";
 
 const COPY: Record<Exclude<MenuPromo["kind"], "campaign">, { title: string; body: string; cta: string }> = {
   finder: { title: "megaMenu.finder.title", body: "megaMenu.finder.body", cta: "megaMenu.finder.cta" },

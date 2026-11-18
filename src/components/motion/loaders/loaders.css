@@ -1,0 +1,375 @@
+/*
+ * K-287 loading OPTIONS (hareket-tasarimcisi prototype, not wired to the site yet).
+ * Plan + numbers: docs/tasarim/loading-secenekleri.md. Demo: /hareket-lab/loading/{a,b,c,d}.
+ *
+ * Contract (same for all four):
+ *   .gl-ld[data-ld=a|b|c|d][data-mode=splash|transition][data-phase=in|out][data-scope=stage|fixed]
+ * - splash: opaque from the very first frame (no flash of content), exits by itself at --ld-cap even without JS
+ *   (failsafe animation), JS may end it earlier with data-phase=out. Content underneath is never hidden, moved
+ *   or re-laid out (CLS 0; the LCP element paints normally under the overlay).
+ * - transition: small, non-blocking indicator (A/B/C) or GSAP-driven curtain (D).
+ * - only transform + opacity (+ one registered <angle> for the A mask) are animated.
+ * - reduced tier (html[data-motion] != on, or [data-sim-reduced] in the lab): nothing moves, only opacity.
+ */
+
+@property --gl-sweep {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@property --gl-from {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* ------------------------------------------------------------------ shared root */
+.gl-ld {
+  --ld-cap: 1000ms;
+  --ld-exit: 320ms;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  animation: gl-ld-fade var(--ld-exit) var(--ease-out) var(--ld-cap) both; /* failsafe: always leaves */
+}
+.gl-ld[data-scope="fixed"] {
+  position: fixed;
+  z-index: 1000;
+}
+.gl-ld[data-phase="out"] {
+  animation: gl-ld-fade-now var(--ld-exit) var(--ease-out) both;
+}
+.gl-ld[data-ld][data-mode="transition"] {
+  inset: 0 0 auto;
+  place-items: start center;
+  padding-top: 16px;
+  background: none;
+  pointer-events: none;
+  overflow: visible;
+  animation: gl-ld-fade-in 200ms var(--ease-out) both;
+}
+.gl-ld[data-mode="transition"][data-phase="out"] {
+  animation: gl-ld-fade-now 240ms var(--ease-out) both;
+}
+@keyframes gl-ld-fade {
+  to { opacity: 0; visibility: hidden; }
+}
+@keyframes gl-ld-fade-now {
+  to { opacity: 0; visibility: hidden; }
+}
+@keyframes gl-ld-fade-in {
+  from { opacity: 0; }
+}
+
+/* small pill used by A/B in transition mode */
+.gl-ld-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--color-ink);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgb(10 42 24 / 0.12), 0 12px 28px -12px rgb(10 42 24 / 0.35);
+}
+
+/* ------------------------------------------------------------------ A · resmî işaret, maske ile çizilme */
+.gl-ld[data-ld="a"] {
+  --ld-cap: 1000ms;
+  background: var(--color-cream-50);
+}
+.gl-ld-a__mark {
+  position: relative;
+  width: clamp(88px, 16vmin, 144px);
+  aspect-ratio: 1;
+}
+.gl-ld-a__mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  --gl-sweep: 360deg;
+  -webkit-mask: conic-gradient(from var(--gl-from), #000 var(--gl-sweep), transparent 0);
+  mask: conic-gradient(from var(--gl-from), #000 var(--gl-sweep), transparent 0);
+}
+.gl-ld-a__ring {
+  position: absolute;
+  inset: -10%;
+  width: 120%;
+  height: 120%;
+  overflow: visible;
+}
+.gl-ld-a__ring circle {
+  fill: none;
+  stroke: var(--color-green-700);
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.gl-ld[data-ld="a"][data-mode="splash"] .gl-ld-a__spin {
+  animation:
+    gl-ld-a-turn 900ms var(--ease-out-expo) both,
+    gl-ld-a-breath 1400ms var(--ease-in-out) 900ms infinite alternate;
+}
+.gl-ld[data-ld="a"][data-mode="splash"] .gl-ld-a__mark img {
+  animation: gl-ld-a-sweep 720ms var(--ease-in-out) both;
+}
+.gl-ld[data-ld="a"][data-mode="splash"] .gl-ld-a__ring circle {
+  animation: gl-ld-a-draw 720ms var(--ease-in-out) both, gl-ld-a-ring-out 400ms var(--ease-out) 760ms both;
+}
+.gl-ld[data-ld="a"][data-phase="out"] .gl-ld-a__mark {
+  animation: gl-ld-a-out var(--ld-exit) var(--ease-in) both;
+}
+@keyframes gl-ld-a-sweep { from { --gl-sweep: 0deg; } }
+@keyframes gl-ld-a-turn { from { transform: rotate(-140deg) scale(0.86); } }
+@keyframes gl-ld-a-breath { to { transform: scale(1.035); } }
+@keyframes gl-ld-a-draw { from { stroke-dashoffset: 100; } }
+@keyframes gl-ld-a-ring-out { to { opacity: 0; transform: rotate(-90deg) scale(1.12); } }
+@keyframes gl-ld-a-out { to { transform: scale(0.9); opacity: 0; } }
+
+/* transition: draw-and-erase loop on the untouched mark (no rotation of the logo) */
+.gl-ld[data-ld="a"][data-mode="transition"] .gl-ld-a__mark { width: 30px; }
+.gl-ld[data-ld="a"][data-mode="transition"] .gl-ld-a__ring { display: none; }
+.gl-ld[data-ld="a"][data-mode="transition"] .gl-ld-a__mark img {
+  animation: gl-ld-a-loop 1300ms var(--ease-in-out) infinite;
+}
+@keyframes gl-ld-a-loop {
+  0% { --gl-from: 0deg; --gl-sweep: 0deg; }
+  50% { --gl-from: 0deg; --gl-sweep: 360deg; }
+  100% { --gl-from: 360deg; --gl-sweep: 0deg; }
+}
+
+/* ------------------------------------------------------------------ B · yedi yaprak açılması (pinwheel esinli) */
+.gl-ld[data-ld="b"] {
+  --ld-cap: 1200ms;
+  background: #fff;
+}
+.gl-ld-b__svg {
+  width: clamp(110px, 20vmin, 180px);
+  height: auto;
+  overflow: visible;
+}
+.gl-ld-b__leaf,
+.gl-ld-b__turn,
+.gl-ld-b__core {
+  transform-box: view-box;
+  transform-origin: 0 0;
+}
+.gl-ld[data-ld="b"][data-mode="splash"] .gl-ld-b__leaf {
+  animation: gl-ld-b-open 560ms var(--ease-spring) calc(var(--i) * 70ms) both;
+}
+.gl-ld[data-ld="b"][data-mode="splash"] .gl-ld-b__turn {
+  animation:
+    gl-ld-b-turn 1100ms var(--ease-out-expo) both,
+    gl-ld-b-sway 1600ms var(--ease-in-out) 1100ms infinite alternate;
+}
+.gl-ld[data-ld="b"][data-mode="splash"] .gl-ld-b__core {
+  animation: gl-ld-b-core 420ms var(--ease-spring) 380ms both;
+}
+.gl-ld[data-ld="b"][data-phase="out"] .gl-ld-b__leaf {
+  animation: gl-ld-b-scatter var(--ld-exit) var(--ease-in) calc(var(--i) * 20ms) both;
+}
+@keyframes gl-ld-b-open { from { transform: scale(0) rotate(-35deg); opacity: 0; } }
+@keyframes gl-ld-b-turn { from { transform: rotate(-51.43deg); } }
+@keyframes gl-ld-b-sway { from { transform: rotate(0deg); } to { transform: rotate(6deg); } }
+@keyframes gl-ld-b-core { from { transform: scale(0); } }
+@keyframes gl-ld-b-scatter { to { transform: translateY(-26px) scale(0.7); opacity: 0; } }
+
+.gl-ld[data-ld="b"][data-mode="transition"] .gl-ld-b__svg { width: 30px; }
+.gl-ld[data-ld="b"][data-mode="transition"] .gl-ld-b__turn {
+  animation: gl-ld-b-spin 2800ms linear infinite;
+}
+.gl-ld[data-ld="b"][data-mode="transition"] .gl-ld-b__leaf {
+  animation: gl-ld-b-pulse 1050ms var(--ease-in-out) calc(var(--i) * 150ms) infinite;
+}
+@keyframes gl-ld-b-spin { to { transform: rotate(360deg); } }
+@keyframes gl-ld-b-pulse { 0%, 100% { opacity: 0.35; } 40% { opacity: 1; } }
+
+/* ------------------------------------------------------------------ C · imza şeridi dolması */
+.gl-ld[data-ld="c"] {
+  --ld-cap: 800ms;
+  --ld-exit: 520ms;
+  display: block;
+  background: none;
+}
+.gl-ld-c__band {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: calc(100% / 3 + 1px);
+  transform-origin: right center;
+  overflow: hidden;
+}
+/* pale base (the first frame already covers the page), the brand colour fills in from the left */
+.gl-ld-c__band:nth-child(1) { top: 0; --c: var(--color-brand-green); }
+.gl-ld-c__band:nth-child(2) { top: calc(100% / 3); --c: var(--color-brand-lime); }
+.gl-ld-c__band:nth-child(3) { top: calc(200% / 3); --c: var(--color-brand-blue); }
+.gl-ld-c__band { background: color-mix(in srgb, var(--c) 28%, #fff); }
+.gl-ld-c__band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--c);
+  transform-origin: left center;
+}
+.gl-ld[data-ld="c"][data-mode="splash"] .gl-ld-c__band::after {
+  animation: gl-ld-c-fill 640ms var(--ease-out-expo) calc(var(--i) * 80ms) both;
+}
+/* exit: bands slide off to the right in turn; root does not fade (the bands ARE the curtain) */
+.gl-ld[data-ld="c"][data-mode="splash"] {
+  animation: gl-ld-c-gone 1ms linear calc(var(--ld-cap) + var(--ld-exit) + 160ms) both;
+}
+.gl-ld[data-ld="c"][data-mode="splash"] .gl-ld-c__band {
+  animation: gl-ld-c-off 440ms var(--ease-in-out) calc(var(--ld-cap) + var(--i) * 80ms) both;
+}
+.gl-ld[data-ld="c"][data-mode="splash"][data-phase="out"] {
+  animation: gl-ld-c-gone-now 1ms linear calc(var(--ld-exit) + 160ms) both;
+}
+.gl-ld[data-ld="c"][data-mode="splash"][data-phase="out"] .gl-ld-c__band {
+  animation: gl-ld-c-off-now 440ms var(--ease-in-out) calc(var(--i) * 80ms) both;
+}
+@keyframes gl-ld-c-fill { from { transform: scaleX(0); } }
+@keyframes gl-ld-c-off { to { transform: translateX(101%); } }
+@keyframes gl-ld-c-off-now { to { transform: translateX(101%); } }
+@keyframes gl-ld-c-gone { to { visibility: hidden; } }
+@keyframes gl-ld-c-gone-now { to { visibility: hidden; } }
+
+/* transition: 3-row signature bar at the very top, indeterminate fill */
+.gl-ld[data-ld="c"][data-mode="transition"] { padding: 0; }
+.gl-ld-c__bar { display: none; }
+.gl-ld[data-ld="c"][data-mode="transition"] .gl-ld-c__band { display: none; }
+.gl-ld[data-ld="c"][data-mode="transition"] .gl-ld-c__bar {
+  display: grid;
+  grid-template-rows: 4px 3px 3px;
+  width: 100%;
+  overflow: hidden;
+}
+.gl-ld-c__bar > span { position: relative; overflow: hidden; }
+.gl-ld-c__bar > span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  transform: translateX(-100%);
+  animation: gl-ld-c-run 1200ms var(--ease-in-out) calc(var(--i) * 110ms) infinite;
+}
+.gl-ld-c__bar > span:nth-child(1) { color: var(--color-brand-green); }
+.gl-ld-c__bar > span:nth-child(2) { color: var(--color-brand-lime); }
+.gl-ld-c__bar > span:nth-child(3) { color: var(--color-brand-blue); }
+.gl-ld[data-ld="c"][data-mode="transition"][data-phase="out"] .gl-ld-c__bar > span::before {
+  animation: gl-ld-c-done 220ms var(--ease-out) both;
+}
+@keyframes gl-ld-c-run { 0% { transform: translateX(-100%); } 60%, 100% { transform: translateX(100%); } }
+@keyframes gl-ld-c-done { from { transform: translateX(-30%); } to { transform: translateX(0); } }
+
+/* ------------------------------------------------------------------ D · orman perdesi + kâğıt yapraklar */
+.gl-ld[data-ld="d"] {
+  --ld-cap: 1400ms;
+  --ld-exit: 720ms;
+  overflow: visible;
+  background-color: var(--color-forest-900);
+  background-image: var(--gradient-forest-deep);
+  color: var(--color-cream-100);
+}
+.gl-ld[data-ld="d"]::after { /* rounded lower edge, only seen while the curtain lifts */
+  content: "";
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  top: calc(100% - 1px);
+  height: 14vmin;
+  background: var(--color-forest-950);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+.gl-ld-d__paper {
+  position: absolute;
+  width: var(--w);
+  left: var(--x);
+  top: var(--y);
+  overflow: visible;
+  transform: rotate(var(--r));
+  filter: drop-shadow(0 18px 22px rgb(0 0 0 / 0.35));
+}
+.gl-ld-d__stripes {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  width: min(220px, 40vw);
+  margin-left: calc(min(220px, 40vw) / -2);
+  display: grid;
+  grid-template-rows: 4px 3px 3px;
+  gap: 3px;
+}
+.gl-ld-d__stripes > span { transform-origin: left center; border-radius: 99px; }
+.gl-ld-d__stripes > span:nth-child(1) { background: var(--color-brand-green); }
+.gl-ld-d__stripes > span:nth-child(2) { background: var(--color-brand-lime); }
+.gl-ld-d__stripes > span:nth-child(3) { background: var(--color-brand-blue); }
+
+.gl-ld[data-ld="d"][data-mode="splash"] {
+  animation: gl-ld-d-lift var(--ld-exit) var(--ease-in-out) var(--ld-cap) both;
+}
+.gl-ld[data-ld="d"][data-mode="splash"][data-phase="out"] {
+  animation: gl-ld-d-lift-now var(--ld-exit) var(--ease-in-out) both;
+}
+.gl-ld[data-ld="d"][data-mode="splash"] .gl-ld-d__paper {
+  animation: gl-ld-d-drop 900ms var(--ease-out-expo) calc(var(--i) * 110ms) both;
+}
+.gl-ld[data-ld="d"][data-mode="splash"] .gl-ld-d__stripes > span {
+  animation: gl-ld-d-grow 700ms var(--ease-out-expo) calc(300ms + var(--i) * 90ms) both;
+}
+.gl-ld[data-ld="d"][data-mode="splash"][data-phase="out"] .gl-ld-d__paper {
+  animation: gl-ld-d-fly var(--ld-exit) var(--ease-in) calc(var(--i) * 40ms) both;
+}
+@keyframes gl-ld-d-lift { to { transform: translateY(calc(-100% - 15vmin)); visibility: hidden; } }
+@keyframes gl-ld-d-lift-now { to { transform: translateY(calc(-100% - 15vmin)); visibility: hidden; } }
+@keyframes gl-ld-d-drop {
+  from { transform: translate(var(--fx), var(--fy)) rotate(calc(var(--r) - 40deg)); opacity: 0; }
+}
+@keyframes gl-ld-d-fly { to { transform: translateY(-40vh) rotate(calc(var(--r) + 25deg)); } }
+@keyframes gl-ld-d-grow { from { transform: scaleX(0); } }
+
+/* transition mode: GSAP owns the curtain (lab: LoadingLab.tsx). Hidden until GSAP takes over. */
+.gl-ld[data-ld="d"][data-mode="transition"] {
+  inset: 0;
+  padding: 0;
+  place-items: center;
+  background-color: var(--color-forest-900);
+  background-image: var(--gradient-forest-deep);
+  pointer-events: auto;
+  visibility: hidden;
+  animation: none;
+}
+
+/* ------------------------------------------------------------------ reduced tier: no movement, opacity only */
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld * ,
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld *::before,
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld *::after {
+  animation: none !important;
+}
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-mode="transition"]:not([data-ld="d"]) .gl-ld-pill,
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-ld="c"][data-mode="transition"] .gl-ld-c__bar {
+  animation: gl-ld-soft-pulse 1200ms var(--ease-in-out) infinite alternate !important;
+}
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-ld="c"][data-mode="transition"] .gl-ld-c__bar > span::before {
+  transform: none;
+}
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld-a__ring {
+  display: none;
+}
+/* C and D leave by fading instead of sliding / lifting */
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-ld="c"][data-mode="splash"],
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-ld="d"][data-mode="splash"] {
+  animation: gl-ld-fade 320ms var(--ease-out) var(--ld-cap) both;
+}
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-ld="c"][data-mode="splash"][data-phase="out"],
+:is(html:not([data-motion="on"]), [data-sim-reduced]) .gl-ld[data-ld="d"][data-mode="splash"][data-phase="out"] {
+  animation: gl-ld-fade-now 320ms var(--ease-out) both;
+}
+@keyframes gl-ld-soft-pulse { from { opacity: 0.55; } to { opacity: 1; } }

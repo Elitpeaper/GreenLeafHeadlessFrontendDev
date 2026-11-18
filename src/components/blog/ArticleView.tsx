@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { DividerLeafVine } from "@/components/illustrations/dividers";
+import { ScrollSvg } from "@/components/motion";
 import { ProductCard } from "@/components/product/ProductCard";
 import { SectionHead } from "@/components/sections/parts";
 import { ArrowRight, ChevronLeft } from "@/components/ui/lucide";
@@ -80,11 +82,20 @@ export async function ArticleView({ post }: { post: Post }) {
         <PostMeta post={post} className="mt-5 justify-center" />
       </header>
 
-      <div className="mx-auto mt-stack max-w-5xl px-gutter" data-motion="reveal-scale">
+      <div className="mx-auto mt-stack max-w-5xl px-gutter">
         <PostCover post={post} priority className="aspect-[16/9] rounded-tile" sizes="(min-width: 1024px) 1024px, 100vw" />
       </div>
 
-      <div className="mx-auto mt-stack max-w-prose px-gutter">
+      <div className="relative mx-auto mt-stack max-w-prose px-gutter">
+        <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-full top-0 ml-6 hidden w-14 xl:block">
+          <div className="sticky top-32 h-[28rem]">
+            <div className="absolute left-1/2 top-1/2 w-[28rem] -translate-x-1/2 -translate-y-1/2 rotate-90">
+              <ScrollSvg mode="draw">
+                <DividerLeafVine className="h-auto w-full" />
+              </ScrollSvg>
+            </div>
+          </div>
+        </div>
         <div className={PROSE} dangerouslySetInnerHTML={{ __html: post.body_html }} />
 
         {post.sourceUrl && (

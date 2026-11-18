@@ -6,22 +6,22 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 1336
+      "lcp": 1132
     },
     "wheel": [
       0,
-      240,
-      372,
-      454,
+      221,
+      373,
+      455,
       512,
-      545,
-      564,
+      546,
+      566,
       578,
-      586,
-      591,
+      587,
+      592,
       595,
-      596,
-      598
+      597,
+      599
     ],
     "pin": {
       "top": 3289.890625,
@@ -36,33 +36,33 @@
       {
         "active": 1,
         "stageTop": 0,
-        "headerHidden": false
+        "headerHidden": true
       },
       {
         "active": 2,
         "stageTop": 0,
-        "headerHidden": false
+        "headerHidden": true
       },
       {
         "active": 3,
         "stageTop": 0,
-        "headerHidden": false
+        "headerHidden": true
       },
       {
         "active": 4,
         "stageTop": -2,
-        "headerHidden": false
+        "headerHidden": true
       }
     ],
     "afterTopScroll": 0,
     "cardHover": {
-      "tileTransform": "matrix3d(0.995799, 0, 0.0915607, -9.15607e-05, -0.00764217, 0.996511, 0.0831151, -8.31151e-05, -0.0912412, -0.0834657, 0.992325, -0.000992325, 0, 0, 0, 1)",
+      "tileTransform": "matrix3d(0.995803, 0, 0.0915207, -9.15207e-05, -0.00764234, 0.996507, 0.0831535, -8.31535e-05, -0.0912011, -0.0835039, 0.992325, -0.000992325, 0, 0, 0, 1)",
       "pillOpacity": "1",
       "pillTranslate": "0px",
       "pillText": "Sepete ekle",
       "cardTranslate": "0px -6px"
     },
-    "headerAfterDown": false,
+    "headerAfterDown": true,
     "headerAfterUp": false,
     "ring": {
       "visible": true,
@@ -74,7 +74,7 @@
       "lenis": true,
       "lenisSmooth": true,
       "cls": 0,
-      "lcp": 1336
+      "lcp": 1132
     },
     "errors": []
   },
@@ -85,35 +85,35 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 888
+      "lcp": 684
     },
     "wheel": [
       0,
-      245,
-      372,
-      462,
-      516,
-      545,
-      565,
-      578,
-      586,
+      216,
+      355,
+      451,
+      510,
+      541,
+      563,
+      577,
+      585,
       591,
       594,
       597,
       598
     ],
     "cardHover": {
-      "tileTransform": "matrix3d(0.99581, 0, 0.091446, -9.1446e-05, -0.00778639, 0.996368, 0.0847906, -8.47906e-05, -0.0911139, -0.0851474, 0.992194, -0.000992194, 0, 0, 0, 1)",
-      "pillOpacity": "0",
-      "pillTranslate": "calc(100% - 44px)",
+      "tileTransform": "matrix3d(0.99581, 0, 0.091446, -9.1446e-05, -0.00778655, 0.996368, 0.0847923, -8.47923e-05, -0.0911139, -0.0851491, 0.992193, -0.000992193, 0, 0, 0, 1)",
+      "pillOpacity": "1",
+      "pillTranslate": "0px",
       "pillText": "Sepete ekle",
       "cardTranslate": "0px -6px"
     },
     "pdpHref": "/urun/ilife-sod-ipek-yuz-kremi",
     "soonHover": {
-      "tileTransform": "matrix3d(0.99581, 0, 0.0914477, -9.14477e-05, -0.0077859, 0.996369, 0.0847837, -8.47837e-05, -0.0911157, -0.0851404, 0.992194, -0.000992194, 0, 0, 0, 1)",
-      "pillOpacity": "0",
-      "pillTranslate": "calc(100% - 44px)",
+      "tileTransform": "matrix3d(0.995845, 0, 0.0910636, -9.10636e-05, -0.00767481, 0.996442, 0.0839294, -8.39294e-05, -0.0907396, -0.0842796, 0.992302, -0.000992302, 0, 0, 0, 1)",
+      "pillOpacity": "1",
+      "pillTranslate": "0px",
       "pillText": "Ürünü incele",
       "cardTranslate": "0px -6px"
     },
@@ -123,7 +123,7 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 568
+      "lcp": 692
     },
     "errors": []
   },
@@ -134,25 +134,25 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 712
+      "lcp": 2004
     },
     "wheel": [
       0,
-      238,
-      364,
-      445,
-      501,
-      535,
-      559,
+      224,
+      359,
+      476,
+      534,
+      558,
       573,
       583,
       589,
       593,
       596,
-      597
+      598,
+      599
     ],
     "cardHover": {
-      "tileTransform": "matrix3d(0.995803, 0, 0.0915173, -9.15173e-05, -0.00764205, 0.996507, 0.0831535, -8.31535e-05, -0.0911976, -0.0835039, 0.992326, -0.000992326, 0, 0, 0, 1)",
+      "tileTransform": "matrix3d(0.995799, 0, 0.0915661, -9.15661e-05, -0.0076402, 0.996513, 0.0830887, -8.30887e-05, -0.0912468, -0.0834392, 0.992327, -0.000992327, 0, 0, 0, 1)",
       "pillOpacity": "1",
       "pillTranslate": "0px",
       "pillText": "Sepete ekle",
@@ -164,7 +164,7 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 712
+      "lcp": 2004
     },
     "errors": [
       "Error: Route \"/urun/[slug]\": Next.js encountered URL data during prerendering or a navigation.\n\n`params` or `searchParams` accessed outside of `<Suspense>` may prevent the navigation from being instant, leading to a slower user experience.\n\nWays to fix this:\n  - [stream] Provide a placeholder with `<Suspense fallback={...}>` around the data access\n  - [block] Set `export const instant = false` to allow a blocking route\n\nLearn more: https://nextjs.org/docs/messages/instant-shell-url-data\n    at ProductPage (about://React/Server/C:%5CUsers%5CThe%20Emeksiz%5CDesktop%5CMasa%C3%BCst%C3%BC%5CGreenLeaf%20documents%5CGreenLeafHeadlessFrontend_V1%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__000r5pwzu0vjy._.js?361:64:22)\n    at resolveErrorDev (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2029:105)\n    at getOutlinedModel (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1568:28)\n    at parseModelString (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1688:50)\n    at reviveModel (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2634:66)\n    at reviveModel (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2637:61)\n    at reviveModel (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2716:112)\n    at parseModel (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2629:16)\n    at initializeModelChunk (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1141:25)\n    at resolveModelChunk (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:1039:43)\n    at processFullStringRow (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2585:371)\n    at processFullBinaryRow (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2507:9)\n    at processBinaryChunk (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2614:221)\n    at progress (http://localhost:3001/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js:2801:13)"
@@ -177,22 +177,22 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 428
+      "lcp": 1008
     },
     "waiting": 8,
     "wheel": [
       0,
-      238,
-      376,
-      459,
-      508,
-      540,
-      562,
-      575,
-      584,
-      590,
-      594,
-      596,
+      236,
+      365,
+      449,
+      507,
+      541,
+      564,
+      577,
+      585,
+      591,
+      595,
+      597,
       598
     ],
     "afterSplit": 6,
@@ -202,7 +202,7 @@
       "lenis": true,
       "lenisSmooth": false,
       "cls": 0,
-      "lcp": 428
+      "lcp": 1008
     },
     "errors": []
   }

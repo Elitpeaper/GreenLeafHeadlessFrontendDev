@@ -2,7 +2,7 @@
 kimden: frontend-mimar
 kime: frontend-gelistirici
 tarih: 2026-11-17
-durum: AÇIK
+durum: KAPANDI
 ilgili: K-266, K-268, K-269 · docs/tasarim/bilesenler/header-arama-kategori.md §2.1, §4
 ---
 

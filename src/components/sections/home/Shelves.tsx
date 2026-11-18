@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getStockImage } from "@/lib/images";
 import { CategoryIllustration } from "@/components/illustrations/category-icons";
 import { PatternLeafScatter } from "@/components/illustrations/patterns";
+import { SceneHeroBotanical } from "@/components/illustrations/scenes";
+import { ScrollSvg } from "@/components/motion";
 import type { CategoryNode } from "@/lib/products";
 import { cssVars } from "@/lib/css";
 import { t, tc } from "@/components/sections/copy";
@@ -54,7 +56,10 @@ export function Shelves({ roots }: { roots: CategoryNode[] }) {
         <PatternLeafScatter strength={0.06} />
       </div>
       <div className="mx-auto max-w-page px-gutter">
-        <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+        <div className="relative flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+          <ScrollSvg mode="near" className="pointer-events-none absolute right-48 -top-10 hidden w-52 xl:block">
+            <SceneHeroBotanical interact="sway" className="h-auto w-full" />
+          </ScrollSvg>
           <div>
             <Eyebrow>{t("home.v2.shelves.eyebrow")}</Eyebrow>
             <h2 id="shelves-title" className="mt-4 text-display text-ink">
@@ -88,16 +93,15 @@ export function Shelves({ roots }: { roots: CategoryNode[] }) {
                   {photo && (
                     <>
                       <Image
+                        data-shelf-photo=""
                         src={photo.src}
                         alt=""
                         fill
                         sizes={def.size === "xl" ? "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" : "(min-width: 1024px) 17vw, (min-width: 768px) 25vw, 34vw"}
                         className="-z-10 object-cover transition-transform duration-500 motion-safe:group-hover:scale-105"
-                        placeholder={photo.blurDataURL ? "blur" : "empty"}
-                        blurDataURL={photo.blurDataURL}
                       />
                       {/* K-270 scrim: forest-950 >= 70% behind the name (bottom), lighter on top */}
-                      <span aria-hidden="true" className="absolute inset-0 -z-10 bg-linear-to-t from-forest-950/85 via-forest-950/70 via-45% to-forest-950/15 transition-opacity duration-250 group-hover:opacity-95" />
+                      <span aria-hidden="true" data-shelf-scrim="" className="absolute inset-0 -z-10 bg-linear-to-t from-forest-950/85 via-forest-950/70 via-45% to-forest-950/15 transition-opacity duration-250 group-hover:opacity-95" />
                     </>
                   )}
                   {def.size === "xl" && !photo && (

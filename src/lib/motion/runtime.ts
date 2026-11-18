@@ -426,6 +426,7 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
 
   // ------------------------------------------------------------ interactive SVG (K-179)
   const svgHosts = new Map<Element, Set<SVGSVGElement>>();
+  const hostOfSvg = new WeakMap<SVGSVGElement, Element>(); // P-09: resolved once in initSvg, never per frame
   const hot = new Set<SVGSVGElement>();
   const svgIo = new IntersectionObserver(
     (entries) => {
@@ -443,6 +444,7 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
     seen.add(svg);
     prepareSvg(svg);
     const host = svgHostOf(svg);
+    hostOfSvg.set(svg, host);
     if (!svgHosts.has(host)) svgHosts.set(host, new Set());
     svgHosts.get(host)!.add(svg);
     if (svg.getAttribute("data-svg-reveal") !== "off") svgIo.observe(svg);
@@ -480,6 +482,17 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
     setHot(el.matches?.(":focus-visible") ? svgsAround(el) : new Set());
   });
   // cursor parallax: pointer position relative to the host, written once per frame
+  let rectGen = 0;
+  const hostRects = new WeakMap<Element, { gen: number; r: DOMRect }>();
+  const hostRect = (el: Element) => {
+    const c = hostRects.get(el);
+    if (c && c.gen === rectGen) return c.r;
+    const r = el.getBoundingClientRect();
+    hostRects.set(el, { gen: rectGen, r });
+    return r;
+  };
+  listen(window, "scroll" as keyof DocumentEventMap, () => void rectGen++, { passive: true });
+  listen(window, "resize" as keyof DocumentEventMap, () => void rectGen++, { passive: true });
   let px = 0;
   let py = 0;
   let pxQueued = false;
@@ -491,13 +504,18 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
     pxQueued = true;
     loop.add(() => {
       pxQueued = false;
+      // P-09: cached host, rect read once per scroll/resize generation, all reads before all writes
+      const out: [SVGSVGElement, string, string][] = [];
       for (const s of hot) {
         if (!(s.getAttribute("data-svg-interact") ?? "").includes("parallax")) continue;
-        const r = svgHostOf(s).getBoundingClientRect();
+        const r = hostRect(hostOfSvg.get(s) ?? svgHostOf(s));
         const nx = Math.max(-1, Math.min(1, (px - (r.left + r.width / 2)) / (r.width / 2 || 1)));
         const ny = Math.max(-1, Math.min(1, (py - (r.top + r.height / 2)) / (r.height / 2 || 1)));
-        s.style.setProperty("--svg-px", nx.toFixed(3));
-        s.style.setProperty("--svg-py", ny.toFixed(3));
+        out.push([s, nx.toFixed(3), ny.toFixed(3)]);
+      }
+      for (const [s, x, y] of out) {
+        s.style.setProperty("--svg-px", x);
+        s.style.setProperty("--svg-py", y);
       }
       return false;
     });
@@ -505,12 +523,16 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
 
   // ------------------------------------------------------------ scroll-linked state (H6 compact, F6 back-to-top)
   let ticking = false;
+  let scrollPos = 0;
   function onScroll() {
+    // read in the scroll event (style is clean there and ScrollTrigger reads it too); the rAF step must not read
+    // scrollY after GSAP has written styles in the same frame (forced style recalc, PERFORMANS-DENETIMI-1 round 2)
+    scrollPos = scrollY;
     if (ticking) return;
     ticking = true;
     loop.add(() => {
       ticking = false;
-      const y = scrollY;
+      const y = scrollPos;
       for (const el of scrollers) {
         if (!el.isConnected) {
           scrollers.delete(el);
@@ -609,11 +631,35 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
     if (root.hasAttribute("data-intro") && location.href.split("#")[0] !== bootHref) root.removeAttribute("data-intro");
   };
   listen(window, "popstate" as keyof DocumentEventMap, introCheck);
-  const introWatch = window.setInterval(() => {
-    introCheck();
-    if (!root.hasAttribute("data-intro")) window.clearInterval(introWatch);
-  }, 250);
-  cleanups.push(() => window.clearInterval(introWatch));
+  // P-11: no idle polling. Client navigations are seen through the History API (Next's router calls pushState /
+  // replaceState), wrapped only while html[data-intro] is still present, then restored.
+  if (root.hasAttribute("data-intro")) {
+    const h = history;
+    const push = h.pushState;
+    const replace = h.replaceState;
+    let wrapped = true;
+    const unwrap = () => {
+      if (!wrapped) return;
+      wrapped = false;
+      if (h.pushState === wrappedPush) h.pushState = push;
+      if (h.replaceState === wrappedReplace) h.replaceState = replace;
+    };
+    const after = () => {
+      introCheck();
+      if (!root.hasAttribute("data-intro")) unwrap();
+    };
+    function wrappedPush(this: History, ...a: Parameters<History["pushState"]>) {
+      push.apply(this, a);
+      after();
+    }
+    function wrappedReplace(this: History, ...a: Parameters<History["replaceState"]>) {
+      replace.apply(this, a);
+      after();
+    }
+    h.pushState = wrappedPush;
+    h.replaceState = wrappedReplace;
+    cleanups.push(unwrap);
+  }
 
   // ------------------------------------------------------------ magnetic (fine pointer only, max 6 px)
   listen(doc, "pointermove", (e) => {
@@ -722,10 +768,19 @@ export function startMotionRuntime(opts: { bootHref?: string } = {}): Cleanup {
   });
 
   // ------------------------------------------------------------ DOM changes (client navigation, conditional UI)
+  // P-01: nodes GSAP adds by itself are ignored: ScrollTrigger's pin-spacer (and the pinned element it re-wraps), its
+  // 100vh measuring div on <body>, and SplitText line wrappers inside a wired heading. Re-scanning them restarted
+  // ScrollTrigger.refresh() forever.
+  const body = doc.body;
+  const foreign = (el: Element) => {
+    if (el.classList.contains("pin-spacer") || el.parentElement?.classList.contains("pin-spacer")) return true;
+    if (el.parentNode === body && el.tagName === "DIV" && !el.firstElementChild && !el.id && el.classList.length === 0) return true;
+    return !!el.parentElement?.closest("[data-split-wired]");
+  };
   const mo = new MutationObserver((records) => {
     for (const r of records) {
       r.addedNodes.forEach((n) => {
-        if (n.nodeType === 1) {
+        if (n.nodeType === 1 && !foreign(n as Element)) {
           scan(n as Element);
           autoReveal(n as Element);
           fx?.scan(n as Element);

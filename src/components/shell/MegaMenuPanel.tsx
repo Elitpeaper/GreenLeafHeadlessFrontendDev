@@ -8,13 +8,20 @@ import Link from "next/link";
 import { useEffect, type RefObject } from "react";
 import { ProductCardMini } from "@/components/product/ProductCardParts";
 import { CategoryIllustration } from "@/components/illustrations/category-icons";
-import { ArrowRight, ChevronRight } from "@/components/ui/lucide";
+import { ArrowRight, ChevronRight, Search } from "@/components/ui/lucide";
+import { useExplore } from "./explore-store";
 import { useT } from "@/lib/ui-text/client";
-import type { MenuRoot } from "./menu-data";
+import type { MenuRoot } from "./menu-model";
 import { PromoTile } from "./PromoTile";
 import { Thumb } from "./Thumb";
 
 const MAX_TILES = 8;
+
+/** The mega panel closes first, so return focus goes to the explore trigger of the header row (compass/subnav) if any. */
+function openExploreFrom(trigger: HTMLElement) {
+  const target = document.querySelector<HTMLElement>("[data-explore-trigger]:not([hidden])") ?? trigger;
+  useExplore.getState().show(target);
+}
 
 export default function MegaMenuPanel({
   roots,
@@ -26,6 +33,7 @@ export default function MegaMenuPanel({
   panelId,
   rootList,
   focusFirst,
+  onSearchInCategory,
 }: {
   roots: MenuRoot[];
   active: string;
@@ -37,6 +45,8 @@ export default function MegaMenuPanel({
   rootList: RefObject<HTMLUListElement | null>;
   /** True when opened by click: focus the first root once the lazy panel has mounted. */
   focusFirst: boolean;
+  /** K-268: "Bu kategoride ara" — sets the search scope to the active root and focuses the input. */
+  onSearchInCategory?: (root: string) => void;
 }) {
   const { t } = useT();
   useEffect(() => {
@@ -173,6 +183,36 @@ export default function MegaMenuPanel({
             </div>
           ))}
         </nav>
+        {/* Footer strip: scope bridge (K-268) + all-pages panel (K-266) */}
+        <div className="flex items-center justify-between gap-4 border-t border-line bg-surface px-gutter py-2">
+          {onSearchInCategory ? (
+            <button
+              type="button"
+              onClick={() => {
+                close();
+                onSearchInCategory(active);
+              }}
+              className="inline-flex min-h-11 items-center gap-2 rounded-pill px-3 text-sm font-medium text-green-700 transition-colors duration-250 hover:bg-green-50"
+            >
+              <Search size={18} />
+              {t("header.search.inCategory")}
+            </button>
+          ) : (
+            <span />
+          )}
+          <button
+            type="button"
+            onClick={(e) => {
+              const trigger = e.currentTarget;
+              close();
+              openExploreFrom(trigger);
+            }}
+            className="inline-flex min-h-11 items-center gap-2 rounded-pill px-3 text-sm font-medium text-ink transition-colors duration-250 hover:bg-surface-muted"
+          >
+            {t("header.explore.allPages")}
+            <ArrowRight size={16} />
+          </button>
+        </div>
         {/* Thin stripe — bottom edge (recolor) */}
         <div aria-hidden="true" className="grid h-1 grid-rows-[2px_1px_1px]" data-motion="mega-stripe">
           <span className="bg-stripe-1" />

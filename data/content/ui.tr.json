@@ -601,5 +601,18 @@
   "sss.notFound.title": "Aradığını bulamadın mı?",
   "sss.notFound.body": "Hakkımızda sayfasından bize ulaşabilir ya da ürünlere göz atmaya devam edebilirsin.",
   "sss.notFound.cta": "Hakkımızda",
-  "sss.notFound.secondary": "Ürünlere göz at"
+  "sss.notFound.secondary": "Ürünlere göz at",
+  "sss.eyebrow": "Yardım",
+  "sss.intro": "Alışveriş, üye fiyatı, PV ve ürünler hakkında en çok sorulanlar burada.",
+  "sss.search.empty": "Bu aramaya uygun soru bulunamadı.",
+  "sss.search.count": "{count} soru bulundu",
+  "sss.tabs.aria": "Soru kategorileri",
+  "sss.soon": "Sorular hazırlanıyor. Çok yakında burada.",
+  "motion.toggle.label": "Hareketi azalt",
+  "motion.toggle.hint": "Animasyonları ve yumuşak kaydırmayı azaltır. Seçimin bu cihazda saklanır.",
+  "motion.backTop": "Sayfanın başına dön",
+  "home.v2.gates.prev": "Önceki",
+  "home.v2.gates.next": "Sonraki",
+  "home.v2.gates.counter": "{n} / {total}",
+  "home.v2.gates.side": "KEŞFET"
 }

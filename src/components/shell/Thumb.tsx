@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Leaf } from "@/components/ui/lucide";
-import type { MenuRoot } from "./menu-data";
+import type { MenuRoot } from "./menu-model";
 
 /** Category / sub-category thumbnail shared by the mega menu panel and the mobile nav (kept out of the MegaMenu shell so next/image stays off the first-load path). */
 export function Thumb({

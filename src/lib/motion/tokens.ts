@@ -125,7 +125,7 @@ export const BUDGET = {
   /** gz bytes of motion JS shipped on first load (runtime + components) */
   runtimeJsGz: 10 * 1024,
   /** gz bytes of motion CSS */
-  cssGz: 8.5 * 1024, // v4 (K-256/K-257: Lenis + horizontal pin rules): measured 8.12 KB gz (v3: 7.95)
+  cssGz: 9.5 * 1024, // v5 (K-264/K-265/K-272: pill, tilt glare, pin stage, link draw; hpin + S-1 removed): measured 8.88 KB gz minified (v4: 8.12)
   /** frame budget during recolor/ticker on a mid-range laptop (ms, p95) */
   frameP95: 16.7,
 } as const;

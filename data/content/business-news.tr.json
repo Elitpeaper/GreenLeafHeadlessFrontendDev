@@ -1,0 +1,57 @@
+{
+  "_note": "Yalnız /pv-nedir#is-firsati bölümü için (K-085, K-099). Haber/blog akışına girmez. Rakamlar kaynak metinle birebir; Türkiye koşullarında doğrulanmadan yayınlanmaz.",
+  "disclaimer": "Kazanç kişisel çalışmaya bağlıdır, garanti değildir.",
+  "attribution": "Kaynak: Greenleaf resmî mağaza duyuruları (Ağustos–Ekim 2026) ve pazarlama planı.",
+  "items": [
+    {
+      "id": "gunluk-urunlerle-is",
+      "date": "2026-10-09",
+      "title": "Her gün kullanılan ürünlerle iş kurmak",
+      "summary": "Greenleaf, temizlik, kozmetik ve kişisel bakım gibi düzenli tüketilen ürünler üzerine kurulu bir iş modeli sunuyor. Ürünler bittikçe memnun müşteriler yeniden sipariş veriyor; üyeler ürün satarak, düzenli müşteri çevresi oluşturarak ve ekip kurarak pazarlama planındaki ödüllerden yararlanabiliyor.",
+      "facts": [
+        "Kaynakta, 5.000’den fazla ürün çeşidi belirtiliyor.",
+        "Kaynakta, iş ortakları için %50 indirim, geri ödeme (cashback) ve pazarlama planında 12 gelir türü belirtiliyor."
+      ],
+      "caveat": "Düzenli gelir kendiliğinden oluşmaz; çalışma, eğitim ve ekip desteği gerektirir.",
+      "sourceUrl": "https://global.green-leaf.shop/novosti-kompanii-greenleaf/biznes-greenleaf-tovary-ezhednevnogo-sprosa",
+      "needsVerification": ["%50 indirim ve 12 gelir türünün Türkiye pazarlama planında aynen geçerli olup olmadığı"]
+    },
+    {
+      "id": "girisimciler-icin-yeni-imkanlar",
+      "date": "2026-08-10",
+      "title": "Girişimciler için yeni imkânlar",
+      "summary": "Greenleaf, küçük ve orta ölçekli girişimcilere yönelik yeni bir iş ortaklığı programı duyurdu. Programa katılanlar şirketin ürünlerinde özel tekliflerden ve indirimlerden yararlanabiliyor.",
+      "facts": [],
+      "caveat": "Duyuru ayrıntı ve rakam içermiyor; kapsamı Türkiye için doğrulanmalı.",
+      "sourceUrl": "https://global.green-leaf.shop/novosti-kompanii-greenleaf/novye-vozmozhnosti-dlya-biznesa-s-green-leaf",
+      "needsVerification": ["Program koşulları ve Türkiye’de geçerliliği"]
+    },
+    {
+      "id": "oto-promosyon-2026-2027",
+      "date": "2026-08-04",
+      "title": "Otomatik bonus promosyonu (Ağustos 2026 – Temmuz 2027)",
+      "summary": "Greenleaf, 1 Ağustos 2026 ile 31 Temmuz 2027 arasında geçerli, iş ortaklarına yönelik bir otomatik bonus (autobonus) promosyonu başlattı.",
+      "facts": [
+        "Dönem: 1 Ağustos 2026 – 31 Temmuz 2027.",
+        "Kaynakta, katılımcı ülkeler arasında Türkiye de sayılıyor."
+      ],
+      "caveat": "Koşullar kaynak duyuruda açıklanmıyor; ödül garanti değildir.",
+      "sourceUrl": "https://global.green-leaf.shop/novosti-kompanii-greenleaf/avtopromoushen-greenleaf",
+      "needsVerification": ["Türkiye’nin kapsamda olduğu ve koşullar (distribütörden teyit)"]
+    },
+    {
+      "id": "uluslararasi-seyahat-promosyonu",
+      "date": "2026-08-03",
+      "title": "Uluslararası seyahat promosyonu (Ağustos 2026 – Ocak 2027)",
+      "summary": "1 Ağustos 2026 ile 31 Ocak 2027 arasında geçerli uluslararası promosyonda, belirlenen koşulları yerine getiren iş ortakları Dubai veya Çin seyahati kazanma fırsatı elde ediyor.",
+      "facts": [
+        "Dönem: 1 Ağustos 2026 – 31 Ocak 2027.",
+        "Seyahat seçenekleri: Dubai (BAE) veya Çin.",
+        "Kaynakta, katılımcı ülkeler arasında Türkiye de sayılıyor."
+      ],
+      "caveat": "Koşullar kaynak duyuruda açıklanmıyor; ödül garanti değildir.",
+      "sourceUrl": "https://global.green-leaf.shop/novosti-kompanii-greenleaf/puteshestvujte-s-greenleaf-promoushen-2026-2027",
+      "needsVerification": ["Türkiye’nin kapsamda olduğu ve koşullar (distribütörden teyit)"]
+    }
+  ]
+}

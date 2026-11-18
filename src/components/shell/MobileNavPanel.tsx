@@ -10,13 +10,16 @@ import { useEffect, useRef, useState } from "react";
 import { Logo } from "@/components/brand/Logo";
 import { ProductCardMini } from "@/components/product/ProductCardParts";
 import { CategoryIllustration } from "@/components/illustrations/category-icons";
-import { Award, ChevronLeft, LayoutGrid, ChevronRight, Heart, Info, ShoppingBag, Sprout, User, X } from "@/components/ui/lucide";
+import { ChevronDown, ChevronLeft, ChevronRight, Search, X } from "@/components/ui/lucide";
+import type { SiteNavGroup } from "@/lib/site-nav";
 import { useT } from "@/lib/ui-text/client";
-import type { MenuRoot } from "./menu-data";
+import type { MenuRoot } from "./menu-model";
+import { OPEN_MOBILE_SEARCH } from "./MobileSearch";
 import { PromoTile } from "./PromoTile";
+import { SiteNavRow } from "./SiteNavRow";
 import { Thumb } from "./Thumb";
 
-export default function MobileNavPanel({ roots, close }: { roots: MenuRoot[]; close: () => void }) {
+export default function MobileNavPanel({ roots, siteNav, close }: { roots: MenuRoot[]; siteNav: SiteNavGroup[]; close: () => void }) {
   const { t } = useT();
   const rootEl = useRef<HTMLDivElement>(null);
   const [level, setLevel] = useState<string | null>(null);
@@ -51,13 +54,17 @@ export default function MobileNavPanel({ roots, close }: { roots: MenuRoot[]; cl
         <div className="relative h-[calc(100dvh-4.25rem)] overflow-hidden">
           {/* Level 1 */}
           <div hidden={!!current} className="h-full overflow-y-auto px-4 pb-8 pt-4" data-motion="mobile-nav-level" data-motion-dir={back ? "back" : undefined}>
-            <Link href="/cilt-tipine-gore" onClick={close} className="flex min-h-14 items-center gap-3 rounded-md bg-blue-50 px-4 font-medium text-ink">
-              <span className="grid size-10 place-items-center rounded-full bg-surface text-blue-700">
-                <Sprout size={22} />
-              </span>
-              <span className="flex-1">{t("megaMenu.finder.title")}</span>
-              <ChevronRight size={20} className="text-ink-muted" />
-            </Link>
+            <button
+              type="button"
+              onClick={() => {
+                close();
+                window.dispatchEvent(new Event(OPEN_MOBILE_SEARCH));
+              }}
+              className="flex min-h-14 w-full items-center gap-3 rounded-pill bg-surface-muted px-4 text-left font-medium text-ink ring-1 ring-line-strong"
+            >
+              <Search size={22} className="text-ink-muted" />
+              <span className="flex-1">{t("header.menu.searchRow")}</span>
+            </button>
 
             <p className="mt-6 px-1 text-xs font-semibold uppercase tracking-eyebrow text-ink-muted">{t("megaMenu.title")}</p>
             <ul className="mt-2">
@@ -86,31 +93,22 @@ export default function MobileNavPanel({ roots, close }: { roots: MenuRoot[]; cl
               ))}
             </ul>
 
-            <p className="mt-6 px-1 text-xs font-semibold uppercase tracking-eyebrow text-ink-muted">{t("megaMenu.quickLinks")}</p>
-            <ul className="mt-2">
-              {[
-                { href: "/urunler", label: t("megaMenu.allProducts"), Icon: LayoutGrid },
-                { href: "/koleksiyon/turkiyede-satista", label: t("header.nav.inStock"), Icon: ShoppingBag },
-                { href: "/kategori/setler", label: t("header.nav.sets"), Icon: Award },
-                { href: "/pv-nedir", label: t("header.nav.pv"), Icon: Info, pv: true },
-                { href: "/favoriler", label: t("header.favorites"), Icon: Heart },
-                { href: "/sertifikalar", label: t("footer.link.certificates"), Icon: Award },
-                { href: "/hakkimizda", label: t("footer.link.about"), Icon: User },
-              ].map(({ href, label, Icon, pv }) => (
-                <li key={href}>
-                  <Link href={href} onClick={close} className="flex min-h-13 items-center gap-3 rounded-md px-1 text-base transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:bg-surface-muted">
-                    {pv ? (
-                      <span className="grid h-7 min-w-10 place-items-center rounded-pill bg-lime-100 px-2 text-xs font-semibold text-lime-700">PV</span>
-                    ) : (
-                      <span className="grid w-10 place-items-center text-ink-muted">
-                        <Icon size={22} />
-                      </span>
-                    )}
-                    {label}
-                  </Link>
-                </li>
+            <p className="mt-6 px-1 text-xs font-semibold uppercase tracking-eyebrow text-ink-muted">{t("header.menu.explore")}</p>
+            <div className="mt-2 divide-y divide-line border-y border-line">
+              {siteNav.map((g, i) => (
+                <details key={g.key} open={i < 2} className="group/acc">
+                  <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between px-1 text-base font-semibold [&::-webkit-details-marker]:hidden">
+                    {g.label}
+                    <ChevronDown size={20} className="text-ink-muted transition-transform duration-250 group-open/acc:rotate-180" />
+                  </summary>
+                  <ul className="pb-2 pl-1">
+                    {g.items.map((it) => (
+                      <SiteNavRow key={it.id} item={it} onNavigate={close} />
+                    ))}
+                  </ul>
+                </details>
               ))}
-            </ul>
+            </div>
 
             <div className="mt-6 border-t border-line pt-6">
               <Link href="/uye-ol" onClick={close} className="flex min-h-control-lg w-full items-center justify-center rounded-pill bg-green-700 text-lg font-medium text-white shadow-button transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:bg-green-800">

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { getStockImage } from "@/lib/images";
 import { CategoryIllustration } from "@/components/illustrations/category-icons";
 import { TextureGrain } from "@/components/illustrations/textures";
+import { PatternLeafLines } from "@/components/illustrations/patterns";
+import { ScrollSvg } from "@/components/motion";
 import { ProductCard } from "@/components/product/ProductCard";
 import type { ProductSummary } from "@/lib/products";
 import { t } from "@/components/sections/copy";
@@ -15,7 +17,7 @@ function TabPhoto({ slug }: { slug: string }) {
   if (!p) return <CategoryIllustration slug={slug} className="size-48 text-ink" />;
   return (
     <span className="relative block aspect-[4/5] w-32 overflow-hidden rounded-tile shadow-card lg:w-36">
-      <Image src={p.src} alt="" fill sizes="144px" className="object-cover" placeholder={p.blurDataURL ? "blur" : "empty"} blurDataURL={p.blurDataURL} />
+      <Image src={p.src} alt="" fill sizes="144px" className="object-cover" />
     </span>
   );
 }
@@ -51,6 +53,12 @@ export function TabbedShowcase({ tabs }: { tabs: ShowcaseTab[] }) {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
         <TextureGrain strength={0.06} />
       </div>
+      <ScrollSvg
+        mode="parallax"
+        className="pointer-events-none absolute inset-y-24 left-3 -z-10 hidden w-20 text-green-700/50 min-[1440px]:block"
+      >
+        <PatternLeafLines strength={0.5} className="h-full w-full" />
+      </ScrollSvg>
       <div className="mx-auto max-w-page px-gutter">
         <Tabs
           label={t("home.v2.showcase2.tabsLabel")}

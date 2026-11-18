@@ -100,7 +100,8 @@ export function startSmoothScroll(): () => void {
     });
     const tick = (t: number) => l.raf(t * 1000);
     l.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add(tick);
+    // P-10: prioritized tick: Lenis scrolls before the GSAP tweens of the same frame write styles (no forced recalc)
+    gsap.ticker.add(tick, false, true);
     gsap.ticker.lagSmoothing(0);
     document.addEventListener("click", onClick);
     lenis = l;

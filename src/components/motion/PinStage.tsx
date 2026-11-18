@@ -56,6 +56,9 @@ export function PinStage({ children, ...rest }: HTMLAttributes<HTMLDivElement> &
           const m = gsap.matchMedia();
           mm = m;
           m.add(PIN_STAGE_QUERY, () => {
+            const headerH = () => Math.round(document.getElementById("header-accent")?.getBoundingClientRect().height ?? 0);
+            const syncHeaderOffset = () => host.style.setProperty("--pin-top", `${headerH()}px`);
+            syncHeaderOffset();
             host.setAttribute("data-stage-ready", "");
             let active = -1;
             const setActive = (i: number) => {
@@ -79,7 +82,11 @@ export function PinStage({ children, ...rest }: HTMLAttributes<HTMLDivElement> &
               defaults: { ease: "none", duration: 1 },
               scrollTrigger: {
                 trigger: stage,
-                start: "top top",
+                // K-292: the sticky header stays visible, so the stage is pinned right under it
+                start: () => {
+                  syncHeaderOffset();
+                  return `top top+=${headerH()}`;
+                },
                 end: () => `+=${Math.round(innerHeight * 0.85 * (n - 1))}`,
                 pin: true,
                 // transform pin: a fixed pin is reported by Chrome as a ~0.9 layout shift (K-260 measurement)
@@ -89,7 +96,6 @@ export function PinStage({ children, ...rest }: HTMLAttributes<HTMLDivElement> &
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
                 onUpdate: (self) => setActive(Math.min(n - 1, Math.max(0, Math.round(self.progress * (n - 1))))),
-                onToggle: (self) => html.toggleAttribute("data-pin-hold", self.isActive), // smart header stays hidden
               },
             });
             // depth (brief fotograf-ve-svg-yerlesim §2): photos cropped at scale 1.12 drift ±6 % sideways over the pin;
@@ -110,10 +116,14 @@ export function PinStage({ children, ...rest }: HTMLAttributes<HTMLDivElement> &
             // the giant outline title draws itself while the stage scrolls in and through the pin
             if (side) {
               const len = Math.ceil(side.getComputedTextLength() * 1.6) || 2000;
+              // P-12: the outline is repainted only when the dash moves a visible step (~1/90 of the stroke): the
+              // value snaps, so most scroll frames write the same offset and nothing repaints (the layer is isolated
+              // by will-change in motion.css)
+              const step = Math.max(4, Math.round(len / 90));
               gsap.fromTo(
                 side,
                 { strokeDasharray: len, strokeDashoffset: len },
-                { strokeDashoffset: 0, ease: "none", scrollTrigger: { trigger: stage, start: "top bottom", end: () => `top+=${innerHeight} top`, scrub: true } },
+                { strokeDashoffset: 0, ease: "none", snap: { strokeDashoffset: step }, scrollTrigger: { trigger: stage, start: "top bottom", end: () => `top+=${innerHeight} top`, scrub: true } },
               );
             }
             if (fill) {
@@ -132,7 +142,7 @@ export function PinStage({ children, ...rest }: HTMLAttributes<HTMLDivElement> &
             return () => {
               stage.removeEventListener("focusin", onFocus);
               host.removeAttribute("data-stage-ready");
-              html.removeAttribute("data-pin-hold");
+              host.style.removeProperty("--pin-top");
               texts.forEach((t) => t.removeAttribute("data-active"));
               points.forEach((p) => p.removeAttribute("data-active"));
             };

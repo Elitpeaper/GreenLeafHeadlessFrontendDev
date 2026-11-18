@@ -12,7 +12,6 @@
  */
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
-import { Info } from "@/components/ui/lucide";
 import { formatPv } from "@/lib/format";
 import { useT } from "@/lib/ui-text/client";
 
@@ -88,10 +87,9 @@ export function PvChip({ value, comingSoon = false, info = true, size = "md", pl
         aria-label={`${t("common.pvAria", { value: formatPv(value) })}. ${t("product.pv.infoButton")}`}
         onClick={() => setOpen((o) => !o)}
         data-motion="pv-chip"
-        className={`${chipClass} relative transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:bg-lime-50 before:absolute before:-inset-y-2 before:inset-x-0 before:content-['']`}
+        className={`${chipClass} relative transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:bg-lime-50 before:absolute before:-inset-y-2 before:inset-x-0 before:content-[''] after:grid after:shrink-0 after:place-items-center after:rounded-full after:border-[1.5px] after:border-current after:font-bold after:leading-none after:content-['i'] ${size === "lg" ? "after:size-[18px] after:text-xs" : "after:size-4 after:text-[0.6875rem]"}`}
       >
-        <span aria-hidden="true">{label}</span>
-        <Info size={size === "lg" ? 18 : 16} />
+        {label}
       </button>
       {open && (
         <span

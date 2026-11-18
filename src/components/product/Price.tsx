@@ -106,25 +106,30 @@ export function PricePair({ price, memberPrice, size = "card", className = "" }:
     );
   }
 
-  // "card" (K-174): container query — side by side when the card body is ≥ 220px wide; below that (360px, 2 columns)
-  // two compact rows with the label left and the amount right, so nothing wraps.
+  // "card" (K-174, K-288 flat DOM): a flat grid — dt/dd pairs without wrapper elements (the card is the size container).
+  // Narrow (2 columns at 360px): two rows, label left / amount right. >= 220px: two columns, label over amount.
+  // The member badge is painted by its own dt (rounded left / top) and dd (rounded right / bottom).
+  const text = formatPrice(price);
+  const memberText = formatPrice(memberPrice);
+  const sr = (v: string) => `${v.replace("₺", "")} TL`;
   return (
-    <div className={`@container ${className}`}>
-      <dl className="flex flex-col gap-1.5 @min-[220px]:flex-row @min-[220px]:items-end @min-[220px]:justify-between @min-[220px]:gap-3">
-        <div className="flex items-baseline justify-between gap-2 px-0.5 @min-[220px]:block @min-[220px]:px-0">
-          <dt className="text-xs font-medium text-ink-muted">{priceLabel}</dt>
-          <dd className="text-sm font-semibold leading-tight text-ink @min-[220px]:text-base">
-            <Money value={price} />
-          </dd>
-        </div>
-        <div className="flex items-baseline justify-between gap-2 rounded-md bg-green-700 px-2.5 py-1.5 text-white @min-[220px]:block @min-[220px]:px-3 @min-[220px]:text-right">
-          <dt className="text-xs font-medium leading-tight">{memberLabel}</dt>
-          <dd className="text-sm font-bold leading-tight @min-[220px]:text-base">
-            <Money value={memberPrice} />
-          </dd>
-        </div>
-      </dl>
-    </div>
+    <dl
+      className={`grid grid-cols-[auto_1fr] items-baseline gap-y-1.5 @min-[220px]:grid-flow-col @min-[220px]:grid-cols-none @min-[220px]:grid-rows-[auto_auto] @min-[220px]:justify-between @min-[220px]:gap-x-3 @min-[220px]:gap-y-0 ${className}`}
+    >
+      <dt className="px-0.5 text-xs font-medium text-ink-muted @min-[220px]:px-0">{priceLabel}</dt>
+      <dd aria-label={sr(text)} className="px-0.5 text-right text-sm font-semibold leading-tight tabular-nums text-ink @min-[220px]:px-0 @min-[220px]:text-left @min-[220px]:text-base">
+        {text}
+      </dd>
+      <dt className="rounded-l-md bg-green-700 py-1.5 pl-2.5 text-xs font-medium leading-tight text-white @min-[220px]:rounded-t-md @min-[220px]:rounded-bl-none @min-[220px]:px-3 @min-[220px]:pb-0 @min-[220px]:text-right">
+        {memberLabel}
+      </dt>
+      <dd
+        aria-label={sr(memberText)}
+        className="rounded-r-md bg-green-700 py-1.5 pr-2.5 text-right text-sm font-bold leading-tight tabular-nums text-white @min-[220px]:rounded-l-none @min-[220px]:rounded-br-md @min-[220px]:px-3 @min-[220px]:pt-0"
+      >
+        {memberText}
+      </dd>
+    </dl>
   );
 }
 
@@ -165,9 +170,18 @@ export function PriceBlock({ price, memberPrice, pv, availability, size = "card"
       </div>
     );
   }
+  if (size === "card") {
+    // K-288: no wrapper — the card is already a flex column; the caller's className positions the prices (mt-auto, margins).
+    return (
+      <>
+        <PricePair price={price} memberPrice={memberPrice} size="card" className={className} />
+        <PvChip value={pv} info={info} size={PV_SIZE.card} placement="top" className="mx-0.5 mt-2 self-start" />
+      </>
+    );
+  }
   return (
     <div className={`flex items-start gap-2 ${size === "mini" ? "flex-row flex-wrap items-center" : "flex-col"} ${size === "lg" ? "gap-3" : ""} ${className}`}>
-      <PricePair price={price} memberPrice={memberPrice} size={size} className={size === "card" ? "w-full" : ""} />
+      <PricePair price={price} memberPrice={memberPrice} size={size} className="" />
       {chip}
     </div>
   );

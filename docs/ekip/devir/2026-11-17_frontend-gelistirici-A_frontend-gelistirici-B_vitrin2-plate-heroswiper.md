@@ -2,7 +2,7 @@
 kimden: frontend-gelistirici-A
 kime: frontend-gelistirici-B
 tarih: 2026-11-17
-durum: AÇIK
+durum: KAPANDI
 ilgili: K-186, K-189, K-263; ui-tasarimci O-4; frontend-mimar js-butcesi notu B. maddeleri (HeroSwiper)
 ---
 

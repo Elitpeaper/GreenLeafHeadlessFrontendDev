@@ -13,7 +13,7 @@ import { useId, type CSSProperties, type ReactNode, type SVGProps } from "react"
  * - The Greenleaf mark / pinwheel is never drawn. Leaves only *echo* its translucent, overlapping language.
  */
 
-export type SvgInteract = "bloom" | "sway" | "draw" | "spin" | "parallax";
+export type SvgInteract = "bloom" | "sway" | "draw" | "spin" | "parallax" | "scatter";
 
 export type IllustrationProps = Omit<SVGProps<SVGSVGElement>, "children" | "viewBox"> & {
   /** Accessible name. When omitted the illustration is aria-hidden. */

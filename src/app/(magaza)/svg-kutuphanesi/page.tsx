@@ -19,6 +19,7 @@ const INTERACT_LABEL: Record<IllustrationEntry["interact"], string> = {
   draw: "çizilir",
   spin: "döner",
   parallax: "derinlik",
+  scatter: "dağılır",
 };
 
 function Meta({ item }: { item: IllustrationEntry }) {

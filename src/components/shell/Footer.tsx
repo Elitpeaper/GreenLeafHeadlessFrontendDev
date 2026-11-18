@@ -16,47 +16,38 @@ import { HideOnHome } from "./HideOnHome";
 import { ArrowRight, ChevronDown, Mail, Phone, Sprout } from "@/components/ui/lucide";
 import { site } from "@/config/site";
 import { t } from "@/lib/ui-text";
-import type { MenuRoot } from "./menu-data";
+import type { SiteNavGroup } from "@/lib/site-nav";
+import type { MenuRootNav } from "./menu-model";
 
 /** soon = target page exists but shows the K-181 "Çok yakında" state → K-182 badge next to the link. */
-type FLink = { href: string; label: string; soon?: boolean };
+type FLink = { href: string | null; label: string; soon?: boolean; external?: boolean };
 
-export function Footer({ roots }: { roots: MenuRoot[] }) {
+export function Footer({ roots, siteNav }: { roots: MenuRootNav[]; siteNav: SiteNavGroup[] }) {
+  // K-266: every link column except the shop roots comes from the single siteNav source (same as Keşfet panel + drawer).
+  const toLinks = (g: SiteNavGroup | undefined): FLink[] =>
+    (g?.items ?? []).map((i) => ({ href: i.href, label: i.label, soon: i.soon, external: i.external }));
   const columns: { title: string; links: FLink[] }[] = [
     { title: t("footer.col.shop"), links: roots.map((r) => ({ href: r.href, label: r.title })) },
-    {
-      title: t("footer.col.explore"),
-      links: [
-        { href: "/urunler", label: t("footer.link.products") },
-        { href: "/koleksiyon/turkiyede-satista", label: t("footer.link.inStock") },
-        { href: "/kategori/setler", label: t("footer.link.sets") },
-        { href: "/cilt-tipine-gore", label: t("footer.link.finder") },
-        { href: "/favoriler", label: t("footer.link.favorites") },
-      ],
-    },
-    {
-      title: t("footer.col.info"),
-      links: [
-        { href: "/hakkimizda", label: t("footer.link.about") },
-        { href: "/sertifikalar", label: t("footer.link.certificates") },
-        { href: "/uye-ol", label: t("footer.link.membership") },
-        { href: "/pv-nedir", label: t("footer.link.pv") },
-      ],
-    },
+    ...siteNav.filter((g) => g.key !== "yardim").map((g) => ({ title: g.label, links: toLinks(g) })),
   ];
-  const legal: FLink[] = [
-    { href: "/yasal/kvkk-aydinlatma-metni", label: t("footer.link.kvkk"), soon: true },
-    { href: "/yasal/cerez-politikasi", label: t("footer.link.cookies"), soon: true },
-    { href: "/yasal/e-posta-acik-riza", label: t("footer.link.emailConsent"), soon: true },
-  ];
+  const legalGroup = siteNav.find((g) => g.key === "yardim");
+  const legal: FLink[] = toLinks(legalGroup);
   const linkCls =
     "inline-flex min-h-tap-min items-center text-sm text-cream-100 transition-[color,translate] duration-250 hover:text-white motion-safe:hover:translate-x-1";
   const item = (l: FLink) => (
     <span className="inline-flex flex-wrap items-center gap-x-2">
-      <Link href={l.href} className={linkCls}>
-        {/* K-272: underline draws in from the left on hover/focus (motion.css [data-link-draw]) */}
-        <span data-link-draw="">{l.label}</span>
-      </Link>
+      {l.href === null ? (
+        <span className="inline-flex min-h-tap-min items-center text-sm text-cream-100/80">{l.label}</span>
+      ) : l.external ? (
+        <a href={l.href} target="_blank" rel="noopener noreferrer" className={linkCls}>
+          <span data-link-draw="">{l.label}</span>
+        </a>
+      ) : (
+        <Link href={l.href} className={linkCls}>
+          {/* K-272: underline draws in from the left on hover/focus (motion.css [data-link-draw]) */}
+          <span data-link-draw="">{l.label}</span>
+        </Link>
+      )}
       {l.soon && <ComingSoonBadge tone="onDark" />}
     </span>
   );
@@ -101,7 +92,7 @@ export function Footer({ roots }: { roots: MenuRoot[] }) {
         </HideOnHome>
 
         {/* [B] Columns */}
-        <nav aria-label={t("footer.nav.aria")} className="mt-stack grid gap-grid-gap lg:grid-cols-[1.4fr_1.6fr_1fr_1fr_1fr]">
+        <nav aria-label={t("footer.nav.aria")} className="mt-stack grid gap-grid-gap lg:grid-cols-[1.3fr_1.5fr_1fr_1fr_1fr_1fr]">
           <div className="pb-4 lg:pr-6">
             <div className="inline-flex rounded-tile bg-surface p-4 shadow-long">
               <Logo height={36} />
@@ -116,7 +107,7 @@ export function Footer({ roots }: { roots: MenuRoot[] }) {
               <h2 className="font-sans text-sm font-semibold tracking-normal text-cream-200">{c.title}</h2>
               <ul className={`mt-3 ${i === 0 ? "grid grid-cols-2 gap-x-4" : ""}`}>
                 {c.links.map((l) => (
-                  <li key={l.href}>
+                  <li key={l.href ?? l.label}>
                     {item(l)}
                   </li>
                 ))}
@@ -127,7 +118,7 @@ export function Footer({ roots }: { roots: MenuRoot[] }) {
             <h2 className="font-sans text-sm font-semibold tracking-normal text-cream-200">{t("footer.col.legal")}</h2>
             <ul className="mt-3">
               {legal.map((l) => (
-                <li key={l.href}>
+                <li key={l.href ?? l.label}>
                   {item(l)}
                 </li>
               ))}
@@ -144,7 +135,7 @@ export function Footer({ roots }: { roots: MenuRoot[] }) {
                 </summary>
                 <ul className="grid grid-cols-2 gap-x-4 pb-4">
                   {c.links.map((l) => (
-                    <li key={l.href}>
+                    <li key={l.href ?? l.label}>
                       {item(l)}
                     </li>
                   ))}
@@ -154,7 +145,7 @@ export function Footer({ roots }: { roots: MenuRoot[] }) {
           </div>
           <ul className="flex flex-wrap gap-x-6 lg:hidden">
             {legal.map((l) => (
-              <li key={l.href}>
+              <li key={l.href ?? l.label}>
                 {item(l)}
               </li>
             ))}

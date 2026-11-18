@@ -3,9 +3,8 @@
  * the full tier (html[data-motion="on"]) and reverted when the visitor picks "Hareketi azalt".
  *
  *  1. SplitText headings   main h2 (and [data-split]) below the fold: lines rise from a mask, y 90 -> 0, stagger .12
- *  2. smart header         the sticky header root hides on scroll down, returns on scroll up (not while a menu/drawer/
- *                          focus is open). Structure-independent: target = [data-smart-header] (fallback #header-accent),
- *                          state = html[data-header-hidden] — the header markup can change freely.
+ *  2. smart header         retired by K-292 (the header row never hides); only a stale html[data-header-hidden] is
+ *                          cleared on stop. No scroll handler / style observer remains (P-05, P-06).
  *  3. scroll-top ring      [data-scroll-ring-bar] stroke follows the page progress (DrawSVG, scrub)
  *  4. header band parallax [data-listing-hero] / [data-page-hero] photo scales 1 -> 1.1, scene drifts (scrub)
  *  5. scroll SVG           [data-scroll-svg] draw (DrawSVG scrub) / parallax (y scrub + cursor lean)
@@ -99,7 +98,7 @@ export function startFx(): FxController {
   }
   function wireSvg(host: HTMLElement) {
     const { gsap } = kit!;
-    const modes = (host.dataset.scrollSvg ?? "draw").split(/s+/);
+    const modes = (host.dataset.scrollSvg ?? "draw").split(/\s+/);
     const has = (m: string) => modes.includes(m) || (modes.includes("both") && (m === "draw" || m === "parallax"));
     if (has("view")) {
       // scroll trigger -> the illustration's own behaviour (bloom/sway/…) plays once when it comes into view
@@ -133,83 +132,101 @@ export function startFx(): FxController {
   const nears: HTMLElement[] = []; // cursor proximity (≤ 240 px) wakes the illustration's own behaviour
   const NEAR = 240;
 
+  // P-01 (PERFORMANS-DENETIMI-1): refresh ONLY when this scan wired a new trigger. An unconditional refresh fed an
+  // endless loop (refresh -> ScrollTrigger's own DOM writes -> runtime MutationObserver -> scan -> refresh).
   function scanFx(node: ParentNode) {
     if (!kit || !ctx || stopped) return;
-    ctx.add(() => scanInto(node));
-    refresh();
+    let added = false;
+    ctx.add(() => {
+      added = scanInto(node);
+    });
+    if (added) refresh();
   }
-  function scanInto(node: ParentNode) {
+  function scanInto(node: ParentNode): boolean {
+    let added = false;
     node.querySelectorAll<HTMLElement>("[data-split-wait]").forEach((h) => {
       if (!h.hasAttribute("data-split-wired")) {
         h.setAttribute("data-split-wired", "");
         wireHeading(h);
+        added = true;
       }
     });
     node.querySelectorAll<HTMLElement>("[data-listing-hero], [data-page-hero]").forEach((b) => {
       if (wired.has(b)) return;
       wired.add(b);
       wireBand(b);
+      added = true;
     });
     node.querySelectorAll<HTMLElement>("[data-scroll-svg]").forEach((s) => {
       if (wired.has(s)) return;
       wired.add(s);
       wireSvg(s);
+      added = true;
     });
+    return added;
   }
 
-  // ------------------------------------------------------------ 2. smart header (Penta "akıllı menü")
+  // ------------------------------------------------------------ 2. smart header: retired (K-292)
+  // The main header row is never hidden, so the hide/show scroll handler, its layout reads (P-06) and the body-wide
+  // `style` MutationObserver with getComputedStyle (P-05) are gone. Only a stale state is cleared on stop.
   const header = () => doc.querySelector<HTMLElement>("[data-smart-header]") ?? doc.getElementById("header-accent");
-  let hidden = false;
-  let lastY = scrollY;
-  const headerLocked = (h: HTMLElement) => {
-    if (h.matches(":focus-within") || h.querySelector('[data-state="open"],[aria-expanded="true"]')) return true;
-    const over = (el: Element) => /hidden|clip/.test(getComputedStyle(el).overflowY);
-    if (over(root) || over(doc.body)) return true; // drawer / mobile nav lock
-    try {
-      return !!doc.querySelector("dialog:modal");
-    } catch {
-      return !!doc.querySelector("dialog[open]");
-    }
+
+  // ------------------------------------------------------------ geometry cache (P-09): no layout reads per pointermove
+  // Rects are read at most once per scroll/resize "generation"; pointermove only does arithmetic on cached values.
+  let geoGen = 0;
+  const bumpGeo = () => void geoGen++;
+  type Cached = { gen: number; r: DOMRect; pull?: [number, number] };
+  const rects = new WeakMap<Element, Cached>();
+  const rectOf = (el: Element): DOMRect => {
+    const c = rects.get(el);
+    if (c && c.gen === geoGen) return c.r;
+    const r = el.getBoundingClientRect();
+    // GSAP's own cached x/y (no DOM read): lets magnets measure from their resting position
+    const pull: [number, number] | undefined =
+      kit && el.hasAttribute("data-fx-magnet") ? [Number(kit.gsap.getProperty(el, "x")) || 0, Number(kit.gsap.getProperty(el, "y")) || 0] : undefined;
+    rects.set(el, { gen: geoGen, r, pull });
+    return r;
   };
-  const setHeader = (hide: boolean) => {
-    const h = header();
-    if (!h || !kit || hide === hidden) return;
-    hidden = hide;
-    root.toggleAttribute("data-header-hidden", hide);
-    kit.gsap.to(h, { yPercent: hide ? -100 : 0, duration: hide ? 0.45 : 0.5, ease: hide ? "power2.in" : "power3.out", overwrite: true });
-  };
-  const onScroll = () => {
-    const h = header();
-    const y = scrollY;
-    const dy = y - lastY;
-    lastY = y;
-    if (!h) return;
-    if (root.hasAttribute("data-pin-hold")) return setHeader(true);
-    if (headerLocked(h) || y < h.offsetHeight + 50) return setHeader(false);
-    if (dy > 4) setHeader(true);
-    else if (dy < -4) setHeader(false);
-  };
-  // a menu / drawer opening while hidden brings the header back
-  const headerMo = new MutationObserver(() => {
-    const h = header();
-    if (hidden && h && headerLocked(h)) setHeader(false);
-  });
 
   // ------------------------------------------------------------ 6/7. pointer: tilt, glare, magnets, SVG lean
-  type Tilt = { rx: (v: number) => void; ry: (v: number) => void };
+  type Tilt = { rx: (v: number) => void; ry: (v: number) => void; glare?: HTMLElement | null };
   const tilts = new WeakMap<HTMLElement, Tilt>();
   const magnets = new WeakMap<HTMLElement, Tilt>();
   let tiltCard: HTMLElement | null = null;
   let magnet: HTMLElement | null = null;
   const MAX = 7.5; // VanillaTilt "max" (Penta collection cards)
 
+  // Tilt: quickTo eases a plain object (no DOM); ONE ticker callback writes ONE transform per tile per frame, only when
+  // the value changed, and lets go of the tile (inline transform cleared) once it has settled after release.
+  type TiltState = { tile: HTMLElement; p: { x: number; y: number }; last: string };
+  const tilting = new Set<TiltState>();
+  const writeTilts = () => {
+    for (const st of tilting) {
+      const { x, y } = st.p;
+      const held = tiltCard?.contains(st.tile) ?? false;
+      if (!held && Math.abs(x) < 0.02 && Math.abs(y) < 0.02) {
+        st.tile.style.removeProperty("transform");
+        st.last = "";
+        tilting.delete(st);
+        continue;
+      }
+      const v = `perspective(1000px) rotateX(${x.toFixed(2)}deg) rotateY(${y.toFixed(2)}deg)`;
+      if (v !== st.last) st.tile.style.transform = st.last = v;
+    }
+  };
   const tiltOf = (tile: HTMLElement): Tilt => {
     let t = tilts.get(tile);
     if (!t) {
       const { gsap } = kit!;
-      gsap.set(tile, { transformPerspective: 1000 });
+      const st: TiltState = { tile, p: { x: 0, y: 0 }, last: "" };
       // VanillaTilt speed 1000 + cubic-bezier(.10,.98,.52,.99) ≈ expo.out over 1 s
-      t = { rx: gsap.quickTo(tile, "rotationX", { duration: 1, ease: "expo.out" }), ry: gsap.quickTo(tile, "rotationY", { duration: 1, ease: "expo.out" }) };
+      const qx = gsap.quickTo(st.p, "x", { duration: 1, ease: "expo.out" });
+      const qy = gsap.quickTo(st.p, "y", { duration: 1, ease: "expo.out" });
+      t = {
+        rx: (v) => (tilting.add(st), qx(v)),
+        ry: (v) => (tilting.add(st), qy(v)),
+        glare: tile.querySelector<HTMLElement>("[data-card-glare]"),
+      };
       tilts.set(tile, t);
     }
     return t;
@@ -240,8 +257,31 @@ export function startFx(): FxController {
     magnets.delete(magnet); // quickTo tweens were overwritten: rebuild on next enter
     magnet = null;
   };
+  // P-09: per near-host cache of its svgs and its current "near" state (no querySelectorAll / attribute writes per move)
+  type NearSvgs = { all: SVGSVGElement[]; para: SVGSVGElement[]; near: boolean };
+  const nearSvgs = new WeakMap<HTMLElement, NearSvgs>();
+  const svgsOfNear = (host: HTMLElement): NearSvgs => {
+    let s = nearSvgs.get(host);
+    if (!s) {
+      const all = Array.from(host.querySelectorAll<SVGSVGElement>("svg[data-svg-interact]"));
+      s = { all, para: all.filter((sv) => /(^|\s)parallax(\s|$)/.test(sv.getAttribute("data-svg-interact") ?? "")), near: false };
+      nearSvgs.set(host, s);
+    }
+    return s;
+  };
+
+  // pointermove is coalesced to one frame (rAF): reads (cached rects) first, then writes
+  let moveEv: PointerEvent | null = null;
+  let moveRaf = 0;
   const onMove = (e: PointerEvent) => {
     if (!kit || e.pointerType !== "mouse") return;
+    moveEv = e;
+    if (!moveRaf) moveRaf = requestAnimationFrame(applyMove);
+  };
+  const applyMove = () => {
+    moveRaf = 0;
+    const e = moveEv;
+    if (!kit || !e) return;
     const target = e.target as Element;
     // card tilt + glare
     const card = target.closest?.<HTMLElement>("[data-product-card]") ?? null;
@@ -249,44 +289,51 @@ export function startFx(): FxController {
     const tile = card?.querySelector<HTMLElement>("[data-card-tile]");
     if (card && tile) {
       tiltCard = card;
-      const r = tile.getBoundingClientRect();
+      const r = rectOf(tile); // read once per enter/scroll (VanillaTilt caches the rect on enter as well)
       const x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
       const y = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
       const t = tiltOf(tile);
       t.ry(MAX - x * MAX * 2); // VanillaTilt: rotateY = max - 2·max·x
       t.rx(y * MAX * 2 - MAX); //              rotateX = 2·max·y - max
-      tile.style.setProperty("--glare-x", `${(x * 100).toFixed(1)}%`);
-      tile.style.setProperty("--glare-y", `${(y * 100).toFixed(1)}%`);
+      // glare: the 2x pre-painted layer slides (translate % of its own size) so its centre sits under the cursor;
+      // one compositor write on one element, no gradient repaint and no inherited var on the tile subtree
+      if (t.glare) t.glare.style.translate = `${((x - 0.5) * 50).toFixed(2)}% ${((y - 0.5) * 50).toFixed(2)}%`;
     }
     // magnetic CTA
     const mEl = target.closest?.<HTMLElement>(MAGNET) ?? null;
-    const usable = mEl && !mEl.matches(":disabled,[aria-disabled='true']") && !mEl.closest("[data-product-card],dialog");
     if (mEl !== magnet) releaseMagnet();
+    const usable = mEl && !mEl.matches(":disabled,[aria-disabled='true']") && !mEl.closest("[data-product-card],dialog");
     if (usable && mEl) {
       magnet = mEl;
-      const r = mEl.getBoundingClientRect();
+      const r = rectOf(mEl);
       const m = magnetOf(mEl);
-      const dx = e.clientX - (r.left + r.width / 2);
-      const dy = e.clientY - (r.top + r.height / 2);
+      // measure from the resting centre: the rect may have been read while the magnet was pulled
+      const [ox, oy] = rects.get(mEl)?.pull ?? [0, 0];
+      const dx = e.clientX - (r.left - ox + r.width / 2);
+      const dy = e.clientY - (r.top - oy + r.height / 2);
       m.rx(Math.max(-10, Math.min(10, dx * 0.3)));
       m.ry(Math.max(-8, Math.min(8, dy * 0.4)));
     }
     // scroll SVG lean toward the cursor (viewport-relative, -1..1)
     for (const host of nears) {
       if (!host.isConnected) continue;
-      const r = host.getBoundingClientRect();
+      const r = rectOf(host);
       const dx = Math.max(r.left - e.clientX, 0, e.clientX - r.right);
       const dy = Math.max(r.top - e.clientY, 0, e.clientY - r.bottom);
       const near = Math.hypot(dx, dy) <= NEAR;
-      host.querySelectorAll("svg[data-svg-interact]").forEach((sv) => sv.toggleAttribute("data-svg-hot", near));
-      if (near) {
+      const svgs = svgsOfNear(host);
+      if (near !== svgs.near) {
+        svgs.near = near;
+        svgs.all.forEach((sv) => sv.toggleAttribute("data-svg-hot", near));
+      }
+      if (near && svgs.para.length) {
         // parallax illustrations lean toward the cursor (same vars the runtime writes on hover)
-        const nx = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / (r.width / 2 || 1)));
-        const ny = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / (r.height / 2 || 1)));
-        host.querySelectorAll<SVGSVGElement>("svg[data-svg-interact~='parallax']").forEach((sv) => {
-          sv.style.setProperty("--svg-px", nx.toFixed(3));
-          sv.style.setProperty("--svg-py", ny.toFixed(3));
-        });
+        const nx = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / (r.width / 2 || 1))).toFixed(3);
+        const ny = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / (r.height / 2 || 1))).toFixed(3);
+        for (const sv of svgs.para) {
+          sv.style.setProperty("--svg-px", nx);
+          sv.style.setProperty("--svg-py", ny);
+        }
       }
     }
     if (leaners.length) {
@@ -322,22 +369,22 @@ export function startFx(): FxController {
         }
       });
       scanFx(doc);
-      window.addEventListener("scroll", onScroll, { passive: true });
-      headerMo.observe(doc.body, { attributes: true, subtree: true, attributeFilter: ["open", "data-state", "aria-expanded", "style"] });
+      window.addEventListener("scroll", bumpGeo, { passive: true });
+      window.addEventListener("resize", bumpGeo, { passive: true });
       if (fine()) {
+        gsap.ticker.add(writeTilts); // after the tweens of the frame (reads eased values, writes once)
         doc.addEventListener("pointermove", onMove, { passive: true });
         doc.addEventListener("pointerout", onLeaveDoc, { passive: true });
       }
       cleanups.push(() => {
-        window.removeEventListener("scroll", onScroll);
-        headerMo.disconnect();
+        window.removeEventListener("scroll", bumpGeo);
+        window.removeEventListener("resize", bumpGeo);
+        cancelAnimationFrame(moveRaf);
         doc.removeEventListener("pointermove", onMove);
         doc.removeEventListener("pointerout", onLeaveDoc);
         const h = header();
-        if (h) {
-          gsap.set(h, { clearProps: "transform" });
-          root.removeAttribute("data-header-hidden");
-        }
+        if (h && root.hasAttribute("data-header-hidden")) gsap.set(h, { clearProps: "transform" });
+        root.removeAttribute("data-header-hidden");
         window.clearTimeout(refreshTimer);
         ctx?.revert(); // only this module's tweens + triggers (PinStage / Lenis own theirs)
         ctx = null;
@@ -347,6 +394,10 @@ export function startFx(): FxController {
           el.removeAttribute("data-fx-magnet");
         });
         doc.querySelectorAll("[data-split-wired]").forEach((el) => el.removeAttribute("data-split-wired"));
+        kit?.gsap.ticker.remove(writeTilts);
+        tilting.forEach((st) => st.tile.style.removeProperty("transform"));
+        tilting.clear();
+        doc.querySelectorAll<HTMLElement>("[data-card-glare]").forEach((g) => g.style.removeProperty("translate"));
       });
     })
     .catch(releaseAll);

@@ -143,7 +143,7 @@ export function HomeDoors({
                 <div key={d.key} data-stage-image="" className="absolute inset-0 overflow-hidden" style={{ zIndex: i + 1 }}>
                   <div data-stage-img="" className="absolute inset-0">
                     {d.photo && (
-                      <Image src={d.photo.src} alt="" fill sizes="(min-width: 1440px) 820px, 56vw" draggable={false} className="object-cover" placeholder={d.photo.blurDataURL ? "blur" : "empty"} blurDataURL={d.photo.blurDataURL} />
+                      <Image src={d.photo.src} alt="" fill sizes="(min-width: 1440px) 820px, 56vw" draggable={false} className="object-cover" />
                     )}
                     <span className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgb(10_42_24/0.55))]" />
                     <DoorArt doorKey={d.key} premiumProduct={premiumProduct} pvProducts={pvProducts} />
@@ -206,7 +206,7 @@ function DoorCard({
     <>
       <span aria-hidden="true" className="relative block aspect-[4/5] overflow-hidden rounded-t-tile bg-forest-900">
         {door.photo && (
-          <Image src={door.photo.src} alt="" fill sizes="(min-width: 1025px) 30vw, (min-width: 769px) 46vw, 85vw" draggable={false} className="object-cover" data-door-photo="" placeholder={door.photo.blurDataURL ? "blur" : "empty"} blurDataURL={door.photo.blurDataURL} />
+          <Image src={door.photo.src} alt="" fill sizes="(min-width: 1025px) 30vw, (min-width: 769px) 46vw, 85vw" draggable={false} className="object-cover" data-door-photo="" />
         )}
         <DoorArt doorKey={door.key} premiumProduct={premiumProduct} pvProducts={pvProducts} compact />
       </span>

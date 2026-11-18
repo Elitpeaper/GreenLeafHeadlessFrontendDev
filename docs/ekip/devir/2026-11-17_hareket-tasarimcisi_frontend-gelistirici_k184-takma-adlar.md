@@ -2,7 +2,7 @@
 kimden: hareket-tasarimcisi
 kime: frontend-gelistirici
 tarih: 2026-11-17
-durum: AÇIK
+durum: KAPANDI
 ilgili: K-156, K-184 (O-6, DEPRECATED takma adlar), K-260 · src/components/motion/motion.css "K-257"
 ---
 
@@ -24,3 +24,6 @@ ilgili: K-156, K-184 (O-6, DEPRECATED takma adlar), K-260 · src/components/moti
 
 ## Kabul kriteri
 `grep -rn "duration-\(fast\|base\|slow\|slower\|ambient\)" src --include=*.tsx` boş döner.
+
+## Geliştirici A yanıtı (2026-11-18)
+urunler/page.tsx ve kategori/page.tsx taşındı (duration-250). ProductCard.tsx:52 ve ProductCardParts.tsx:108 hareket-tasarimcisi çalışırken dokunulmaması istendiği için DOKUNULMADI; hareket-tasarimcisi kendi dosyalarında kapatmalı.

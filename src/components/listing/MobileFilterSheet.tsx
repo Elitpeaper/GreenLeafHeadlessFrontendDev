@@ -1,24 +1,25 @@
 "use client";
 
 /**
- * Mobile filter panel (kategori.md §6): bottom sheet (≤ 90% height), focus trap via <dialog>, Esc, sticky footer
+ * Mobile filter panel (kategori.md §6): bottom sheet (≤ 90% height), focus trap + Esc via modal-layer.ts (K-293), sticky footer
  * "N ürünü göster" + "Temizle". Filters are links, so they apply immediately; "göster" closes the sheet.
  */
 import Link from "next/link";
 import { useRef, type ReactNode } from "react";
 import { SlidersHorizontal, X } from "@/components/ui/lucide";
+import { closeLayer, openLayer } from "@/lib/a11y/modal-layer";
 import { useT } from "@/lib/ui-text/client";
 
 export function MobileFilterSheet({ activeCount, total, clearHref, children }: { activeCount: number; total: number; clearHref: string; children: ReactNode }) {
   const { t } = useT();
   const ref = useRef<HTMLDialogElement>(null);
-  const close = () => ref.current?.close();
+  const close = () => closeLayer(ref.current);
   return (
     <>
       <button
         type="button"
         aria-haspopup="dialog"
-        onClick={() => ref.current?.showModal()}
+        onClick={() => ref.current && openLayer(ref.current)}
         className="inline-flex min-h-control shrink-0 items-center gap-2 rounded-pill border border-line-strong bg-surface px-4 font-medium text-ink transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:border-green-700 lg:hidden"
       >
         <SlidersHorizontal size={20} />
@@ -27,12 +28,15 @@ export function MobileFilterSheet({ activeCount, total, clearHref, children }: {
       </button>
       <dialog
         ref={ref}
+        popover="manual"
+        aria-modal="true"
+        tabIndex={-1}
         aria-label={t("listing.filter.title")}
         onClick={(e) => {
           if (e.target === ref.current) close();
         }}
         data-motion="filter-sheet"
-        className="z-(--z-drawer) m-0 mt-auto max-h-[90dvh] w-full max-w-none rounded-t-xl bg-surface p-0 text-ink backdrop:bg-ink/40"
+        className="z-(--z-drawer) fixed inset-x-0 bottom-0 top-auto m-0 max-h-[90dvh] w-full max-w-none rounded-t-xl bg-surface p-0 text-ink outline-none backdrop:bg-ink/40"
       >
         <div className="flex max-h-[90dvh] flex-col">
           <div className="flex h-16 shrink-0 items-center justify-between border-b border-line px-5">

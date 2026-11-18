@@ -126,6 +126,10 @@ UI bileşeni ──► src/lib/products.ts (async cephe: filtre, sıralama, sayf
 | Tembel chunk'lar | ilk yüke girmez; GSAP/Lenis yalnız masaüstü, Swiper yalnız `/` |
 | Mega menü görselleri | panel açılmadan 0 istek (KK-1-06) |
 | Sepet kataloğu prop'u | yalnız satılabilir ürünler (~41 kayıt, birkaç KB) |
+| Kabuk menü verisi (K-294) | sayfaya yalnız metin menü (`MenuRootNav`); görsel/öne çıkan/tanıtım `/api/menu` (statik) ile menü niyetinde |
+| DOM (K-295) | ilk HTML ≤ 1500 element hedef, ≤ 2500 tavan |
+| Modal açma/kapama (K-293) | `showModal()` kullanılmaz; `src/lib/a11y/modal-layer.ts` (`openLayer`/`closeLayer`, `<dialog popover="manual" aria-modal="true" tabIndex={-1}>`); arka plan inert bir kare sonra |
+| not-found dosyaları | Next her not-found'u her sayfayla gönderir: kök `app/not-found.tsx` kabuk içermez (K-294) |
 Kurallar: `products.json` (3,6 MB) yalnız sunucuda; istemci modülü `@/lib/products` import edemez. Liste prop'ları `ProductSummary` (detay alanları yok). Hero H1 opacity animasyonu almaz.
 
 ## 8. Kurallar ve isimlendirme

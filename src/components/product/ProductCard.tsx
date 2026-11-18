@@ -30,7 +30,12 @@
  * so every card in a row lines up.
  *
  * Whole card links to the PDP via the title link's ::after; favourite + add-to-cart sit above it (z-10).
- * Motion hooks (hareket-tasarimcisi): data-product-card, data-motion="card-media" | "card-band" | "card-reveal".
+ * Motion hooks (hareket-tasarimcisi): data-product-card, data-card-shadow (article::before), data-card-tile (+::before light,
+ * ::after accent glow), data-card-glare (+::after sweep), data-motion="card-media" (the <img>) | "card-band" | "card-reveal".
+ *
+ * K-288 DOM diet (was 56 elements per card, now ~25): decoration lives in pseudo-elements, dt/dd are flat, the body has
+ * no wrapper, the second hover image is the only optional extra. Hover state is a single [data-product-card]:hover in
+ * motion.css (no :has(), no group-hover utilities), and the card root carries `contain: layout style`.
  */
 import Link from "next/link";
 import { GoldDoubleRule } from "@/components/brand/ornaments";
@@ -47,9 +52,11 @@ import { PriceBlock } from "./Price";
 
 export const CARD_GRID_SIZES = "(min-width: 1280px) 290px, (min-width: 1024px) 24vw, (min-width: 640px) 32vw, 46vw";
 
-/** K-231: shared reveal transition. Opacity always fades (~0.25 s, also under reduced motion); translate only with motion. */
-const REVEAL =
-  "transition-opacity duration-250 ease-(--ease-out-expo) motion-safe:transition-[opacity,translate] motion-safe:duration-(--duration-base)";
+/** K-288: the tile light (white halo behind the packshot + podium shadow) is the tile's ::before — no extra elements. */
+const TILE_LIGHT =
+  "before:pointer-events-none before:absolute before:inset-0 before:content-[''] before:[background:radial-gradient(closest-side_at_50%_44%,var(--color-surface)_0%,color-mix(in_oklab,var(--color-surface)_55%,transparent)_55%,transparent_100%),radial-gradient(closest-side,color-mix(in_oklab,var(--accent-line)_70%,transparent),transparent)_50%_88.4%/56%_5%_no-repeat]";
+const TILE_LIGHT_GOLD =
+  "before:pointer-events-none before:absolute before:inset-0 before:content-[''] before:[background:var(--gradient-gold-glow),radial-gradient(closest-side,color-mix(in_oklab,var(--accent-line)_70%,transparent),transparent)_50%_88.4%/56%_5%_no-repeat]";
 
 export interface ProductCardProps {
   product: ProductSummary;
@@ -74,7 +81,7 @@ export function ProductCard({ product: p, priority = false, sizes = CARD_GRID_SI
   const comingSoon = p.availability === "yakinda" || notSellable;
   const premium = p.theme === "premium-gold";
   const badge = comingSoon ? "comingSoon" : p.isSet && !premium ? "set" : null;
-  const second = (p.hoverImage ?? null);
+  const second = p.hoverImage ?? null;
   const detail = p.shortDescription?.trim() || null;
   const meta = [p.volume, p.category.childTitle ?? p.category.rootTitle].filter(Boolean).join(" · ");
 
@@ -82,63 +89,44 @@ export function ProductCard({ product: p, priority = false, sizes = CARD_GRID_SI
     <article
       aria-labelledby={titleId}
       data-product-card=""
+      data-card-shadow=""
       data-availability={p.availability}
       data-theme={premium ? "premium-gold" : undefined}
       {...accentTriggerProps(p.accent)}
       style={!premium && p.accent ? accentStyle(p.accent) : undefined}
-      className={`group/card @container/card relative flex h-full min-w-0 flex-col ${
-        surface === "default" ? "" : `rounded-tile bg-surface p-card-pad ${surface === "forest" ? "shadow-card-on-forest" : "shadow-card"}`
+      className={`@container/card relative flex h-full min-w-0 flex-col [contain:layout_style] ${
+        surface === "default" ? "" : `rounded-tile bg-surface p-card-pad [--card-pad:var(--spacing-card-pad)] ${surface === "forest" ? "shadow-card-on-forest" : "shadow-card"}`
       } ${className}`}
     >
-      {/* ------------------------------------------------------------ image tile (motion hook: data-card-tile) */}
+      {/* ------------------------------------------------------------ image tile */}
+      {/* P-02/K-272 perf: the hover depth is a pre-painted shadow layer (article::before, only its opacity moves), so the
+          tilting tile never repaints a box-shadow. */}
       <div
         data-card-tile=""
-        className={`relative aspect-[4/5] overflow-hidden rounded-tile shadow-xs transition-shadow duration-250 group-hover/card:shadow-tile group-has-[a[data-card-link]:focus-visible]/card:ring-3 group-has-[a[data-card-link]:focus-visible]/card:ring-blue-700 group-has-[a[data-card-link]:focus-visible]/card:ring-offset-2 ${
+        className={`relative aspect-[4/5] overflow-hidden rounded-tile shadow-xs ${premium ? TILE_LIGHT_GOLD : TILE_LIGHT} ${
           premium
             ? "border border-transparent bg-gold-50 shadow-gold [background:linear-gradient(var(--color-gold-50),var(--color-gold-50))_padding-box,var(--gradient-gold-foil)_border-box]"
-            : p.accent ? "bg-accent-soft" : "bg-cream-100"
+            : p.accent
+              ? "bg-accent-soft"
+              : "bg-cream-100"
         }`}
       >
-        {/* Soft light: white halo behind the packshot + podium shadow (tint stays at the edges). */}
-        <span
-          aria-hidden="true"
-          className={`absolute inset-0 ${
-            premium
-              ? "bg-(image:--gradient-gold-glow)"
-              : "bg-[radial-gradient(closest-side_at_50%_44%,var(--color-surface)_0%,color-mix(in_oklab,var(--color-surface)_55%,transparent)_55%,transparent_100%)]"
-          }`}
-        />
-        <span aria-hidden="true" className="absolute inset-x-[22%] bottom-[11%] h-[5%] rounded-[50%] bg-accent-line/70 blur-md" />
-        {/* K-272 hover light: glare follows the cursor (fx.ts sets --glare-x/y), one sweep crosses the tile per hover */}
+        {/* K-272 hover light: a pre-painted glare layer that fx.ts slides with translate; its ::after is the one-shot sweep */}
         <span aria-hidden="true" data-card-glare="" className="pointer-events-none absolute inset-0 z-[3]" />
-        <span aria-hidden="true" data-card-sweep="" className="pointer-events-none absolute inset-0 z-[3] overflow-hidden" />
 
-        {/* Hover band (3px, product/theme stripes). */}
+        {/* Hover band (3px, product/theme stripes as one gradient). */}
         <span
           aria-hidden="true"
           data-motion="card-band"
-          className="pointer-events-none absolute inset-x-0 top-0 z-[3] grid h-[3px] grid-cols-[2fr_1fr_1.4fr] opacity-0 transition-opacity duration-250 group-hover/card:opacity-100 group-has-[:focus-visible]/card:opacity-100"
-        >
-          <span className="bg-stripe-1" />
-          <span className="bg-stripe-2" />
-          <span className="bg-stripe-3" />
-        </span>
+          className="pointer-events-none absolute inset-x-0 top-0 z-[3] h-[3px] opacity-0 [background:linear-gradient(to_right,var(--color-stripe-1)_0_45.45%,var(--color-stripe-2)_0_68.18%,var(--color-stripe-3)_0)]"
+        />
 
-        <div data-motion="card-media" className="absolute inset-x-[12%] bottom-[14%] top-[10%]">
-          {p.image ? (
-            <ProductImage
-              image={p.image}
-              name={p.name}
-              sizes={sizes}
-              priority={priority}
-              className={second ? `group-hover/card:opacity-0 ${REVEAL}` : ""}
-            />
-          ) : null}
-          {second && (
-            <ProductImage image={{ ...second, alt: "" }} name="" sizes={sizes} className={`opacity-0 group-hover/card:opacity-100 ${REVEAL}`} />
-          )}
-        </div>
-        {!p.image && <MediaFallback name={p.name} />}
+        {p.image ? (
+          <ProductImage image={p.image} name={p.name} sizes={sizes} priority={priority} media className={second ? "transition-opacity duration-250" : ""} />
+        ) : (
+          <MediaFallback name={p.name} />
+        )}
+        {second && <ProductImage image={{ ...second, alt: "" }} name="" sizes={sizes} media className="opacity-0 transition-opacity duration-250" />}
 
         {badge && (
           <Badge
@@ -159,56 +147,66 @@ export function ProductCard({ product: p, priority = false, sizes = CARD_GRID_SI
         )}
         <FavoriteButton slug={p.slug} name={p.name} className="absolute right-1.5 top-1.5 z-[4] @min-[220px]/card:right-2 @min-[220px]/card:top-2" />
 
-        {/* Bottom overlay: detail reveal (fine pointer, wide cards) + always-visible quick add. */}
-        <div className="absolute inset-x-2 bottom-2 z-[4] flex flex-col items-end gap-2 @min-[220px]/card:inset-x-3 @min-[220px]/card:bottom-3">
-          {detail && (
-            <p
-              aria-hidden="true"
-              data-motion="card-reveal"
-              className={`pointer-events-none hidden w-full translate-y-2 rounded-md bg-surface/92 px-3 py-2 text-xs leading-snug text-ink opacity-0 shadow-xs backdrop-blur-sm group-hover/card:translate-y-0 group-hover/card:opacity-100 @min-[220px]/card:block ${REVEAL}`}
-            >
-              <span className="line-clamp-2">{detail}</span>
-            </p>
-          )}
-          {p.sellable && !comingSoon && <AddToCartButton code={p.code} name={p.name} variant="quick" className="shrink-0" />}
-          {comingSoon && (
-            // K-272: same round button -> pill opening as the cart button, but "Ürünü incele" (no add to cart, K-038).
-            // Decorative: the whole card is already the link (title ::after), so clicks pass through.
-            <span aria-hidden="true" data-qa="" className="pointer-events-none relative inline-flex shrink-0">
-              <span data-qa-pill="" data-tone="view">
-                <span>{t("product.card.view")}</span>
-              </span>
-              <span data-qa-round="" className="relative grid size-11 place-items-center rounded-pill bg-surface text-green-800 shadow-button ring-1 ring-line">
-                <ArrowRight size={20} />
-              </span>
+        {/* Detail reveal (fine pointer, wide cards): ONE element, 2-line clamp; transparent borders act as vertical padding
+            (padding would let a 3rd clamped line peek through). Opacity/translate come from motion.css on card hover. */}
+        {detail && (
+          <p
+            aria-hidden="true"
+            data-motion="card-reveal"
+            className="pointer-events-none absolute inset-x-3 bottom-16 z-[4] hidden rounded-md border-y-8 border-transparent bg-surface/95 px-3 text-xs leading-snug text-ink shadow-xs @min-[220px]/card:line-clamp-2"
+          >
+            {detail}
+          </p>
+        )}
+        {/* Always-visible quick add (round) that opens into a labelled pill on hover/focus. */}
+        {p.sellable && !comingSoon && (
+          <AddToCartButton code={p.code} name={p.name} variant="quick" className="absolute bottom-2 right-2 z-[4] @min-[220px]/card:bottom-3 @min-[220px]/card:right-3" />
+        )}
+        {comingSoon && (
+          // K-272: same round button -> pill opening as the cart button, but "Ürünü incele" (no add to cart, K-038).
+          // Decorative: the whole card is already the link (title ::after), so clicks pass through. The round disc is the
+          // arrow svg itself (padding + ring), not a wrapper.
+          <span
+            aria-hidden="true"
+            data-qa=""
+            className="pointer-events-none absolute bottom-2 right-2 z-[4] inline-flex @min-[220px]/card:bottom-3 @min-[220px]/card:right-3"
+          >
+            <ArrowRight data-qa-round="" size={20} className="relative z-[1] size-11 rounded-pill bg-surface p-3 text-green-800 shadow-button ring-1 ring-line" />
+            <span data-qa-pill="" data-tone="view">
+              <span>{t("product.card.view")}</span>
             </span>
-          )}
-        </div>
+          </span>
+        )}
 
         {premium && <GoldDoubleRule className="absolute inset-x-0 bottom-0 z-[3]" />}
       </div>
 
-      {/* ------------------------------------------------------------ body */}
-      <div className="flex flex-1 flex-col px-0.5 pt-3 @min-[220px]/card:pt-4">
-        <p className="flex min-w-0 items-center gap-1.5 text-xs font-semibold uppercase tracking-eyebrow text-ink-muted">
-          <span aria-hidden="true" className={`size-1.5 shrink-0 rounded-full ${premium ? "bg-gold-500" : "bg-accent-decor"}`} />
-          <span className="truncate">{premium ? `${t("product.badge.premium")} · ${p.brand.title}` : p.brand.title}</span>
-        </p>
-        <H id={titleId} className="mt-1.5 min-h-[2lh] font-sans text-sm font-medium leading-snug tracking-normal text-ink @min-[220px]/card:text-base">
-          <Link
-            href={p.href}
-            data-card-link=""
-            className="line-clamp-2 outline-none after:absolute after:inset-0 after:z-[2] after:rounded-tile after:content-[''] transition-colors duration-250 group-hover/card:text-green-800"
-          >
-            {p.name}
-          </Link>
-        </H>
-        <p className="mt-1 min-h-[1lh] truncate text-xs text-ink-muted">{meta}</p>
-
-        <div className="mt-auto pt-3">
-          <PriceBlock price={comingSoon ? null : p.price} memberPrice={comingSoon ? null : p.memberPrice} pv={p.pv} availability={comingSoon ? "yakinda" : p.availability} size="card" />
-        </div>
-      </div>
+      {/* ------------------------------------------------------------ body (direct children of the card: no wrapper) */}
+      <p
+        className={`mx-0.5 mt-3 block truncate text-xs font-semibold uppercase tracking-eyebrow text-ink-muted before:mr-1.5 before:inline-block before:size-1.5 before:rounded-full before:align-middle before:content-[''] @min-[220px]/card:mt-4 ${
+          premium ? "before:bg-gold-500" : "before:bg-accent-decor"
+        }`}
+      >
+        {premium ? `${t("product.badge.premium")} · ${p.brand.title}` : p.brand.title}
+      </p>
+      <H id={titleId} className="mx-0.5 mt-1.5 min-h-[2lh] font-sans text-sm font-medium leading-snug tracking-normal text-ink @min-[220px]/card:text-base">
+        <Link
+          href={p.href}
+          data-card-link=""
+          className="line-clamp-2 outline-none transition-colors duration-250 after:absolute after:inset-0 after:z-[2] after:rounded-tile after:content-[''] focus-visible:after:ring-3 focus-visible:after:ring-blue-700 focus-visible:after:ring-offset-2"
+        >
+          {p.name}
+        </Link>
+      </H>
+      <p className="mx-0.5 mt-1 min-h-[1lh] truncate text-xs text-ink-muted">{meta}</p>
+      <PriceBlock
+        price={comingSoon ? null : p.price}
+        memberPrice={comingSoon ? null : p.memberPrice}
+        pv={p.pv}
+        availability={comingSoon ? "yakinda" : p.availability}
+        size="card"
+        className="mx-0.5 mt-auto pt-3"
+      />
     </article>
   );
 }

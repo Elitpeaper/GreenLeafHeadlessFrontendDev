@@ -1,0 +1,111 @@
+{
+ "home": {
+  "count": 4,
+  "modes": [
+   "near:208",
+   "draw:1216",
+   "parallax:80",
+   "near:144"
+  ],
+  "errs": [],
+  "items": [
+   {
+    "i": 0,
+    "mode": "near:208",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": true,
+    "hotAtCursor": true,
+    "hotAway": false,
+    "scrollChanged": false
+   },
+   {
+    "i": 1,
+    "mode": "draw:1216",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": true,
+    "hotAtCursor": true,
+    "hotAway": true,
+    "scrollChanged": true
+   },
+   {
+    "i": 2,
+    "mode": "parallax:80",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": false,
+    "hotAtCursor": false,
+    "hotAway": false,
+    "scrollChanged": true
+   },
+   {
+    "i": 3,
+    "mode": "near:144",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": true,
+    "hotAtCursor": true,
+    "hotAway": false,
+    "scrollChanged": true
+   }
+  ]
+ },
+ "blog": {
+  "count": 1,
+  "modes": [
+   "view:256"
+  ],
+  "errs": [],
+  "items": [
+   {
+    "i": 0,
+    "mode": "view:256",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": false,
+    "hotAtCursor": true,
+    "hotAway": true,
+    "scrollChanged": true
+   }
+  ]
+ },
+ "haberler": {
+  "count": 1,
+  "modes": [
+   "view:256"
+  ],
+  "errs": [],
+  "items": [
+   {
+    "i": 0,
+    "mode": "view:256",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": false,
+    "hotAtCursor": true,
+    "hotAway": true,
+    "scrollChanged": true
+   }
+  ]
+ },
+ "sss": {
+  "count": 1,
+  "modes": [
+   "near view:320"
+  ],
+  "errs": [],
+  "items": [
+   {
+    "i": 0,
+    "mode": "near view:320",
+    "visible": true,
+    "tier": "on",
+    "cursorChanged": true,
+    "hotAtCursor": true,
+    "hotAway": false,
+    "scrollChanged": true
+   }
+  ]
+ }
+}

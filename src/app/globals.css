@@ -173,10 +173,17 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html:not([data-motion="on"]) {
-    scroll-behavior: smooth;
-  }
+/* Native smooth scroll only where Lenis is not driving the page (touch / coarse pointer in the full tier, K-258). */
+html[data-motion="on"]:not(.lenis) {
+  scroll-behavior: smooth;
+}
+
+/*
+ * K-264: entrance / ambient classes follow the site motion tier (html[data-motion], boot script), never the OS
+ * prefers-reduced-motion query. "reduced" (visitor chose "Hareketi azalt") and absent (?motion=off, no JS) render
+ * the final pose with no animation, so content is always visible.
+ */
+html[data-motion="on"] {
 
   /* Hero entrance — stagger with style={{"--d": "120ms"}} */
   .anim-enter {

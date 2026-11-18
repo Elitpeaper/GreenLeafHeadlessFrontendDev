@@ -74,6 +74,12 @@
     translate: 0 16px;
   }
 }
+@keyframes gl-scale-up {
+  from {
+    scale: 0.96;
+    translate: 0 16px;
+  }
+}
 @keyframes gl-pop-in {
   from {
     opacity: 0;
@@ -250,7 +256,7 @@
 
 /* ======================================================================== on-view reveals (runtime adds [data-motion-in] once) */
 /* 1. before the runtime: hidden at most 2.5 s (fail-safe if JS never arrives) */
-html[data-motion="on"] :is([data-motion~="reveal"], [data-motion~="reveal-scale"], [data-motion~="M-20"]),
+html[data-motion="on"] [data-motion~="reveal"],
 html[data-motion="on"]
   :is([data-motion~="stagger"], [data-motion~="fan"], [data-motion~="M-13"])
   > *,
@@ -263,8 +269,10 @@ html[data-motion="on"] :is(:is([data-motion~="band"], [data-motion~="footer-stri
 html[data-motion="on"][data-motion-runtime] [data-motion~="reveal"]:not([data-motion-in]) {
   animation: gl-rise 1s backwards paused;
 }
+/* P-03 / KK-0-19a: reveal-scale (M-20) sits on hero / first-screen visuals that can be the LCP element: transform
+   only, never an opacity-0 start and never hidden before the runtime (no gl-fs) */
 html[data-motion="on"][data-motion-runtime] :is([data-motion~="reveal-scale"], [data-motion~="M-20"]):not([data-motion-in]) {
-  animation: gl-scale-in 1s backwards paused;
+  animation: gl-scale-up 1s backwards paused;
 }
 html[data-motion="on"][data-motion-runtime]
   :is([data-motion~="stagger"], [data-motion~="M-14"]):not([data-motion-in])
@@ -289,7 +297,7 @@ html[data-motion="on"] [data-motion~="reveal"][data-motion-in] {
   animation: gl-rise var(--motion-lg) var(--motion-ease-out) backwards;
 }
 html[data-motion="on"] :is([data-motion~="reveal-scale"], [data-motion~="M-20"])[data-motion-in] {
-  animation: gl-scale-in 600ms var(--motion-ease-out-expo) backwards;
+  animation: gl-scale-up 600ms var(--motion-ease-out-expo) backwards;
 }
 html[data-motion="on"]
   :is([data-motion~="stagger"], [data-motion~="M-14"])[data-motion-in]
@@ -959,7 +967,7 @@ html[data-motion="on"] [data-motion~="card-band"] {
     opacity var(--motion-sm) var(--motion-ease-out),
     scale var(--motion-md) var(--motion-ease-out);
 }
-html[data-motion="on"] :is([data-product-card], [data-motion~="card"]):not(:hover):not(:has(:focus-visible)) [data-motion~="card-band"] {
+html[data-motion="on"] :is([data-product-card], [data-motion~="card"]):not(:hover) [data-motion~="card-band"] {
   scale: 0.4 1;
 }
 @media (hover: hover) and (pointer: fine) {
@@ -1047,9 +1055,6 @@ html[data-motion="on"] [data-motion~="reveal"][data-motion-in] {
     inset 0 -46px 60px -34px color-mix(in srgb, var(--accent-decor) 42%, transparent);
   opacity: 0;
 }
-[data-product-card]:has(:focus-visible) [data-card-tile]::after {
-  opacity: 1;
-}
 html[data-motion] [data-product-card] [data-card-tile]::after {
   transition: opacity var(--motion-md) var(--motion-ease-out);
 }
@@ -1067,9 +1072,6 @@ html[data-motion="on"] [data-product-card] [data-motion~="card-media"] {
     scale 700ms var(--motion-ease-out),
     rotate 700ms var(--motion-ease-out);
 }
-html[data-motion="on"] [data-product-card]:has(:focus-visible) {
-  translate: 0 -6px;
-}
 @media (hover: hover) and (pointer: fine) {
   html[data-motion] [data-product-card]:hover [data-card-tile]::after {
     opacity: 1;
@@ -1077,10 +1079,41 @@ html[data-motion="on"] [data-product-card]:has(:focus-visible) {
   html[data-motion="on"] [data-product-card]:hover {
     translate: 0 -6px;
   }
+  /* K-288: states that were Tailwind group-hover/card utilities (band, detail reveal, title colour, 2nd image swap) */
+  [data-product-card]:hover [data-motion~="card-band"] {
+    opacity: 1;
+  }
+  [data-product-card]:hover [data-motion~="card-reveal"] {
+    opacity: 1;
+    translate: 0 0;
+  }
+  [data-product-card]:hover > h2 > [data-card-link],
+  [data-product-card]:hover > h3 > [data-card-link],
+  [data-product-card]:hover > h4 > [data-card-link] {
+    color: var(--color-green-800, #245f1a);
+  }
+  [data-product-card]:hover img[data-motion~="card-media"]:first-of-type:not(:only-of-type) {
+    opacity: 0;
+  }
+  [data-product-card]:hover img[data-motion~="card-media"]:last-of-type:not(:only-of-type) {
+    opacity: 1;
+  }
   html[data-motion="on"] [data-product-card]:hover [data-motion~="card-media"] {
     scale: 1.08;
     rotate: -1.5deg;
   }
+}
+
+/* K-288: detail reveal rests slightly low and faded (hover rules above lift it) */
+[data-motion~="card-reveal"] {
+  opacity: 0;
+  translate: 0 0.5rem;
+  transition:
+    opacity 250ms var(--ease-out-expo, ease-out),
+    translate 250ms var(--ease-out-expo, ease-out);
+}
+html:not([data-motion="on"]) [data-motion~="card-reveal"] {
+  translate: none;
 }
 
 /* ---------------------------------------------------------------- buttons: press + lift + shine */
@@ -1597,17 +1630,21 @@ html[data-motion="on"] [class~="shadow-tile"]:is(:focus-visible, :has(:focus-vis
    (also without JS). Layer "base" + :where() = zero weight: a component's own transition-* utility always wins, and
    Tailwind's default duration is lifted to 250 ms in :root above. Movement properties are listed too so a component's
    own hover:translate never jumps; the gentle tier never sets movement from this file (see below).
-   Exception: the focus outline itself is not transitioned (keyboard users need the indicator at once, WCAG 2.4.7). */
+   Exception: the focus outline itself is not transitioned (keyboard users need the indicator at once, WCAG 2.4.7).
+   P-07 (PERFORMANS-DENETIMI-1): shape/shadow utilities are matched as whole class tokens ([class~=]), not substrings:
+   cheaper matching on every style recalc; variant forms (hover:shadow-card, ...) are still caught by the variant
+   substrings. Parts written every frame (progress bars, GSAP targets) must opt out with transition-none. */
 @layer base {
   :where(
       a, button, summary, label, input, select, textarea,
       [role="button"], [role="link"], [role="tab"], [role="menuitem"], [role="option"], [role="switch"], [role="checkbox"], [role="radio"],
       [data-product-card], [data-card-tile], [data-motion], [data-motion-part], [data-svg-interact], [data-svg-part], [data-accent], [data-accent-trigger],
       [class*="hover:"], [class*="focus"], [class*="active:"], [class*="aria-"], [class*="data-["], [class*="open:"], [class*="checked:"], [class*="peer-"],
-      [class*="rounded-pill"], [class*="rounded-tile"], [class*="rounded-card"], [class*="shadow-tile"], [class*="shadow-card"], [class*="chip"]
+      [class~="rounded-pill"], [class~="rounded-tile"], [class~="rounded-card"], [class~="shadow-tile"], [class~="shadow-card"],
+      [class~="shadow-card-on-forest"], [class*="chip"]
     ),
-  :where([class*="before:"], [class*="after:"], [data-product-card], [data-card-tile], [class*="shadow-tile"])::before,
-  :where([class*="before:"], [class*="after:"], [data-product-card], [data-card-tile], [class*="shadow-tile"])::after {
+  :where([class*="before:"], [class*="after:"], [data-product-card], [data-card-tile], [class~="shadow-tile"])::before,
+  :where([class*="before:"], [class*="after:"], [data-product-card], [data-card-tile], [class~="shadow-tile"])::after {
     transition: var(--motion-t-paint), var(--motion-t-move);
   }
 }
@@ -1857,8 +1894,9 @@ html.lenis body {
 }
 [data-qa] > :is(button, [data-qa-round]) {
   position: relative;
+  z-index: 1; /* above the pill clip window, which comes AFTER it in the DOM (sibling focus selector, no :has()) */
 }
-@container card (min-width: 200px) {
+@container card (min-width: 150px) {
   @media (hover: hover) and (pointer: fine) {
     [data-product-card]:hover [data-qa-pill] {
       opacity: 1;
@@ -1867,14 +1905,12 @@ html.lenis body {
       translate: 0 0;
     }
   }
-  [data-qa]:has(:focus-visible) [data-qa-pill],
-  [data-qa][data-state="added"] [data-qa-pill],
-  [data-product-card]:has(a[data-card-link]:focus-visible) [data-qa-pill] {
+  [data-qa] > button:focus-visible ~ [data-qa-pill],
+  [data-qa][data-state="added"] > [data-qa-pill] {
     opacity: 1;
   }
-  [data-qa]:has(:focus-visible) [data-qa-pill] > span,
-  [data-qa][data-state="added"] [data-qa-pill] > span,
-  [data-product-card]:has(a[data-card-link]:focus-visible) [data-qa-pill] > span {
+  [data-qa] > button:focus-visible ~ [data-qa-pill] > span,
+  [data-qa][data-state="added"] > [data-qa-pill] > span {
     translate: 0 0;
   }
 }
@@ -1884,25 +1920,47 @@ html:not([data-motion="on"]) [data-qa-pill] > span {
   transition: var(--motion-t-paint);
 }
 /* the round "Ürünü incele" disc turns its arrow toward the pill */
-html[data-motion="on"] [data-qa-round] > svg {
+html[data-motion="on"] [data-qa-round] {
   transition: rotate var(--motion-md) var(--motion-ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
-  html[data-motion="on"] [data-product-card]:hover [data-qa-round] > svg {
+  html[data-motion="on"] [data-product-card]:hover [data-qa-round] {
     rotate: -45deg;
   }
 }
 
 /* ---------------------------------------------------------------- K-272 card: tilt (fx.ts) + glare + sweep + deep shadow */
+/* Compositor-only hover (P-02 / K-288 card pass): nothing on the tilting tile repaints per frame.
+   - glare: a 2x layer with a FIXED radial gradient, slid with translate by fx.ts (was a per-move gradient repaint)
+   - depth: [data-card-shadow] under the tile is pre-painted, only its opacity moves (was a box-shadow transition)
+   - will-change only while hovered; no filter/backdrop-filter animates inside the tile */
 [data-card-glare] {
+  inset: -50%;
   opacity: 0;
-  background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 0%), rgb(255 255 255 / 0.5), transparent 58%);
+  background: radial-gradient(circle at 50% 50%, rgb(255 255 255 / 0.5), transparent 29%);
+  translate: 0 -25%;
   transition: opacity 0.3s ease;
 }
-[data-card-sweep]::before {
+/* K-288: the shadow layer is the card root's ::before (no wrapper/span), sized like the 4:5 tile (--card-pad = plate inset) */
+[data-card-shadow]::before {
   content: "";
   position: absolute;
-  inset: -10% -60%;
+  inset-inline: var(--card-pad, 0px);
+  top: var(--card-pad, 0px);
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-tile, 1.75rem);
+  pointer-events: none;
+  box-shadow:
+    0 30px 50px -24px color-mix(in srgb, var(--accent-deep, #14482f) 55%, transparent),
+    0 12px 22px -14px rgb(20 40 25 / 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* one-shot sweep = the glare layer's ::after (the glare is already 2x the tile, so its width-% band matches the old sweep) */
+[data-card-glare]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: linear-gradient(105deg, transparent 40%, rgb(255 255 255 / 0.55) 50%, transparent 60%);
   translate: -100% 0;
 }
@@ -1918,17 +1976,20 @@ html[data-motion="on"] [data-qa-round] > svg {
   [data-product-card]:hover [data-card-glare] {
     opacity: 1;
   }
-  html[data-motion="on"] [data-product-card]:hover [data-card-sweep]::before {
+  html[data-motion="on"] [data-product-card]:hover [data-card-glare]::after {
     animation: gl-card-sweep 900ms var(--motion-ease-in-out);
   }
-  [data-product-card]:hover [data-card-tile] {
-    box-shadow:
-      0 30px 50px -24px color-mix(in srgb, var(--accent-deep, #14482f) 55%, transparent),
-      0 12px 22px -14px rgb(20 40 25 / 0.3);
+  [data-product-card]:hover::before {
+    opacity: 1;
+  }
+  html[data-motion="on"] [data-product-card]:hover :is([data-card-tile], [data-card-glare]) {
+    will-change: transform;
   }
 }
+/* the tile is GSAP-driven (tilt writes transform every tick): no transform transition on it, or every write would start and
+   cancel a 250 ms K-231 transition (same trap as P-07). Its shadow no longer changes (see [data-card-shadow]). */
 [data-product-card] [data-card-tile] {
-  transition: box-shadow 0.3s ease;
+  transition: opacity 0.3s ease; /* overrides the K-231 base list: no transform transition on the tile */
 }
 
 /* ---------------------------------------------------------------- K-272 links, tiles, menus, footer (.3s ease, Penta) */
@@ -2054,8 +2115,8 @@ html[data-motion="on"] [data-split-wait] {
 }
 [data-pin-host][data-stage-ready] [data-pin-stage] {
   display: block;
-  height: 100svh;
-  min-height: 40rem;
+  height: calc(100svh - var(--pin-top, 0px)); /* K-292: sticky header stays visible above the pinned stage */
+  min-height: 36rem;
 }
 [data-pin-host][data-stage-ready] [data-stage-list] {
   display: none;
@@ -2107,4 +2168,28 @@ html[data-motion="on"] [data-split-wait] {
 [data-swiper-strip-host] .is-disabled {
   opacity: 0.4;
   cursor: default;
+}
+
+/* ---------------------------------------------------------------- photo tiles (shelves etc., K-272 / brief §1.1):
+   mark the <img> data-shelf-photo and the scrim layer data-shelf-scrim (opacity .70 at rest -> 1 on hover = .78 alpha
+   when the scrim colour carries 78 % alpha) */
+html[data-motion="on"] [data-shelf-photo] {
+  transition: scale 0.7s var(--motion-ease-out);
+}
+[data-shelf-scrim] {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  html[data-motion="on"] a:hover [data-shelf-photo] {
+    scale: 1.06;
+  }
+  a:hover [data-shelf-scrim] {
+    opacity: 1;
+  }
+}
+
+/* P-12: the pin stage's giant outline title repaints in its own layer only (its dash offset is snapped in PinStage) */
+html[data-motion="on"] [data-stage-ready] [data-stage-side] {
+  will-change: transform;
 }

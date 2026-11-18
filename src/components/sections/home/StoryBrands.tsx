@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { BrandFacet } from "@/lib/products";
 import { t } from "@/components/sections/copy";
 import { Marquee } from "@/components/motion/Marquee";
+import { ScrollSvg } from "@/components/motion";
+import { SceneMembership } from "@/components/illustrations/scenes";
 
 /**
  * "Marka duvarı" (brief §8, K-236): brand-lime colour block, forest-950 type (6.49). Typographic names (no sub-brand
@@ -15,7 +17,10 @@ export function Brands({ brands }: { brands: BrandFacet[] }) {
   const top = brands.slice(0, 10);
   return (
     <section aria-labelledby="brands-title" className="-mb-[2.25rem] bg-brand-lime pb-[calc(var(--spacing-section)+2.25rem)] pt-section">
-      <div className="mx-auto max-w-wide px-gutter">
+      <div className="relative mx-auto max-w-wide px-gutter">
+        <ScrollSvg mode="near" className="pointer-events-none absolute right-gutter top-full mt-3 hidden w-36 lg:block">
+          <SceneMembership interact="scatter" className="h-auto w-full" />
+        </ScrollSvg>
         <h2 id="brands-title" className="text-center text-3xl text-forest-950">
           {t("home.v2.brands.title")}
         </h2>

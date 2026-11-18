@@ -31,6 +31,7 @@ export function PageHero({
   return (
     <section
       aria-labelledby={id}
+      data-page-hero=""
       className="relative isolate overflow-hidden bg-[linear-gradient(135deg,var(--color-forest-600)_0%,var(--color-forest-700)_48%,var(--color-forest-800)_100%)] text-cream-100"
     >
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">

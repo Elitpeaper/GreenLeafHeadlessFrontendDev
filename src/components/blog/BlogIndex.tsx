@@ -2,6 +2,8 @@ import Link from "next/link";
 import { BlogHero } from "./BlogHero";
 import { Suspense } from "react";
 import { ComingSoonPage } from "@/components/coming-soon";
+import { SceneBlog } from "@/components/illustrations/scenes";
+import { ScrollSvg } from "@/components/motion";
 import { t, tc } from "@/lib/ui-text";
 import { Pagination } from "./Pagination";
 import { FeaturedPost, PostCard } from "./PostCard";
@@ -131,6 +133,10 @@ async function PostList({ type, searchParams }: { type: PostType; searchParams: 
       )}
 
       <Pagination page={page} pageCount={pageCount} hrefFor={(p) => hrefFor(p)} />
+
+      <ScrollSvg mode="view" className="pointer-events-none mx-auto mt-stack hidden w-64 lg:block">
+        <SceneBlog className="h-auto w-full" />
+      </ScrollSvg>
     </>
   );
 }

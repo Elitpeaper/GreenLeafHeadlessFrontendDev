@@ -1,48 +1,16 @@
 /**
  * Server-side assembly of the mega menu / mobile drawer model (mega-menu wireframe A1–A4, K-064, K-077, K-091, K-095).
- * Serializable output -> passed as props to the client MegaMenu / MobileNav. Never import from a client module.
+ * K-288/P-08: two halves. getMenuNav() = text only, passed as props with every page (StoreChrome);
+ * getMenuMedia() = images / featured / promo, served by the static route /api/menu and fetched on menu intent.
+ * Never import from a client module.
  */
 import { megaCampaign, megaFeatured, regulatedCategories } from "@/config/storefront";
 import { getCollection, getProducts, getProductsByCodes } from "@/lib/products";
 import type { CatalogImage, CategoryNode, ProductSummary } from "@/lib/products";
-import { categoryPhoto, stockPhoto, type StockPhoto } from "@/components/listing/stock";
+import type { MenuMediaMap, MenuPromo, MenuRootNav } from "./menu-model";
+import { categoryPhoto, stockPhoto } from "@/components/listing/stock";
 
-export interface MenuChild {
-  path: string;
-  title: string;
-  href: string;
-  count: number;
-  trCount: number;
-  image: CatalogImage | null;
-}
-
-export type MenuPromoKind = "finder" | "inStock" | "pv" | "sets" | "campaign";
-
-export interface MenuPromo {
-  kind: MenuPromoKind;
-  href: string;
-  /** Only for kind "campaign" (config text) — other kinds read ui.tr.json keys in the component. */
-  title?: string;
-  text?: string;
-  image?: CatalogImage | null;
-  /** Licensed atmosphere photo (K-160/K-161), decorative. */
-  photo?: StockPhoto | null;
-  theme?: "premium-gold" | null;
-}
-
-export interface MenuRoot {
-  root: string;
-  title: string;
-  href: string;
-  count: number;
-  trCount: number;
-  image: CatalogImage | null;
-  /** K-161 category atmosphere photo (mobile level-2 cover). */
-  cover: StockPhoto | null;
-  children: MenuChild[];
-  featured: ProductSummary | null;
-  promo: MenuPromo | null;
-}
+export type { MenuChild, MenuChildNav, MenuMedia, MenuMediaMap, MenuPromo, MenuPromoKind, MenuRoot, MenuRootNav } from "./menu-model";
 
 const isRegulated = (p: ProductSummary) => p.regulated;
 
@@ -83,38 +51,44 @@ async function promoFor(node: CategoryNode, premiumHref: string | null): Promise
   return { kind: "pv", href: "/pv-nedir", photo: stockPhoto("promo.mega") };
 }
 
-export async function getMenuModel(tree: CategoryNode[]): Promise<MenuRoot[]> {
+const visibleChildren = (node: CategoryNode) =>
+  [...node.children].filter((c) => !regulatedCategories.includes(c.path) || c.count > 0).sort((a, b) => a.order - b.order);
+
+/** Text-only menu model (every page). No product queries. */
+export function getMenuNav(tree: CategoryNode[]): MenuRootNav[] {
+  return tree.map((node) => ({
+    root: node.root,
+    title: node.title,
+    href: node.href,
+    count: node.count,
+    trCount: node.trCount,
+    children: visibleChildren(node).map((c) => ({ path: c.path, title: c.title, href: c.href, count: c.count, trCount: c.trCount })),
+  }));
+}
+
+/** Menu media keyed by root (GET /api/menu). */
+export async function getMenuMedia(tree: CategoryNode[]): Promise<MenuMediaMap> {
   const premium = await getCollection("premium-gold", { limit: 1 });
-  return Promise.all(
+  const entries = await Promise.all(
     tree.map(async (node) => {
-      const children = [...node.children]
-        .filter((c) => !regulatedCategories.includes(c.path) || c.count > 0)
-        .sort((a, b) => a.order - b.order);
+      const children = visibleChildren(node);
       const [image, featured, promo, childImages] = await Promise.all([
         nodeImage(node.path, node.image),
         featuredFor(node.root),
         promoFor(node, premium?.href ?? null),
         Promise.all(children.map((c) => nodeImage(c.path, c.image))),
       ]);
-      return {
-        root: node.root,
-        title: node.title,
-        href: node.href,
-        count: node.count,
-        trCount: node.trCount,
-        image,
-        cover: categoryPhoto(node.root),
-        featured,
-        promo,
-        children: children.map((c, i) => ({
-          path: c.path,
-          title: c.title,
-          href: c.href,
-          count: c.count,
-          trCount: c.trCount,
-          image: childImages[i] ?? null,
-        })),
-      };
+      return [
+        node.root,
+        {
+          image,
+          cover: categoryPhoto(node.root),
+          featured,
+          promo,
+          childImages: Object.fromEntries(children.map((c, i) => [c.path, childImages[i] ?? null])),
+        },
+      ] as const;
     }),
   );
+  return Object.fromEntries(entries);
 }

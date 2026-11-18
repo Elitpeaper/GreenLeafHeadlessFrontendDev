@@ -15,7 +15,8 @@ import "swiper/css/a11y";
  * Autoplay (Swiper Autoplay) starts only after the K-233 entrance (whenHeroIntroDone) and then gives slide 1 its full
  * interval. It pauses on mouse hover (Swiper), keyboard focus inside and hidden tab (Swiper), has a visible pause
  * button (WCAG 2.2.2) and never starts under reduced motion. The active dot shows the remaining time
- * (autoplayTimeLeft). Inactive slides are `inert`. Arrow keys work while focus is inside (not page-wide).
+ * (autoplayTimeLeft drives one compositor animation per slide, no per-frame style writes; P-07) and autoplay stops while
+ * the hero is off screen (IntersectionObserver). Inactive slides are `inert`. Arrow keys work while focus is inside (not page-wide).
  * Swiper core is loaded lazily and initialised on the server-rendered markup (slide 1 is visible before it arrives, so
  * Swiper is not first-load JS). swiper/react is not used: it builds its instance during render, which reads the clock
  * and breaks the static prerender of "/".
@@ -32,6 +33,13 @@ export interface HeroSwiperLabels {
   goTo: string; // "{n}. slayta git"
 }
 
+type BarAnim = { current: { el: HTMLElement; anim: Animation } | null };
+/** P-07: stop and forget the active progress-bar animation (class state takes over again). */
+const dropBar = (ref: BarAnim) => {
+  ref.current?.anim.cancel();
+  ref.current = null;
+};
+
 const fill = (s: string, n: number, total: number) => s.replace("{n}", String(n)).replace("{total}", String(total));
 
 export function HeroSwiper({ slides, names, labels }: { slides: ReactNode[]; names: string[]; labels: HeroSwiperLabels }) {
@@ -47,9 +55,20 @@ export function HeroSwiper({ slides, names, labels }: { slides: ReactNode[]; nam
   const [reduced, setReduced] = useState(false); // site motion tier (K-264)
   const [userPlay, setUserPlay] = useState(false); // explicit "play" while reduced: autoplay only, speed stays gentle
   const [introDone, setIntroDone] = useState(false);
+  const [onScreen, setOnScreen] = useState(true);
+  const barAnim = useRef<{ el: HTMLElement; anim: Animation } | null>(null);
 
   const manual = userPaused || (reduced && !userPlay);
-  const allowed = total > 1 && introDone && !manual;
+  const allowed = total > 1 && introDone && !manual && onScreen;
+
+  // P-07: no autoplay clock (Swiper rAF + timer) while the hero is scrolled out of view
+  useEffect(() => {
+    const node = root.current;
+    if (!node || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(([e]) => setOnScreen(!!e?.isIntersecting), { threshold: 0 });
+    io.observe(node);
+    return () => io.disconnect();
+  }, []);
 
   // K-243: wait for the hero entrance (resolves at once when it does not play: client return, motion off)
   useEffect(() => {
@@ -83,9 +102,27 @@ export function HeroSwiper({ slides, names, labels }: { slides: ReactNode[]; nam
           init: (sw) => void sw.autoplay.stop(), // started by the effect below, after the K-233 entrance
           slideChange: (sw) => {
             setActive(sw.activeIndex);
-            bars.current.forEach((b) => b?.style.removeProperty("scale"));
+            dropBar(barAnim);
           },
-          autoplayTimeLeft: (sw, _ms, left) => bars.current[sw.activeIndex]?.style.setProperty("scale", `${1 - left} 1`),
+          // P-07: the fill is one linear WAAPI animation (compositor). Swiper's per-frame time-left only keeps it in step:
+          // it is paused / resumed with autoplay and re-seeked only when it drifts, so nothing is written per frame.
+          autoplayTimeLeft: (sw, _ms, left) => {
+            const bar = bars.current[sw.activeIndex];
+            if (!bar) return;
+            let b = barAnim.current;
+            if (!b || b.el !== bar) {
+              dropBar(barAnim);
+              const anim = bar.animate([{ scale: "0 1" }, { scale: "1 1" }], { duration: INTERVAL, easing: "linear", fill: "both" });
+              anim.pause();
+              b = barAnim.current = { el: bar, anim };
+            }
+            const want = Math.min(1, Math.max(0, 1 - left)) * INTERVAL;
+            const paused = sw.autoplay.paused;
+            if (paused && b.anim.playState === "running") b.anim.pause();
+            else if (!paused && b.anim.playState !== "running") b.anim.play();
+            if (Math.abs(Number(b.anim.currentTime ?? 0) - want) > 120) b.anim.currentTime = want;
+          },
+          autoplayStop: () => dropBar(barAnim),
           // a finished transition must not resume while keyboard focus is inside
           autoplayResume: (sw) => void (focusIn.current && sw.autoplay.pause()),
         },
@@ -96,9 +133,11 @@ export function HeroSwiper({ slides, names, labels }: { slides: ReactNode[]; nam
     return () => {
       live = false;
       api.current = null;
+      dropBar(barAnim);
       s?.destroy(true, false);
     };
   }, []);
+
 
   // K-231: opacity cross-fade stays smooth in every tier, just shorter in the gentle tier
   useEffect(() => {
@@ -192,7 +231,7 @@ export function HeroSwiper({ slides, names, labels }: { slides: ReactNode[]; nam
                           ref={(el) => {
                             bars.current[i] = el;
                           }}
-                          className={`absolute inset-0 origin-left rounded-pill bg-green-700 ${i === active && manual ? "" : "scale-x-0"}`}
+                          className={`absolute inset-0 origin-left rounded-pill bg-green-700 transition-none ${i === active && manual ? "" : "scale-x-0"}`}
                         />
                       </span>
                     </button>

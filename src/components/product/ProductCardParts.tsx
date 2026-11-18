@@ -27,22 +27,27 @@ export function ProductImage({
   name,
   sizes,
   priority,
+  media = false,
   className = "",
 }: {
   image: CatalogImage;
   name: string;
   sizes: string;
   priority?: boolean;
+  /** Card tile image (K-288): carries the card-media motion hook itself and keeps its packshot margins as padding
+   *  (object-contain letterboxes inside the content box), so no wrapper element is needed. */
+  media?: boolean;
   className?: string;
 }) {
   return (
     <Image
+      data-motion={media ? "card-media" : undefined}
       src={image.src}
       alt={image.alt || name}
       fill
       sizes={sizes}
       priority={priority}
-      className={`object-contain mix-blend-multiply ${className}`}
+      className={`object-contain mix-blend-multiply ${media ? "px-[12%] pb-[17.5%] pt-[12.5%]" : ""} ${className}`}
     />
   );
 }
@@ -105,7 +110,7 @@ export function ProductCardMini({
       <span className={`relative shrink-0 overflow-hidden rounded-md bg-accent-soft ${box}`}>
         <span aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(closest-side,var(--color-surface),transparent)]" />
         {p.image ? (
-          <span className="absolute inset-[10%] transition-[scale] duration-(--duration-slow) motion-safe:group-hover/mini:scale-105">
+          <span className="absolute inset-[10%] transition-[scale] duration-450 motion-safe:group-hover/mini:scale-105">
             <ProductImage image={p.image} name={p.name} sizes={size === "sm" ? "64px" : "80px"} />
           </span>
         ) : (

@@ -7,6 +7,8 @@ import { TabbedShowcase } from "@/components/sections/home/TabbedShowcase";
 import { home } from "@/config/storefront";
 import { getBrands, getCategoryTree, getCollection, getProducts, getProductsByCodes, type ProductSummary } from "@/lib/products";
 import { t } from "@/components/sections/copy";
+import { DividerLeafVine } from "@/components/illustrations/dividers";
+import { ScrollSvg } from "@/components/motion";
 
 const featurable = (p: ProductSummary) => !p.regulated; // K-095: regulated items are never featured
 
@@ -78,6 +80,11 @@ export default async function HomePage() {
           products={vitrin1}
         />
       )}
+      <div className="bg-surface px-gutter">
+        <ScrollSvg mode="draw" className="pointer-events-none mx-auto hidden max-w-page lg:block">
+          <DividerLeafVine className="h-auto w-full" />
+        </ScrollSvg>
+      </div>
       <HomeDoors items={doors} premiumProduct={premiumLead} pvProducts={slidePv} />
       <TabbedShowcase tabs={tabs} />
       <Brands brands={trBrands} />

@@ -470,3 +470,90 @@ Not: `swiper/react` statik olarak içe aktarıldığında ilk yükleme +23,7 KB 
 - Sayfa kilitliyken (drawer, dialog, açık mega menü) çapa tıklaması Lenis'e alınmaz, tarayıcıya bırakılır.
 - **Hareket çalışma zamanı tembel chunk:** `MotionRuntime` yalnız yükleyicidir; `runtime.ts` (gözlemciler, recolor, SVG etkileşimi, mıknatıs/paralaks, Lenis başlatıcı) `load` + boşta `import()` ile gelir (9,2 KB gz). Çalışma zamanı zaten öğelere ancak bu noktadan sonra dokunuyordu (hidrasyon kuralı), görsel davranış değişmez; reveal CSS'i `data-motion-runtime` ile bağlı olduğundan chunk gelmezse sayfa statik ve tam görünür kalır. Tam yükleme adresi ilk chunk'ta yakalanır, chunk gelmeden yapılan istemci gezinmesi de hero girişini iptal eder (K-244).
 - Ölçüm (`npm run perf:js`): `/` 230,5 → **224,5 KB gz**, `/hakkimizda` 227,1 → **219,1 KB gz**. Mağaza kabuğunun ilk yüklemesinde kalan hareket kodu yalnız yükleyici (< 1 KB); `/`'de Lenis yardımcıları + pin ana sayfa chunk'ında (5,4 KB gz, HeroSwiper ile birlikte). Kalan aşım frontend-gelistirici'nin `js-butcesi` notundaki kabuk işinde (`ui.tr.json`, tembel paneller).
+
+## 27. Hareket v5 — tam hareket varsayılanı, Penta/Ravena yaklaşımı (K-264, K-265, K-271, K-272)
+
+### 27.1 Tek kapı: `html[data-motion]` (K-264)
+- İşletim sisteminin azaltılmış hareket ayarı artık katmanı **belirlemez**. Boot betiği varsayılan `data-motion="on"` yazar.
+- Kaynak sırası: `?motion=off|reduced|on|full` önizleme anahtarı (sessionStorage `gl-motion-preview`, `?motion=auto` siler) → ziyaretçinin seçimi (localStorage `gl-motion` = `reduced`/`on`) → `on`.
+- Footer'da görünür **"Hareketi azalt"** anahtarı (`MotionToggle`, `role="switch"`): seçimi saklar ve katmanı canlı değiştirir; CSS, runtime, Lenis, GSAP sahneleri ve Swiper hızları `html[data-motion]` değişimini izler.
+- Bileşenler `matchMedia("(prefers-reduced-motion)")` okumaz: `src/lib/motion/preference.ts` (`motionTier`, `onMotionTier`, `setMotionChoice`). Tailwind `motion-safe:` / `motion-reduce:` varyantları token üreticisinde `html[data-motion]`'a bağlandı (`scripts/tokens/build-tokens.mjs`).
+- "Azaltılmış" katman K-231 kurallarını korur: konum/ölçek hareketi yok, renk/opaklık 250 ms yumuşak.
+
+### 27.2 Lenis (Penta/Nakkaş)
+- Tüm ince işaretçili cihazlarda, her genişlikte, tam katmanda: `new Lenis({ duration: 1.5 })` (Nakkaş 1.7; varsayılan expo-out), `gsap.ticker` + `lagSmoothing(0)` + `ScrollTrigger.update`. Kilit kuralları (drawer, mobil menü, modal, açık mega menü) aynen.
+
+### 27.3 Ravena pin sahnesi — Kapılar (K-265, K-257)
+- `PinStage` (istemci adası) + `HomeDoors`: > 900 px + ince işaretçi + tam katman. 100svh orman sahne; ızgara `52px | 15fr | 24fr`.
+- ScrollTrigger: `start: top top`, `end: +=0.85·vh·(n−1)`, `pin`, **`pinType: "transform"`**, `scrub: 2`, `snap: 1/(n−1)` (0,25–0,7 sn, gecikme 0,12), aktif indeks = `round(progress·(n−1))` (Ravena'nın 20/85 eşik boşluğu yok).
+- Sol çubuk: n çentik + işaretçi (aktif çentiğe 0,3 sn kayar). Orta: metin blokları üst üste; aktif `[data-active]` → opaklık + 30 px yükselme, 0,45 sn, 0,3 sn gecikme (Ravena birebir). Sağ: `door.<key>.tall` fotoğrafları (ui-tasarimci) üst üste; her sonraki fotoğraf **alttan perde** gibi açılır — dış katman `yPercent 100→0`, iç katman `−100→0` (yalnız transform; Ravena `height` yerine). Fotoğraflar `scale 1.12` kırpımda pin boyunca ±%3 yatay paralaks (toplam %6); yeni açılan 1.3→1.12, öncekinin 1.12→1.2.
+- Dev kontur kelime (`home.v2.gates.side`) `stroke-dashoffset` scrub ile çizilir; zemin katmanı `scaleY .35→1` dolar.
+- Pin sırasında akıllı header gizli (`html[data-pin-hold]`). Klavye: bir kapının bağlantısı odak alınca sayfa o kapının durağına atlar; etkin olmayan metinler odaklanabilir (yalnız `pointer-events: none`).
+- Sahne yalnız pin kurulunca görünür (`[data-stage-ready]`); aksi hâlde (mobil, tablet, "Hareketi azalt", JS yok) aynı kapılar **Swiper şeridi** (`SwiperStrip`: 1.12 → 1.5 → 2 → 3 slayt, hız 1000 / azaltılmışta 300, oklar, klavye, A11y; Swiper gelmeden yerel scroll-snap şerit). Ölçülen CLS 0.
+- Ravena'dan sapma: metin fotoğraf üstünde değil yanında (Ravena düzeni), bu yüzden fotoğraf scrim'i yalnız hafif alt gölge; brief §2'deki "metin alt %35 scrim" şerit kartlarında da gereksiz (metin fotoğrafın altında, düz zeminde).
+
+### 27.4 Penta desenleri (site geneli, `src/lib/motion/fx.ts`, tembel GSAP + SplitText + DrawSVG)
+| Desen | Değerler |
+|---|---|
+| SplitText başlık | `main h2` + `[data-split]`, yalnız ilk ekranın altında; satır maskesi, `y 90→0`, opaklık, 1 sn `power3.out`, kademe 0,12; tetik `top 88%`, bir kez; bitince `revert()` (React metni geri alır). GSAP gelene kadar `[data-split-wait]` gizler, 4 sn emniyet |
+| Akıllı header | **K-292 ile kaldırıldı** (header satırı hiç gizlenmez; P-05/P-06 kapsamında kaydırma işleyicisi ve `style` gözlemcisi silindi, §28). Eski tarif: aşağı > 4 px gizle (0,45 sn `power2.in`), yukarı göster (0,5 sn `power3.out`), ilk `header + 50 px` içinde hep görünür; odak içerde, açık menü/drawer/dialog veya kilitli sayfada hep görünür. Yapıdan bağımsız: hedef `[data-smart-header]` (yoksa `#header-accent`), durum `html[data-header-hidden]` |
+| Başa dön halkası | `MotionRoot` içinde, ≥ 1024 px; yarım ekrandan sonra görünür; halka DrawSVG ile sayfa ilerlemesi (scrub 0,4); tıklama Lenis ile kayar, odağı `#icerik`'e taşır |
+| Başlık bandı paralaksı | `[data-listing-hero]`, `[data-page-hero]`: fotoğraf `scale 1→1.1`, sahne SVG `y 0→60`, `top top → bottom top`, scrub |
+| Kart tilt + parıltı | VanillaTilt değerleri: max 7,5°, 1000 ms, perspektif 1000 (GSAP `quickTo`, expo.out); görsel karosunda imleci izleyen parıltı + hover başına bir ışık süpürmesi + derin gölge |
+| Mıknatıs CTA | `[data-magnetic]`, büyük hap CTA'lar, header "Üye ol": x ≤ 10 / y ≤ 8 px, 0,6 sn; bırakınca `elastic.out(1, .4)` |
+| Kaydırma SVG (K-271) | `ScrollSvg mode="draw parallax view near"`: draw = DrawSVG scrub; parallax = y ±60 scrub + imlece eğilme; view = görünüme girince çizimin kendi davranışı bir kez; near = imleç ≤ 240 px iken davranış (+ paralaks değişkenleri) |
+
+### 27.5 Hover seti (K-272, `.3s ease` tabanı)
+- **Kart sepet düğmesi:** yuvarlak çanta düğmesinin arkasındaki kırpma penceresinden "Sepete ekle" hapı sola kayarak açılır (520 ms out-expo, yalnız transform) — hover, klavye odağı ve "Eklendi" durumunda; kart kabı ≥ 150 px. **Yakında kartları:** aynı yuvarlak → "Ürünü incele" hapı (beyaz, green-800; dekoratif, tıklama kart bağlantısına geçer; sepete ekleme yok, K-038), ok −45° döner.
+- Bağlantı alt çizgisi soldan çizilir (`[data-link-draw]`, footer bağlantıları), kategori karosu ikonu 1.12 / −6°, mega menü satırları 4 px kayar + kök ikon diski 1.14 / −8°, header ikonları 3 px sıçrar + 1.15, kapı kartı fotoğrafı 1.07.
+
+### 27.6 Kaldırılanlar
+`HorizontalPin.tsx` + K-257 yatay pin CSS'i, `GiantBand.tsx` + S-1 yatay drift CSS'i (K-267), runtime'daki OS reduced-motion dinleyicisi, HeroSwiper/Rail'deki `matchMedia` kapıları.
+
+### 27.7 Kanıt (`docs/qa/ekran/motion-v5/`, `_kanit.mjs`: playwright-core + kurulu Chrome, `reducedMotion: "reduce"`, 1440×900, dev sunucusu)
+| Sayfa | Katman | Lenis | CLS | Not |
+|---|---|---|---|---|
+| `/` | on | etkin (tekerlek 600 px → 12 karede 240…598, süzülme) | 0 | pin 0/25/50/75/100 → aktif 0…4, sahne üstü 0, header gizli; kart hover: tilt matrix3d, hap açık; header aşağıda gizli / yukarıda görünür; halka dolu |
+| `/urunler` | on | etkin | 0 | TR kartı "Sepete ekle" hapı, yakında kartı "Ürünü incele" hapı açılıyor |
+| PDP | on | etkin | 0 | ilgili ürün kartında tilt + hap |
+| `/sss` | on | etkin | 0 | 8 başlık bekliyor → kaydırınca SplitText ile giriyor (kare serisi 61–64) |
+Bütçe: `npm run perf:js` `/` 207,2 KB gz, `/hakkimizda` 200,2 (≤ 220). Tembel: GSAP + ScrollTrigger + SplitText + DrawSVG + Lenis (+ Swiper `/`). motion CSS 8,88 KB gz küçültülmüş (bütçe 9,5).
+
+## 28. Performans düzeltmeleri 1 (K-288, `docs/qa/PERFORMANS-DENETIMI-1.md`)
+Kurallar (yeni kod da uyar):
+- **ScrollTrigger.refresh yalnız yeni tetik bağlanınca** (`fx.scan` → `scanInto` bool döner). Runtime MutationObserver'ı GSAP'in kendi düğümlerini yok sayar: `.pin-spacer` + yeniden sarılan pin öğesi, `body`'ye eklenen sınıfsız/boş ölçüm `div`'i, `[data-split-wired]` içindeki SplitText satırları (P-01).
+- Akıllı header kodu tamamen kaldırıldı (K-292): kaydırma işleyicisi ve `body` alt ağacında `style` gözlemcisi yok (P-05, P-06).
+- `pointermove` rAF'e toplanır; dikdörtgenler kaydırma/yeniden boyut "nesli" başına bir kez okunur, svg listeleri ve SVG host'u önbellekte; önce okuma, sonra yazma; mıknatıs dinlenme merkezinden ölçülür (P-09).
+- Lenis tiki öncelikli: `gsap.ticker.add(tick, false, true)` (P-10). Intro izleme `setInterval` yerine History API sarmalı, `data-intro` kalkınca söner (P-11).
+- Hero ilerleme çubuğu: tek doğrusal WAAPI animasyonu (`scale`), Swiper zaman bilgisi yalnız duraklat/sürdür ve kayma > 120 ms ise yeniden konumlama; çubukta `transition-none`; hero ekran dışındayken autoplay durur (P-07).
+- K-231 taban listesinde şekil/gölge sınıfları tam sınıf eşleşmesiyle (`[class~=]`); her karede yazılan parçalar `transition-none` almalı.
+- `reveal-scale` / `M-20` artık **yalnız transform** (`gl-scale-up`: ölçek .96 + 16 px), opaklık 0 başlangıcı ve runtime öncesi gizleme yok: LCP öğesini geciktiremez (P-03, KK-0-19a).
+
+Ölçüm (üretim derlemesi kopyası, kalite-denetcisi betikleri, 4× CPU masaüstü 1440×900; önce → sonra):
+| Senaryo | Önce | Sonra |
+|---|---|---|
+| Boşta DOM eklemesi `/` (10 sn) | 518 (pin-spacer ×148, body div ×74) | 0 |
+| Boşta yük `/` · `/urunler` · `/sss` | %83 · %30 · %29 | %20 · %21 · %21 (`?motion=off` tabanı %15–20) |
+| Mobil 4× boşta `/` | %75 | %21 |
+| Hero görünmezken `transitioncancel` (5 sn) | 959 | 0 |
+| Hero "sonraki" p95 / >16 ms | 71,2 / %9,1 | 12,6 / %2,9 |
+| Ana sayfa Lenis kaydırma | 95,9 / %34,9 | 25,2 / %18,7 |
+| Pin scrub | 87,7 / %22,1 | 20,8 / %6,7 |
+| Vitrin renk geçişi | 16,6 / %4,5 | 8,4 / %0,3 |
+| SVG near/parallax | 91,7 / %41,9 | 24,8 / %8,4 |
+| 20 kart hover (`/urunler`) | 62,7 / %68,4 | 58,3 / %63,2 |
+Açık kalan: kart hover (tilt + parıltı boyaması, P-02 kart DOM'u ile birlikte) ve ana sayfa kaydırması (%18,7; P-12 kontur başlık boyaması + pin) hedef < %5'in üstünde. Mobil INP ve akıllı header senaryosu bu turda ölçülmedi (ölçüm kullanıcı kararıyla durduruldu).
+
+### 28.1 Tur 2 — kart hover yalnız bileşimci + P-12
+- **Tilt:** `quickTo` artık DOM'a değil düz bir nesneye yazar; tek `gsap.ticker` geri çağrısı kart başına karede **tek** `transform` yazar (değer değişmediyse yazmaz), oturunca satır içi transform'u siler. Karoda transform geçişi yok (K-231 tabanı ezildi; yoksa her yazım 250 ms geçiş başlatıp iptal ederdi).
+- **Parıltı:** 2× boyutlu, sabit radial-gradient'li katman; imleç konumu `translate` ile (karonun alt ağacına değişken yazımı ve gradient yeniden boyaması yok).
+- **Derinlik gölgesi:** karonun altında önceden boyanmış `[data-card-shadow]` katmanı, yalnız `opacity` (box-shadow geçişi yok). Ayrıntı panelindeki `backdrop-blur` kaldırıldı (`bg-surface/95`). `will-change: transform` yalnız hover'da.
+- **P-12:** kontur başlığın `stroke-dashoffset`'i ~1/90 adımlarla `snap`lenir; SVG pin hazırken kendi katmanında.
+- Runtime kaydırma adımı `scrollY`'yi rAF'te değil kaydırma olayında okur (GSAP yazımlarından sonra zorunlu stil hesaplaması kalktı).
+
+| 4× masaüstü (p95 / >16 ms) | Tur 1 sonrası | Tur 2 sonrası (2 tekrar) |
+|---|---|---|
+| 20 kart hover | 58,3 / %63,2 | 45,9 / %40–42,5 |
+| Ana sayfa kaydırma | 25,2 / %18,7 | 25,1 / %16,5–22,1 (zorunlu hesaplama 1026 → ~595 ms) |
+| Pin scrub | 20,8 / %6,7 | 20,9 / %8,7 (tek ölçüm, fark gürültü içinde) |
+Kalan kart maliyeti: hover durum değişiminde `:has()`/`group-hover` stil hesaplaması (kart başına 76–192 öğe) ve isabet testi; kart DOM'u (P-02) küçülmeden < %5 beklenmez.

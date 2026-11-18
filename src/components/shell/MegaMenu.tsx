@@ -2,113 +2,87 @@
 
 /**
  * Desktop mega menu (≥ 1024px) — bilesenler/mega-menu.md §1, wireframe/mega-menu.md A0–A6, K-064, K-077, K-091.
+ * K-290: there is no trigger button any more. The menu is CONTROLLED by the header search: focusing / clicking the
+ * search input opens it (HeaderSearch owns `open`); typing 2+ characters hands the space to the instant results.
  * 4 zones: roots (left) · sub-category image tiles + text list (centre) · featured product + promo (right).
- * - All panels are in the DOM (links crawlable); inactive panels are `hidden`, so their lazy images never load
- *   until that root is shown (A6 / KK-1-06).
- * - Hover-recolor zone Z1 on the panel, linked to header Z2 (#header-accent). Trigger = featured card (data-accent).
- * Motion hooks: data-motion="mega-panel" | "mega-tiles" | "mega-root-bar", data-state on the trigger.
+ * - Panels stay in the DOM once mounted (links crawlable); inactive roots are `hidden`, so lazy images load on demand.
+ * - Hover-recolor zone Z1 on the panel, linked to header Z2 (#header-accent).
+ * - Esc / pointerdown outside `containerRef` (capsule + panel) closes it.
+ * Motion hooks: data-motion="mega-panel" | "mega-tiles" | "mega-root-bar", data-state on the panel.
  */
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useId, useRef, useState } from "react";
-import { LayoutGrid, X } from "@/components/ui/lucide";
+import { useCallback, useEffect, useId, useRef, useState, type RefObject } from "react";
 import { useAccentZone } from "@/lib/theme/useAccentZone";
 import { useT } from "@/lib/ui-text/client";
-import type { MenuRoot } from "./menu-data";
+import { useMenuRoots } from "./menu-media";
+import type { MenuRootNav } from "./menu-model";
 
 const loadPanel = () => import("./MegaMenuPanel");
 const MegaMenuPanel = dynamic(loadPanel, { ssr: false });
 
-const OPEN_INTENT_MS = 150;
 const ROOT_INTENT_MS = 80;
-const HOVER_CLOSE_MS = 300;
 
-export function MegaMenu({ roots }: { roots: MenuRoot[] }) {
+export function MegaMenu({
+  roots,
+  open,
+  onClose,
+  containerRef,
+}: {
+  /** Text-only roots; images / featured / promo are fetched once the panel mounts (K-288, menu-media.ts). */
+  roots: MenuRootNav[];
+  open: boolean;
+  onClose: (returnFocus?: boolean) => void;
+  /** Wrapper of the search capsule + this panel: pointerdown inside it never closes the menu. */
+  containerRef: RefObject<HTMLElement | null>;
+}) {
   const { t } = useT();
-  const [open, setOpen] = useState(false);
-  /** Panel body is mounted on first intent (hover/focus/click) or browser idle; see MegaMenuPanel. */
   const [mounted, setMounted] = useState(false);
-  const [focusFirst, setFocusFirst] = useState(false);
   const [active, setActive] = useState(roots[0]?.root ?? "");
-  const openedBy = useRef<"hover" | "click">("click");
-  const timers = useRef<{ open?: number; root?: number; close?: number }>({});
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const timers = useRef<{ root?: number }>({});
   const rootList = useRef<HTMLUListElement>(null);
   const panelId = useId();
   const { ref: zoneRef } = useAccentZone<HTMLDivElement>({ intentDelay: 120, releaseDelay: 200, linkedIds: ["header-accent"], disabled: !open });
 
-  const mount = useCallback(() => setMounted(true), []);
+  if (open && !mounted) setMounted(true); // lazy body mounts on first open (render-time derive, no effect)
+  const fullRoots = useMenuRoots(roots, mounted);
+
   useEffect(() => {
     const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 2500));
     const id = idle(() => void loadPanel());
     return () => (window.cancelIdleCallback ?? window.clearTimeout)(id);
   }, []);
 
-  const clear = (k: "open" | "root" | "close") => window.clearTimeout(timers.current[k]);
-
-  const close = useCallback((returnFocus = false) => {
-    setOpen(false);
-    if (returnFocus) buttonRef.current?.focus();
-  }, []);
-
-  // Esc + outside click
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close(true);
+      if (e.key === "Escape") onClose(true);
     };
     const onDown = (e: PointerEvent) => {
-      const target = e.target as Node;
-      if (!zoneRef.current?.contains(target) && !buttonRef.current?.contains(target)) close();
+      if (!containerRef.current?.contains(e.target as Node)) onClose();
     };
+    const onFocusOut = (e: FocusEvent) => {
+      const to = e.relatedTarget as Node | null;
+      if (to && !containerRef.current?.contains(to)) onClose();
+    };
+    const box = containerRef.current;
     document.addEventListener("keydown", onKey);
     document.addEventListener("pointerdown", onDown);
+    box?.addEventListener("focusout", onFocusOut);
     return () => {
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("pointerdown", onDown);
+      box?.removeEventListener("focusout", onFocusOut);
     };
-  }, [open, close, zoneRef]);
+  }, [open, onClose, containerRef]);
 
   useEffect(() => {
     const tm = timers.current;
-    return () => {
-      window.clearTimeout(tm.open);
-      window.clearTimeout(tm.root);
-      window.clearTimeout(tm.close);
-    };
+    return () => window.clearTimeout(tm.root);
   }, []);
 
-  const finePointer = () => window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-
-  const onTriggerClick = () => {
-    clear("open");
-    if (open && openedBy.current === "hover") {
-      openedBy.current = "click";
-      return;
-    }
-    openedBy.current = "click";
-    setOpen((o) => !o);
-    mount();
-    if (!open) setFocusFirst(true);
-    if (!open) requestAnimationFrame(() => rootList.current?.querySelector<HTMLElement>("a[data-root-link]")?.focus());
-  };
-
-  const onEnterArea = () => {
-    clear("close");
-    if (!finePointer()) return;
-    mount();
-    if (open) return;
-    clear("open");
-    timers.current.open = window.setTimeout(() => {
-      openedBy.current = "hover";
-      setOpen(true);
-    }, OPEN_INTENT_MS);
-  };
-  const onLeaveArea = () => {
-    clear("open");
-    if (!open || openedBy.current !== "hover") return;
-    clear("close");
-    timers.current.close = window.setTimeout(() => setOpen(false), HOVER_CLOSE_MS);
-  };
+  const clear = useCallback((k: "open" | "root" | "close") => {
+    if (k === "root") window.clearTimeout(timers.current.root);
+  }, []);
 
   const selectRoot = (root: string, immediate = false) => {
     clear("root");
@@ -117,28 +91,15 @@ export function MegaMenu({ roots }: { roots: MenuRoot[] }) {
   };
 
   return (
-    <div className="hidden lg:block" onFocusCapture={mount} onPointerEnter={onEnterArea} onPointerLeave={onLeaveArea}>
-      <button
-        ref={buttonRef}
-        type="button"
-        aria-expanded={open}
-        aria-controls={panelId}
-        onClick={onTriggerClick}
-        data-state={open ? "open" : "closed"}
-        className={`inline-flex min-h-control items-center gap-2 rounded-pill border px-5 font-medium text-ink transition-[color,background-color,border-color,box-shadow,text-decoration-color] duration-250 hover:border-green-700 ${
-          open ? "border-accent-line bg-accent-soft" : "border-line-strong bg-surface"
-        }`}
-      >
-        {open ? <X size={20} /> : <LayoutGrid size={20} />}
-        {t("megaMenu.title")}
-      </button>
-
+    <>
       {/* Scrim: ink 30% under the panel, below the sticky header */}
       {open && <div aria-hidden="true" className="absolute inset-x-0 top-full h-dvh bg-ink/30" data-motion="mega-scrim" />}
 
       <div
         ref={zoneRef}
         id={panelId}
+        role="region"
+        aria-label={t("megaMenu.title")}
         data-accent-zone=""
         data-motion="mega-panel"
         data-state={open ? "open" : "closed"}
@@ -147,18 +108,18 @@ export function MegaMenu({ roots }: { roots: MenuRoot[] }) {
       >
         {mounted && (
           <MegaMenuPanel
-            roots={roots}
+            roots={fullRoots}
             active={active}
             setActive={setActive}
             selectRoot={selectRoot}
             clear={clear}
-            close={close}
+            close={(returnFocus) => onClose(returnFocus)}
             panelId={panelId}
             rootList={rootList}
-            focusFirst={focusFirst}
+            focusFirst={false}
           />
         )}
       </div>
-    </div>
+    </>
   );
 }

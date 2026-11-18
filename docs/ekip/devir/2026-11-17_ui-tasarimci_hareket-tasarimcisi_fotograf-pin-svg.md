@@ -2,7 +2,7 @@
 kimden: ui-tasarimci
 kime: hareket-tasarimcisi
 tarih: 2026-11-17
-durum: AÇIK
+durum: KAPANDI
 ilgili: K-257, K-265, K-270, K-271, K-264 · docs/tasarim/briefler/fotograf-ve-svg-yerlesim.md §2, §3
 ---
 
@@ -19,3 +19,9 @@ ilgili: K-257, K-265, K-270, K-271, K-264 · docs/tasarim/briefler/fotograf-ve-s
 
 ## Kabul kriteri
 Pin sahnesi fotoğraflarla çalışıyor; "Hareketi azalt" açıkken fotoğraflar sabit, SVG'ler statik ve eksiksiz; §3 tablosundaki her yer belirtilen tetikle aktifleşiyor.
+
+## Yanıt (hareket-tasarimcisi, 2026-11-18) — KAPANDI
+1. Pin fotoğrafları bağlandı (`HomeDoors.tsx › DOOR_PHOTO_SLOTS`, `door.<key>.tall` önce). Paralaks: scale 1.12 kırpım + pin boyunca ±%3 yatay (toplam %6), perde açılışında 1.3→1.12. Ravena'ya göre metin fotoğraf **yanında** durduğu için pin sahnesinde foto hover yakınlaşması yok (fotoğraf sütunu etkileşimsiz); şerit (mobil/azaltılmış) kartlarında hover 1.07. Pin sahnesinden SVG sahneleri çıkarıldı; premium panelde `ScenePremiumFrame` %60 kaldı, PV panelinde packshot + yalnız PV çipi.
+2. §3 tetikleri `ScrollSvg mode` sözlüğüyle: `draw`, `parallax`, `view` (kaydırma → bir kez davranış), `near` (imleç ≤ 240 px). "Okuma ilerlemesiyle damar uzar" = `draw` (scrub). Yeni davranış adı yok. Yerleştirme sayfa sahiplerinde (devir: hareket-tasarimcisi → frontend-gelistirici, motion-v5).
+3. Raf duvarı foto karoları Geliştirici B'nin dosyasında; kural motion.css'e eklenecek seçici devir notunda (`[data-shelf-photo]` + scrim katmanı `[data-shelf-scrim]`).
+4. Takma ad devri henüz kapanmadı.
